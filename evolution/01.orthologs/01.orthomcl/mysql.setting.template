@@ -1,0 +1,5 @@
+drop database orthomcl_cluster; ### if database orthomcl is exists, do this; else, pass;
+create database orthomcl_cluster;
+grant all  on orthomcl_cluster* to TwoIronWood@localhost identified by '1234';  #### give all privileges to TwoIronWood;
+flush privileges;
+exit;

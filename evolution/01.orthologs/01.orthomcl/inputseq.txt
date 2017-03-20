@@ -1,0 +1,4 @@
+Cpa /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Cpa.pep.clean.fa
+Rco /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Rco.pep.clean.fa
+Ath /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Ath.pep.clean.fa
+Vvi /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Vvi.pep.clean.fa

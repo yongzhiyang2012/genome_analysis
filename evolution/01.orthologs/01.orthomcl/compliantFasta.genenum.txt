@@ -1,0 +1,4 @@
+Ath.fasta:26864
+Cpa.fasta:26249
+Rco.fasta:29911
+Vvi.fasta:25400
