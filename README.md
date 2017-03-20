@@ -1,2 +1,2 @@
 # Two_iron_wood_genome_analysis
-The detail analysis for two iron wood genome paper.
+The detail analysis for two iron wood genome paper, inculding software and parameters.
