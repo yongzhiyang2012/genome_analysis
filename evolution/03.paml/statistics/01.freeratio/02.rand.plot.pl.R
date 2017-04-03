@@ -1,0 +1,5 @@
+library(ggplot2)
+a=read.table("02.rand.plot.pl.rand.150genes.10000times.out")
+pdf(file="02.rand.plot.pl.rand.150genes.10000times.out.pdf",height=3,width=5)
+ggplot(a,aes(V1,V3,col=V1))+geom_boxplot()+labs(x="Species",y="Ka/Ks")+theme(legend.title=element_blank())
+dev.off()
