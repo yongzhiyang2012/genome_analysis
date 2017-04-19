@@ -11,7 +11,7 @@
     CodonFreq = 2  * 0:1/61 each, 1:F1X4, 2:F3X4, 3:codon table
 
         clock = 0  * 0:no clock, 1:clock; 2:local clock; 3:CombinedAnalysis
-        model = 1  
+        model = 2  
                    * models for codons:
                        * 0:one, 1:b, 2:2 or more dN/dS ratios for branches
                    * models for AAs or codon-translated AAs:

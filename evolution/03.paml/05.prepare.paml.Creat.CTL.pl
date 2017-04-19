@@ -78,7 +78,7 @@ for my $tree (@tree){
             }
             close F;
             close O;
-        }else{
+        }elsif($type eq 'branch-site'){
             open (F,"ctl/ctl.template")||die"$!";
             open (O1,">ctl/branch-site.$sp.fix.ctl");
             open (O2,">ctl/branch-site.$sp.nofix.ctl");
@@ -94,7 +94,7 @@ for my $tree (@tree){
 	    print O1 "$_\n";
 	    print O2 "$_\n";
 	}elsif(/^\s+model\s+=/){
-	    s/model\s+=/model = 1 /;
+	    s/model\s+=/model = 2 /;
 	    print O1 "$_\n";
 	    print O2 "$_\n";
 	}elsif(/^\s+NSsites\s+=/){
@@ -109,7 +109,7 @@ for my $tree (@tree){
 	}elsif(/^\s+omega\s+=/){
 	    s/omega\s+=/omega = 1 /;
 	    print O1 "$_\n";
-	    s/omega\s+=s\+1/omega = 1.5 /;
+	    s/omega\s+=\s+1/omega = 1.5 /;
 	    print O2 "$_\n";
 	}else{
 	    print O1 "$_\n";
@@ -119,6 +119,8 @@ for my $tree (@tree){
             close F;
             close O1;
             close O2;
+        }else{
+            die "branch | branch-site\n";
         }
     }
 }
