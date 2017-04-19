@@ -41,7 +41,7 @@ open (O,">$0.R");
 print O "library(ggplot2)
 a=read.table(\"$0.rand.150genes.10000times.out\")
 pdf(file=\"$0.rand.150genes.10000times.out.pdf\",height=3,width=5)
-ggplot(a,aes(V1,V3,col=V1))+geom_boxplot()+labs(x=\"Species\",y=\"Ka/Ks\")+theme(legend.title=element_blank())
+ggplot(a,aes(V1,V3,col=V1))+geom_boxplot()+labs(x=\"Species\",y=\"Ka/Ks\")+theme(legend.title=element_blank())+theme(axis.text.x = element_text(angle = 270, hjust = 1))
 dev.off()
 ";
 close O;
