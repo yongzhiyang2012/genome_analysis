@@ -6,9 +6,9 @@ my $dir=shift or die "perl $0 dir\nthe dir should containing paml result with th
 open (O,">All.freeratio.result.out");
 print O "cluster\tlength\tspeices\tN\tS\tdN\tdS\tNdN\tSdS\tw\tlnl\n";
 
-my @mlc=<$dir/*/freeratio.mlc>; 
+my @mlc=<$dir/*/branch.freeratio.mlc>; 
 for my $mlc (@mlc){
-    $mlc=~/\/([^\/]+)\/freeratio.mlc$/;
+    $mlc=~/\/([^\/]+)\/branch.freeratio.mlc$/;
     my ($cluster)=($1);
     my ($lnl,$N,$S);
     my $len;
