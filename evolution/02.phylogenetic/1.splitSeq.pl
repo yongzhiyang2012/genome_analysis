@@ -21,7 +21,12 @@ for my $seqfile (@seq){
     while (my $seq=$fa->next_seq) {
         my $id=$seq->id;
         my $seq=$seq->seq;
-        my $key="$name|$id";
+        my $key;
+        if ($id=~/^$name\|/){
+            $key=$id;
+        }else{
+            $key="$name|$id";
+        }
         $seq{$type}{$key}=$seq;
     }
 }
@@ -39,14 +44,16 @@ while (<F>) {
 close F;
 
 `mkdir align` if (! -e "align");
-for my $k (sort keys %list){
+    for my $k (sort keys %list){
     my $dir="align/$k";
     `mkdir $dir` if (! -e "$dir");
     for my $type ("cds","pep"){
         open (O,">$dir/$type");
         for my $k2 (sort keys %{$list{$k}}){
             die "$k2\n" if ! exists $seq{$type}{$k2};
-            print O ">$k2\n$seq{$type}{$k2}\n";
+            $k2=~/^(\S+)\|/ or die "$k2\n";
+            my $outid=$1;
+            print O ">$outid\n$seq{$type}{$k2}\n";
         }
         close O;
     }
