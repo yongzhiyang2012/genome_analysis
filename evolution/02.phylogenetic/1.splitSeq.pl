@@ -7,7 +7,7 @@ use Bio::SeqIO;
 my ($dir,$singlecoypegenelist)=@ARGV;
 die "Usage:\nperl $0 dir single_coype_gene_list
 dir: containing cds and pep seq with the name of XXX.cds.clean.fa and XXX.pep.clean.fa. XXX represent the species ID.
-single_coype_gene_list: clusterid\tGene_num\tSpecies_num\Orthologous_genes_split_comma
+single_coype_gene_list: clusterid\tGene_num\tSpecies_num\tOrthologous_genes_split_comma
 " if (! $singlecoypegenelist);
 
 my %list;
