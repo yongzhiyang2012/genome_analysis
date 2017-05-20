@@ -1,1 +1,3 @@
 for gene family analysis
+1. phase gene family size >= (species_num/2) && >=3 species in this family
+2. run cafe. Please replace the header and give the right software pathway. Please give the right tree and be careful: the branch lengths in the tree is the time of the species divergence
