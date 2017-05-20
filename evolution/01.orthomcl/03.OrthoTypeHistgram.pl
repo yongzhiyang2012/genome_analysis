@@ -4,6 +4,7 @@ use warnings;
 ## created by Yongzhi Yang. 2017/3/20 ##
 
 my %group;
+my %sp;
 open (F,"groups.txt")||die"$!";
 while (<F>) {
     chomp;
@@ -11,10 +12,12 @@ while (<F>) {
     for (my $i=1;$i<@a;$i++){
         $a[$i]=~/^(\w+)\|/;
         my $id=$1;
+        $sp{$id}++;
         $group{$a[0]}{$id}{$a[$i]}++;
     }
 }
 close F;
+my $spnum=scalar(keys %sp);
 my %genenum;
 open (F,"compliantFasta/genenum.txt")||die"$!";
 while (<F>) {
@@ -27,7 +30,7 @@ my %count;
 for my $k1 (sort keys %group){
     my @k2=sort keys %{$group{$k1}};
     my $type1="paralogs";
-    if (scalar(@k2) == 10){
+    if (scalar(@k2) == $spnum){
         $type1="orthologs";
     }elsif(scalar(@k2) > 1){
         $type1="other";
