@@ -1,3 +1,20 @@
-for gene family analysis
-1. phase gene family size >= (species_num/2) && >=3 species in this family
-2. run cafe. Please replace the header and give the right software pathway. Please give the right tree and be careful: the branch lengths in the tree is the time of the species divergence
+Gene family analysis with cafe.
+
+Please download the last version of cafe. In this example I just test the v4.0.1 (https://github.com/hahnlab/CAFE/releases/download/v4.0.1/CAFE-4.0.1.tar.gz).
+
+All the running shell in the 01.run.sh.
+Notice:
+1. give the right tree, which the branch length is the divergence time
+2. fix the cafetutorial_run2.sh lambda value from cafetutorial_run1.sh's result
+
+
+step by step:
+
+python2.7 cafetutorial_mcl2rawcafe.py -i mcloutput -o unfiltered_cafe_input.txt -sp "Cow Dog Goa Hom Hor Oam Opo Pig She"       ### -sp species that contained in the mcl output file
+
+python2.7 cafetutorial_clade_and_size_filter.py -i unfiltered_cafe_input.txt -o filtered_cafe_input.txt -s
+
+cafe cafetutorial_run1.sh
+
+cafe cafetutorial_run2.sh  ### remember the lambda value from cafetutorial_run1.sh's result
+
