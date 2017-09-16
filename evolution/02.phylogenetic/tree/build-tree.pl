@@ -55,6 +55,6 @@ sub print_convertType_alignment{
       }elsif($sf eq 'phyml'){
           return ("$phyml -i $in -d nt -b $bootstrap -m GTR -f e -a e --no_memory_check");
       }elsif($sf eq 'raxml'){
-          return ("$raxml -s $in -n $in -m GTRGAMMA -f a -x 12345 -N 100 -p 12345 -T 30");
+          return ("$raxml -s $in -n $in -m GTRGAMMAI -f a -x 12345 -N 100 -p 12345 -T 30");
       }
   }
