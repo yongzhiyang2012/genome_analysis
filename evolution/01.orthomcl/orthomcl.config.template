@@ -1,9 +1,9 @@
 # this config assumes a mysql database named 'orthomcl'.  adjust according
 # to your situation.
 dbVendor=mysql
-dbConnectString=dbi:mysql:orthomcl_cluster
-dbLogin=TwoIronWood
-dbPassword=1234
+dbConnectString=dbi:mysql:orthomcl_cluster_yyz
+dbLogin=yyz
+dbPassword=Ironwood123
 similarSequencesTable=SimilarSequences
 orthologTable=Ortholog
 inParalogTable=InParalog
