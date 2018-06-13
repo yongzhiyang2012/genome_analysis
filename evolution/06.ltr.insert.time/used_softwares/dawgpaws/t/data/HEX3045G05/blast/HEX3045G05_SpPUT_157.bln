@@ -1,0 +1,263 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SpPUT_157 
+           9061 sequences; 4,917,502 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+PUT-157a-Sorghum_propinquum-3094#PlantGDB-assembled Unique Trans...   416   e-114
+PUT-157a-Sorghum_propinquum-6059#PlantGDB-assembled Unique Trans...   381   e-104
+PUT-157a-Sorghum_propinquum-137#PlantGDB-assembled Unique Transc...   293   1e-77
+PUT-157a-Sorghum_propinquum-995#PlantGDB-assembled Unique Transc...   117   2e-24
+
+>PUT-157a-Sorghum_propinquum-3094#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 900
+
+ Score =  416 bits (210), Expect = e-114
+ Identities = 333/374 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||| || ||||| || |||||||||||||||||||| || 
+Sbjct: 560   cctcacttggccatcataaccttaacaaactcttcatagttgatctggccgtcgccatcg 501
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 500   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 441
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || |||||||||||||| || |||
+Sbjct: 440   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcaaagacg 381
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 380   cggaaggcctccttgagctcctcctcggagtcggtgtccttcatcttccttgccatcagg 321
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| ||||| || ||||| || || |||||||| |||||||||
+Sbjct: 320   ttcaggaactctgggaagtcaatggtcccattgccatcagcatcaacctcattgatcatg 261
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 260   tcctgcagctctgcctcggtagggttctggccaagggagcgcatcacagttccaagctcc 201
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||| ||||||||
+Sbjct: 200   ttggtagtgatgca 187
+
+
+
+ Score =  133 bits (67), Expect = 3e-29
+ Identities = 76/79 (96%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||| ||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 185   ccgtcgccatccttatcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 126
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 125   gtgagctggtccgccatgg 107
+
+
+>PUT-157a-Sorghum_propinquum-6059#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1147
+
+ Score =  381 bits (192), Expect = e-104
+ Identities = 330/376 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||||||||||||||||||||| ||||| || |
+Sbjct: 705   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccatcgccatcga 646
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || |||||||| || ||||||||||| || |||||||
+Sbjct: 645   cgtcagcctcgcggatcatctcatcgacctcctcatcggtcagcttctcgccaaggttgg 586
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||||||||| |||||||| || |||||||||||||||||||||||||||||||| |
+Sbjct: 585   tcatcacgtggcggagctccgcagcagagatgaagccgttctggtccttgtcgaacaccc 526
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              |||||||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 525   tgaacgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 466
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| || ||||| |||||||| ||||| || || || ||||| ||||||||||
+Sbjct: 465   tgaggaactcaggaaagtcaatggtgccattgccatcggcatcgacctcattgatcatgt 406
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| || || || || ||||| || |||||||||||||
+Sbjct: 405   cctgaagctcagcctcggttgggttttgacccagtgaacgcatgacagttccaagctcct 346
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 345   tggttgtgatgcaacc 330
+
+
+
+ Score =  135 bits (68), Expect = 7e-30
+ Identities = 74/76 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             ||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct: 328   tcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtg 269
+
+                             
+Query: 46575 agctggtccgccatgg 46590
+             ||||||||||||||||
+Sbjct: 268   agctggtccgccatgg 253
+
+
+>PUT-157a-Sorghum_propinquum-137#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 777
+
+ Score =  293 bits (148), Expect = 1e-77
+ Identities = 319/376 (84%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||| ||||| |||||||| ||||||||||| || || || ||||
+Sbjct: 546   ctcacttggccatcatgactttgacaaactcctcatagttgatctgaccatcaccatcca 487
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| ||||||||||| || || |||||||| || || || |
+Sbjct: 486   catcagcctcacggatcatctcatccacctcctcatcagttagcttctcaccaagatttg 427
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || |||||||||||||||||||||||||| ||||| |
+Sbjct: 426   tcatgacatggcggagctcggcagcagagatgaagccgttctggtccttgtcaaacacac 367
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             | || |||||||||||||| ||||| |||||||||||||||||||| |  ||||| ||||
+Sbjct: 366   gaaaggcctccttgagctcttcctcagagtccgtgtccttcatcttgcgagccatgaggt 307
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || || || |||||||||||||| || || || ||||| ||||||||||
+Sbjct: 306   tgagaaactctggaaaatcaatggtgccgttgccatcagcatcgacctcattgatcatgt 247
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| ||||| || || ||||| || ||||| |||||||
+Sbjct: 246   cctggagctcagcctctgtagggttttgccctagtgaacgcatgacagttcccagctcct 187
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 186   tggtcgtgatgcaacc 171
+
+
+
+ Score =  117 bits (59), Expect = 2e-24
+ Identities = 68/71 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| ||||||||||||||||||||||| |||||||| |||||||||||||||
+Sbjct: 163   tccttgtcgaataggctgaaggcctccttgaactcagcgatctggtcgtcggtgagctgg 104
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 103   tccgccatggg 93
+
+
+>PUT-157a-Sorghum_propinquum-995#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 543
+
+ Score =  117 bits (59), Expect = 2e-24
+ Identities = 68/71 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| ||||||||||||||||||||||| |||||||| |||||||||||||||
+Sbjct: 161   tccttgtcgaataggctgaaggcctccttgaactcagcgatctggtcgtcggtgagctgg 102
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 101   tccgccatggg 91
+
+
+  Database: SpPUT_157
+    Posted date:  Feb 17, 2007  3:20 PM
+  Number of letters in database: 4,917,502
+  Number of sequences in database:  9061
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 9061
+Number of Hits to DB: 279,860
+Number of extensions: 111697
+Number of successful extensions: 32296
+Number of sequences better than 1.0e-05: 4
+Number of HSP's gapped: 32296
+Number of HSP's successfully gapped: 7
+Length of query: 82726
+Length of database: 4,917,502
+Length adjustment: 20
+Effective length of query: 82706
+Effective length of database: 4,736,282
+Effective search space: 391718939092
+Effective search space used: 391718939092
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 28 (56.0 bits)

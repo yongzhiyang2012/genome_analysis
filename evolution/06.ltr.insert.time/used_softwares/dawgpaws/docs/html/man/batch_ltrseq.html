@@ -1,0 +1,434 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>batch_ltrseq.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_ltrseq.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_options">Required Options</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<ul>
+
+		<li><a href="#configuration_file">Configuration File</a></li>
+		<li><a href="#environment">Environment</a></li>
+	</ul>
+
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>batch_ltrseq.pl - Run the LTR_seq program in batch mode.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    batch_ltrseq.pl -i in_dir -o out_dir</pre>
+<p>
+</p>
+<h2><a name="required_options">Required Options</a></h2>
+<pre>
+    -i        # Intput directory of files to process
+              # These must be in fasta file format
+    -o        # Base output directory</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program runs the LTR_seq program for each file in the input directory.
+An optional configuartion file can also be used to run the LTR_seq program
+for multiple LTR_seq parameter combinations. If no configuration file is
+provided, batch_ltrseq.pl will run LTR_seq using default parameters.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dindir">-i,--indir</a></strong>
+
+<dd>
+<p>Path of the directory containing the sequences to process.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutdir">-o,--outdir</a></strong>
+
+<dd>
+<p>Path of the directory to place the program output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2dc_2c_2d_2dconfig">-c,--config</a></strong>
+
+<dd>
+<p>Path to a configuration file. This config file  will allow the 
+batch_ltrseq.pl program to run the LTR_seq program for multiple parameter 
+combinations for every fasta file in the input sequence directory. 
+If no configuartion file is used, the LTR_seq program will be run with
+default parameters.</p>
+</dd>
+<dd>
+<p>The configuration file will
+be a two column, tab delimited text file with the following options:</p>
+</dd>
+<ul>
+<li><strong><a name="item_col_2e_1_configuration_set_name">Col. 1 Configuration Set Name</a></strong>
+
+<p>This is the name that will be used in the gff file to tag the configuration
+set. For example def for default options or old for an optional set to
+try to finder LTR retrotransposon insertions that are old.</p>
+</li>
+<li><strong><a name="item_col_2e_2_config_file_path">Col. 2 Config File Path</a></strong>
+
+<p>Path to the LTR_Seq config file describing the parameter set to use. This file
+should follow the format used for LTR_Seq config files. If this value is
+set to DEF, then batch_ltrseq.p will run the LTR_seq program with
+default parameters.</p>
+</li>
+</ul>
+<p>An example configuration file is shown below:</p>
+<pre>
+    def     DEF
+    long    long_ltr.cfg
+    old     lod_ltr.cfg</pre>
+<p>This configuration file would run three sets of parameter files for every
+sequence in the input directory.</p>
+<dt><strong><a name="item__2d_2dtest">--test</a></strong>
+
+<dd>
+<p>Run the batch_ltrseq.pl program in test mode. This will create the required
+directory structure, test for existence of files and other program functions.
+However, this will not actually run the LTR_seq program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<dl>
+<dt><strong><a name="item_error_3a_could_not_create_root_name_dir">ERROR: Could not create root name dir</a></strong>
+
+<dd>
+<p>The program could not create the directory needed to hold the output for
+the sequence file. It is possible that you not have the proper access to
+create a directory in the path that you specified. It is also possible
+that the directory that you are trying to create this subdirectory in 
+does not exist.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>
+</p>
+<h2><a name="configuration_file">Configuration File</a></h2>
+<p>This program can optionally make use of a configuration file. The path to
+configuration file is declared with the --config option at the command line.
+This config file  will allow the 
+batch_ltrseq.pl program to run the LTR_seq program for multiple parameter 
+combinations for every fasta file in the input sequence directory. 
+If no configuartion file is used, the LTR_seq program will be run with
+default parameters.</p>
+<p>The configuration file will
+be a two column, tab delimited text file with the following options:</p>
+<ul>
+<li><strong>Col. 1 Configuration Set Name</strong>
+
+<p>This is the name that will be used in the gff file to tag the configuration
+set. For example def for default options or old for an optional set to
+try to finder LTR retrotransposon insertions that are old.</p>
+</li>
+<li><strong>Col. 2 Config File Path</strong>
+
+<p>Path to the LTR_Seq config file describing the parameter set to use. This file
+should follow the format used for LTR_Seq config files. If this value is
+set to DEF, then batch_ltrseq.p will run the LTR_seq program with
+default parameters.</p>
+</li>
+</ul>
+<p>An example configuration file is shown below:</p>
+<pre>
+    def     DEF
+    long    long_ltr.cfg
+    old     old_ltr.cfg</pre>
+<p>This configuration file would run three sets of LTR_seq configurations
+for every sequence in the input directory. These configurations would
+include (1) the default parameter set, (2) the parameter set name long
+that is specified by the LTR_seq config file long_ltr.cfg, and (3) the
+parameter set name old that is specified by the parameter set old_ltr.cfg.</p>
+<p>Please see the LTR_seq documentation for specific information on the 
+LTR_seq configuration files. The configuration files in LTR_seq allow you 
+to specifiy the following parameters:</p>
+<ul>
+<li><strong><a name="item_dmin">Dmin</a></strong>
+
+<p>The starting positions of the 5' and 3' LTRs should be separated by a minimum 
+of this distance in base pairs.</p>
+</li>
+<li><strong><a name="item_dmax">Dmax</a></strong>
+
+<p>The starting positions of the 5' and 3' LTRs should be separated by a maximum 
+of this distance in base pairs.</p>
+</li>
+<li><strong><a name="item_ltrmax">LTRmax</a></strong>
+
+<p>The 5' and 3' LTRs can individually span a maximum of this distance in base
+pairs.</p>
+</li>
+<li><strong><a name="item_ltrmin">LTRmin</a></strong>
+
+<p>The 5' and 3' LTRs can individually span a minimum of this distance in 
+base pairs.</p>
+</li>
+<li><strong><a name="item_ltrminexactmatch">LTRminExactMatch</a></strong>
+
+<p>The 5' and 3' LTRs should contain an exact match of this length in
+base pairs.</p>
+</li>
+<li><strong><a name="item_match">match</a></strong>
+
+<p>Dynamic programming score for a match (alignment).</p>
+</li>
+<li><strong><a name="item_mismatch">mismatch</a></strong>
+
+<p>Dynamic programming score for a mismatch (alignment).</p>
+</li>
+<li><strong><a name="item_hgap">hgap</a></strong>
+
+<p>Dynamic programming score for a gap opening (alignment).</p>
+</li>
+<li><strong><a name="item_gap">gap</a></strong>
+
+<p>Dynamic programming score for a gap continuation (alignment).</p>
+</li>
+<li><strong><a name="item_alignmentwithn">AlignmentWithN</a></strong>
+
+<p>Dynamic programming score for aligning an `N' with any other base (alignment).</p>
+</li>
+<li><strong><a name="item_maxscoreratiothreshold">MaxScoreRatioThreshold</a></strong>
+
+<p>Dynamic programming score threshold in percentage. This allows upto 15% 
+difference in the scores of the optimal alignment vs. the best possible 
+alignment given 100% identity.</p>
+</li>
+<li><strong><a name="item_tsr_len">TSR_len</a></strong>
+
+<p>Length of the target site repeat.</p>
+</li>
+<li><strong><a name="item_window">window</a></strong>
+
+<p>The LTR_seq documentation specifies that this parameter should not be
+changed and is for internal use only.</p>
+</li>
+</ul>
+<p>An example LTR_seq config file is shown below:</p>
+<pre>
+    window  12
+    Dmin 600
+    Dmax 15000
+    LTRmax 2000
+    match 2
+    mismatch -5
+    gap -1
+    hgap -6
+    AlignmentWithN -5
+    MaxScoreRatioThreshold  15
+    LTRmin 100
+    TSR_len 6
+    LTRminExactMatch 30</pre>
+<p>
+</p>
+<h2><a name="environment">Environment</a></h2>
+<p>This program does not make use of variables set in the user environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<p>The following software is required for the batch_ltrseq.pl program
+to run properly.</p>
+<ul>
+<li><strong><a name="item_ltr_seq">ltr_seq</a></strong>
+
+<p>The ltr_seq is the latest incarnation of the ltr_par program
+described by Kalyanaraman and Aluru J. Bioinform Comput Biol 4: 197-216.
+A binary of this program is available upon contacuting the program
+author: ananth &lt;at&gt; eecs.wsu.edu. The author's current homepage is:
+<a href="http://www.eecs.wsu.edu/~ananth/">http://www.eecs.wsu.edu/~ananth/</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_getopt_3a_3along">Getopt::Long</a></strong>
+
+<p>This module is required to accept options at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_config_file_must_use_unix_format_line_endings">Config file must use UNIX format line endings</a></strong>
+
+<p>The config file must have UNIX formatted line endings. Because of
+this any config files that have been edited in programs such as
+MS Word must be converted to a UNIX compatible text format before
+being used with batch_ltrseq.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU GENERAL PUBLIC LICENSE, VERSION 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 09/06/2007</p>
+<p>UPDATED: 03/24/2009
+
+</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_ltrseq.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_repmask2gff.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_repmask2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_variables">Required Variables</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>batch_mask.pl - Convert RepeatMasker output to the gff format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_repmask2gff.pl -i infile.out -o outfile.gff</pre>
+<p>
+</p>
+<h2><a name="required_variables">Required Variables</a></h2>
+<pre>
+    -i    # Path to the repeatmasker file to convert
+    -o    # Path to the gff output file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program will convert the output from RepeatMasker to the standard
+gff file format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path to the intput file that contains the repeatmasker out file to
+convert to the gff format. If this option is not specified, the program
+will expect input from STDIN.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doufile">-o,--oufile</a></strong>
+
+<dd>
+<p>Path to the gff output file. If and outfile file path is not specified, the
+program will write the output to STDERR.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2dp_2c_2d_2dparam">-p,--param</a></strong>
+
+<dd>
+<p>The parameter name to append to the source program name. This information will
+be appended to the second column of the gff output file. This is used to 
+specify if
+you masked with the same database using a different parameter set or if you
+used a different database.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dprogram">--program</a></strong>
+
+<dd>
+<p>The program name to use. This is the data in the second column of the 
+gff output file. Be default, this is set to 'repeatmasker'. This option
+allows you to specify other program names if desired.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2ds_2c_2d_2dseqname">-s,--seqname</a></strong>
+
+<dd>
+<p>Identifier for the sequence file that was masked with repeatmasker. The
+out file from repeatmasker may have truncated your original file name,
+and this option allows you to use the full sequence name.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dplus">--plus</a></strong>
+
+<dd>
+<p>Write all of the annotations to be in the positive (plus) strand. By default
+the program will interpret strand results reported as 'C' to be in the
+negative strand orientation. Setting the --plus flag will report all
+RepeatMasker hit results as occurring in the plus strand orientation.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dappend">--append</a></strong>
+
+<dd>
+<p>Append the results to an existing gff file. This must be used in
+conjunctions with the --outfile option.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dtest">--test</a></strong>
+
+<dd>
+<p>Run the program without doing the system commands.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<dl>
+<dt><strong><a name="item_typical_use">Typical Use</a></strong>
+
+<dd>
+<p>The typical use of this program will be to convert a repeat masker
+output file to the gff format.</p>
+</dd>
+<dd>
+<pre>
+  cnv_repmask2gff.pl -i HEX3045G05_TREP.out -o HEX3045G05_TREP.gff</pre>
+</dd>
+<dd>
+<p>This will produce a GFF file similar to the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05  repeatmasker    exon     469       493     25      -     . AT_rich
+ HEX3045G05  repeatmasker    exon     716       754     25      +     . AT_rich
+ HEX3045G05  repeatmasker    exon     1764      2069    469     +     . TREP20
+ HEX3045G05  repeatmasker    exon     1816      2105    507     +     . TREP58
+ HEX3045G05  repeatmasker    exon     1920      2248    450     +     . TREP214
+ ...</pre>
+</dd>
+</li>
+<dt><strong><a name="item_identify_the_database_used">Identify the Database Used</a></strong>
+
+<dd>
+<p>It may be also be useful to run repeatmasker against a number of different
+databases. You would therefore want to specify the database used in your
+gff output file. This can be specified using the --param option, to specify
+the database in the parameter tag. For example, if you used the TREP
+database as your database for masking:</p>
+</dd>
+<dd>
+<pre>
+  cnv_repmask2gff.pl -i rm_result.out -o rm_resout.gff --param TREP</pre>
+</dd>
+<dd>
+<p>This will append the parameter tag 'TREP' to the source column (col 2) of 
+the gff output file and 
+will produce a GFF file simlar to the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05  repeatmasker:TREP  exon   469     493     25     - .      AT_rich
+ HEX3045G05  repeatmasker:TREP  exon   716     754     25     + .      AT_rich
+ HEX3045G05  repeatmasker:TREP  exon   1764    2069    469    + .      TREP20
+ HEX3045G05  repeatmasker:TREP  exon   1816    2105    507    + .      TREP58
+ HEX3045G05  repeatmasker:TREP  exon   1920    2248    450    + .      TREP214
+ ...</pre>
+</dd>
+</li>
+<dt><strong><a name="item_program_source">Program Source</a></strong>
+
+<dd>
+<p>It may also be useful for you to specify a different program source name
+depending on the needs of your individual pipeline. You can do this
+using the --program option. For example, to shorten the full name
+repeatmasker to 'RM', you could use the following command</p>
+</dd>
+<dd>
+<pre>
+  cnv_repmask2gff.pl -i rm_result.out -o rm_result.gff --program RM</pre>
+</dd>
+<dd>
+<p>This will changed the source id in the second column of the output to RM
+and will result in a GFF output file similar to the following:</p>
+</dd>
+<dd>
+<pre>
+  HEX3045G05    RM     exon     469     493     25      -     . AT_rich
+  HEX3045G05    RM     exon     716     754     25      +     . AT_rich
+  HEX3045G05    RM     exon     1764    2069    469     +     . TREP20
+  HEX3045G05    RM     exon     1816    2105    507     +     . TREP58
+  HEX3045G05    RM     exon     1920    2248    450     +     . TREP214
+  ...</pre>
+</dd>
+<dd>
+<p>This can also be used in conjunction with the param tag:</p>
+</dd>
+<dd>
+<pre>
+  cnv_repmask2gff.pl -i result.out -o result.gff --program RM --param TREP</pre>
+</dd>
+<dd>
+<p>This will result in a GFF file similar to the following</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05   RM:TREP   exon    469     493     25      -     . AT_rich
+ HEX3045G05   RM:TREP   exon    716     754     25      +     . AT_rich
+ HEX3045G05   RM:TREP   exon    1764    2069    469     +     . TREP20
+ HEX3045G05   RM:TREP   exon    1816    2105    507     +     . TREP58
+ ...</pre>
+</dd>
+</li>
+<dt><strong><a name="item_specify_the_sequence_source">Specify the Sequence Source</a></strong>
+
+<dd>
+<p>It is possible that the repeatmasker out file will truncate the name of
+your source sequence. You can restore this to the original name using the
+--name option. For example, if your full name was HEX3045G05_A001 you could
+specify this as:</p>
+</dd>
+<dd>
+<pre>
+  cnv_repmask2gff.pl -i result.out -o result.gff --name HEX3045G05_A001</pre>
+</dd>
+<dd>
+<p>This will result in a GFF output file similar to the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05_A001   repeatmasker exon    469     493     25      -    .  AT_rich
+ HEX3045G05_A001   repeatmasker exon    716     754     25      +    .  AT_rich
+ HEX3045G05_A001   repeatmasker exon    1764    2069    469     +    .  TREP20
+ HEX3045G05_A001   repeatmasker exon    1816    2105    507     +    .  TREP58
+ HEX3045G05_A001   repeatmasker exon    1920    2248    450     +    .  TREP214
+ ...</pre>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>The error messages that can be generated will be listed here.</p>
+<ul>
+<li><strong><a name="item_expecting_input_from_stdin">Expecting Input from STDIN</a></strong>
+
+<p>You will see this message if you did not specify an input file with the -i
+or --input options.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of a configuration file or variables set in the
+user's environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong><a name="item_repeatmasker">RepeatMasker</a></strong>
+
+<p>This program is designed to parse output file produce by the RepeatMasker
+program. RepeatMaske is available for download from:
+<a href="http://www.repeatmasker.org/">http://www.repeatmasker.org/</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<p>This program does not make use of Perl modules outside of the normal suite
+of modules present in a typical installation of perl.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_limited_repeatmasker_version_testing_2e">Limited RepeatMasker Version Testing.</a></strong>
+
+<p>This program has been tested with RepeatMasker v  3.1.6. If you find that this
+program is not compatible with other versions of RepeatMasker, please file
+a BUG report an include an output file that is not able to be parsed.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 04/10/2006</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_repmask2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

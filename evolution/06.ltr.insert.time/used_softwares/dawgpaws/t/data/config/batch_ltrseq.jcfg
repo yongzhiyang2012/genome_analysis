@@ -1,0 +1,3 @@
+#default	/home/jestill/apps/ltr_seq/LTR.cfg
+default	LTR.cfg
+dist_400_8000	LTR_400_8000.cfg

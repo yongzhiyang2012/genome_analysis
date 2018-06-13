@@ -1,0 +1,135 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: ShTA_2 
+           1372 sequences; 610,400 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+TA384_4560 Calmodulin-like protein [Branchiostoma lanceolatum (C...   268   9e-71
+AI724920 Hypothetical protein OSJNBa0088I06.10 [Oryza sativa (ja...    82   1e-14
+TA591_4560 Calmodulin-2 [Oryza sativa (japonica cultivar-group)]       58   2e-07
+
+>TA384_4560 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 587
+
+ Score =  268 bits (135), Expect = 9e-71
+ Identities = 282/331 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||| ||||| |||||||| ||||||||||| || || || ||||
+Sbjct: 348   ctcacttggccatcatgactttgacaaactcctcatagttgatctgaccatcaccatcca 289
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| ||||||||||| || || |||||||| || || || |
+Sbjct: 288   catcagcctcacggatcatctcatccacctcctcatcagttagcttctcaccaagatttg 229
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || |||||||||||||||||||||||||| ||||| |
+Sbjct: 228   tcatgacatggcggagctcggcagcagagatgaagccgttctggtccttgtcaaacacac 169
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||| ||||| |||||||||||||||||||| |  ||||| ||||
+Sbjct: 168   ggaaggcctccttgagctcttcctcagagtccgtgtccttcatcttgcgagccatgaggt 109
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || || || |||||||||||||| || || || ||||| ||||||||||
+Sbjct: 108   tgagaaactctggaaaatcaatggtgccgttgccatcagcatcgacctcattgatcatgt 49
+
+                                            
+Query: 45006 cctgcagctccgcctccgtggggttctgccc 45036
+             |||| ||||| ||||| || ||||| |||||
+Sbjct: 48    cctggagctcagcctctgtagggttttgccc 18
+
+
+>AI724920 Hypothetical protein OSJNBa0088I06.10 [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 396
+
+ Score = 81.8 bits (41), Expect = 1e-14
+ Identities = 107/129 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54830 cagcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgag 54889
+             |||| ||||||| ||||| ||| |||| ||||| || |  ||||| |||||||  || ||
+Sbjct: 153   cagcggtttgtaaagcacaaagctcacatacttggattcaaaccgatgggtgacgccaag 94
+
+                                                                         
+Query: 54890 ggcgagcagagactgcgccccccaccctttctcgatgaacagatggttgaggacgacatg 54949
+             ||||||||| ||||||   ||||||||||| || || |||||||||||||||||||| ||
+Sbjct: 93    ggcgagcagtgactgctatccccaccctttttcaataaacagatggttgaggacgacgtg 34
+
+                      
+Query: 54950 ctgcggctt 54958
+             ||| |||||
+Sbjct: 33    ctgtggctt 25
+
+
+>TA591_4560 Calmodulin-2 [Oryza sativa (japonica cultivar-group)]
+          Length = 341
+
+ Score = 58.0 bits (29), Expect = 2e-07
+ Identities = 35/37 (94%)
+ Strand = Plus / Minus
+
+                                                  
+Query: 44727 tgacgaactcctcgtagttgatctggccgtcgccgtc 44763
+             |||||||||| |||||||||| |||||||||||||||
+Sbjct: 59    tgacgaactcatcgtagttgacctggccgtcgccgtc 23
+
+
+  Database: ShTA_2
+    Posted date:  Feb 16, 2007  2:01 PM
+  Number of letters in database: 610,400
+  Number of sequences in database:  1372
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 1372
+Number of Hits to DB: 33,934
+Number of extensions: 13328
+Number of successful extensions: 13328
+Number of sequences better than 1.0e-05: 3
+Number of HSP's gapped: 13328
+Number of HSP's successfully gapped: 3
+Length of query: 82726
+Length of database: 610,400
+Length adjustment: 18
+Effective length of query: 82708
+Effective length of database: 585,704
+Effective search space: 48442406432
+Effective search space used: 48442406432
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 11 (22.3 bits)
+S2: 27 (54.0 bits)

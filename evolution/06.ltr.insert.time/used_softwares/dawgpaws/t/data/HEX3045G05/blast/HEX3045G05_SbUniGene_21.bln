@@ -1,0 +1,142 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SbUniGene_21 
+           10,603 sequences; 7,465,720 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|Sbi#S19495486 RHOH1_29_E09.g1_A002 Acid- and alkaline-tre...   383   e-104
+gnl|UG|Sbi#S15655935 HS1_59_C04.b1_A012 Heat-shocked seedlings S...    58   2e-06
+
+>gnl|UG|Sbi#S19495486 RHOH1_29_E09.g1_A002 Acid- and alkaline-treated
+             roots Sorghum bicolor cDNA clone RHOH1_29_E09_A002 5',
+             mRNA sequence /clone=RHOH1_29_E09_A002 /clone_end=5'
+             /gb=CN128465 /gi=45955367 /ti=977851812 /ug=Sbi.8597
+             /len=821
+          Length = 821
+
+ Score =  383 bits (193), Expect = e-104
+ Identities = 330/375 (88%), Gaps = 3/375 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44710 cttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtc 44769
+             |||||||||||||||||||||||||||  |||||||||| | ||||||||||||| ||||
+Sbjct: 576   cttggccatcatgaccttgacgaactcggcgtagttgatgtcgccgtcgccgtccgcgtc 517
+
+                                                                         
+Query: 44770 cgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcat 44829
+              ||||| |||||||||||| | ||||||||||   |||||||||||||||||||||||||
+Sbjct: 516   ggcctcgcggatcatctcgccgacctcctcgttgctcagcttctccccgaggttggtcat 457
+
+                                                                         
+Query: 44830 cacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaa 44889
+              ||||| || ||||||||||| |||||||| |||| ||||||||||||||||||||||||
+Sbjct: 456   gacgtgccggagctccgccgcggagatgaacccgtcctggtccttgtcgaacacgcggaa 397
+
+                                                                         
+Query: 44890 cgcctccttgagctcctc---ctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||||||| ||||||||||   |||||| ||||||||||||||||| | ||||||||||  
+Sbjct: 396   cgcctccctgagctcctcctcctccgactccgtgtccttcatcttgcgcgccatcaggcc 337
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             |||||||||  | | ||||||||||||| ||  ||    ||| ||||||  |||||||||
+Sbjct: 336   caggaactcctgcaggtcgatggtgccgctgttgttgctgtccacctcggcgatcatgtc 277
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             |||||||||||||||||||||||||||||||||||| ||||||||||| || ||||||||
+Sbjct: 276   ctgcagctccgcctccgtggggttctgcccgagggagcgcatcacggtcccgagctcctt 217
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             ||| |||||||||||
+Sbjct: 216   ggttgtgatgcaacc 202
+
+
+
+ Score = 87.7 bits (44), Expect = 2e-15
+ Identities = 71/80 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||| | |||||||||||||||||||| || || ||||||||||| ||||| || ||
+Sbjct: 204   accgtcgtcgtccttgtcgaagaggctgaaagcttctttgaactcggcaatctggtcttc 145
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             | ||||||||||||||||||
+Sbjct: 144   gctgagctggtccgccatgg 125
+
+
+>gnl|UG|Sbi#S15655935 HS1_59_C04.b1_A012 Heat-shocked seedlings Sorghum
+             bicolor cDNA clone HS1_59_C04_A012 3', mRNA sequence
+             /clone=HS1_59_C04_A012 /clone_end=3' /gb=CD211272
+             /gi=30947208 /ti=963688206 /ug=Sbi.270 /len=636
+          Length = 636
+
+ Score = 58.0 bits (29), Expect = 2e-06
+ Identities = 74/89 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54830 cagcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgag 54889
+             |||| ||||||| ||||| ||| |||| ||||| || |  ||||| |||||||  |||||
+Sbjct: 394   cagcggtttgtaaagcacaaagctcacatacttggattcaaaccgatgggtgacgccgag 335
+
+                                          
+Query: 54890 ggcgagcagagactgcgccccccaccctt 54918
+             ||||||||| |||||||  ||||||||||
+Sbjct: 334   ggcgagcagcgactgcgatccccaccctt 306
+
+
+  Database: SbUniGene_21
+    Posted date:  Feb 18, 2007  1:03 AM
+  Number of letters in database: 7,465,720
+  Number of sequences in database:  10,603
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 10603
+Number of Hits to DB: 425,593
+Number of extensions: 170214
+Number of successful extensions: 49215
+Number of sequences better than 1.0e-05: 2
+Number of HSP's gapped: 49214
+Number of HSP's successfully gapped: 4
+Length of query: 82726
+Length of database: 7,465,720
+Length adjustment: 20
+Effective length of query: 82706
+Effective length of database: 7,253,660
+Effective search space: 599921203960
+Effective search space used: 599921203960
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 28 (56.0 bits)

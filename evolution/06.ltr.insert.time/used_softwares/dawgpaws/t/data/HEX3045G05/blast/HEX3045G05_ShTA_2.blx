@@ -1,0 +1,249 @@
+TBLASTX 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: ShTA_2 
+           1372 sequences; 610,400 total letters
+
+Searching..................................................done
+
+
+
+                                                             Score    E
+Sequences producing significant alignments:                  (bits) Value  N
+
+TA384_4560 Calmodulin-like protein [Branchiostoma lanceolatu...   268   1e-71  3 
+AI724920 Hypothetical protein OSJNBa0088I06.10 [Oryza sativa...    95   1e-19  1 
+DN552682 Putative MAP kinase kinase [Oryza sativa (japonica ...    41   3e-08  2 
+DN552735 Hypothetical protein OSJNBa0075M12.3 [Oryza sativa ...    53   1e-06  1 
+
+>TA384_4560 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 587
+
+ Score =  268 bits (580), Expect = 1e-71
+ Identities = 114/114 (100%), Positives = 114/114 (100%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45051 VMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDK 44872
+             VMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDK
+Sbjct: 3     VMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDK 182
+
+                                                                   
+Query: 44871 DQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 44710
+             DQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK
+Sbjct: 183   DQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 344
+
+
+
+ Score = 81.3 bits (171), Expect(3) = 5e-26
+ Identities = 35/43 (81%), Positives = 38/43 (88%)
+ Frame = +2 / -2
+
+                                                        
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFCPRDRIT 45052
+             FI  A+R RNSGKSMVPLPSASTSLIMS SSASVGFCP +R+T
+Sbjct: 130   FILRAMRLRNSGKSMVPLPSASTSLIMSWSSASVGFCPSERMT 2
+
+
+
+ Score = 40.0 bits (81), Expect(3) = 5e-26
+ Identities = 14/15 (93%), Positives = 15/15 (100%)
+ Frame = +2 / -2
+
+                            
+Query: 44825 VITWRSSAAEMKPFW 44869
+             V+TWRSSAAEMKPFW
+Sbjct: 229   VMTWRSSAAEMKPFW 185
+
+
+
+ Score = 32.7 bits (65), Expect(3) = 5e-26
+ Identities = 15/16 (93%), Positives = 15/16 (93%)
+ Frame = +2 / -2
+
+                             
+Query: 44708 HLAIMTLTNSS*LIWP 44755
+             HLAIMTLTNSS*LI P
+Sbjct: 346   HLAIMTLTNSS*LI*P 299
+
+
+
+ Score = 84.9 bits (179), Expect(2) = 1e-17
+ Identities = 37/84 (44%), Positives = 53/84 (63%)
+ Frame = -3 / +3
+
+                                                                         
+Query: 43418 IDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEAD 43239
+             ID P FL + ARK     S + L +    FD D +G I A +LR VM   G++LT+EE D
+Sbjct: 87    IDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVD 266
+
+                                     
+Query: 43238 ELVRKADPRGEGRVQCKELVKVLM 43167
+             E++R+AD  G+G++  +E VKV+M
+Sbjct: 267   EMIREADVDGDGQINYEEFVKVMM 338
+
+
+
+ Score = 23.1 bits (44), Expect(2) = 1e-17
+ Identities = 9/17 (52%), Positives = 12/17 (70%)
+ Frame = -3 / +3
+
+                              
+Query: 43505 LRSLGQNVDEAEARGFL 43455
+             +RSLGQN  EAE +  +
+Sbjct: 6     MRSLGQNPTEAELQDMI 56
+
+
+
+ Score = 46.9 bits (96), Expect(2) = 3e-10
+ Identities = 17/33 (51%), Positives = 28/33 (84%)
+ Frame = +1 / -1
+
+                                              
+Query: 44938 HQVQELGEVDGAVAVRVNLVDHVLQLRLRGVLP 45036
+             H+V++L +++GAVA+ ++L+DHVL+L L  VLP
+Sbjct: 116   HEVEKLWKINGAVAISIDLIDHVLELSLCRVLP 18
+
+
+
+ Score = 35.9 bits (72), Expect(2) = 3e-10
+ Identities = 14/28 (50%), Positives = 20/28 (71%)
+ Frame = +1 / -1
+
+                                         
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRRD 44856
+             L DHL+HLL+  LL ++ H +A+L  RD
+Sbjct: 281   LTDHLIHLLIS*LLTKICHDMAELGSRD 198
+
+
+>AI724920 Hypothetical protein OSJNBa0088I06.10 [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 396
+
+ Score = 95.5 bits (202), Expect = 1e-19
+ Identities = 39/45 (86%), Positives = 42/45 (93%)
+ Frame = -1 / +1
+
+                                                          
+Query: 54958 KPQHVVLNHLFIEKGWGAQSLLALGLTHRFQSKYVNFVLYKLLVR 54824
+             KPQHVVLNHLFIEKGWG QSLLALG+THRF+SKYV+FVLYK L R
+Sbjct: 25    KPQHVVLNHLFIEKGWG*QSLLALGVTHRFESKYVSFVLYKPLNR 159
+
+
+
+ Score = 86.8 bits (183), Expect = 6e-17
+ Identities = 30/37 (81%), Positives = 32/37 (86%)
+ Frame = +3 / -2
+
+                                                  
+Query: 54849 KFTYFDWNRWVSPRASRDCAPHPFSMNRWLRTTCCGF 54959
+             K TY D NRWV+PRAS DC PHPFS+NRWLRTTCCGF
+Sbjct: 134   KLTYLDSNRWVTPRASSDCYPHPFSINRWLRTTCCGF 24
+
+
+
+ Score = 70.3 bits (147), Expect = 5e-12
+ Identities = 29/76 (38%), Positives = 47/76 (61%)
+ Frame = +2 / -1
+
+                                                                         
+Query: 54731 TLSNYTLLFTPISPNQPPLLSFIFHQRHRSPPHQQFVEHEVHVLRLEPVGESEGEQRLRP 54910
+             ++  Y + +T I      L + +F       P Q+FV+H+ H+L  +P+G+++GEQ L  
+Sbjct: 252   SIQRYNVSYTHIIYLNQSLATILFFHSQYPLPVQRFVKHKAHILGFKPMGDAKGEQ*LLS 73
+
+                             
+Query: 54911 PPFLDEQMVEDDMLRL 54958
+             PPF ++QMVEDD+L L
+Sbjct: 72    PPFFNKQMVEDDVLWL 25
+
+
+
+ Score = 53.8 bits (111), Expect = 5e-07
+ Identities = 26/45 (57%), Positives = 33/45 (73%)
+ Frame = -3 / +3
+
+                                                          
+Query: 54971 RSKAEAAACRPQPSVHRERVGGAVSARPRTHPPVPVEVRELRALQ 54837
+             +S  +A A RPQPSV+ +RVG AV+ARP  HP V ++V EL ALQ
+Sbjct: 12    QSSFKATARRPQPSVY*KRVGIAVTARPWRHPSV*IQVCELCALQ 146
+
+
+>DN552682 Putative MAP kinase kinase [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 878
+
+ Score = 40.9 bits (83), Expect(2) = 3e-08
+ Identities = 13/35 (37%), Positives = 24/35 (68%)
+ Frame = +1 / +2
+
+                                                
+Query: 41836 ILHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGL 41940
+             ++H    + I+HRD+KP N++++     K+SDFG+
+Sbjct: 65    LIHLHHERHIIHRDLKPSNILINHRGEVKISDFGV 169
+
+
+
+ Score = 35.0 bits (70), Expect(2) = 3e-08
+ Identities = 19/63 (30%), Positives = 32/63 (50%)
+ Frame = +1 / +2
+
+                                                                         
+Query: 41965 TSRTRMNIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTNEKNNLIEK 42144
+             +S  R    G+ +Y+ P  I   K    SD++SLG+++LE  +G  P         L+E 
+Sbjct: 185   SSSGRDTFTGTYNYMAPERISGKKHGYMSDIWSLGLVILECATGIFPFPPRESFYELLEA 364
+
+                
+Query: 42145 VLK 42153
+             V++
+Sbjct: 365   VVE 373
+
+
+>DN552735 Hypothetical protein OSJNBa0075M12.3 [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 894
+
+ Score = 52.8 bits (109), Expect = 1e-06
+ Identities = 21/51 (41%), Positives = 31/51 (60%)
+ Frame = +1 / +1
+
+                                                                
+Query: 41974 TRMNIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTNEK 42126
+             T  +I G+  Y+ P Y   GK   + D+Y+ GV+LLEI+SG +P  Q + K
+Sbjct: 28    TCTDITGTFGYMAPEYFSYGKVNEKIDIYAFGVVLLEIISGRRPITQGSAK 180
+
+
+  Database: ShTA_2
+    Posted date:  Feb 16, 2007  2:01 PM
+  Number of letters in database: 610,400
+  Number of sequences in database:  1372
+  
+Lambda     K      H
+   0.318    0.134    0.401 
+
+
+Matrix: BLOSUM62
+Number of Sequences: 1372
+Number of Hits to DB: 63,939,285
+Number of extensions: 962312
+Number of successful extensions: 4824
+Number of sequences better than 1.0e-05: 4
+Length of query: 27575
+Length of database: 203,466
+Length adjustment: 46
+Effective length of query: 27529
+Effective length of database: 140,354
+Effective search space: 3863805266
+Effective search space used: 3863805266
+Neighboring words threshold: 13
+Window for multiple hits: 40
+X1: 16 ( 7.3 bits)
+S2: 100 (48.7 bits)

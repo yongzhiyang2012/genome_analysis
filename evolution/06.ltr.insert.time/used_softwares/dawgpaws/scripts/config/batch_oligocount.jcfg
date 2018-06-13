@@ -1,0 +1,9 @@
+# Batch oligo count
+# Tab delimited text file
+# Col 1. length of oligomer,k
+# Col 2. index name (database name for countsfor counts)
+#        There should be not spaces in the index name.
+# Col 3. Full path to the index file
+20	HEXAll	/db/jlblab/suffix/HEXAll.tfa
+20	tata_2	/db/jlblab/suffix/tata2
+# End

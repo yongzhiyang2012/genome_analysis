@@ -1,0 +1,120 @@
+<?xml version="1.0"  standalone="yes"?>
+<svg width="100%" height="100%" version="1.1" viewBox = "0,-1500 51740,17000" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="-500" width="51740" height="17000" fill="white" stroke="black" />
+<rect fill="green" x="1000" y="11500" width="1000" height="1000"/>
+<text x="2100" y="12200" fill="black" font-size="1000"> Angela</text>
+<rect fill="blue" x="1000" y="13000" width="1000" height="1000"/>
+<text x="2100" y="13700" fill="black" font-size="1000"> Artem</text>
+<rect fill="red" x="8500" y="11500" width="1000" height="1000"/>
+<text x="9600" y="12200" fill="black" font-size="1000"> Enuc</text>
+<rect fill="orange" x="8500" y="13000" width="1000" height="1000"/>
+<text x="9600" y="13700" fill="black" font-size="1000"> Liuling</text>
+<rect fill="purple" x="16000" y="11500" width="1000" height="1000"/>
+<text x="17100" y="12200" fill="black" font-size="1000"> Mara</text>
+<rect fill="firebrick" x="16000" y="13000" width="1000" height="1000"/>
+<text x="17100" y="13700" fill="black" font-size="1000"> Veju</text>
+<rect fill="darkgrey" x="23500" y="11500" width="1000" height="1000"/>
+<text x="24600" y="12200" fill="black" font-size="1000"> Vowyli</text>
+<rect fill="olive" x="23500" y="13000" width="1000" height="1000"/>
+<text x="24600" y="13700" fill="black" font-size="1000"> WIS</text>
+<rect fill="slateblue" x="31000" y="11500" width="1000" height="1000"/>
+<text x="32100" y="12200" fill="black" font-size="1000"> XC</text>
+<rect fill="peru" x="31000" y="13000" width="1000" height="1000"/>
+<text x="32100" y="13700" fill="black" font-size="1000"> Yvonne</text>
+<line stroke="black" stroke-width="200" x1="40500" y1="11500" x2="45500" y2="11500"/>
+<line stroke="black" stroke-width="200" x1="40500" y1="12000" x2="40500" y2="11000"/>
+<line stroke="black" stroke-width="200" x1="45500" y1="12000" x2="45500" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="40500" y1="12000" x2="40500" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="40954.5454545455" y1="12000" x2="40954.5454545455" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="41409.0909090909" y1="12000" x2="41409.0909090909" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="41863.6363636364" y1="12000" x2="41863.6363636364" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="42318.1818181818" y1="12000" x2="42318.1818181818" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="42772.7272727273" y1="12000" x2="42772.7272727273" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="43227.2727272727" y1="12000" x2="43227.2727272727" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="43681.8181818182" y1="12000" x2="43681.8181818182" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="44136.3636363636" y1="12000" x2="44136.3636363636" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="44590.9090909091" y1="12000" x2="44590.9090909091" y2="11000"/>
+<line stroke="black" stroke-width=".1%" x1="45045.4545454545" y1="12000" x2="45045.4545454545" y2="11000"/>
+<text x="40500" y="13000" fill="black" font-size="1000">5000 bp</text>
+<line stroke="black" stroke-width="250" x1="6687" y1="10000" x2="43276" y2="10000"/>
+<polygon stroke="black" stroke-width="150" points="48408,5000 51740,5000 43274,10000"/>
+<polygon fill="olive" points="48408,5000 51740,5000 43274,10000"/>
+<polygon stroke="black" stroke-width="150" points="40810.5,5000 47835.5,5000 43273,10000"/>
+<polygon fill="green" points="40810.5,5000 47835.5,5000 43273,10000"/>
+<polygon stroke="black" stroke-width="150" points="39851,5000 40287,5000 43269,10000"/>
+<polygon fill="darkgrey" points="39851,5000 40287,5000 43269,10000"/>
+<polygon stroke="black" stroke-width="150" points="37902.5,5000 39331.5,5000 43267,10000"/>
+<polygon fill="darkgrey" points="37902.5,5000 39331.5,5000 43267,10000"/>
+<polygon stroke="black" stroke-width="150" points="36427.5,5000 37064.5,5000 33696,10000"/>
+<polygon fill="slateblue" points="36427.5,5000 37064.5,5000 33696,10000"/>
+<polygon stroke="black" stroke-width="150" points="35729.5,5000 35910.5,5000 28520,10000"/>
+<polygon fill="firebrick" points="35729.5,5000 35910.5,5000 28520,10000"/>
+<polygon stroke="black" stroke-width="150" points="32821.5,5000 35214.5,5000 28518,10000"/>
+<polygon fill="firebrick" points="32821.5,5000 35214.5,5000 28518,10000"/>
+<polygon stroke="black" stroke-width="150" points="29683.5,5000 32262.5,5000 27523,10000"/>
+<polygon fill="blue" points="29683.5,5000 32262.5,5000 27523,10000"/>
+<polygon stroke="black" stroke-width="150" points="28604.5,5000 29137.5,5000 27121,10000"/>
+<polygon fill="slateblue" points="28604.5,5000 29137.5,5000 27121,10000"/>
+<polygon stroke="black" stroke-width="150" points="19545,5000 28063,5000 21154,10000"/>
+<polygon fill="green" points="19545,5000 28063,5000 21154,10000"/>
+<polygon stroke="black" stroke-width="150" points="14486,5000 18998,5000 20992,10000"/>
+<polygon fill="orange" points="14486,5000 18998,5000 20992,10000"/>
+<polygon stroke="black" stroke-width="150" points="13788.5,5000 13967.5,5000 18428,10000"/>
+<polygon fill="red" points="13788.5,5000 13967.5,5000 18428,10000"/>
+<polygon stroke="black" stroke-width="150" points="12891,5000 13261,5000 18426,10000"/>
+<polygon fill="red" points="12891,5000 13261,5000 18426,10000"/>
+<polygon stroke="black" stroke-width="150" points="11028,5000 12378,5000 10053,10000"/>
+<polygon fill="peru" points="11028,5000 12378,5000 10053,10000"/>
+<polygon stroke="black" stroke-width="150" points="1822,5000 10486,5000 9454,10000"/>
+<polygon fill="green" points="1822,5000 10486,5000 9454,10000"/>
+<polygon stroke="black" stroke-width="150" points="0,5000 1278,5000 8539,10000"/>
+<polygon fill="purple" points="0,5000 1278,5000 8539,10000"/>
+<polygon stroke="black" stroke-width="150" points="40980.5,0 41630.5,0 41305.5,5000"/>
+<polygon fill="green" points="40980.5,0 41630.5,0 41305.5,5000"/>
+<polygon stroke="black" stroke-width="150" points="12987.5,0 13294.5,0 13091,5000"/>
+<polygon fill="red" points="12987.5,0 13294.5,0 13091,5000"/>
+<polygon stroke="black" stroke-width="150" points="10655.5,0 12420.5,0 11588,5000"/>
+<polygon fill="green" points="10655.5,0 12420.5,0 11588,5000"/>
+<polygon fill="white" points="41275.5,5000 41348.5,5000 43273,10000"/>
+<polygon fill="white" points="42424.5,5000 42507.5,5000 43273,10000"/>
+<polygon fill="white" points="42650.5,5000 42695.5,5000 43273,10000"/>
+<polygon fill="white" points="47448.5,5000 47481.5,5000 43273,10000"/>
+<polygon fill="white" points="33060.5,5000 33061.5,5000 28518,10000"/>
+<polygon fill="white" points="34180.5,5000 35052.5,5000 28518,10000"/>
+<polygon fill="white" points="21221,5000 21222,5000 21154,10000"/>
+<polygon fill="white" points="21332,5000 21725,5000 21154,10000"/>
+<polygon fill="white" points="26384,5000 26384,5000 21154,10000"/>
+<polygon fill="white" points="13044,5000 13093,5000 18426,10000"/>
+<polygon fill="white" points="11586,5000 11590,5000 10053,10000"/>
+<polygon fill="white" points="3502,5000 3536,5000 9454,10000"/>
+<polygon fill="white" points="8821,5000 8821,5000 9454,10000"/>
+<polygon fill="white" points="41180.5,0 41295.5,0 41305.5,5000"/>
+<rect stroke-width="150" x="42323" y="5250" width="3000" height="1000" fill="black" stroke="black" />
+<rect x="42323" y="5250" width="3000" height="1000" fill="green" stroke="black" />
+<text x="42573" y="6125" fill="white" font-size="1000"> 1.846 </text>
+<line stroke="black" stroke-width="200" x1="40810.5" y1="5000" x2="41275.5" y2="5000"/>
+<polygon fill="black" points="40810.5,5000 41210.5,4500 41210.5,5500"/>
+<line stroke="black" stroke-width="200" x1="47481.5" y1="5000" x2="47835.5" y2="5000"/>
+<polygon fill="black" points="47481.5,5000 47881.5,4500 47881.5,5500"/>
+<rect stroke-width="150" x="32018" y="5250" width="3000" height="1000" fill="black" stroke="black" />
+<rect x="32018" y="5250" width="3000" height="1000" fill="firebrick" stroke="black" />
+<text x="32268" y="6125" fill="white" font-size="1000"> 4.269 </text>
+<line stroke="black" stroke-width="200" x1="32821.5" y1="5000" x2="33060.5" y2="5000"/>
+<polygon fill="black" points="32821.5,5000 33221.5,4500 33221.5,5500"/>
+<line stroke="black" stroke-width="200" x1="35052.5" y1="5000" x2="35214.5" y2="5000"/>
+<polygon fill="black" points="35052.5,5000 35452.5,4500 35452.5,5500"/>
+<rect stroke-width="150" x="21804" y="5250" width="3000" height="1000" fill="black" stroke="black" />
+<rect x="21804" y="5250" width="3000" height="1000" fill="green" stroke="black" />
+<text x="22054" y="6125" fill="white" font-size="1000"> 1.038 </text>
+<line stroke="black" stroke-width="200" x1="19545" y1="5000" x2="21221" y2="5000"/>
+<polygon fill="black" points="19545,5000 19945,4500 19945,5500"/>
+<line stroke="black" stroke-width="200" x1="26384" y1="5000" x2="28063" y2="5000"/>
+<polygon fill="black" points="26384,5000 26784,4500 26784,5500"/>
+<rect stroke-width="150" x="6154" y="5250" width="3000" height="1000" fill="black" stroke="black" />
+<rect x="6154" y="5250" width="3000" height="1000" fill="green" stroke="black" />
+<text x="6404" y="6125" fill="white" font-size="1000"> 1.115 </text>
+<line stroke="black" stroke-width="200" x1="1822" y1="5000" x2="3502" y2="5000"/>
+<polygon fill="black" points="3102,5500 3102,4500 3502,5000"/>
+<line stroke="black" stroke-width="200" x1="8821" y1="5000" x2="10486" y2="5000"/>
+<polygon fill="black" points="10086,5500 10086,4500 10486,5000"/>
+</svg>

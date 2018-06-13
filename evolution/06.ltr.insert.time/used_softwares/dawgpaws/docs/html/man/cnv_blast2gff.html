@@ -1,0 +1,444 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_blast2gff.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_blast2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<ul>
+
+		<li><a href="#typical_use">Typical Use</a></li>
+		<li><a href="#piping_blast_result_directly_to_the_conversion_utility">Piping BLAST Result Directly to the Conversion Utility</a></li>
+		<li><a href="#combining_blast_results_in_gff_format">Combining Blast Results in GFF format</a></li>
+		<li><a href="#specify_the_sequence_id_with_name">Specify the Sequence ID with -name</a></li>
+		<li><a href="#specify_the_database_name_with_database">Specify the Database name with -database</a></li>
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>cnv_blast2gff.pl - Convert blast output to GFF</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_blast2gff.pl -i blast_report.bln -o blast_out.gff -n seq_id</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i      # Path to the input file
+            # If not specified the program will expect input from STDIN
+    -o      # Path to the output file
+            # If not specified the program will write to STDOUT
+    -s      # Name of the query sequence
+            # If a name is not specified, the name will be
+            # extracted from the blast report or use &quot;seq&quot;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program will translate a blast report for a single query sequence into
+the GFF format. Since this uses the general bioperl BLAST parser code,
+this should also be able to parse output from BLAT or wublast. This code
+works best for converting a blast report of a single query sequence against
+a single database.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path of the input file. If an input file is not specified, the program
+will expect input from STDIN.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutfile">-o,--outfile</a></strong>
+
+<dd>
+<p>Path of the output file. If an output file is not specified, the program
+will write output to STDOUT.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2ds_2c_2d_2dseqname">-s,--seqname</a></strong>
+
+<dd>
+<p>Identifier of the sequence that has been used as the query sequence
+in the blast report. This will be used as the first column in the 
+gff output file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dp_2c_2d_2dprogram">-p,--program</a></strong>
+
+<dd>
+<p>The blast program used. This will be used to identify the source program in the
+second column of the GFF output file. Example of valid values include
+blastn, blastx, or wublast.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dfeature">--feature</a></strong>
+
+<dd>
+<p>The type of feature. Be default, this is set to exon to facilitate using
+this blast report in Apollo. It is also possible to set this to an
+ontology complient name such as match or expressed_sequence_match.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dd_2c_2d_2ddatabase">-d,--database</a></strong>
+
+<dd>
+<p>The name for the database that was blasted against. If provided, this
+will be appended to the program variable in the second colum of the 
+GFF output file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dm_2c_2d_2dalign">-m,--align</a></strong>
+
+<dd>
+<p>The alignment format use in the BLAST report to be parsed.
+The program will assume that you are using the default alginment format for
+blast. Otherwise, you can specify 'tab' or '8' or '9' for tab delimited blast.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2de_2c_2d_2dmaxe">-e,--maxe</a></strong>
+
+<dd>
+<p>The maximum e value threshold to accept.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dl_2c_2d_2dmin_2dlen">-l,--min-len</a></strong>
+
+<dd>
+<p>The minimum length to accept.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program with maximum reporting of error and status messages.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<p>The following are examples on how to use the cnv_blast2gff.pl program.</p>
+<p>
+</p>
+<h2><a name="typical_use">Typical Use</a></h2>
+<p>The typical use of this program will be to convert an existing blast output
+to to the GFF file format:</p>
+<pre>
+  cnv_blast2gff.pl -i blast_result.bln -o parsed_result.gff</pre>
+<p>This will generate a GFF format file named parsed_result.gff.</p>
+<p>
+</p>
+<h2><a name="piping_blast_result_directly_to_the_conversion_utility">Piping BLAST Result Directly to the Conversion Utility</a></h2>
+<p>It is also possible to directly send the blast result to the cnv_blast2gff.pl
+program using the standard streams.</p>
+<pre>
+  blastall -p blastin .. | cnv_blast2gff.pl -o blast_result.gff</pre>
+<p>This will take the blast output from NCBI's blastall program and 
+convert the output to the gff format.</p>
+<p>
+</p>
+<h2><a name="combining_blast_results_in_gff_format">Combining Blast Results in GFF format</a></h2>
+<p>Since the cnv_blast2gff.pl program will write the results to the
+standard output stream if no file path is specified, it is possible to
+use standard unix commands to combined results. Consider the following
+set of commands:</p>
+<pre>
+  cnv_blast2gff.pl blast_result01.bln &gt; combined_results.gff
+  cnv_blast2gff.pl blast_result02.bln &gt;&gt; combined_results.gff
+  cnv_blast2gff.pl blast_result03.bln &gt;&gt; combined_results.gff</pre>
+<p>This will combined the blast results from the 01, 02 and 03 search into
+a single gff file named combined_results.gff</p>
+<p>
+</p>
+<h2><a name="specify_the_sequence_id_with_name">Specify the Sequence ID with --name</a></h2>
+<p>The first column in the GFF output file results indicates the id of the
+sequence that is being annotated. By default, the cnv_blast2gff.pl program
+will attempt to extract this ID from the blast result. It is also possible
+to specify this from the command line using the --name option. For example
+consider you had a blast report that gave the following result``</p>
+<pre>
+  cnv_blast2gff.pl -i bl_result.bln -o gff_result.gff</pre>
+<p>that generated a gff file like the following</p>
+<pre>
+ HEX3045G05   blast:mips   exon     8537    8667    39   +    .  rire1
+ HEX3045G05   blast:mips   exon     9911    9996    38   +    .  rire1
+ HEX3045G05   blast:mips   exon     10025   10191   36   +    .  rire1
+ HEX3045G05   blast:mips   exon     76161   76235   35   +    .  rire1
+ HEX3045G05   blast:mips   exon     81151   81200   34   +    .  rire1
+ ...</pre>
+<p>where HEX304GO5 indicates the sequence id. This sequence identifier could
+be modified using the --name option:</p>
+<pre>
+  cnv_blast2gff.pl -i bl_result.bln -o gff_result.gff --seqname HEX001</pre>
+<p>this would give the following result:</p>
+<pre>
+ HEX001   blast:mips   exon     8537    8667    39       +    .  rire1
+ HEX001   blast:mips   exon     9911    9996    38       +    .  rire1
+ HEX001   blast:mips   exon     10025   10191   36       +    .  rire1
+ HEX001   blast:mips   exon     76161   76235   35       +    .  rire1
+ HEX001   blast:mips   exon     81151   81200   34       +    .  rire1
+ ...</pre>
+<p>
+</p>
+<h2><a name="specify_the_database_name_with_database">Specify the Database name with --database</a></h2>
+<p>By default the cnv_blast2gff.pl program will identify the database in the
+second column as a suffix to the blast program, separated by a colon.
+The command:</p>
+<pre>
+  cnv_blast2gff.pl -i bl_result.bln -o gff_result.gff</pre>
+<p>that generated a gff file like the following</p>
+<pre>
+ HEX3045G05   blast:mips   exon     8537    8667    39   +    .  rire1
+ HEX3045G05   blast:mips   exon     9911    9996    38   +    .  rire1
+ HEX3045G05   blast:mips   exon     10025   10191   36   +    .  rire1
+ HEX3045G05   blast:mips   exon     76161   76235   35   +    .  rire1
+ HEX3045G05   blast:mips   exon     81151   81200   34   +    .  rire1
+ ...</pre>
+<p>Could have the database suffix modified using the --database option as follows:</p>
+<pre>
+  cnv_blast2gff.pl -i bl_result.bln -o gff_result.gff --name tes</pre>
+<p>This would modify the gff output to the following:</p>
+<pre>
+ HEX3045G05   blast:tes   exon     8537    8667    39    +    .  rire1
+ HEX3045G05   blast:tes   exon     9911    9996    38    +    .  rire1
+ HEX3045G05   blast:tes   exon     10025   10191   36    +    .  rire1
+ HEX3045G05   blast:tes   exon     76161   76235   35    +    .  rire1
+ HEX3045G05   blast:tes   exon     81151   81200   34    +    .  rire1</pre>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<ul>
+<li><strong><a name="item_expecting_input_from_stdin">Expecting input from STDIN</a></strong>
+
+<p>If you see this message, it may indicate that you did not properly specify
+the input sequence with -i or --infile flag.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of a configuration file or any
+variables set in the user's environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<p>This program requires output from a BLAST program. Since this program makes
+use of the BioPerl blast parser, it should be possible to convert
+local alignment results from any of the following programs:</p>
+<ul>
+<li><strong><a name="item_blast">BLAST</a></strong>
+
+<li><strong><a name="item_psiblast">PSIBLAST</a></strong>
+
+<li><strong><a name="item_psitblastn">PSITBLASTN</a></strong>
+
+<li><strong><a name="item_rpsblast">RPSBLAST</a></strong>
+
+<li><strong><a name="item_wublast">WUBLAST</a></strong>
+
+<li><strong><a name="item_bl2seq">bl2seq</a></strong>
+
+<li><strong><a name="item_wu_2dblast">WU-BLAST</a></strong>
+
+<li><strong><a name="item_blastz">BLASTZ</a></strong>
+
+<li><strong><a name="item_blat">BLAT</a></strong>
+
+<li><strong><a name="item_paracel">Paracel</a></strong>
+
+<li><strong><a name="item_btk">BTK</a></strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<p>The following perl modules are required for this program:</p>
+<ul>
+<li><strong><a name="item_bio_3a_3asearchio">Bio::SearchIO</a></strong>
+
+<p>The SearchIO module is part of the bioperl module.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_limited_blast_testing">Limited BLAST testing</a></strong>
+
+<p>This program has only been tested with BLAST output from the NCBI-BLAST package
+using standard and tab delimited output. If you find that there are limiations
+to this program that limit your use, please email the author or file a 
+bug report on the Sourceforge website:
+<a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 08/06/2007</p>
+<p>UPDATED: 01/31/2009
+
+</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_blast2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

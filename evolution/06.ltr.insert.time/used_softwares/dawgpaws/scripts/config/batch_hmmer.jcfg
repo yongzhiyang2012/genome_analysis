@@ -1,0 +1,39 @@
+# batch_hmmer.jcfg - Config file for running HMMER in batch mode
+# 
+# This is a tab delimited text file. The columns of data represent
+# the following information
+# 1. Name of the parameter set
+# 2. Dir of the hmmer models
+#    All hmmer models in this
+# 3. Arguments for hmmer
+#    These include the following
+#     -E Evalue cutoff
+#     -T T bit threshold
+#     -Z Number of seqs for E-Value calc
+# You MUST include at least the E value option in column three
+rice_mite	/home/jestill/HMMData/db/hmm/rice_mite_models/	-E 0.00001
+rice_mule	/home/jestill/HMMData/db/hmm/rice_mule_models/	-E 0.00001
+tpase	/home/jestill/HMMData/db/hmm/tpase_models/	-E 0.00001
+pfam	/home/jestill/HMMData/db/hmm/pfam/	-E 0.00001
+# END
+# THE FOLLOWINS LISTS THE AVAILABLE OPTIONS THAT CAN BE INCLUDED
+# IN THE THIRD COLUMN
+#  Available options are:
+#   -h             : help; print brief help on version and usage
+#   -A <n>         : sets alignment output limit to <n> best domain alignments
+#   -E <x>         : sets E value cutoff (globE) to <= x
+#   -T <x>         : sets T bit threshold (globT) to >= x
+#   -Z <n>         : sets Z (# seqs) for E-value calculation
+# 
+#   --compat       : make best effort to use last version's output style
+#   --cpu <n>      : run <n> threads in parallel (if threaded)
+#   --cut_ga       : use Pfam GA gathering threshold cutoffs
+#   --cut_nc       : use Pfam NC noise threshold cutoffs
+#   --cut_tc       : use Pfam TC trusted threshold cutoffs
+#   --domE <x>     : sets domain Eval cutoff (2nd threshold) to <= x
+#   --domT <x>     : sets domain T bit thresh (2nd threshold) to >= x
+#   --forward      : use the full Forward() algorithm instead of Viterbi
+#   --informat <s> : sequence file is in format <s>
+#   --null2        : turn OFF the post hoc second null model
+#   --pvm          : run on a Parallel Virtual Machine (PVM)
+#   --xnu          : turn ON XNU filtering of target protein sequences

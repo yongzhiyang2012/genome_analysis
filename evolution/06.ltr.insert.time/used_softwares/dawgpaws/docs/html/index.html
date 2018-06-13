@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <title>DAWGPAWS</title>
+  <link rel="stylesheet" type="text/css" href="css/dawgpaws.css">
+  <link rel="SHORTCUT ICON" href="images/dawgpaws.ico">
+</head>
+<body>
+<table style="border-collapse: collapse;" id="AutoNumber1" border="0"
+ bordercolor="#111111" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="50%">
+      <p align="center"> <img src="images/DAWGPAWS_med.png"
+ align="left" border="2" height="115" width="326"></p>
+      </td>
+      <td width="50%">
+      <ul>
+        <li><i><a href="#description">Description</a></i></li>
+        <li><i><a href="#features">Features</a></i></li>
+        <li><i><a href="#download">Download</a> <br>
+          </i></li>
+        <li><i><a href="http://www.gnu.org/licenses/gpl.html">License :
+General Public License <br>
+          </a></i></li>
+        <li><i><a href="man.html">User Manual<br>
+          </a></i></li>
+        <li><i><a href="http://sourceforge.net/projects/dawgpaws/">SourceForge
+Project Website</a></i></li>
+        <li><i><a
+ href="http://dawgpaws.svn.sourceforge.net/viewvc/dawgpaws/">Subversion
+Repository</a><br>
+          </i></li>
+        <li>Author: <a href="http://jestill.myweb.uga.edu">James
+C. Estill</a></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2><a name="description"></a>Description</h2>
+<p>DAWGPAWS is a suite of scripts written in Perl that are desinged to
+assist a Distributed Annotation Working Group (<span
+ style="font-weight: bold;">DAWG)</span> in the sequence annotation of
+BAC
+sized contigs. Since this suite of software was initially
+written to annotate randomly sampled wheat BACs, it is refered to as a
+Pipeline
+to Annoate Wheat Sequnces (<span style="font-weight: bold;">PAWS</span>).
+Although these programs were initially designed for wheat, the scripts
+can be applied to nearly any eukaryotic sequence annoation pipeline.<br>
+</p>
+<p>The scripts in this suite are designed to facilitate high throughput
+generation of computational results for both gene annotation and
+transposable element
+annotation using a number of existing sequence
+anotation programs. These results are converted from the native output
+of the individual annotation programs to the standard <a
+ href="http://www.sanger.ac.uk/Software/formats/GFF/">GFF&nbsp; file
+format</a>. Since a GFF file is a simple tab delmited text file,
+multiple computational results for a single sequence can easily be
+concatenated together using standard text maninpulation tools such as <a
+ href="http://linux.die.net/man/1/cat">cat</a>; proof that cats and
+dawgs can play well together. DAWGPAWS provides
+additional tools to facilitate using the <a
+ href="http://www.fruitfly.org/annot/apollo/">Apollo Genome Annotation
+Curation Tool</a> for visualization and curation of the computational
+results.<br>
+</p>
+<p>Usage of DAWGPAWS is through a series of command line programs. A
+command line interface was chosen since these programs will usually be
+run remotely on high preformance machines running some version of the
+Unix/Linux operating system. Since a command line inteface has been
+written for all programs, no special knowledge of Perl is required to
+use this
+suite. However,
+since some the Perl scripts rely on external Perl modules, a working
+knowledge of Perl will be helpful when installing DAWGPAWS.</p>
+<h2><a name="features"></a>Features</h2>
+<p><span lang="en-us">The current features of DAWGPAWS include:</span></p>
+<ul>
+  <li>FASTA file manipulation to prepare sequences for the annotation
+pipeline<br>
+  </li>
+  <li>Annotation of gaps in the sequence assemblies</li>
+  <li>Executing <span style="font-style: italic;">ab initio</span>
+gene anotation and transposable element
+annotation
+programs in a high throughput pipeline</li>
+  <li>BLAST pipeline suitable for use in a cluster computing framework<br>
+  </li>
+  <li>Conversion of output from annotation software to the common GFF
+file format</li>
+  <li>Conversion of gff files to the game.xml format</li>
+  <li><span lang="en-us">Help is available in all command line programs
+using command line flags. Help info and full manual files are still
+under
+development for some programs. To access help where </span><big><code>progname</code></big><span
+ lang="en-us"> is the name of the
+individual program:<br>
+    </span></li>
+  <ul>
+    <li><big><code>progname --usage </code></big><br>
+generate a basic usage message with info on the required arguments<br>
+    </li>
+    <li><span lang="en-us"><big><code>progname --help</code></big><br>
+generate a more extensive help message that includes required arguments
+and all options<br>
+      </span></li>
+    <li><span lang="en-us"><big><code>progname --man</code></big><br>
+view the full manual for the program</span></li>
+  </ul>
+  <li><span lang="en-us"><a href="man.html">Manual pages</a> for the
+individual programs are
+available on the DAWGPAWS web site and are including in the Release-1.0
+download of the DAWGPAWS suite.<br>
+    </span></li>
+</ul>
+<h2><a name="download"></a>Download</h2>
+<p>By downloading
+this software you agree to abide by the terms of the
+<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public
+License</a>.</p>
+<p>The release 1.0 version of the DAWGPAWS package is available from
+the DAWGPAWS SourceForge web site. The most recent version of all
+scripts may also be downloaded
+separately through the <a
+ href="http://dawgpaws.svn.sourceforge.net/viewvc/dawgpaws/trunk/scripts/">SVN
+browse interface</a>. It is also posible to get DAWGPAWS through an <a
+ href="https://sourceforge.net/svn/?group_id=204962">anonymous
+check out</a> of the root directory from the SVN server. </p>
+<p>DAWGPAWS requires a large number of gene and transposable element
+annotation programs to operate. These programs are NOT included in the
+DAWGPAWS <br>
+</p>
+<span style="text-decoration: underline;"></span>
+<ul>
+</ul>
+<h2><a name="manual"></a>User Manual and Software Documentation<span
+ style="font-weight: 400;"></span></h2>
+<p>A user manual describing the use of DAWGPAWS for genome
+annotation is available from the <a href="man.html">DAWGPAWS web site
+on SourceForge</a>. This manual is also included in the release 1.0
+version of the DAWGPAWS program.<br>
+</p>
+<h2>How to Cite DAWGPAWS<br>
+</h2>
+<p>A manuscript has been submitted describing the DAWGPAWS
+program.&nbsp; Until this manuscript is published, please refer to the
+DAWGPAWS SourceForge website when describing your use of this
+program.<br>
+<br>
+<span style="font-style: italic;">JC Estill and JL Bennetzen. 2009. The
+DAWGPAWS Pipeline for the Annotation of Genes and Transposable Elements
+in Plant Genomes.</span><span style="font-style: italic;">
+http://dawgpaws.sourceforge.net/</span><br>
+</p>
+<h2>Supported Annotation Programs<br>
+</h2>
+<p>DAWGPAWS includes scripts to work with computational evidences from
+the following standalone programs and web sites. You can get
+information for the following programs by clicking on the annotation
+program name, and you can get the documentation for the DAWGPAWS
+script by clicking on the script name. For full information on
+installing and using these programs, see the <a href="man.html">DAWGPAWS
+manual</a>. <br>
+</p>
+<p>These annotation programs are not included in the DAWGPAWS program
+and must be installed separately.<br>
+</p>
+<table id="prog_list" style="text-align: left; width: 100%;" 2=""
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td colspan="2" rowspan="1"
+ style="vertical-align: top; background-color: rgb(192, 192, 192);"><span
+ style="font-weight: bold;">GENE ANNOTATION<br>
+      </span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Annotation
+Program</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">DAWGPAWS
+Scripts</span><br>
+      </td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top; font-weight: bold;"><a
+ href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi">NCBI-BLAST</a> </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_blast.html">batch_blast.pl</a><br>
+      <a style="font-weight: bold;" href="man/batch_cnv_blast2gff.html">batch_cnv_blast2gff.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_blast2gff.html">cnv_blast2gff.pl</a><br>
+      </td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="http://genes.mit.edu/GENSCAN.html">Genscan</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_genscan.html">batch_genscan.pl</a><br>
+      </td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ href="http://genome.imim.es/software/geneid/"><span
+ style="font-weight: bold;">GeneID</span></a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_geneid.html">batch_geneid.pl</a><br>
+      </td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ href="http://www.inra.fr/internet/Departements/MIA/T/EuGene/"><span
+ style="font-weight: bold;">EuGene</span></a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_eugene.html">batch_eugene.pl</a><br>
+      </td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="http://www.softberry.com/berry.phtml">Fgenesh</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top; font-weight: bold;"><a
+ href="man/cnv_fgenesh2gff.html">cnv_fgenesh2gff.pl</a></td>
+    </tr>
+    <tr id="program">
+      <td id="prog" style="vertical-align: top; font-weight: bold;"><a
+ href="http://exon.gatech.edu/GeneMark/">GeneMarkHMM</a> </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_genemark.html">batch_genemark.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_genemark2gff.html">cnv_genemark2gff.pl</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"
+ style="vertical-align: top; background-color: rgb(192, 192, 192);"><span
+ style="font-weight: bold;">TRANSPOSABLE ELEMENT ANNOTATION</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Annotation
+Program</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">DAWGPAWS
+Scripts</span><br>
+      </td>
+    </tr>
+<!-- LTR_STRUC --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://www.genetics.uga.edu/retrolab/data/LTR_Struc.html">LTR_STRUC</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/ltrstruc_prep.html">ltrstruc_prep.pl</a><br>
+      <a style="font-weight: bold;"
+ href="http://dawgpaws.svn.sourceforge.net/viewvc/*checkout*/dawgpaws/trunk/scripts/batch_ltrstruc.vbs">batch_ltrstruc.vbs</a><br>
+      <a style="font-weight: bold;" href="man/cnv_ltrstruc2gff.html">cnv_ltrstruc2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- LTR_FINDER --> <tr id="program">
+      <td id="prog" style="vertical-align: top; font-weight: bold;"><a
+ href="http://tlife.fudan.edu.cn/ltr_finder">LTR_Finder</a> </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_ltrfinder.html">batch_ltrfinder.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_ltrfinder2gff.html">cnv_ltrfinder2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- FIND_LTR --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://darwin.informatics.indiana.edu/cgi-bin/evolution/ltr.pl">find_ltr</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_findltr.html">batch_findltr.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_findltr2gff.html">cnv_findltr2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- LTR_SEQ --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://www.eecs.wsu.edu/%7Eananth/software.htm">ltr_seq</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_ltrseq.html">batch_ltrseq.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_ltrstruc2gff.html">cnv_ltrseq2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- REPSEEK --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ href="http://wwwabi.snv.jussieu.fr/public/RepSeek/"><span
+ style="font-weight: bold;">RepSeek</span></a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/cnv_repseek2gff.html">cnv_repseek2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- FINDMITE --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://jaketu.biochem.vt.edu/4download/MITE/">FINDMITE</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_findmite.html">batch_findmite.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_findmite2gff.html">cnv_findmite2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- TRF --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ href="http://tandem.bu.edu/trf/trf.html"><span
+ style="font-weight: bold;">Tandem Repeats Finder</span></a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ href="man/batch_trf.html"><span style="font-weight: bold;">batch_trf.pl</span></a><br>
+      </td>
+    </tr>
+<!-- REPEATMASKER --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="http://www.repeatmasker.org/">RepeatMasker</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_mask.html">batch_mask.pl</a><br>
+      <a style="font-weight: bold;" href="man/batch_hardmask.html">batch_hardmask.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_repmask2gff.html">cnv_repmask2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- NCBIBLAST --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi">NCBI-BLAST</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_blast.html">batch_blast.pl</a><br>
+      <a style="font-weight: bold;" href="man/batch_cnv_blast2gff.html">batch_cnv_blast2gff.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_blast2gff.html">cnv_blast2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- TENEST --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;"
+ href="http://www.public.iastate.edu/%7Eimagefpc/Subpages/software.html">TE
+Nest</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_tenest.html">batch_tenest.pl</a><br>
+      <a style="font-weight: bold;" href="man/fetch_tenest.html">fetch_tenest.pl</a><br>
+      <a style="font-weight: bold;" href="man/cnv_tenest2gff.html">cnv_tenest2gff.pl</a><br>
+      </td>
+    </tr>
+<!-- HMMER --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="http://hmmer.janelia.org/">HMMER</a><br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/batch_hmmer.html">batch_hmmer.pl</a><br>
+      </td>
+    </tr>
+<!-- MDRs --> <tr id="program">
+      <td id="prog" style="vertical-align: top;"><span
+ style="font-weight: bold;">Mathematically
+Defined Repeats<br>
+      </span>Required the <a href="http://www.vmatch.de/">vmatch</a>
+program<br>
+      </td>
+      <td id="prog" style="vertical-align: top;"><a
+ style="font-weight: bold;" href="man/seq_oligocount.html">seq_oligocount.pl</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<table style="border-collapse: collapse;" id="AutoNumber2" border="0"
+ bordercolor="#111111" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="50%"><i>Author: <a
+ href="http://www.arches.uga.edu/%7Ejestill">James Estill</a><br>
+Last Updated: April 13, 2009</i></td>
+      <td width="50%"> <br>
+      </td>
+      <td><a href="http://sourceforge.net/"> <img
+ src="http://sourceforge.net/sflogo.php?group_id=204962&amp;type=5"
+ alt="SourceForge.net Logo" border="0" height="62" width="210"></a> </td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script src="http://www.google-analytics.com/urchin.js"
+ type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2207628-5";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# BATCH FINDMITE PARAMTERS FILES
+# All values should be whitespace delimited
+# Name:    Base name to assign to putative mites
+# Rep:     Direct Repeat
+# TIRLen:  Length of the 
+# Mis:     Number of mismatches
+# AT:      Filter A/T    (y/n)
+# GC:      Filter C/G    (y/n)
+# ATTA:    Filter AT/TA  (y/n)
+# 2Base:   
+# Min:     Minimum distance
+# Max:     Maximum distance
+# Name	Rep	TIR	Mis	AT	GC	ATTA	2Base	Min	Max
+TA_11	TA	11	1	
+	.	.	.	.	.	.	.	.	.
+
+
+# END OF FILE 

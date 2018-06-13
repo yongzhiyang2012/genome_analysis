@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_game2gff3.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_game2gff3.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<ul>
+
+		<li><a href="#convert_a_single_file">Convert a Single File</a></li>
+		<li><a href="#convert_an_entire_directory_of_files">Convert an Entire Directory of Files</a></li>
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<ul>
+
+		<li><a href="#error__no_xml_files_were_found_in_the_input_directory_">ERROR: No xml files were found in the input directory.</a></li>
+	</ul>
+
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#perl_modules">Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>cnv_game2gff3.pl - Convert game.xml to gff3 format</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_game2gff3.pl -i infile.xml -o outfile.gff</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    --infile        # Path to the input file or direcotry
+    --outfie        # Path to the output file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program can covert game.xml files to the gff3 format. This script
+is essentially a wrapper around the Apollo genome annotation editor
+program, so Apollo is require for this script to work. It can convert
+a single file at a time, or all game.xml files in a directory.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path of the input file or directory. If the input path is a file, the single
+file will be converted to the gff3 with a file name specified by the
+--outfile option. If an entire directory of files is being specified by
+the -i option, all of the files ending in xml will be be converted to
+gff format. The gff file will be generated in the input directory, and
+the files will have the existing name with gff appended.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutfile">-o,--outfile</a></strong>
+
+<dd>
+<p>Path of the output file. If the input path is a directory, then this
+argument is not needed.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dap_2dbin">--ap-bin</a></strong>
+
+<dd>
+<p>Path to the apollo binary. By default, the program assumes that the directory
+containing the apollo program is included in your PATH. If this is not
+the case, you will need to specify the location of the apollo program
+using the -ap-bin variable.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program in verbose mode.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<p>
+</p>
+<h2><a name="convert_a_single_file">Convert a Single File</a></h2>
+<p>To convert a single game.xml file to gff3 format, you would use the following
+command:</p>
+<pre>
+    cnv_game2gff3.pl -i HEX001.game.xml -o HEX001.gff</pre>
+<p>This will result in a single file name HEX001.gff in the path specified
+by the -o argument.</p>
+<p>
+</p>
+<h2><a name="convert_an_entire_directory_of_files">Convert an Entire Directory of Files</a></h2>
+<p>To convert an entire directory of game.xml files to the gff3 format,
+simply specify the directory containing the game.xml files with
+the -i argument:</p>
+<pre>
+    cnv_game2gff3.pl -i annotation_dir/</pre>
+<p>This will find all files with names ending in xml, and will convert
+those files to the gff3 format. The .gff extension will be added on
+to the existing file name. For example, the following list shows
+the name of game files and the name of the gff files that would
+be created:</p>
+<pre>
+    Game File             GFF File Created
+    HEX001.game.xml       HEX001.game.xml.gff
+    HEX002.game.xml       HEX001.game.xml.gff
+    HEX003.game.xml       HEX003.game.xml.gff</pre>
+<p>The gff files will be created in the same directory as the game.xml files.
+The original files will not be overwritten in this process.</p>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>The following information includes error message you may encounter
+when using this program, and information on possible solutions
+to these errors.</p>
+<p>
+</p>
+<h2><a name="error__no_xml_files_were_found_in_the_input_directory_">ERROR: No xml files were found in the input directory.</a></h2>
+<p>This program that the files you want to convert will be named with 
+the xml extension, and that all files that end with xml are game.xml files.
+If you have files in this directory that you need to convert, they must
+all end with xml.</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use a configuration file.</p>
+<p>The following variables can be defined in the user environment:</p>
+<ul>
+<li><strong><a name="item_dp_apollo_bin">DP_APOLLO_BIN</a></strong>
+
+<p>The location of the apollo binary file. This is the path used to
+lauch the Apollo genome annotation program. If not specified in the
+user environment, this will attempt to call 'apollo'. The path may
+also be specified using the --ap-path option at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<dl>
+<dt><strong><a name="item_apollo_genome_annotation_curation_tool">Apollo Genome Annotation Curation Tool</a></strong>
+
+<dd>
+<p>This program uses the Apollo program to convert from game.xml to gff3
+format. The Apollo program can be obtained at:
+<a href="http://apollo.berkeleybop.org/current/index.html">http://apollo.berkeleybop.org/current/index.html</a></p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<h2><a name="perl_modules">Perl Modules</a></h2>
+<p>This program does not make use of Perl modules beyond the standard modules
+included in basic installations of Perl.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<dl>
+<dt><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<dd>
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<dl>
+<dt><strong><a name="item_apollo_required">Apollo Required</a></strong>
+
+<dd>
+<p>This program is completely dependent on a local installation of the Apollo
+program since it depends on Apollo to do the conversion.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 02/17/2009</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_game2gff3.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

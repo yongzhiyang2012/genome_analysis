@@ -1,0 +1,3753 @@
+#-----------------------------------------------------------+
+#                                                           |
+# WHEAT.TIERS - APOLLO TIERS FILE                           | 
+# WORKING DRAFT                                             |
+#                                                           |
+#-----------------------------------------------------------+
+#                                                           |
+# AUTHOR  : JAMES C. ESTILL                                 |
+# STARTED : 02/08/2007                                      |
+# UPDATED : 11/07/2008                                      |
+# VERSION : $Rev: 636 $                                     |
+# DESCRIPTION:                                              |
+#                                                           |
+#  This tiers file has a focus on gene model annotation.    |
+#  Other seq feature result information (RNAS, TEs, etc.    |
+#  could potentially use a separate tiers file. Using       |
+#  separate tiers files for different aspects of annotation |
+#  will allow a wider color space for each of the           |
+#  individual annotation methods.                           |
+#                                                           |	
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# TIER FIELDS                                               |
+#-----------------------------------------------------------+
+#
+# label :      false  (Group tier label)
+# visible :    true
+# expanded :   false
+# sorted :     false
+# maxrows :    maximum number of rows to show for this tier
+#              --default 0 means all
+# labeled :    false
+# curated :    false  
+#                [Whether to display in blue annotation zone]
+# warnonedit : false  
+#                [Can also be used as a Type parameter to tag
+#                 individual types]
+# number_of_levels : 3 
+#                   [The default is 1, for one-level annotation 
+#                    types; use 3 for gene-like annotations 
+#                    (gene/transcript/exon)]
+#
+# The order in which tiers are listed in this file determines 
+# their vertical display order (the first tier is displayed 
+# closest to the central axis).
+#
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# TYPE FIELDS                                               |
+#-----------------------------------------------------------+
+#  tiername :   the tier this type appears in
+#  typename :   label for this type
+#  resulttype : data type(s) to be included this type
+#               You may have mutliple resultypes listed
+#               to pull in the same result from multiple
+#               sources
+#  color :      can be a standard color name (e.g. red) or an 
+#               R,G,B triplet (default gray)
+#  utr_color :  color used for utr regions. Only works with
+#               DrawableGeneFeatureSet. (default black)
+#  usescore :   default true  # use score to set the height of this glyph
+#  minscore :   0 # minimum score for scaling height
+#  maxscore :   100 # maximum score for scaling height
+#  glyph :      what glyph to use (mandatory).  
+#               Current choices include:
+#                 DrawableGeneFeatureSet (exons & peaked introns),
+#                 DrawableResultFeatureSet (exons & straight lines),
+#                 DoubleHeadedArrow, 
+#                 Triangle, 
+#                 Zigzag, 
+#                 ThinRectangle (a rectangular outline).
+#  column :     names of column(s) in detail table.  Choices include
+#                 GENOMIC_RANGE, 
+#                 GENOMIC_LENGTH, 
+#                 MATCH_RANGE, 
+#                 MATCH_LENGTH,
+#                 SCORE, 
+#                 NAME, 
+#                 READS.  
+#               You can also specify column names not in all caps
+#               that correspond to properties of the features present 
+#               in the data (e.g.query_frame).
+#  sortbycolumn : row order in table determined by this column
+#  reversesort :  Sort table rows in reverse order?  (default false)
+#  groupby :      GENE method to use for grouping features 
+#                 (GENE, SINGLE, HOMOLOGY)
+#  weburl :       optional, URL for pulling up web 
+#                 pages about this type of result
+#  freshdate :    date after which sequences of this type are 
+#                 considered new (the dates are found in the 
+#                 sequence descriptions)
+#  idformat :     format of IDs for this kind of annotation 
+#                 (regexp, e.g. CG\d+)
+#  annot_type :   when this result is promoted to an annotation, 
+#                 annot_type says which type of annotation it 
+#                 should become.
+#  warnonedit :   false  [Overrides value of warnonedit setting, if any,
+#                 for the parent tier]
+#
+# The fields for a Type or Tier record can appear in any order, one per
+# line.  Be sure that none of the lines get broken up by inserted newlines.
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# GAP ANNOTATION                                            |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# Gap annotation placed nearest the central axis so that
+# it is always visible.
+
+#-----------------------------+
+# GAP                         |
+#-----------------------------+
+# 08/28/2007
+# This will be used to show gaps in the 
+# assembled BAC
+#[Tier]
+#tiername : Gap Annotation
+#expanded : false
+#labeled : false
+#curated : true
+#warnonedit : true
+#
+#[Type]
+#label : gap
+#tiername : Gap Annotation
+#datatype : gap	
+#glyph : Zigzag
+#color : 255,0,0
+#column : GENOMIC_RANGE
+#column : GENOMIC_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#name_method : FlyNameAdapter
+#idformat : DPgap\d{7}
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# ANNOTATION                                                |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# These are the main annotation features that appear on the
+# annotation panes of Apollo.
+
+[Tier]
+tiername : Annotation
+expanded : true
+labeled : true
+curated : true
+warnonedit : false
+
+#-----------------------------+
+# GENE                        |
+#-----------------------------+
+# Using DPgn for Dawg Paws Gene for now
+[Type]
+label : gene
+tiername : Annotation
+datatype : gene
+datatype : transcript
+datatype : exon
+glyph : DrawableGeneFeatureSet
+color : 51,102,255
+idformat : DPgn\d{7}
+utr_color : 176,224,230
+name_method : FlyNameAdapter
+overlap_method : ORF_Overlap
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+number_of_levels : 3
+
+##-----------------------------+
+## Transfer RNA                |
+##-----------------------------+
+#[Type]
+#label : tRNA
+#tiername : Annotation
+#datatype : tRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+#
+#
+##-----------------------------+
+## Small Nuclear RNA           |
+##-----------------------------+
+#[Type]
+#label : snRNA
+#tiername : Annotation
+#datatype : snRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+#
+##-----------------------------+
+## Small Nucleolar RNA         |
+##-----------------------------+
+#[Type]
+#label : snoRNA
+#tiername : Annotation
+#datatype : snoRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+#
+##-----------------------------+
+## Non-Coding RNA              |
+##-----------------------------+
+#[Type]
+#label : ncRNA
+#tiername : Annotation
+#datatype : misc. non-coding RNA
+#datatype : ncRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+#
+##-----------------------------+
+## Ribosomal RNA               |
+##-----------------------------+
+#[Type]
+#label : rRNA
+#tiername : Annotation
+#datatype : rRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+#
+##-----------------------------+
+## MicroRNA                    |
+##-----------------------------+
+#[Type]
+#label : miRNA
+#tiername : Annotation
+#datatype : microRNA
+#datatype : miRNA
+#glyph : DrawableResultFeatureSet
+#color : 0,204,0
+#idformat : FBgn\d{7}
+#name_method : FlyNameAdapter
+#overlap_method : ORF_Overlap
+#column : GENOMIC_RANGE
+#column : ID
+#sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------+
+# Pseudogene                  |
+#-----------------------------+
+[Type]
+label : pseudogene
+tiername : Annotation
+datatype : pseudogene
+glyph : DrawableResultFeatureSet
+color : 153,153,255
+idformat : DPgn\d{7}
+name_method : FlyNameAdapter
+overlap_method : ORF_Overlap
+column : GENOMIC_RANGE
+column : ID
+number_of_levels : 3
+
+
+//-----------------------------------------------------------+
+// Dispersed Repeats                                         |
+//-----------------------------------------------------------+
+// At the minimum I want to make this a tier separate from
+// the regular Annotation Field. This will allow me to
+// collapse the DRDs from the TRDs
+// However trying to get this to collapse does not
+// really seem to be working. I will leave this in the
+// annotation tier for now while I work with the results
+// tiers. 
+// --JCE 02/13/2007
+
+//[Tier]
+//tiername : Dispersed Repeats
+//expanded : true
+//labeled : true
+//curated : true
+//warnonedit : false
+
+[Type]
+label : transposable_element
+tiername : Annotation
+//tiername : Dispersed Repeats
+datatype : transposable_element
+// Jamie added the following two
+//datatype : LTR
+datatype : repeat_region
+glyph : DoubleHeadedArrow
+color : 255,0,203
+idformat : HEX_te\d{7}
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+warnonedit : true
+number_of_levels : 3
+
+#09/28/2007
+# Added MITE TYPE
+[Type]
+label : MITE
+tiername : Annotation
+//tiername : Dispersed Repeats
+// Jamie added the following two
+datatype : MITE
+glyph : DoubleHeadedArrow
+color : 255,0,203
+idformat : HEX_MITE\d{7}
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+warnonedit : false
+number_of_levels : 3
+
+# 09/27/2007
+# The following added to try to work with 
+# the complex features of ltr retrotransposons
+[Type]
+label : LTR Retrotransposon
+tiername : Annotation
+//tiername : Dispersed Repeats
+//datatype : transposable_element
+//datatype : transposable_element
+// Jamie added the following two
+datatype : ltr_struc
+datatype : ltr_retrotransposon
+//datatype : LTR Retro
+//datatype : repeat_region
+#glyph : DoubleHeadedArrow
+glyph : DrawableResultFeatureSet
+color : 255,0,203
+idformat : HEX_ltr\d{7}
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+warnonedit : false
+number_of_levels : 3
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# OTHER ANNOTATED FEATURES                                  |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+[Tier]
+# JCE turned on labeling 02/28/2007
+tiername : Other annotated features
+# expand while testing
+expanded : true
+labeled : true
+curated : true
+warnonedit : true
+
+
+//[Type]
+//label : P insertion_site
+//tiername : Other annotated features
+//datatype : p_insertion
+//datatype : P insertion_site
+//datatype : transposable_element_insertion_site
+//datatype : insertion_site
+//glyph : Triangle
+//color : 255,0,203
+//idformat : FBti\d{7}
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//# column : SCORE
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+[Type]
+label : remark
+tiername : Other annotated features
+datatype : miscellaneous curator's observation
+datatype : remark
+glyph : Zigzag
+color : 255,255,204
+idformat : CR\d+
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : GENOMIC_RANGE
+column : ID
+number_of_levels : 1
+
+//# ARGS types
+//[Type]
+//label : rescue fragment
+//tiername : Other annotated features
+//datatype : rescue_fragment
+//glyph : ThinRectangle
+//color : 153,51,255
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : point mutation
+//tiername : Other annotated features
+//datatype : point_mutation
+//glyph : Triangle
+//color : 0,102,204
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : protein binding site
+//tiername : Other annotated features
+//datatype : protein_binding_site
+//glyph : DrawableResultFeatureSet
+//color : 255,204,0
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : sequence variant
+//tiername : Other annotated features
+//datatype : sequence_variant
+//glyph : ThinRectangle
+//color : 0,153,255
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID      
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : aberration junction
+//tiername : Other annotated features
+//datatype : aberration_junction
+//glyph : Zigzag
+//color : 153,0,51
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : regulatory region
+//tiername : Other annotated features
+//datatype : regulatory_region
+//glyph : DrawableResultFeatureSet
+//color : 102,255,255
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+[Type]
+label : region
+tiername : Other annotated features
+datatype : region
+glyph : DrawableResultFeatureSet
+color : 102,255,255
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+number_of_levels : 1
+
+[Type]
+label : oligonucleotide
+tiername : Other annotated features
+datatype : oligonucleotide
+glyph : DrawableResultFeatureSet
+color : 204,102,0
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+number_of_levels : 1
+
+[Type]
+label : DNA motif
+tiername : Other annotated features
+datatype : DNA_motif
+glyph : ThinRectangle
+color : 102,102,102
+name_method : FlyNameAdapter
+overlap_method : NoOverlap
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+number_of_levels : 1
+
+//[Type]
+//label : enhancer
+//tiername : Other annotated features
+//datatype : enhancer
+//glyph : DrawableResultFeatureSet
+//color : 255,153,255
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//column : GENOMIC_LENGTH
+//sortbycolumn : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : mature peptide
+//tiername : Other annotated features
+//datatype : mature_peptide 
+//glyph : DrawableResultFeatureSet
+//color : 102,102,255
+//column : ID
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : GENOMIC_RANGE
+//number_of_levels : 1
+
+//[Type]
+//label : signal peptide
+//tiername : Other annotated features
+//datatype : signal_peptide 
+//glyph : DrawableResultFeatureSet
+//color : 153,153,255
+//name_method : FlyNameAdapter
+//overlap_method : NoOverlap
+//column : ID
+//column : GENOMIC_RANGE
+//number_of_levels : 1
+
+#-----------------------------------------------------------+
+#////////////////////////////////////////////////////////////
+#-----------------------------------------------------------+
+# COMPUTATIONAL RESULTS TYPES                               |
+#-----------------------------------------------------------+
+#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#-----------------------------------------------------------+
+# THE FOLLOWING TIERS ARE COMPUTATIONAL RESULTS THAT CAN
+# BE ADDED TO THE ANNOTATION TIERS ABOVE
+
+#-----------------------------------------------------------+
+# NEW ANALYSIS RESULTS                                      |
+#-----------------------------------------------------------+ 
+# This is the default type used by Apollo when adding
+# data from the computational analysis panel
+[Tier]
+tiername : New analysis results
+expanded : true
+labeled : true
+
+[Type]
+label : New analysis results
+tiername : New analysis results
+glyph : DrawableResultFeatureSet
+color : 255,255,0
+usescore : true
+column : SCORE
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# COMPUTATIONALLY DETERMINED GAPS                           |
+#-----------------------------------------------------------+ 
+# Gaps that need to be added to the annotation tier
+# These are determined by reading the FASTA file 
+[Tier]
+tiername : Comp Gap
+expanded : false
+labeled : false
+curated : false
+warnonedit : true
+
+[Type]
+label : gap
+tiername : Comp Gap
+resulttype : gap	
+glyph : Zigzag
+color : 255,0,0
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+#annot_type : gap
+
+#-----------------------------------------------------------+
+# E. coli BLASTN                                            |
+#-----------------------------------------------------------+
+# ADDED 03/01/2007
+# This will highlight PROBLEMS in the assembly
+# Red empty boxes these will be the nearest to the central
+# axis to highlight problem regions
+#
+[Tier]
+tiername : Contamination
+expanded : true
+labeled : true
+
+#-----------------------------+
+# E. coli BLASTN              |
+#-----------------------------+
+# 03/01/2007
+# ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Bacteria/
+[Type]
+typename : E. coli BLASTN
+tiername : Contamination
+resulttype : blastn:contam_Ecoli
+resulttype : BLASTN:contam_Ecoli
+glyph : ThinRectangle
+color : 255,0,0
+usescore : true
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------+
+# NCBI UniVec BLASTN          |
+#-----------------------------+
+# 03/01/2007
+# UniVec downloaded from NCBI 03/01/2007
+[Type]
+typename : UniVec BLASTN
+tiername : Contamination
+resulttype : blastn:contam_UniVec
+resulttype : BLASTN:contam_UniVec
+glyph : ThinRectangle
+color : 255,0,0
+usescore : true
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# BEGIN OF COMPUTATIONAL GENE MODEL OUTPUT HERE             |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# GENSCAN                                                   |
+#-----------------------------------------------------------+
+[Tier]
+tiername : GENSCAN
+expanded : true
+
+[Type]
+label : GENSCAN
+tiername : GENSCAN
+resulttype : GENSCAN
+resulttype : Genscan:maize
+glyph : DrawableResultFeatureSet
+color : 0,255,0
+//usescore : true
+//minscore : 0.0
+//maxscore : 100
+column : SCORE
+column : GENOMIC_RANGE
+column : query_frame
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# FGENESH                                                   |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : Fgenesh
+expanded : true
+
+[Type]
+label : Fgenesh
+tiername : Fgenesh
+resulttype : FGENESH
+glyph : DrawableResultFeatureSet
+color : 254,169,90
+usescore : true
+minscore : 0.0
+// Need to figure out the best 
+// way to scale the FGENESH results
+//maxscore : 100
+column : SCORE
+column : GENOMIC_RANGE
+column : query_frame
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+weburl : http://www.softberry.com/berry.phtml?topic=index&group=programs&subgroup=gfind#
+
+#-----------------------------------------------------------+
+# GeneMark.hmm                                              |
+#-----------------------------------------------------------+
+// GeneMark from TriAnnot does not appear to have
+// score information so he score will be ignored for now.
+// We may be able to get the score from UGAPAWS. 
+
+[Tier]
+tiername : GeneMark.hmm
+//expanded : true
+// Will leave combined at the initial open
+// it can be expanded later to work with the data.
+expanded : false
+
+
+[Type]
+typename : GeneMarkHMM_Ta
+label : GeneMarkHMM Triticum aestivum
+tiername : GeneMark.hmm
+resulttype : GeneMarkHMM_Ta
+glyph : DrawableResultFeatureSet
+color : 214,187,135
+// Commented out score use - 02/08/2007
+//usescore : true
+//minscore : 0.0
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Type]
+typename : GeneMarkHMM_Hv
+label : GeneMarkHMM Hordeum vulgare
+tiername : GeneMark.hmm
+resulttype : GeneMarkHMM_Hv
+glyph : DrawableResultFeatureSet
+color : 216,105,31
+//usescore : true
+//minscore : 0.0
+//scorethreshold : -1.0
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Type]
+typename : GeneMarkHMM_Zm
+label : GeneMarkHMM Zea Mays
+tiername : GeneMark.hmm
+resulttype : GeneMarkHMM_Zm
+glyph : DrawableResultFeatureSet
+color : 226,183,37
+//usescore : true
+//minscore : 0.0
+//scorethreshold : -1.0
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Type]
+typename : GeneMarkHMM_Os
+tiername : GeneMark.hmm
+resulttype : GeneMarkHMM_Os
+glyph : DrawableResultFeatureSet
+color : 255,255,255
+//usescore : true
+//minscore : 0.0
+//scorethreshold : -1.0
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# GeneID                                                    |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : geneid
+expanded : true
+
+[Type]
+typename : geneid_type
+label : geneid
+tiername : geneid
+resulttype : geneid
+resulttype : geneid_v1.2
+glyph : DrawableResultFeatureSet
+color : 200,227,98
+// Need to add back use score once I figure out the
+// geneid scoring scheme.
+//usescore : true
+//minscore : 0.0
+//maxscore : 60
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# EUGENE                                                    |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : eugene
+expanded : true
+
+[Type]
+typename : eugene_type
+label : eugene
+tiername : eugene
+resulttype : eugene
+resulttype : eugene:rice
+resulttype : EuGene
+glyph : DrawableResultFeatureSet
+#color : 75,147,216
+color : 128,0,0
+//usescore : true
+//minscore : 0.0
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# OLIGOMER COUNTS TIERS
+#-----------------------------------------------------------+
+# The oligomer counts tiers will go here, these will first
+# attempt to make use of a normalized Green red Color
+# as well as segemental counts
+# The script to run oligo counts will create a gff file with
+# results normalized to 0 to 1 in increments of 0.01.
+# 1 will be colored red and will represent the most repetitive
+# fraction. 0 will be colored green and will represent the
+# least repetitive and thus the most unique fraction.
+
+
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# BEGIN TE RELATED TIERS HERE
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# This is the TEs as drawn for the gene annoation phase of
+# the project. Folks working on TE annotation may want to
+# draw these in a more distinguishable way, but the gray
+# can just be used to represent the masked regions of the 
+# BAC/Genome.
+# 
+#
+
+#-----------------------------------------------------------+
+# RepeatMasker                                              |
+#-----------------------------------------------------------+
+# 07/18/2007
+# - Modified to be the same as ensj.tiers to try to
+#   get the RepeatMasker files to parse correctly
+[Tier]
+tiername : RepeatMasker
+expanded : false
+#expanded : true
+
+[Type]
+typename : RepeatMasker
+tiername : RepeatMasker
+resulttype : RepeatMasker
+resulttype : repeatmasker
+resulttype : repeatmasker:trep9
+//glyph : DoubleHeadedArrow
+glyph : DrawableResultFeatureSet
+color : 124,124,124
+usescore : true
+annot_type : transposable_element
+//Leaving Name out to see
+// if this helps the parse of the
+// name as given in the GFF file
+column : NAME
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+reversesort : false
+//overlap_method : SimpleOverlap
+//overlap_method : ORF_Overlap
+//groupby : HOMOLOGY
+groupby : SINGLE
+
+#-----------------------------------------------------------+
+# TE Nest results                                           |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TE Nest Result
+expanded : false
+
+[Type]
+typename : TE Nest
+tiername : TE Nest Result
+resulttype : tenest
+glyph : DrawableGeneFeatureSet
+color : 164,164,164
+column : NAME
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+reversesort : false
+overlap_method : ORF_Overlap
+
+#-----------------------------------------------------------+
+# TRF - Tandem Repeat Finder                                |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRF
+expanded : false
+
+[Type]
+label : TRFv4.00
+tiername : TRF
+resulttype : TRFv3.21
+resulttype : TRFv4.00
+glyph : DoubleHeadedArrow
+color : 64,64,64
+annot_type : transposable_element
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# FINDMITE - de novo MITE discovery                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : FINDMITE Results
+expanded : false
+
+# This will need to be expanded to show a different row for
+# each of the types below to allow to distinguish between 11 and 12
+# len tiers etc
+
+[Type]
+label : FINDMITE
+tiername : FINDMITE Results
+resulttype : findmite:TA_11
+resulttype : findmite:TA_12
+resulttype : findmite:TA_13
+glyph : DoubleHeadedArrow
+#color : 64,64,64
+color : 0,255,255
+annot_type : MITE
+//Leaving Name out to see
+// if this helps the parse of the
+// name as given in the GFF file
+column : NAME
+column : ID
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# HMM RICE MITES                                            |
+#-----------------------------------------------------------+
+[Tier]
+tiername : MITE HMM Results
+expanded : false
+
+[Type]	
+label : Rice Mite 	
+tiername : MITE HMM Results
+resulttype : hmmer:rice_mite
+glyph : DoubleHeadedArrow
+#color : 64,64,64
+color : 255,255,255
+annot_type : MITE
+//Leaving Name out to see
+// if this helps the parse of the
+// name as given in the GFF file
+column : NAME
+column : ID
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# HMM RICE MULES                                            |
+#-----------------------------------------------------------+
+# 10/04/2007
+[Tier]
+tiername : MULE HMM Results
+expanded : false
+
+[Type]	
+label : Rice MULES 	
+tiername : MULE HMM Results
+resulttype : hmmer:rice_mule
+glyph : DoubleHeadedArrow
+#color : 64,64,64
+color : 255,255,255
+annot_type : MITE
+//Leaving Name out to see
+// if this helps the parse of the
+// name as given in the GFF file
+column : NAME
+column : ID
+column : SCORE
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# LTR_STRUC                                                 |
+#-----------------------------------------------------------+
+# 09/27/2007
+# Currently only using a single LTR_STRUC result tier. However
+# it may be useful in the future to add additional tiers for
+# different sensitivites 1 through 10
+[Tier]
+tiername : LTR_STRUC Results
+expanded : false
+
+[Type]
+label : LTR_STRUC
+tiername : LTR_STRUC Results
+resulttype : ltr_struc
+//glyph : DrawableResultFeatureSet
+// The DrawableResultFeatureSet glyph does not
+// do a good job for LTR component visualization
+glyph : DoubleHeadedArrow
+color : 255,255,64
+//usescore : true
+annot_type : LTR Retrotransposon
+//annot_type : ltr_retrotransposon
+//Leaving Name out to see
+// if this helps the parse of the
+// name as given in the GFF file
+// ID Appears to be the same as NAME
+column : NAME
+column : SCORE
+column : ID
+//column : data_type 
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# LTR_seq Results
+#-----------------------------------------------------------+
+[Tier]
+tiername : LTR_seq Results
+expanded : false
+
+[Type]
+label : LTR_seq
+tiername : LTR_seq Results
+resulttype : ltr_seq
+//glyph : DrawableResultFeatureSet
+// The DrawableResultFeatureSet glyph does not
+// do a good job for LTR component visualization
+glyph : DoubleHeadedArrow
+color : 0,0,255
+//usescore : true
+annot_type : LTR Retrotransposon
+column : NAME
+column : SCORE
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# fidn_ltr RESULTS                                          |
+#-----------------------------------------------------------+
+# Currently drawing separate tiers that could be placed
+# in a single tier
+
+[Tier]
+tiername : find_ltr Results
+expanded : false
+
+[Type]
+label : find_ltr
+tiername :  find_ltr Results
+resulttype : find_ltr:def
+//glyph : DrawableResultFeatureSet
+// The DrawableResultFeatureSet glyph does not
+// do a good job for LTR component visualization
+glyph : DoubleHeadedArrow
+color : 255,0,0
+//usescore : true
+annot_type : LTR Retrotransposon
+column : NAME
+//column : SCORE
+column : ID
+//column : data_type 
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Tier]
+tiername : find_ltr Old
+expanded : false
+
+[Type]
+label : find_ltr_old
+tiername :  find_ltr Old
+resulttype : find_ltr:old
+//glyph : DrawableResultFeatureSet
+// The DrawableResultFeatureSet glyph does not
+// do a good job for LTR component visualization
+glyph : DoubleHeadedArrow
+color : 255,40,40
+//usescore : true
+annot_type : LTR Retrotransposon
+column : NAME
+//column : SCORE
+column : ID
+//column : data_type 
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Tier]
+tiername : find_ltr Older
+expanded : false
+
+[Type]
+label : find_ltr_older
+tiername :  find_ltr Older
+resulttype : find_ltr:older
+//glyph : DrawableResultFeatureSet
+// The DrawableResultFeatureSet glyph does not
+// do a good job for LTR component visualization
+glyph : DoubleHeadedArrow
+color : 255,80,80
+//usescore : true
+annot_type : LTR Retrotransposon
+column : NAME
+//column : SCORE
+column : ID
+//column : data_type 
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# LTR_Finder                                                |
+#-----------------------------------------------------------+
+# Added 10/01/2007
+[Tier]
+tiername : LTR_Finder Younger Results
+expanded : false
+
+[Type]
+label : LTR_Finder Younger
+tiername : LTR_Finder Younger Results
+resulttype : ltr_finder:p_30
+glyph : DoubleHeadedArrow
+color : 20,255,20
+annot_type : LTR Retrotransposon
+column : NAME
+column : SCORE
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+
+[Tier]
+tiername : LTR_Finder Result
+expanded : false
+
+[Type]
+label : LTR_Finder
+tiername : LTR_Finder Result
+resulttype : ltr_finder:def
+glyph : DoubleHeadedArrow
+color : 0,255,0
+annot_type : LTR Retrotransposon
+column : NAME
+column : SCORE
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+[Tier]
+tiername : LTR_Finder Older Results
+expanded : false
+
+[Type]
+label : LTR_Finder Older
+tiername : LTR_Finder Older Results
+resulttype : ltr_finder:p_10
+glyph : DoubleHeadedArrow
+color : 40,255,40
+annot_type : LTR Retrotransposon
+column : NAME
+column : SCORE
+column : ID
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# TREP prot                                                 |
+#-----------------------------------------------------------+
+# BLASTX against the TREP protein database
+
+[Tier]
+tiername : BLASTX TREP PROTEIN
+expanded : false
+
+[Type]
+typename : TREP Protein
+tiername : BLASTX TREP PROTEIN
+resulttype : BLASTX_TREP_prot
+resulttype : blastx:PTREP_9
+resulttype : BLASTX:PTREP_9
+glyph : ThinRectangle
+color : 124,124,124
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# TREP TOTAL                                                |
+#-----------------------------------------------------------+
+# BLASTN AGAINST THE TOTAL TREP REPEAT DATABASE
+
+[Tier]
+tiername : BLASTN: TREP TOTAL
+expanded : false
+
+[Type]
+label : TREP_total
+tiername : BLASTN: TREP TOTAL
+resulttype : BLASTN_TREP_total
+resulttype : blastn:TREP9_total
+resulttype : BLASTN:TREP9_total
+glyph : DoubleHeadedArrow
+color : 84,84,84
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+weburl : http://wheat.pw.usda.gov/ITMI/Repeats/Seqfiles.total/__ID__.html
+
+#-----------------------------------------------------------+
+# TREP nr                                                   |
+#-----------------------------------------------------------+
+# BLASTN against the total trep non-redundant databse
+[Tier]
+tiername : BLASTN: TREP NR
+expanded : false
+
+[Type]
+label : TREP_nr
+tiername : BLASTN: TREP NR
+resulttype : BLASTN_TREP_nr
+resulttype : blastn:TREP9_nr
+resulttype : BLASTN:TREP9_nr
+glyph : DoubleHeadedArrow
+color : 104,104,104
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+weburl : http://wheat.pw.usda.gov/ITMI/Repeats/Seqfiles.nr/__ID__.html
+
+#-----------------------------------------------------------+
+# RepBase                                                   |
+#-----------------------------------------------------------+
+# BLASTN against the RepBase database
+# Locally this is the RepBase Plants database, I will
+# need to download the latest version and then hold this
+# static for the initial GENE annotation phase.
+[Tier]
+tiername : BLASTN: RepBase
+expanded : false
+
+[Type]
+label : RepBase
+tiername : BLASTN: RepBase
+resulttype : BLASTN_ALL_Repbase
+resulttype : blastn:RB_pl
+resulttype : BLASTN:RB_pln
+glyph : DoubleHeadedArrow
+color : 144,144,144
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# SanMiguel                                                 |
+#-----------------------------------------------------------+
+# BLASTN against the SanMiguel retrotransposon database
+
+[Tier]
+tiername : SanMiguel
+expanded : false
+
+[Type]
+label : SanMiguel
+tiername : SanMiguel
+resulttype : BLASTN_SanMiguel
+// The following added for manual import of local BLAST
+resulttype : blastn:SanMiguel_200610
+resulttype : BLASTN:SanMiguel_200610
+glyph : DoubleHeadedArrow
+color : 184,184,184
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# MIPS REdat                                                |
+#-----------------------------------------------------------+
+# BLASTN against the MIPS Repetitive Element Database
+# http://mips.gsf.de/proj/plant/webapp/recat/
+# Currently using v. 4.3 of the database
+#
+[Tier]
+tiername : BLASTN: MIPS REdat
+expanded : false
+
+[Type]
+label : MIPS REdat 4.3
+tiername : BLASTN: MIPS REdat
+resulttype : blastn:mips_REdat_4_3
+resulttype : BLASTN:mips_REdat_4_3
+glyph : DoubleHeadedArrow
+color : 164,164,164
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+weburl : http://mips.gsf.de/proj/plant/webapp/recat/RepeatRetrival.jsp?searchcolumn=name&kw=__ID#__&coltosort=
+
+#-----------------------------------------------------------+
+# Wessler                                                   |
+#-----------------------------------------------------------+
+# BLASTN against the Wessler TE database available from
+# the MAGI website
+
+[Tier]
+tiername : BLASTN: Wessler DB
+expanded : false
+
+[Type]
+label : Wessler
+tiername : BLASTN: Wessler DB
+resulttype : blastn:Wessler
+resulttype : BLASTN:Wessler
+glyph : DoubleHeadedArrow
+color : 174,174,174
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# TriAnnotation Transposons                                 |
+#-----------------------------------------------------------+
+# BlASTN against the CF transposon database
+# BLASTN against the TriAnnotation provided transposon db
+
+[Tier]
+tiername : BLASTN: TriAnnot Transposon
+expanded : false
+
+[Type]
+label : TriAnnot_Transposon_BLASTN 
+tiername : BLASTN: TriAnnot Transposon
+resulttype : BLASTN_CF_TRANSPOSON
+resulttype : blastn:TATrans_200702
+resulttype : BLASTN:TATrans_200702
+glyph : DoubleHeadedArrow
+//color : 124,124,124
+color : 184,184,184
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+
+#-----------------------------------------------------------+
+# TIGR Gramineae Repeats
+#-----------------------------------------------------------+
+# BLASTN against the TIGR Gramineae repeats
+# These were downloaded from:
+# http://www.tigr.org/tdb/e2k1/plant.repeats/
+[Tier]
+tiername : BLASTN: TIGR Gram Repeats
+expanded : false
+
+[Type]
+label : TIGR Gramineae Repeats
+tiername : BLASTN: TIGR Gram Repeats
+resulttype : blastn:TIGR_Gram_3_3
+resulttype : BLASTN:TIGR_Gram_3_3
+glyph : DoubleHeadedArrow
+color : 194,194,194
+annot_type : transposable_element
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+sortbycolumn : GENOMIC_RANGE
+# The following url is general for all TIGR Plant repeats
+# I do not know if specific URLs are available for the databases
+weburl : http://www.tigr.org/tdb/e2k1/plant.repeats/index.shtml
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# EST ASSEMBLY SETS                                         |
+# - NCBI UNIGENES                                           |
+# - TIGR TAs                                                |
+# - TIGR GIs                                                |
+# - Plant GDB PUTs                                          |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+
+# It would be nice to add any full length cDNA data
+# that is available here
+
+#-----------------------------------------------------------+
+# Clermont Ferrand mRNA
+#-----------------------------------------------------------+
+# TBLASTX against the Clemont Ferrand mRNA database
+# This is a track of information that is available from
+# the TriAnnot pipeline for local BLAST.
+# I do not know what the nature or source of this data is.
+#
+#[Tier]
+#tiername : Clermont Ferrand mRNA
+#expanded : false
+#
+#[Type]
+#typename : Clermont Ferrand mRNA 
+#tiername : Clermont Ferrand mRNA
+#resulttype : TBLASTX_CF_emblPoaRNAc
+#glyph : DrawableResultFeatureSet
+#color : 83,134,213
+#usescore : true
+#minscore : 0.0
+#scorethreshold : -1.0
+#column : NAME
+#column : SCORE
+#column : expect
+#column : identity
+#column : GENOMIC_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_RANGE
+#reversesort : false
+
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# NCBI UNIGENES BLASTN                                      |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# BLASTN against NCBI unigene datasets
+
+#-----------------------------------------------------------+
+# TRITICEAE UNIGENES BLASTN                                 |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE UNIGENES BLASTN
+expanded : false
+
+[Type]
+typename : Hordeum vulgare UniGene BLASTN
+tiername : TRITICEAE UNIGENES BLASTN
+resulttype : BLASTN_HV_unigene
+resulttype : blastn:HvUniGene_47
+resulttype : BLASTN:HvUniGene_47
+glyph : DrawableResultFeatureSet
+color : 255,69,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Triticum aestivum UniGene BLASTN
+tiername : TRITICEAE UNIGENES BLASTN
+resulttype : BLASTN_TA_unigene
+resulttype : blastn:TaUniGene_46
+glyph : DrawableResultFeatureSet
+color : 255,69,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?CID=__ID.__
+
+
+#-----------------------------------------------------------+
+# POACEAE UNIGENES BLASTN                                   |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE UNIGENES BLASTN
+expanded : false
+
+
+# Oryza sativa Unique Unigenes
+[Type]
+typename : Oryza sativa Unigene BLASTN
+tiername : POACEAE UNIGENES BLASTN
+resulttype : BLASTN_OS_unigene
+resulttype : blastn:OsUniGene_65
+resulttype : BLASTN:OsUniGene_65
+glyph : DrawableResultFeatureSet
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Sorghum bicolor UniGene BLASTN
+tiername : POACEAE UNIGENES BLASTN
+resulttype : blastn:SbUniGene_21
+resulttype : BLASTN:SbUniGene_21
+glyph : DrawableResultFeatureSet
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Saccharum officinarum UniGene BLASTN
+tiername : POACEAE UNIGENES BLASTN
+resulttype : BLASTN:SoUniGene_8
+glyph : DrawableResultFeatureSet
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Zea mays UniGene BLASTN
+tiername : UniGenes BLASTN
+resulttype : BLASTN_ZM_unigene 
+resulttype : blastn:ZmUniGene_61
+resulttype : BLASTN:ZmUniGene_61
+glyph : DrawableResultFeatureSet
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+#-----------------------------------------------------------+
+# PLANT UNIGENES BLASTN                                     |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : PLANT UNIGENES BLASTN
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana UniGene BLASTN
+tiername : PLANT UNIGENES BLASTN
+resulttype : BLASTN_AT_unigene
+resulttype : blastn:AtUniGene_56
+resulttype : BLASTN:AtUniGene_56
+glyph : DrawableResultFeatureSet
+color : 255,169,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# NCBI UNIGENES TBLASTX                                     |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# TRITICEAE UNIGENES TBLASTX                                |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE UNIGENES TBLASTX
+expanded : false
+
+[Type]
+typename : Hordeum vulgare UniGene_TBLASTX
+tiername : TRITICEAE UNIGENES TBLASTX
+resulttype : BLASTN_HV_unigene
+resulttype : blastx:HvUniGene_47
+resulttype : tblastx:HvUniGene_47
+glyph : ThinRectangle
+color : 255,69,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Triticum aestivum UniGene TBLASTX
+tiername : TRITICEAE UNIGENES TBLASTX
+resulttype : BLASTN_TA_unigene
+resulttype : blastx:TaUniGene_46
+resulttype : tblastx:TaUniGene_46
+glyph : ThinRectangle
+color : 255,69,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/seq.cgi?ORG=__ID#__&SID=__ID__
+
+
+#-----------------------------------------------------------+
+# POACEAE UNIGENES TBLASTX                                  |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : POACEAE UNIGENES TBLASTX
+expanded : false
+
+[Type]
+typename : Oryza sativa Unigene TBLASTX
+tiername : POACEAE UNIGENES TBLASTX
+resulttype : BLASTN_OS_unigene
+resulttype : blastx:OsUniGene_65
+resulttype : tblastx:OsUniGene_65
+glyph : ThinRectangle
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Sorghum bicolor UniGene TBLASTX
+tiername : POACEAE UNIGENES TBLASTX
+resulttype : blastx:SbUniGene_21
+resulttype : tblastx:SbUniGene_21
+glyph : ThinRectangle
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Saccharum officinarum UniGene TBLASTX
+tiername : POACEAE UNIGENES TBLASTX
+resulttype : blastx:SoUniGene_8
+resulttype : tblastx:SoUniGene_8
+glyph : ThinRectangle
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+[Type]
+typename : Zea mays UniGene TBLASTX
+tiername : POACEAE UNIGENES TBLASTX
+resulttype : BLASTN_ZM_unigene 
+resulttype : blastx:ZmUniGene_61
+resulttype : tblastx:ZmUniGene_61
+resulttype : TBLAST:ZmUniGene_61
+glyph : ThinRectangle
+color : 255,99,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+#-----------------------------------------------------------+
+# PLANT UNIGENES TBLASTX                                    |
+#-----------------------------------------------------------+
+
+[Tier]
+tiername : PLANT UNIGENES TBLASTX
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana UniGene TBLASTX
+tiername : PLANT UNIGENES TBLASTX
+resulttype : BLASTN_AT_unigene
+resulttype : blastx:AtUniGene_56
+resulttype : tblastx:AtUniGene_56
+glyph : ThinRectangle
+color : 255,169,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=__ID.__&CID=__ID__
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# TIGR GIs BLASTN                                           |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# GIs are from the TIGR Gene Index database:
+
+#-----------------------------------------------------------+
+# TRITICEAE GI BLASTN                                       |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE GIs BLASTN
+expanded : false
+
+[Type]
+typename : Hordeum vulgare GI BLASTN
+tiername : TRITICEAE GIs BLASTN
+resulttype : blastn:HvGI_9
+resulttype : BLASTN:HvGI_9
+glyph : DrawableResultFeatureSet
+color : 0,0,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Triticum aestivum GI BLASTN
+tiername : TRITICEAE GIs BLASTN
+resulttype : blastn:TaGI_10
+resulttype : BLASTN:TaGI_10
+glyph : DrawableResultFeatureSet
+color : 0,0,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+#-----------------------------------------------------------+
+# POACEAE GI BLASTN                                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE GIs BLASTN
+expanded : false
+
+[Type]
+typename : Oryza sativa GI BLASTN
+tiername : POACEAE GIs BLASTN
+resulttype : blastn:OsGI_17
+resulttype : BLASTN:OsGI_17
+glyph : DrawableResultFeatureSet
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Sorghum bicolor GI BLASTN
+tiername : POACEAE GIs BLASTN
+resulttype : blastn:SbGI_9
+resulttype : blastn:SbGI_8
+resulttype : BLASTN:SbGI_9
+resulttype : BLASTN:SbGI_8
+glyph : DrawableResultFeatureSet
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Zea mays GI BLASTN
+tiername : POACEAE GIs BLASTN
+resulttype : blastn:ZmGI_17
+resulttype : BLASTN:ZmGI_17
+glyph : DrawableResultFeatureSet
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+#-----------------------------------------------------------+
+# PLANT GI BLASTN                                           |
+#-----------------------------------------------------------+
+# Other plants not triticeae or Poaceae
+[Tier]
+tiername : PLANT GIs BLASTN
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana GI BLASTN
+tiername : PLANT GIs BLASTN
+resulttype : blastn:AtGI_13
+resulttype : BLASTN:AtGI_13
+glyph : DrawableResultFeatureSet
+color : 100,100,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# TIGR GIs TBLASTX                                          |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# TRITICEAE GIs TBLASTX                                     |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE GIs TBLASTX
+expanded : false
+
+[Type]
+typename : Hordeum vulgare GI TBLASTX
+tiername : TRITICEAE GIs TBLASTX
+resulttype : BLASTX:HvGI_9
+resulttype : TBLASTX:HvGI_9
+resulttype : blastx:HvGI_9
+resulttype : tblastx:HvGI_9
+glyph : ThinRectangle
+color : 0,0,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Triticum aestivum GI TBLASTX
+tiername : TRITICEAE GIs TBLASTX
+resulttype : blastx:TaGI_10
+resulttype : tblastx:TaGI_10
+resulttype : BLASTX:TaGI_10
+resulttype : TBLASTX:TaGI_10
+resulttype : TBLASTX_TA_tigrta
+glyph : ThinRectangle
+color : 0,0,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+#-----------------------------------------------------------+
+# POACEAE GI BLASTN                                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE GIs TBLASTX
+expanded : false
+
+[Type]
+typename : Oryza sativa GI TBLASTX
+tiername : POACEAE GIs TBLASTX
+resulttype : blastx:OsGI_17
+resulttype : tblastx:OsGI_17
+resulttype : BLASTX:OsGI_17
+resulttype : TBLASTX:OsGI_17
+glyph : ThinRectangle
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Sorghum bicolor GI TBLASTX
+tiername : POACEAE GIs TBLASTX
+resulttype : blastx:SbGI_9
+resulttype : tblastx:SbGI_9
+resulttype : blastx:SbGI_8
+resulttype : tblastx:SbGI_8
+resulttype : BLASTX:SbGI_9
+resulttype : TBLASTX:SbGI_9
+resulttype : BLASTX:SbGI_8
+resulttype : TBLASTX:SbGI_8
+glyph : ThinRectangle
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+[Type]
+typename : Zea mays GI TBLASTX
+tiername : POACEAE GIs TBLASTX
+resulttype : blastx:ZmGI_17
+resulttype : tblastx:ZmGI_17
+resulttype : BLASTX:ZmGI_17
+resulttype : TBLASTX:ZmGI_17
+glyph : ThinRectangle
+color : 50,50,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+
+#-----------------------------------------------------------+
+# PLANT GI TBLASTX                                          |
+#-----------------------------------------------------------+
+# Other plants not triticeae or Poaceae
+[Tier]
+tiername : PLANT GIs TBLASTX
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana GI TBLASTX
+tiername : PLANT GIs TBLASTX
+resulttype : blastx:AtGI_13
+resulttype : tblastx:AtGI_13
+resulttype : BLASTX:AtGI_13
+resulttype : TBLASTX:AtGI_13
+glyph : ThinRectangle
+color : 100,100,255
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl      : http://compbio.dfci.harvard.edu/tgi/cgi-bin/tgi/tc_report.pl?gudb=arab&tc=
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# TIGR TAs BLASTN                                           |
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+ 
+# TAs are TIGR transcript assemblies:
+# SOURCE: ftp://ftp.tigr.org/pub/data/plantta/
+
+#-----------------------------------------------------------+
+# TRITICEAE TAs BLASTN                                      |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE TAs BLASTN
+expanded : false
+
+# MAY WANT TO GET AEGILOPS
+# I don't know if I have this one
+#[Type]
+#typename : Aegilops tauschii Tas
+#tiername : TIGR TAs BLASTN
+#resulttype : TBLASTX_AS_tigrta
+#glyph : DrawableResultFeatureSet
+#color : 178,139,57
+#column : SCORE
+#column : expect
+#column : identity
+#column : GENOMIC_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_RANGE
+#reversesort : false
+#weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Hordeum vulgare TAs BLASTN
+tiername : TRITICEAE TAs BLASTN
+resulttype : blastn:HvTA_2
+resulttype : BLASTN:HvTA_2
+glyph : DrawableResultFeatureSet
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum aestivum TAs BLASTN
+tiername : TRITICEAE TAs BLASTN
+resulttype : blastn:TaTA_2
+resulttype : BLASTN:TaTA_2
+glyph : DrawableResultFeatureSet
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum monococcum Tas
+tiername : TRITICEAE TAs BLASTN
+resulttype : blastn:TmTA_2
+resulttype : BLASTN:TmTA_2
+glyph : DrawableResultFeatureSet
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum turgidum Tas
+tiername : TRITICEAE TAs BLASTN
+resulttype : blastn:TtTa_1
+resulttype : BLASTN:TtTa_1
+glyph : DrawableResultFeatureSet
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+# POACEAE TAs BLASTN                                        |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE TAs BLASTN
+expanded : false
+
+[Type]
+typename : Agrostis capillaris TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:AcTA_1
+resulttype : BLASTN:AcTA_1
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Agrostis stolonifera TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:AsTA_1
+resulttype : BLASTN:AsTA_1
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : score
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Avena sativa TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:AvenSatTA_2
+resulttype : BLASTN:AvenSatTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Cynodon dactylon TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:CdTA_2
+resulttype : BLASTN:CdTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Festuca arundinaceae TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:FaTA_2
+resulttype : BLASTN:FaTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Oryza sativa TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:OsTA_2
+resulttype : blastn:OsTA2
+resulttype : BLASTN:OsTA_2
+resulttype : BLASTN:OsTA2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Pennistum glaucum TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:PgTA_2
+resulttype : BLASTN:PgTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Saccharum officinarum TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:SoTA_2
+resulttype : BLASTN:SoTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum bicolor TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:SbTA_2
+resulttype : BLASTN:SbTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum halepense TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:ShTA_2
+resulttype : BLASTN:ShTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum propinquum TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:SpTA_2
+resulttype : BLASTN:SpTA_2
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Zea mays B73 TAs BLASTN
+tiername : POACEAE TAs BLASTN
+tiername : TIGR TAs BLASTN
+resulttype : blastn:ZmB73TA_1
+resulttype : BLASTN:ZmB73TA_1
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Zea mays TAs BLASTN
+tiername : POACEAE TAs BLASTN
+resulttype : blastn:ZmTA_3
+resulttype : BLASTN:ZmTA_3
+glyph : DrawableResultFeatureSet
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+# PLANT TAs BLASTn                                          |
+#-----------------------------------------------------------+
+[Tier]
+tiername : PLANT TAs BLASTN
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana TAs BLASTN
+tiername : PLANT TAs BLASTN
+resulttype : blastn:AtTA_2
+resulttype : BLASTN:AtTA_2
+glyph : DrawableResultFeatureSet
+color : 221,160,221
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# TIGR TAs TBLASTX
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# TAs are TIGR transcript assemblies:
+# SOURCE: ftp://ftp.tigr.org/pub/data/plantta/
+
+#-----------------------------------------------------------+
+# TRITICEAE TAs TBLASTX                                     |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE TAs TBLASTX
+expanded : false
+
+[Type]
+typename : Hordeum vulgare TAs TBLASTX
+tiername : TRITICEAE TAs TBLASTX
+resulttype : blastx:HvTA_2
+resulttype : tblastx:HvTA_2
+resulttype : BLASTX:HvTA_2
+resulttype : TBLASTX:HvTA_2
+glyph : ThinRectangle
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum aestivum TAs TBLASTX
+tiername : TRITICEAE TAs TBLASTX
+resulttype : TBLASTX_TA_tigrta
+resulttype : blastx:TaTA_2
+resulttype : tblastx:TaTA_2
+resulttype : BLASTX:TaTA_2
+resulttype : TBLASTX:TaTA_2
+glyph : ThinRectangle
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum monococcum TAs TBLASTX
+tiername : TRITICEAE TAs TBLASTX
+resulttype : TBLASTX_TM_tigrta
+resulttype : blastx:TmTA_2
+resulttype : tblastx:TmTA_2
+resulttype : BLASTX:TmTA_2
+resulttype : TBLASTX:TmTA_2
+glyph : ThinRectangle
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Triticum turgidum TAs TBLASTX
+tiername : TRITICEAE TAs TBLASTX
+resulttype : TBLASTX_TT_tigrta
+resulttype : blastx:TtTa_1
+resulttype : tblastx:TtTa_1
+resulttype : BLASTX:TtTa_1
+resulttype : TBLASTX:TtTa_1
+glyph : ThinRectangle
+color : 148,0,211
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+# POACEAE TAs TBLASTX                                       |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE TAs TBLASTX
+expanded : false
+
+[Type]
+typename : Agrostis capillaris TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:AcTA_1
+resulttype : tblastx:AcTA_1
+resulttype : BLASTX:AcTA_1
+resulttype : TBLASTX:AcTA_1
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Agrostis stolonifera TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : BLASTX:AsTA_1
+resulttype : TBLASTX:AsTA_1
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Avena sativa TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : BLASTX:AvenSatTA_2
+resulttype : TBLASTX:AvenSatTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Cynodon dactylon TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:CdTA_2
+resulttype : tblastx:CdTA_2
+resulttype : BLASTX:CdTA_2
+resulttype : TBLASTX:CdTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Festuca arundinaceae TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:FaTA_2
+resulttype : tblastx:FaTA_2
+resulttype : BLASTX:FaTA_2
+resulttype : TBLASTX:FaTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Oryza sativa TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:OsTA_2
+resulttype : blastx:OsTA2
+resulttype : tblastx:OsTA_2
+resulttype : tblastx:OsTA2
+resulttype : BLASTX:OsTA_2
+resulttype : BLASTX:OsTA2
+resulttype : TBLASTX:OsTA_2
+resulttype : TBLASTX:OsTA2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Pennistum glaucum TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:PgTA_2
+resulttype : tblastx:PgTA_2
+resulttype : BLASTX:PgTA_2
+resulttype : TBLASTX:PgTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Saccharum officinarum TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:SoTA_2
+resulttype : tblastx:SoTA_2
+resulttype : BLASTX:SoTA_2
+resulttype : TBLASTX:SoTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum bicolor TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:SbTA_2
+resulttype : tblastx:SbTA_2
+resulttype : BLASTX:SbTA_2
+resulttype : TBLASTX:SbTA2_
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum halepense TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:ShTA_2
+resulttype : tblastx:ShTA_2
+resulttype : BLASTX:ShTA_2
+resulttype : TBLASTX:ShTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Sorghum propinquum TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:SpTA_2
+resulttype : tblastx:SpTA_2
+resulttype : BLASTX:SpTA_2
+resulttype : TBLASTX:SpTA_2
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Zea mays B73 TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:ZmB73TA_1
+resulttype : tblastx:ZmB73TA_1
+resulttype : BLASTX:ZmB73TA_1
+resulttype : TBLASTX:ZmB73TA_1
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+[Type]
+typename : Zea mays TAs TBLASTX
+tiername : POACEAE TAs TBLASTX
+resulttype : blastx:ZmTA_3
+resulttype : tblastx:ZmTA_3
+resulttype : BLASTX:ZmTA_3
+resulttype : TBLASTX:ZmTA_3
+glyph : ThinRectangle
+color : 218,12,214
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+# PLANT TAs TBLASTX                                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : PLANT TAs TBLASTX
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana TAs TBLASTNX
+tiername : PLANT TAs TBLASTX
+resulttype : blastx:AtTA_2
+resulttype : tblastx:AtTA_2
+resulttype : BLASTX:AtTA_2
+resulttype : TBLASTX:AtTA_2
+glyph : ThinRectangle
+color : 221,160,221
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://plantta.tigr.org/cgi-bin/plantta_report.pl?ta=
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# Plant GDB PUTs BLASTN
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+# Full list of PUTs available at:
+# http://www.plantgdb.org/prj/ESTCluster/progress.php
+
+#-----------------------------------------------------------+
+# TRITICEAE PUTs BLASTN                                     |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE PUTs BLASTN
+expanded : false
+
+[Type]
+typename : Hordeum vulgare PUTs BLAST
+tiername : TRITICEAE PUTs BLASTN
+resulttype : blastn:HvPUT_157
+resulttype : BLASTN:HvPUT_157
+glyph : DrawableResultFeatureSet
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+# WEB URL SOMETHING LIKE
+# http://www.plantgdb.org/search/display/data.php?Seq_ID=PUT-151a-Hordeum_vulgare-1535106207
+# This may work with something like
+#http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Triticum aestivum PUTs BLASTN
+tiername : TRITICEAE PUTs BLASTN
+resulttype : blastn:TaPUT_157
+resulttype : BLASTN:TaPUT_157
+glyph : DrawableResultFeatureSet
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Triticum monococcum PUTs BLASTN
+tiername : TRITICEAE PUTs BLASTN
+resulttype : blastn:TmPUT_157
+resulttype : BLASTN:TmPUT_157
+glyph : DrawableResultFeatureSet
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+# POACEAE PUTs BLASTN                                       |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE PUTs BLASTN
+expanded : false
+
+[Type]
+typename : Avena sativa PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:AsIndPUT_157
+resulttype : BLASTN:AsIndPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : O. sativa (Indica) PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:OsIndPUT_157
+resulttype : BLASTN:OsIndPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : O. sativa (Japonica) PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:OsJapPUT_157
+resulttype : BLASTN:OsJapPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Oryza sativa PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:OsPUT_157
+resulttype : BLASTN:OsPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Sorghum bicolor PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:SbPUT_157
+resulttype : BLASTN:SbPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Zea mays PUTs BLASTN
+tiername : POACEAE PUTs BLASTN
+resulttype : blastn:ZmPUT_157
+resulttype : BLASTN:ZmPUT_157
+glyph : DrawableResultFeatureSet
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+# PLANT PUTs BLASTn                                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : PLANT PUTs BLASTN
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana PUTs BLASTN
+tiername : PLANT PUTs BLASTN
+resulttype : blastn:ZmPUT_157
+resulttype : BLASTN:ZmPUT_157
+glyph : DrawableResultFeatureSet
+color : 100,255,100
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+# TRITICEAE PUTS TBLASTX                                    |
+#-----------------------------------------------------------+
+[Tier]
+tiername : TRITICEAE PUTs TBLASTX
+expanded : false
+
+[Type]
+typename : Hordeum vulgare PUTs TBLASTX
+tiername : TRITICEAE PUTs TBLASTX
+resulttype : blastx:HvPUT_157
+resulttype : tblastx:HvPUT_157
+resulttype : BLASTX:HvPUT_157
+resulttype : TBLASTX:HvPUT_157
+glyph : ThinRectangle
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Triticum aestivum PUTs TBLASTX
+tiername : TRITICEAE PUTs TBLASTX
+resulttype : blastx:TaPUT_157
+resulttype : tblastx:TaPUT_157
+resulttype : BLASTX:TaPUT_157
+resulttype : TBLASTX:TaPUT_157
+glyph : ThinRectangle
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Triticum monococcum PUTs TBLASTX
+tiername : TRITICEAE PUTs TBLASTX
+resulttype : BLASTX:TmPUT_157
+resulttype : TBLASTX:TmPUT_157
+glyph : ThinRectangle
+color : 0,255,0
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+# POACEAE PUTs TBLASTX                                      |
+#-----------------------------------------------------------+
+[Tier]
+tiername : POACEAE PUTs TBLASTX
+expanded : false
+
+[Type]
+typename : Avena sativa PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:AsPUT_157
+resulttype : tblastx:AsPUT_157
+resulttype : BLASTX:AsPUT_157
+resulttype : TBLASTX:AsPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Oryza sativa Indica PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:OsIndPUT_157
+resulttype : tblastx:OsIndPUT_157
+resulttype : BLASTX:OsIndPUT_157
+resulttype : TBLASTX:OsIndPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Oryza sativa Japonica PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:OsJapPUT_157
+resulttype : tblastx:OsJapPUT_157
+resulttype : BLASTX:OsJapPUT_157
+resulttype : TBLASTX:OsJapPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Oryza sativa PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:OsPUT_157
+resulttype : tblastx:OsPUT_157
+resulttype : BLASTX:OsPUT_157
+resulttype : TBLASTX:OsPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Sorghum bicolor PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:SbPUT_157
+resulttype : tblastx:SbPUT_157
+resulttype : BLASTX:SbPUT_157
+resulttype : TBLASTX:SbPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Sorghum propinquum PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:SpPUT_157
+resulttype : tblastx:SpPUT_157
+resulttype : BLASTX:SpPUT_157
+resulttype : TBLASTX:SpPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+[Type]
+typename : Zea mays PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:ZmPUT_157
+resulttype : tblastx:ZmPUT_157
+resulttype : BLASTX:ZmPUT_157
+resulttype : TBLASTX:ZmPUT_157
+glyph : ThinRectangle
+color : 50,255,50
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+# PLANT PUTs TBLASTX                                        |
+#-----------------------------------------------------------+
+[Tier]
+tiername : PLANT PUTs TBLASTX
+expanded : false
+
+[Type]
+typename : Arabidopsis thaliana PUTs TBLASTX
+tiername : POACEAE PUTs TBLASTX
+resulttype : blastx:AtPUT_157
+resulttype : tblastx:AtPUT_157
+resulttype : BLASTX:AtPUT_157
+resulttype : TBLASTX:AtPUT_157
+glyph : ThinRectangle
+color : 100,255,100
+usescore : true
+minscore : 0.0
+scorethreshold : -1.0
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_RANGE
+reversesort : false
+weburl : http://www.plantgdb.org/search/display/data.php?Seq_ID=__ID#__
+
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+#
+#-----------------------------------------------------------+
+#-----------------------------------------------------------+
+
+#-----------------------------------------------------------+
+# EMBL BLASTX                                               |
+#-----------------------------------------------------------+
+# MAY WANT TO ADD EMBL_CDS
+# ftp://ftp.ebi.ac.uk/pub/databases/embl/cds/README.txt
+[Tier]
+tiername : BLASTX: EMBL UniProt
+expanded : false
+	
+[Type]	
+label : UniProt Swiss-Prot (BLASTX)
+tiername : BLASTX: EMBL UniProt
+resulttype : blastx:UniProt_SProt_34_7
+resulttype : BLASTX:UniProt_SProt_34_7
+glyph : DrawableResultFeatureSet
+color : 255,20,0
+usescore : true
+column : SCORE
+column : expect
+column : identity
+column : query_frame
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+weburl : http://www.ebi.uniprot.org/uniprot-srv/uniProtView.do?primaryAc=
+
+[Type]
+label : UniProt TrEMBL (BLASTX)
+tiername : EMBL UniProt (BLASTX)
+resulttype : blastx:UniProt_TrEMBL_34_7
+resulttype : BLASTX:UniProt_TrEMBL_34_7
+glyph : DrawableResultFeatureSet
+color : 200,20,0
+usescore : true
+column : SCORE
+column : expect
+column : identity
+column : query_frame
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+weburl : http://www.ebi.uniprot.org/uniprot-srv/uniProtView.do?primaryAc=
+
+#-----------------------------------------------------------+
+# sim4
+#-----------------------------------------------------------+
+# Added 02/24/2007
+# Program Source: http://www.bx.psu.edu/miller_lab/
+# Pub: http://www.genome.org/cgi/content/full/8/9/967
+# The sim4 program should be run against the mRNA information
+# from T. aestivum
+
+
+
+##-----------------------------------------------------------+
+## genomic homoloies
+##-----------------------------------------------------------+
+## Unclear as to what this is
+#
+#[Tier]
+#tiername : genomic homologies
+#expanded : false
+#
+#[Type]
+#typename : BLASTN_CF_bac
+#label : local BACdb 
+#tiername : genomic homologies
+#resulttype : BLASTN_CF_bac
+#glyph : DrawableResultFeatureSet
+#color : 239,130,031
+#//usescore : true
+#column : NAME
+#column : SCORE
+#column : GENOMIC_RANGE
+#column : MATCH_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#groupby : HOMOLOGY
+#
+#[Type]
+#typename : BLASTN_embl_gss_pln
+#label : PLN GSS
+#tiername : genomic homologies
+#resulttype : BLASTN_embl_gss_pln
+#glyph : DrawableResultFeatureSet
+#color : 239,130,031
+#usescore : true
+#column : NAME
+#column : SCORE
+#column : GENOMIC_RANGE
+#column : MATCH_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#groupby : HOMOLOGY
+#
+#[Type]
+#typename : BLASTN_Embl_htg_pln
+#label : PLN HTG
+#tiername : genomic homologies
+#resulttype : BLASTN_Embl_HTG_PLN
+#glyph : DrawableResultFeatureSet
+#color : 239,130,031
+#//usescore : true
+#column : NAME
+#column : SCORE
+#column : GENOMIC_RANGE
+#column : MATCH_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#groupby : HOMOLOGY
+
+##-----------------------------------------------------------+
+## STS
+##-----------------------------------------------------------+
+#
+#[Tier]
+#tiername : STS
+#expanded : false
+#
+#[Type]
+#typename : BLASTN_embl_sts_pln
+#label : STS
+#tiername : STS
+#resulttype : BLASTN_embl_sts_pln
+#glyph : DrawableResultFeatureSet
+#color : 102,255,102
+#//usescore : true
+#column : NAME
+#column : SCORE
+#column : GENOMIC_RANGE
+#column : MATCH_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#groupby : HOMOLOGY
+#
+##-----------------------------------------------------------+
+## other_homologies
+##-----------------------------------------------------------+
+#
+#[Tier]
+#tiername : other homologies
+#expanded : false
+#
+#[Type]
+#typename : BLASTN_Embl_PLN
+#label : EMBL
+#tiername : other homologies
+#resulttype : BLASTN_Embl_PLN
+#glyph : DrawableResultFeatureSet
+#color : 102,255,102
+#//usescore : true
+#column : NAME
+#column : SCORE
+#column : GENOMIC_RANGE
+#column : MATCH_RANGE
+#column : GENOMIC_LENGTH
+#column : MATCH_LENGTH
+#sortbycolumn : GENOMIC_RANGE
+#groupby : HOMOLOGY
+
+#-----------------------------------------------------------+
+# CDS BLASTX ARABIDOPSIS                                    |
+#-----------------------------------------------------------+
+[Tier]
+tiername : BLASTX: CDS Arabidopsis
+expanded : false
+
+[Type]
+typename : Arabidopsis CDS TAIR
+tiername : BLASTX: CDS Arabidopsis
+resulttype : tblastx:TAIR6
+resulttype : TBLASTX:TAIR6
+resulttype : blastx:TAIR6
+resulttype : BLASTX:TAIR6
+glyph : DrawableResultFeatureSet
+color : 255,0,0
+usescore : true
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+
+[Type]
+typename : Arabidopsis CDS TIGR
+tiername : BLASTX: CDS Arabidopsis
+resulttype : blastx:ATH1_cds
+resulttype : BLASTX:ATH1_cds
+resulttype : TBLASTX:ATH1_cds
+resulttype : tblastx:ATH1_cds
+glyph : DrawableResultFeatureSet
+color : 255,0,0
+usescore : true
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+
+#-----------------------------------------------------------+
+# PROTEIN MODEL (CDS) BLASTX                                |
+#-----------------------------------------------------------+
+[Tier]
+tiername : BLASTX: CDS Rice TIGR
+expanded : false
+
+[Type]
+typename : Rice CDS BLASTX TIGR
+tiername : BLASTX: CDS Rice TIGR
+resulttype : blastx:Os_5_cds_pep
+resulttype : BLASTX:Os_5_cds_pep
+glyph : DrawableResultFeatureSet
+color : 255,255,0
+usescore : true
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+
+[Type]
+typename : Rice CDS TBLASTX TIGR
+tiername : BLASTX: CDS Rice TIGR
+resulttype : tblastx:Os_5_cds
+resulttype : TBLASTX:Os_5_cds
+glyph : DrawableResultFeatureSet
+color : 255,255,40
+usescore : true
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+
+#-----------------------------------------------------------+
+# PROTEIN MODEL (CDS) RAP 1                                 |
+# http://rapdownload.lab.nig.ac.jp/                         |
+#-----------------------------------------------------------+
+[Tier]
+tiername : BLASTX: CDS RICE RAP1
+expanded : false
+
+[Type]
+typename : Rice CDS BLASTX RAP1
+tiername : BLASTX: CDS RICE RAP1
+# The _pe is a problem with the database on an early version
+# of the DAWG-PAWS pipeline
+resulttype : blastx:Os_Rap1_pep
+resulttype : blastx:Os_Rap1_pe    
+resulttype : BLASTX:Os_Rap1_pep
+resulttype : BLASTX:Os_Rap1_pe    
+glyph : DrawableResultFeatureSet
+color : 255,255,255
+usescore : true
+column : NAME
+column : SCORE
+column : expect
+column : identity
+column : GENOMIC_RANGE
+column : MATCH_RANGE
+column : GENOMIC_LENGTH
+column : MATCH_LENGTH
+sortbycolumn : GENOMIC_RANGE
+groupby : HOMOLOGY
+weburl : http://rapdownload.lab.nig.ac.jp/

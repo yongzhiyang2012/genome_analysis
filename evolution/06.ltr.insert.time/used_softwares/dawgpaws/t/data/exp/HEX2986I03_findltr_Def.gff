@@ -1,0 +1,9 @@
+HEX2986I03	find_ltr:Def	LTR_retrotransposon	4933	11888	.	-	.	HEX2986I03_findltr_1
+HEX2986I03	find_ltr:Def	five_prime_LTR	4933	5075	.	-	.	HEX2986I03_findltr_1
+HEX2986I03	find_ltr:Def	three_prime_LTR	11746	11888	.	-	.	HEX2986I03_findltr_1
+HEX2986I03	find_ltr:Def	LTR_retrotransposon	12361	20786	.	-	.	HEX2986I03_findltr_2
+HEX2986I03	find_ltr:Def	five_prime_LTR	12361	12464	.	-	.	HEX2986I03_findltr_2
+HEX2986I03	find_ltr:Def	three_prime_LTR	20683	20786	.	-	.	HEX2986I03_findltr_2
+HEX2986I03	find_ltr:Def	LTR_retrotransposon	82421	91828	.	-	.	HEX2986I03_findltr_3
+HEX2986I03	find_ltr:Def	five_prime_LTR	82421	83243	.	-	.	HEX2986I03_findltr_3
+HEX2986I03	find_ltr:Def	three_prime_LTR	91006	91828	.	-	.	HEX2986I03_findltr_3

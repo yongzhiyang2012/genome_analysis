@@ -1,0 +1,161 @@
+#-----------------------------------------------------------+
+# DAWG-PAWS: Batch Blast Configuration file                 |
+#-----------------------------------------------------------+
+# This includes the 
+# A Tab delimited text file
+# BLAST PROGRAM -----> Name of the blastall program to use
+#                      [ blastn | blastx | tblastx | megablast ] 
+# OUT EXT -----------> Output file extension (ie. bln, blx)
+# EVALUE ------------> E-Value threshold
+# ALIGNOUT ---------->
+# DBNAME ------------> Name of the database
+# CMD SUFFIX --------> Additional BLAST Command flags (ie. -a 2, -U
+#----------------------------------------------------------------------------
+# BLAST	OUT					CMD
+# PROG	EXT	ALIGN	EVAL	DBNAME 		SUFFIX
+#----------------------------------------------------------------------------
+#-----------------------------+
+# BLASTN: TIGR GIs            |
+#-----------------------------+
+blastn	bln	8	1e-5	TaGI_10	-a 2 -U
+blastn	bln	8	1e-5	AtGI_13	-a 2 -U
+blastn	bln	8	1e-5	ZmGI_17	-a 2 -U
+blastn	bln	8	1e-5	SbGI_8	-a 2 -U
+blastn	bln	8	1e-5	OsGI_17	-a 2 -U
+blastn	bln	8	1e-5	HvGI_9	-a 2 -U
+#-----------------------------+
+# BLASTN: TIGR TAs            |
+#-----------------------------+
+blastn	bln	8	1e-5	AcTA_1	-a 2 -U
+blastn	bln	8	1e-5	AsTA_1	-a 2 -U
+blastn	bln	8	1e-5	AtTA_2	-a 2 -U
+blastn	bln	8	1e-5	AvenSatTA_2	-a 2 -U
+blastn	bln	8	1e-5	CdTA_2	-a 2 -U
+blastn	bln	8	1e-5	FaTA_2	-a 2 -U
+blastn	bln	8	1e-5	HvTA_2	-a 2 -U
+blastn	bln	8	1e-5	OsTA_2	-a 2 -U
+blastn	bln	8	1e-5	PgTA_2	-a 2 -U
+blastn	bln	8	1e-5	SbTA_2	-a 2 -U
+blastn	bln	8	1e-5	ShTA_2	-a 2 -U
+blastn	bln	8	1e-5	SoTA_2	-a 2 -U
+blastn	bln	8	1e-5	SpTA_2	-a 2 -U
+blastn	bln	8	1e-5	TaTA_2	-a 2 -U
+blastn	bln	8	1e-5	TmTA_2	-a 2 -U
+blastn	bln	8	1e-5	TtTA_1	-a 2 -U
+blastn	bln	8	1e-5	ZmB73TA_1	-a 2 -U
+blastn	bln	8	1e-5	ZmTA_3	-a 2 -U
+#-----------------------------+
+# BLASTN: NCBI UniGenes       |
+#-----------------------------+
+blastn	bln	8	1e-5	AtUniGene_56	-a 2 -U
+blastn	bln	8	1e-5	HvUniGene_47	-a 2 -U
+blastn	bln	8	1e-5	OsUniGene_65	-a 2 -U
+blastn	bln	8	1e-5	SbUniGene_21	-a 2 -U
+blastn	bln	8	1e-5	SoUniGene_8	-a 2 -U
+blastn	bln	8	1e-5	TaUniGene_46	-a 2 -U
+blastn	bln	8	1e-5	ZmUniGene_61	-a 2 -U
+#-----------------------------+
+# BLASTN: Plant GDB PUTS      |
+#-----------------------------+
+blastn	bln	8	1e-5	AsPUT_157	-a 2 -U
+blastn	bln	8	1e-5	AtPUT_157	-a 2 -U
+blastn	bln	8	1e-5	HvPUT_157	-a 2 -U
+blastn	bln	8	1e-5	OsIndPUT_157	-a 2 -U
+blastn	bln	8	1e-5	OsJapPUT_157	-a 2 -U
+blastn	bln	8	1e-5	OsPUT_157	-a 2 -U
+blastn	bln	8	1e-5	SbPUT_157	-a 2 -U
+blastn	bln	8	1e-5	SpPUT_157	-a 2 -U
+blastn	bln	8	1e-5	TaPUT_157	-a 2 -U
+blastn	bln	8	1e-5	TmPUT_157	-a 2 -U
+blastn	bln	8	1e-5	ZmPUT_157	-a 2 -U
+#-----------------------------+
+# TBLASTX: TIGR GIs           |
+#-----------------------------+
+tblastx	blx	8	1e-5	TaGI_10	-a 2 -U
+tblastx	blx	8	1e-5	AtGI_13	-a 2 -U
+tblastx	blx	8	1e-5	ZmGI_17	-a 2 -U
+tblastx	blx	8	1e-5	SbGI_8	-a 2 -U
+tblastx	blx	8	1e-5	OsGI_17	-a 2 -U
+tblastx	blx	8	1e-5	HvGI_9	-a 2 -U
+#-----------------------------+
+# TBLASTX: TIGR TAs           |
+#-----------------------------+
+tblastx	blx	8	1e-5	AcTA_1	-a 2 -U
+tblastx	blx	8	1e-5	AsTA_1	-a 2 -U
+tblastx	blx	8	1e-5	AtTA_2	-a 2 -U
+tblastx	blx	8	1e-5	AvenSatTA_2	-a 2 -U
+tblastx	blx	8	1e-5	CdTA_2	-a 2 -U
+tblastx	blx	8	1e-5	FaTA_2	-a 2 -U
+tblastx	blx	8	1e-5	HvTA_2	-a 2 -U
+tblastx	blx	8	1e-5	OsTA_2	-a 2 -U
+tblastx	blx	8	1e-5	PgTA_2	-a 2 -U
+tblastx	blx	8	1e-5	SbTA_2	-a 2 -U
+tblastx	blx	8	1e-5	ShTA_2	-a 2 -U
+tblastx	blx	8	1e-5	SoTA_2	-a 2 -U
+tblastx	blx	8	1e-5	SpTA_2	-a 2 -U
+tblastx	blx	8	1e-5	TaTA_2	-a 2 -U
+tblastx	blx	8	1e-5	TmTA_2	-a 2 -U
+tblastx	blx	8	1e-5	TtTA_1	-a 2 -U
+tblastx	blx	8	1e-5	ZmB73TA_1	-a 2 -U
+tblastx	blx	8	1e-5	ZmTA_3	-a 2 -U
+#-----------------------------+
+# TBLASTX: NCBI UniGenes      |
+#-----------------------------+
+tblastx	blx	8	1e-5	AtUniGene_56	-a 2 -U
+tblastx	blx	8	1e-5	HvUniGene_47	-a 2 -U
+tblastx	blx	8	1e-5	OsUniGene_65	-a 2 -U
+tblastx	blx	8	1e-5	SbUniGene_21	-a 2 -U
+tblastx	blx	8	1e-5	SoUniGene_8	-a 2 -U
+tblastx	blx	8	1e-5	TaUniGene_46	-a 2 -U
+tblastx	blx	8	1e-5	ZmUniGene_61	-a 2 -U
+#-----------------------------+
+# TBLASTX: Plant GDB PUTS     |
+#-----------------------------+
+tblastx	blx	8	1e-5	AsPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	AtPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	HvPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	OsIndPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	OsJapPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	OsPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	SbPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	SpPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	TaPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	TmPUT_157	-a 2 -U
+tblastx	blx	8	1e-5	ZmPUT_157	-a 2 -U
+#-----------------------------+
+# BLASTX: FINISHED GENOMES    |
+#-----------------------------+
+blastx	blx	8	1e-5	TAIR6	-a 2 -U
+blastx	blx	8	1e-5	Os_5_cds_pep	-a 2 -U
+blastx	blx	8	1e-5	Os_RAP1_pep	-a 2 -U
+#-----------------------------+
+# BLASTN: CONTAMINATION       |
+#-----------------------------+
+blastn	bln	8	1e-5	contam_Ecoli	-a 2 -U
+blastn	bln	8	1e-5	contam_UniVec	-a 2 -U
+#-----------------------------+
+# TBLASTX: CDS                |
+#-----------------------------+
+tblastx	blx	8	1e-5	ATH1_cds	-a 2 -U
+tblastx	blx	8	1e-5	Os_5_cds	-a 2 -U
+#-----------------------------+
+# BLASTX: REPEAT PROTEINS     |
+#-----------------------------+
+blastx	blx	8	1e-5	PTREP_9	-a 2 -U
+#-----------------------------+
+# BLASTX: UNIPROT PROTEIN DBS |
+#-----------------------------+
+blastx	blx	8	1e-5	UniProt_SProt_34_7	-a 2 -U
+blastx	blx	8	1e-5	UniProt_TrEMBL_34_7	-a 2 -U
+#-----------------------------+
+# BLASTN: REPEAT              |
+#-----------------------------+
+blastn	bln	8	1e-5	TATrans_200702	-a 2 -U
+blastn	bln	8	1e-5	mips_REdat_4_3	-a 2 -U
+blastn	bln	8	1e-5	RB_pln	-a 2 -U
+blastn	bln	8	1e-5	SanMiguel_200610	-a 2 -U
+blastn	bln	8	1e-5	TIGR_Gram_3_3	-a 2 -U
+blastn	bln	8	1e-5	TREP9_nr	-a 2 -U
+blastn	bln	8	1e-5	TREP9_total	-a 2 -U
+blastn	bln	8	1e-5	Wessler	-a 2 -U
+# END -- Leave this here

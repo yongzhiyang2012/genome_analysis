@@ -1,0 +1,468 @@
+#################################################################
+###################### GENERAL PARAMETERS #######################
+#################################################################
+# WORKING FOR HEX -- JCE
+# 11/08/2008
+EuGene.version		3.3
+EuGene.organism		Rice
+EuGene.sloppy		0
+#
+##### Lengths #####
+EuGene.InitExDist	init.dist
+EuGene.IntrExDist	intr.dist
+EuGene.TermExDist	term.dist
+EuGene.SnglExDist	sngl.dist
+EuGene.IntronDist	intron.dist
+EuGene.InterGDist	intergenic.dist
+EuGene.5PrimeDist	utr.dist
+EuGene.3PrimeDist	utr.dist
+#
+##### Priors #####
+EuGene.SplicedStopPen   1e999.0
+EuGene.ExonPrior	0.33		# Prior on the initial states
+EuGene.IntronPrior	0.17		# Sato et al 1999 / Terryn et al. 1999
+EuGene.InterPrior	0.4
+EuGene.FivePrimePrior	0.03
+EuGene.ThreePrimePrior	0.07
+#
+##### Output control ######
+Output.MinCDSLen	60
+Output.truncate		5
+Output.stepid		1
+Output.graph		0		# Don't produce a graphical output
+Output.resx		900
+Output.resy		400
+Output.glen		-1
+Output.golap		-1
+Output.gfrom		-1
+Output.gto		-1
+Output.window		48
+Output.offset		0
+Output.normopt		1
+Output.intron		0
+Output.format		l
+Output.Prefix		./
+Output.webdir		LOCAL # or URL: http://www.inra.fr/bia/T/EuGene/
+#
+#################################################################
+################### SIGNAL SENSORS PARAMETERS####################
+#################################################################
+#
+##### ATGpr parameters #####
+ATGpr.startP*		0.002
+ATGpr.startB*		0.001
+#
+##### EuStop parameters #####
+EuStop.stopP*           4.155
+#
+##### FrameShift parameters #####
+FrameShift.Ins*		1e999.0
+FrameShift.Del*		1e999.0
+#
+##### GeneSplicer parameters #####
+GSplicer.coefAcc*	1
+GSplicer.penAcc*	0
+GSplicer.coefDon*	1
+GSplicer.penDon* 	0
+#
+##### PepSignal #####
+PepSignal.startP*	1
+PepSignal.startB*	0
+#
+##### SpliceMachine parameters #####
+SMachine.cmd		"splicemachine.pl "
+SMachine.isScaled	1
+SMachine.accP*		0.102032725565
+SMachine.accB*		5.585
+SMachine.donP*		0.020202707318
+SMachine.donB*		27.670
+SMachine.startP*	0.052
+SMachine.startB*	0.308
+#
+# NetGene2 parameters #####
+NG2.accP*[0]	0.903
+NG2.accB*[0]	5.585
+NG2.donP*[0]	0.980
+NG2.donB*[0]	27.670
+NG2.accP*[1]	0.903
+NG2.accB*[1]	5.585
+NG2.donP*[1]	0.980
+NG2.donB*[1]	27.670
+#
+##### NetStart parameters #####
+NStart.startP*		0.052
+NStart.startB*		0.308
+#
+##### PatConst sensor (uniform penalties) #####
+PatConst.type[0]	donor   # Possible types : start insertion deletion
+PatConst.pat[0]		GT	#  transstart transstop stop acceptor donor
+PatConst.newStatePos[0] 1       # Position of the new state in the pattern
+PatConst.patP*[0]	1e-9
+PatConst.patPNo*[0]	0
+#
+PatConst.type[1]	acceptor
+PatConst.pat[1]		AG
+PatConst.newStatePos[1] 3
+PatConst.patP*[1]	1e-9
+PatConst.patPNo*[1]	0
+#
+PatConst.type[2]	start
+PatConst.pat[2]		ATG
+PatConst.newStatePos[2] 1
+PatConst.patP*[2]	2.897949
+PatConst.patPNo*[2]	0
+#
+##### Sensor SpliceWAM #####
+SpliceWAM.MarkovianOrder	1
+SpliceWAM.donmodelfilename	WAM/WAM.ARA.DON.L9
+SpliceWAM.NbNtBeforeGT		3
+SpliceWAM.NbNtAfterGT		4
+SpliceWAM.DonScaleCoef*		2.9004
+SpliceWAM.DonScalePenalty*	-7.5877
+SpliceWAM.accmodelfilename	WAM/WAM.ARA.ACC.L7
+SpliceWAM.NbNtBeforeAG		2
+SpliceWAM.NbNtAfterAG		3
+SpliceWAM.AccScaleCoef*		2.9004
+SpliceWAM.AccScalePenalty*	-7.5877
+#
+##### SplicePredictor parameters #####
+SPred.accP*[0]	0.987
+SPred.accB*[0]	3.850
+SPred.donP*[0]	0.929
+SPred.donB*[0]	10.800
+SPred.accP*[1]	0.987
+SPred.accB*[1]	3.850
+SPred.donP*[1]	0.929
+SPred.donB*[1]	10.800
+#
+##### Sensor StartWAM #####
+StartWAM.modelfilename	WAM/WAM.ARA.START9
+StartWAM.NbNtBeforeATG	3
+StartWAM.NbNtAfterATG	3
+StartWAM.MarkovianOrder	1
+StartWAM.ScaleCoef*	0.1594
+StartWAM.ScalePenalty*	-3.1439
+#
+##### Transcript parameters #####
+Transcript.Start*	4.155
+Transcript.Stop*	4.155
+#
+#################################################################
+################# CONTENT SENSORS PARAMETERS ####################
+#################################################################
+#
+##### Proteic similarity sensor parameters #####
+BlastX.PostProcess 0    # 0 1 OR 2
+BlastX.PPNumber	   5    # For PostProcess = "2"
+BlastX.levels	012
+BlastX.level0*	0.2
+BlastX.level1*	0.05
+BlastX.level2*	0.0
+BlastX.level3*	0.0
+BlastX.level4*	0.0
+BlastX.level5*	0.0
+BlastX.level6*	0.0
+BlastX.level7*	0.0
+BlastX.level8*	0.0
+BlastX.level9*	0.0
+BlastX.blastxM*	10	
+BlastX.minIn 50
+#
+##### Est sensor parameters #####
+Est.PostProcess	0     # 0 1 OR 2
+Est.PPNumber	5     # For PostProcess = "2"
+Est.estP*	-0.4
+#Est.estP*	-1e4  # forces EuGene to match with est
+Est.estM	6
+Est.utrP*	0.35
+Est.utrM	5
+Est.SpliceBoost* 0.0
+Est.StrongDonor 0.95
+Est.MinDangling 10
+Est.MaxIntron   15000
+#
+##### Homology Sensor parameters #####
+Homology.TblastxP*	0
+Homology.TblastxB* 	0.0595
+Homology.protmatname	BLOSUM80
+#
+##### State penalties per position #####
+MarkovConst.minGC[0]	-1
+MarkovConst.maxGC[0]	100
+MarkovConst.Coding*	1.0
+MarkovConst.Intron*	1.0
+MarkovConst.IntronUTR*	0.98
+MarkovConst.UTR5*	0.99
+MarkovConst.UTR3*	0.99
+MarkovConst.Inter*	1.0
+#
+##### Interpolated Markov Models parameters #####
+#MarkovIMM.matname[0]	Ara2UTR.mat
+MarkovIMM.matname[0]	Oryzasativa_dec2003.mat
+MarkovIMM.minGC[0]	0
+MarkovIMM.maxGC[0]	100
+MarkovIMM.useM0asIG[0]	0
+MarkovIMM.maxOrder[0]	8
+#MarkovIMM.matname[1]	Ara2UTR.mat
+#MarkovIMM.minGC[1]	50
+#MarkovIMM.maxGC[1]	100
+#MarkovIMM.useM0asIG[1]	0
+#MarkovIMM.maxOrder[1]	8
+#
+##### Markov proteic model parameters #####
+MarkovProt.matname[0]	SwP41.noFragm.mininfo1.order2.bin
+MarkovProt.minGC[0]	0
+MarkovProt.maxGC[0]	100
+MarkovProt.maxorder     2
+MarkovProt.order        2
+#
+##### Repeat sensor parameters #####
+Repeat.UTRPenalty*	0.0
+Repeat.IntronPenalty*	0.1
+Repeat.ExonPenalty*	1.0
+#
+#################################################################
+############## SIGNAL/CONTENT SENSORS PARAMETERS ################
+#################################################################
+#
+##### Sensors AnnotaStruct #####
+AnnotaStruct.FileExtension      gff
+AnnotaStruct.Start*             1
+AnnotaStruct.StartType          p     # p: probability  s: score
+AnnotaStruct.Stop*              1
+AnnotaStruct.StopType           p
+AnnotaStruct.Acc*               1
+AnnotaStruct.AccType            p
+AnnotaStruct.Don*               1
+AnnotaStruct.DonType            p
+AnnotaStruct.TrStart*           1
+AnnotaStruct.TrStartType        p
+AnnotaStruct.TrStop*            1
+AnnotaStruct.TrStopType         p
+AnnotaStruct.Exon*              10
+AnnotaStruct.Intron*            10
+AnnotaStruct.CDS*               10
+#
+##### IfElse #####
+IfElse.SensorIf		NG2
+IfElse.SensorElse	SPred
+#
+##### Riken sensor parameters #####
+Riken.StrandRespect			0
+Riken.Min_est_diff			100
+Riken.Max_overlap			60
+Riken.Max_riken_length			60000
+Riken.Max_riken_est_length		3000
+Riken.Min_riken_length			120 
+Riken.Min_riken_est_length		10
+Riken.RAFLPenalty*			-120.0
+#
+#################################################################
+################## OTHERS SENSORS PARAMETERS ####################
+#################################################################
+#
+##### Sensor GCPlot #####
+GCPlot.Color	5
+GCPlot.Zoom	2.0
+GCPlot.Zoom3	1.0
+GCPlot.Up	GC
+GCPlot.Over	ATGC
+GCPlot.Smooth	100
+#
+##### GFF sensor parameters #####
+GFF.PostProcess		1
+#
+##### Sensor Plotter
+Plotter.GC	 1   # 0 -> no plot  -  1 -> plot 
+Plotter.GC3	 1   #
+Plotter.A|T/A+T	 0   # T/A+T -> IntronF - A/A+T -> IntronR
+#
+##### Sensor Tester #####
+Tester.Make		SPSN	# SPSN, TEST
+Tester.Sensor		EuStop
+Tester.Sensor.Instance	0
+Tester.SPSN.MinNumbers	100     # greater than 0
+Tester.SPSN.Eval        STOP    # START, STOP, SPLICE
+#
+#################################################################
+################# SENSORS CONFIGURATION PARAMETERS ##############
+#################################################################
+#
+##### Sensors activation #####
+# SIGNAL SENSORS
+Sensor.ATGpr.use	0
+Sensor.EuStop.use	1
+Sensor.FrameShift.use	0
+Sensor.GSplicer.use	0
+Sensor.SMachine.use	0
+Sensor.NG2.use		0
+Sensor.NStart.use	1
+Sensor.PatConst.use	0
+Sensor.PepSignal.use	0
+Sensor.SpliceWAM.use 	0
+Sensor.SPred.use	0
+Sensor.StartWAM.use	0
+Sensor.Transcript.use	1
+#
+# CONTENT SENSORS
+Sensor.BlastX.use	0
+Sensor.Est.use		0
+Sensor.Homology.use	0
+Sensor.MarkovConst.use	1
+Sensor.MarkovIMM.use	1
+#Sensor.MarkovIMM.use	2
+Sensor.MarkovProt.use	0
+Sensor.Repeat.use	0
+#
+# SIGNAL/CONTENT SENSORS
+Sensor.AnnotaStruct.use 0
+Sensor.IfElse.use	1
+Sensor.Riken.use	0
+Sensor.User.use		0
+#
+# OTHERS SENSORS
+Sensor.GCPlot.use	0
+Sensor.GFF.use		0
+Sensor.Plotter.use	0
+Sensor.Tester.use	0
+#
+##### Sensor priorities	 #####
+#  the lower the priority, the first loaded sensor
+# SIGNAL SENSORS
+Sensor.ATGpr 		10
+Sensor.EuStop 		10
+Sensor.FrameShift 	10
+Sensor.GSplicer 	10
+Sensor.NG2 		10
+Sensor.NStart 		10
+Sensor.PatConst 	10
+Sensor.PepSignal 	10
+Sensor.SMachine 	10
+Sensor.SpliceWAM 	10
+Sensor.SPred 		10
+Sensor.StartWAM 	10
+Sensor.Transcript 	10
+#
+# CONTENT SENSORS
+Sensor.BlastX 		10
+Sensor.Est 		20
+Sensor.Homology   	10
+Sensor.MarkovConst 	10
+Sensor.MarkovIMM 	1
+Sensor.MarkovProt 	1
+Sensor.Repeat 		10
+#
+# SIGNAL/CONTENT SENSORS
+Sensor.AnnotaStruct     1
+Sensor.IfElse 		10
+Sensor.Riken 		10
+Sensor.User 		30
+#
+# OTHERS SENSORS
+Sensor.GCPlot 		1
+Sensor.GFF 		10
+Sensor.Plotter 		1
+Sensor.Tester 		1
+#
+#
+#################################################################
+################### OPTIMIZATION PARAMETERS #####################
+#################################################################
+ParaOptimization.Use 0
+ParaOptimization.TrueCoordFile ---
+ParaOptimization.EvalPredDir   ../Procedures/Eval
+ParaOptimization.Algorithm GENETIC+LINESEARCH
+ParaOptimization.Test 0
+ParaOptimization.Trace 1
+#
+ParaOptimization.NbCluster 3
+ParaOptimization.Cluster[0] LINKED
+ParaOptimization.Cluster[1] IDENTICAL
+ParaOptimization.Cluster[2] IDENTICAL
+#
+ParaOptimization.NbParameter 5
+#
+ParaOptimization.Para.Name[0] para1*
+ParaOptimization.Para.Max[0] 1
+ParaOptimization.Para.Min[0] 0
+ParaOptimization.Para.Cluster[0] 0
+#
+ParaOptimization.Para.Name[1] para2*
+ParaOptimization.Para.Max[1] 1
+ParaOptimization.Para.Min[1] 0
+ParaOptimization.Para.Cluster[1] 0
+#
+ParaOptimization.Para.Name[2] para3*
+ParaOptimization.Para.Max[2] 1
+ParaOptimization.Para.Min[2] 0
+ParaOptimization.Para.Cluster[2] 1
+#
+ParaOptimization.Para.Name[3] para4*
+ParaOptimization.Para.Max[3] 1
+ParaOptimization.Para.Min[3] 0
+ParaOptimization.Para.Cluster[3] 1
+#
+ParaOptimization.Para.Name[4] para5*
+ParaOptimization.Para.Max[4] 1
+ParaOptimization.Para.Min[4] 0
+ParaOptimization.Para.Cluster[4] 2
+#
+################## Genetic ######################################
+Genetic.NbRun 2
+Genetic.NbGeneration 2
+Genetic.NbElement 10
+Genetic.CrossOverProbability 0.6
+Genetic.MutationProbability 0.2
+Genetic.SelectionType 1
+#				  1:stochastic remainder without replacement
+Genetic.ScalingType 1
+#				  1: Sigma Truncation scaling 
+#				  2: Power Law scaling
+Genetic.Sharing 0.9
+#				  1: sharing, looking for clusters which best 
+#				     elt fitness is at least n% of the overall 
+#	                             best element of the population
+Genetic.Clustering 1
+Genetic.Elitism 0.9
+#				  n: elitism; keeps the best elt if no sharing,
+#	                             and keeps the best elt of each cluster 
+#				     which best_elt fitness is at
+#	                             least n% of the overallbest elt if sharing
+Genetic.SA.Mutation 0
+Genetic.SA.CrossOver 0
+Genetic.Seed 4
+#
+#
+######### LINESEARCH ###########################################
+LineSearch.NbMaxCycle 10
+LineSearch.NbMinCycle 2
+LineSearch.NbMaxStab 2
+LineSearch.DivInter 4
+LineSearch.Alpha 0.6
+LineSearch.EvolutionMini 0.001
+LineSearch.Seed 1
+#
+LineSearch.Para.Step[0] 0.01
+LineSearch.Para.Init[0] 0.5
+LineSearch.Para.MaxInit[0] 1
+LineSearch.Para.MinInit[0] 0
+#
+LineSearch.Para.Step[1] 0.01
+LineSearch.Para.Init[1] 0.5
+LineSearch.Para.MaxInit[1] 1
+LineSearch.Para.MinInit[1] 0
+#
+LineSearch.Para.Step[2] 0.01
+LineSearch.Para.Init[2] 0.5
+LineSearch.Para.MaxInit[2] 1
+LineSearch.Para.MinInit[2] 0
+#
+LineSearch.Para.Step[3] 0.01
+LineSearch.Para.Init[3] 0.5
+LineSearch.Para.MaxInit[3] 1
+LineSearch.Para.MinInit[3] 0
+#
+LineSearch.Para.Step[4]	0.01
+LineSearch.Para.Init[4] 0.5
+LineSearch.Para.MaxInit[4] 1
+LineSearch.Para.MinInit[4] 0

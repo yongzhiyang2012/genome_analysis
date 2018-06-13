@@ -1,0 +1,460 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AtUniGene_56 
+           29,224 sequences; 42,877,695 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|At#S11730605 Arabidopsis thaliana CAM7 (CALMODULIN 7); ca...   254   1e-64
+gnl|UG|At#S15460543 Arabidopsis thaliana ATCAL4; calcium ion bin...   216   2e-53
+gnl|UG|At#S18908491 Arabidopsis thaliana Full-length cDNA Comple...   202   3e-49
+gnl|UG|At#S18901574 Arabidopsis thaliana Full-length cDNA Comple...   196   2e-47
+gnl|UG|At#S11707608 Arabidopsis thaliana AT3g43810/T28A8_100 mRN...   190   1e-45
+gnl|UG|At#S11732309 Arabidopsis thaliana unknown protein (AT2G41...   151   1e-33
+gnl|UG|At#S11699194 A.thaliana calmodulin-2 (cam2) mRNA, complet...   111   9e-22
+gnl|UG|At#S11807229 Arabidopsis thaliana At2g27030 mRNA sequence...   111   9e-22
+gnl|UG|At#S18894022 Arabidopsis thaliana Full-length cDNA Comple...    90   3e-15
+
+>gnl|UG|At#S11730605 Arabidopsis thaliana CAM7 (CALMODULIN 7); calcium
+             ion binding (CAM7) mRNA, complete cds /cds=p(104,553)
+             /gb=NM_114249 /gi=30691682 /ug=At.23208 /len=801
+          Length = 801
+
+ Score =  254 bits (128), Expect = 1e-64
+ Identities = 314/376 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| ||||||||||| || ||||||||||| || || || || |
+Sbjct: 554   ctcactttgccatcatgactttgacgaactcttcatagttgatctgaccatcaccatcga 495
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || || ||||| ||||||| ||||||||| || || |
+Sbjct: 494   cgtcagcctctcggatcatctcatcgacttcctcatccgtcaacttctccccaagatttg 435
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||||||||| || ||||| |||||||||||||| ||||||||||||||||| || || |
+Sbjct: 434   tcatcacgtgacgaagctcagccgccgagatgaaaccgttctggtccttgtcaaaaaccc 375
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| || ||||| ||||| ||||| || || ||||| |||||||| |  ||||| ||||
+Sbjct: 374   tgaaggcttccttaagctcttcctctgaatcagtgtctttcatcttacgtgccattaggt 315
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||| ||||| || || || ||||| ||||| || || || |||||||||||||
+Sbjct: 314   tcaggaactctgggaaatctattgtcccgttcccgtctgcatccacttcgttgatcatgt 255
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| || || || ||||||||||| || || | |||||| || ||||||||||
+Sbjct: 254   cctggagctcggcttctgtcgggttctgcccaagtgatctcatcacagtcccaagctcct 195
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             | |||||||| |||||
+Sbjct: 194   ttgtggtgatacaacc 179
+
+
+>gnl|UG|At#S15460543 Arabidopsis thaliana ATCAL4; calcium ion binding
+             (ATCAL4) mRNA, complete cds /cds=p(67,516) /gb=NM_180013
+             /gi=30688530 /ug=At.48576 /len=1009
+          Length = 1009
+
+ Score =  216 bits (109), Expect = 2e-53
+ Identities = 310/377 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||| |||||||| ||||| || ||||| |||||||||||||| || || || || 
+Sbjct: 518   cctcacttagccatcataaccttcacaaactcttcgtagttgatctgaccatcaccatca 459
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             || || || |||   |||||||| || || || || || || |||||||| |||||||| 
+Sbjct: 458   acatcagcttccttaatcatctcatcaacttcttcatcagtaagcttctcgccgaggtta 399
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| || | ||  || || || |||||||| ||||||||||| |||||||| || 
+Sbjct: 398   gtcatcacatgtctcaattcagcagctgagatgaaaccgttctggtctttgtcgaaaact 339
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | ||| || |||||||| || ||||| ||||| ||||||||||| ||||| ||||| |||
+Sbjct: 338   ctgaaagcttccttgagttcttcctcagagtcagtgtccttcattttcctagccattagg 279
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             |||| |||||| ||||| || ||||| ||||| || ||||| ||||| ||||||||||||
+Sbjct: 278   ttcaagaactccgggaaatcaatggttccgttaccatccgcatcaacttcgttgatcatg 219
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||| ||||| || || || ||||| || |||||||| ||||||||||| |||||||||
+Sbjct: 218   tcctgaagctcagcttcggttgggttttgaccgagggaacgcatcacggtaccaagctcc 159
+
+                              
+Query: 45065 ttggtggtgatgcaacc 45081
+             || ||||| ||||||||
+Sbjct: 158   tttgtggtaatgcaacc 142
+
+
+
+ Score = 69.9 bits (35), Expect = 3e-09
+ Identities = 62/71 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||||||||| | ||||||||| |||||||| || | |||||| ||||| ||||||
+Sbjct: 137   ccatccttgtcgaataagctgaaggcttccttgaattctgagatctgatcgtctgtgagc 78
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 77    tgatccgccat 67
+
+
+>gnl|UG|At#S18908491 Arabidopsis thaliana Full-length cDNA Complete
+             sequence from clone GSLTPGH47ZC06 of Hormone Treated
+             Callus of strain col-0 of Arabidopsis thaliana (thale
+             cress) /gb=BX832026 /gi=42459640 /ug=At.294 /len=1419
+          Length = 1419
+
+ Score =  202 bits (102), Expect = 3e-49
+ Identities = 311/378 (82%), Gaps = 2/378 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||| | |||||| ||||| || ||||| ||||| || || || || ||
+Sbjct: 1342  tcacttagccatcataatcttgacaaactcttcatagttaatctgaccatctccatcaac 1283
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || ||||| ||||||||||| ||||| || || || || |||||||| || || |||||
+Sbjct: 1282  atcagcctcacggatcatctcttccacttcttcatcagttagcttctcaccaagattggt 1223
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| | ||| || || |||||||| ||||||||||| |||||||| || | 
+Sbjct: 1222  catcacatggcgta-ctcagcagcggagatgaaaccgttctggtctttgtcgaaaaccct 1164
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcat-cttcctcgccatcaggt 44945
+             ||| || || || ||||| ||||| ||||| ||||| ||||| |||| | ||||||||||
+Sbjct: 1163  gaaggcttcttttagctcttcctcggagtcagtgtctttcattcttcttagccatcaggt 1104
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||||||||||||||| |||||||| || || || |||||||||||||||||||
+Sbjct: 1103  tcaggaactcggggaagtcgatagtgccgtttccatctgcatcaacctcgttgatcatgt 1044
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| ||||| || ||||| || || || || ||||| || ||||| ||||| |
+Sbjct: 1043  cttggagctcagcctctgttgggttttgtcctagtgaacgcataactgttcccagctctt 984
+
+                               
+Query: 45066 tggtggtgatgcaacctg 45083
+             | || |||||||||||||
+Sbjct: 983   ttgttgtgatgcaacctg 966
+
+
+>gnl|UG|At#S18901574 Arabidopsis thaliana Full-length cDNA Complete
+             sequence from clone GSLTPGH58ZF06 of Hormone Treated
+             Callus of strain col-0 of Arabidopsis thaliana (thale
+             cress) /gb=BX824588 /gi=42466557 /ug=At.23067 /len=985
+          Length = 985
+
+ Score =  196 bits (99), Expect = 2e-47
+ Identities = 306/375 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||||||||| || ||||| || ||||| ||||| || || || || ||
+Sbjct: 550   tcacttagccatcatgaccttaacaaactcttcatagttaatctgaccatcaccatcaac 491
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || || |||  ||||||||| || || || || || || |||||||| || ||||| ||
+Sbjct: 490   atcagcttccttgatcatctcatcaacttcttcatcagtaagcttctcaccaaggtttgt 431
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| ||||| || || |||||||| |||||||||||||||||||| || ||
+Sbjct: 430   catcacatggcggagctcagctgctgagatgaaaccgttctggtccttgtcgaaaacccg 371
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| || ||||||||||| ||||| ||||| |||||||||||||| |  ||||| |||||
+Sbjct: 370   gaatgcttccttgagctcttcctcagagtcggtgtccttcatcttacgagccataaggtt 311
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             || |||||| ||||| || ||||| ||||| || || || |  || ||||||||||||||
+Sbjct: 310   caagaactctgggaaatcaatggtaccgttaccatcagcatgcacttcgttgatcatgtc 251
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+              || ||||| || || || ||||| || || ||||| |||||||| || || ||||||||
+Sbjct: 250   ttgaagctctgcttcggttgggttttgtccaagggaacgcatcacagtacccagctcctt 191
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             |||||| ||||||||
+Sbjct: 190   ggtggtaatgcaacc 176
+
+
+
+ Score = 69.9 bits (35), Expect = 3e-09
+ Identities = 62/71 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||||||||| | |||||| || ||||| ||||| | |||||| ||||||||||||
+Sbjct: 171   ccatccttgtcgaataagctgaaagcttccttaaactcagagatctgatcgtcggtgagc 112
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 111   tgatccgccat 101
+
+
+>gnl|UG|At#S11707608 Arabidopsis thaliana AT3g43810/T28A8_100 mRNA,
+             complete cds /cds=p(69,518) /gb=AY050350 /gi=15215643
+             /ug=At.21106 /len=759
+          Length = 759
+
+ Score =  190 bits (96), Expect = 1e-45
+ Identities = 306/376 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| |||||||| || || ||||| ||||| || ||||| || |
+Sbjct: 519   ctcacttagccatcatgactttgacgaattcttcatagttaatctgaccatcgccatcaa 460
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | ||||| || ||||||||||| || || ||||| || |  |||||||| ||||| || |
+Sbjct: 459   catccgcttctcggatcatctcatcaacttcctcatcggatagcttctcaccgagatttg 400
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || ||||| || || || ||||| || |||||||| || || || || |
+Sbjct: 399   tcatgacatgtcgaagctctgctgcagatatgaaaccattctggtctttatcaaaaaccc 340
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+               || || ||||||||||| ||||| || || ||||||||||| ||||| ||||||||||
+Sbjct: 339   taaaagcttccttgagctcttcctctgaatcagtgtccttcattttccttgccatcaggt 280
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||| ||||| || ||||| ||||| || || || ||||| || ||||||||||
+Sbjct: 279   tcaggaactccgggaaatcaatggtcccgttcccatctgcatcaacttcattgatcatgt 220
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| || || || ||||| ||||| || |||| |||||||||||| |||||||
+Sbjct: 219   cttgaagctcagcttctgttgggttttgccccagagacctcatcacggttccgagctcct 160
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||||||||| |||||
+Sbjct: 159   tggtggtgatacaacc 144
+
+
+
+ Score = 77.8 bits (39), Expect = 1e-11
+ Identities = 63/71 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||| ||||||||||| ||||| ||||||||||| | |||||| || |||||||||
+Sbjct: 139   ccatccttatcgaagaggctaaaggcttccttgaactctgagatctggtcatcggtgagc 80
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 79    tgatccgccat 69
+
+
+>gnl|UG|At#S11732309 Arabidopsis thaliana unknown protein (AT2G41120)
+             mRNA, complete cds /cds=p(1,786) /gb=NM_129677
+             /gi=30688532 /ug=At.69620 /len=1345
+          Length = 1345
+
+ Score =  151 bits (76), Expect = 1e-33
+ Identities = 244/300 (81%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||| |||||||| ||||| || ||||| |||||||||||||| || || || || 
+Sbjct: 1046  cctcacttagccatcataaccttcacaaactcttcgtagttgatctgaccatcaccatca 1105
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             || || || |||   |||||||| || || || || || || |||||||| |||||||| 
+Sbjct: 1106  acatcagcttccttaatcatctcatcaacttcttcatcagtaagcttctcgccgaggtta 1165
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| || | ||  || || || |||||||| ||||||||||| |||||||| || 
+Sbjct: 1166  gtcatcacatgtctcaattcagcagctgagatgaaaccgttctggtctttgtcgaaaact 1225
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | ||| || |||||||| || ||||| ||||| ||||||||||| ||||| ||||| |||
+Sbjct: 1226  ctgaaagcttccttgagttcttcctcagagtcagtgtccttcattttcctagccattagg 1285
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             |||| |||||| ||||| || ||||| ||||| || ||||| ||||| ||||||||||||
+Sbjct: 1286  ttcaagaactccgggaaatcaatggttccgttaccatccgcatcaacttcgttgatcatg 1345
+
+
+>gnl|UG|At#S11699194 A.thaliana calmodulin-2 (cam2) mRNA, complete cds
+             /cds=p(718,1167) /gb=M38380 /gi=166650 /ug=At.67188
+             /len=1400
+          Length = 1400
+
+ Score =  111 bits (56), Expect = 9e-22
+ Identities = 110/128 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44849 gccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcctcc 44908
+             ||||||||||| |||||||||||||| ||||| || | ||| || || |||||||| || 
+Sbjct: 1025  gccgagatgaaaccgttctggtccttatcgaaaaccctgaaagcttctttgagctcttct 966
+
+                                                                         
+Query: 44909 tccgagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatg 44968
+             || ||||| ||||||||||||||||| ||||| |||||||| ||||| |||||||| |||
+Sbjct: 965   tcagagtcagtgtccttcatcttcctagccattaggttcagaaactcagggaagtctatg 906
+
+                     
+Query: 44969 gtgccgtt 44976
+             || |||||
+Sbjct: 905   gttccgtt 898
+
+
+>gnl|UG|At#S11807229 Arabidopsis thaliana At2g27030 mRNA sequence
+             /gb=AY090987 /gi=20259399 /ug=At.23711 /len=2287
+          Length = 2287
+
+ Score =  111 bits (56), Expect = 9e-22
+ Identities = 110/128 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44849 gccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcctcc 44908
+             ||||||||||| |||||||||||||| ||||| || | ||| || || |||||||| || 
+Sbjct: 916   gccgagatgaaaccgttctggtccttatcgaaaaccctgaaagcttctttgagctcttct 857
+
+                                                                         
+Query: 44909 tccgagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatg 44968
+             || ||||| ||||||||||||||||| ||||| |||||||| ||||| |||||||| |||
+Sbjct: 856   tcagagtcagtgtccttcatcttcctagccattaggttcagaaactcagggaagtctatg 797
+
+                     
+Query: 44969 gtgccgtt 44976
+             || |||||
+Sbjct: 796   gttccgtt 789
+
+
+>gnl|UG|At#S18894022 Arabidopsis thaliana Full-length cDNA Complete
+             sequence from clone GSLTFB68ZC06 of Flowers and buds of
+             strain col-0 of Arabidopsis thaliana (thale cress)
+             /gb=BX814324 /gi=42474109 /ug=At.23146 /len=748
+          Length = 748
+
+ Score = 89.7 bits (45), Expect = 3e-15
+ Identities = 204/257 (79%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| ||||| || || || || || ||||| ||||||||||| ||||||||||| 
+Sbjct: 415   gtcatcacatggcgaaggtctgcagcggatatgaaaccgttctggtctttgtcgaacacc 356
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | ||| || || || || || ||||||||||   ||||||||| |||  | ||||| |||
+Sbjct: 355   ctgaaagcttctttcagttcttcctccgagtttttgtccttcagctttttagccattagg 296
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             || | |||||| |||||||  ||||| ||||| || || || | ||||||||||||||||
+Sbjct: 295   tttaagaactcagggaagttaatggttccgtttccatcagcttaaacctcgttgatcatg 236
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             |   | ||||| || |  || ||||||||||| ||  ||||||| || |||||  |||||
+Sbjct: 235   tttagtagctcagcttttgttgggttctgccctagttaccgcataactgttccccgctcc 176
+
+                              
+Query: 45065 ttggtggtgatgcaacc 45081
+             || ||||||||||||||
+Sbjct: 175   tttgtggtgatgcaacc 159
+
+
+  Database: AtUniGene_56
+    Posted date:  Feb 18, 2007  1:02 AM
+  Number of letters in database: 42,877,695
+  Number of sequences in database:  29,224
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 29224
+Number of Hits to DB: 2,450,306
+Number of extensions: 958436
+Number of successful extensions: 78547
+Number of sequences better than 1.0e-05: 9
+Number of HSP's gapped: 78542
+Number of HSP's successfully gapped: 12
+Length of query: 82726
+Length of database: 42,877,695
+Length adjustment: 21
+Effective length of query: 82705
+Effective length of database: 42,263,991
+Effective search space: 3495443375655
+Effective search space used: 3495443375655
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 13 (26.3 bits)
+S2: 30 (60.0 bits)

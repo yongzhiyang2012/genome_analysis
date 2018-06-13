@@ -1,0 +1,450 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AcTA_1 
+           5916 sequences; 4,425,894 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+TA36_204232 Calmodulin-related protein 3, touch-induced [Arabido...   476   e-132
+DV858069 Calmodulin-like protein [Branchiostoma lanceolatum (Com...   406   e-111
+DV859225 Calmodulin-like protein [Branchiostoma lanceolatum (Com...   381   e-104
+DV857122 Calmodulin-like protein [Branchiostoma lanceolatum (Com...   341   6e-92
+DV853600 Calmodulin-like protein [Branchiostoma lanceolatum (Com...   333   1e-89
+DV854722 Calmodulin-like protein [Branchiostoma lanceolatum (Com...   313   1e-83
+TA166_204232 Calmodulin-like protein [Branchiostoma lanceolatum ...   301   5e-80
+DV853257                                                               66   5e-09
+
+>TA36_204232 Calmodulin-related protein 3, touch-induced [Arabidopsis
+             thaliana (Mouse-ear cress)]
+          Length = 2880
+
+ Score =  476 bits (240), Expect = e-132
+ Identities = 339/372 (91%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             ||||||||||||||| |||||||||||||||||||||||||||||||| |||||||| ||
+Sbjct: 2611  tcacttggccatcatcaccttgacgaactcctcgtagttgatctggccatcgccgtcgac 2552
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+             ||| ||||| ||||||||||||||||||||||||||||| |||||||| || ||||||||
+Sbjct: 2551  gtcggcctcgcggatcatctcgtccacctcctcgtccgttagcttctcgccaaggttggt 2492
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             ||| |||||||| |||||||| ||||||||||||||||||||||||||||| ||||| ||
+Sbjct: 2491  catgacgtggcggagctccgcggccgagatgaagccgttctggtccttgtcaaacacccg 2432
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| |||||||||||||||||||||||||| |||||||||||||| |  |||||||||||
+Sbjct: 2431  gaaggcctccttgagctcctcctccgagtcggtgtccttcatcttgcgagccatcaggtt 2372
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+              |||||||| |||||||||||||||||||||||||| ||||| |||||||||||||||||
+Sbjct: 2371  gaggaactccgggaagtcgatggtgccgttgccgtcagcgtccacctcgttgatcatgtc 2312
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             ||| ||||| |||||||| ||||||||||| || || ||||| || || || ||||||||
+Sbjct: 2311  ctggagctcggcctccgttgggttctgccccagcgaacgcatgaccgtccccagctcctt 2252
+
+                         
+Query: 45067 ggtggtgatgca 45078
+             ||| ||||||||
+Sbjct: 2251  ggttgtgatgca 2240
+
+
+
+ Score =  103 bits (52), Expect = 2e-20
+ Identities = 71/76 (93%), Gaps = 1/76 (1%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctcc-ttgaactcggcgatctgctcgtcggt 46573
+             ||||| ||||||||||| ||||||||||||||| ||||||||||||||||| ||||||||
+Sbjct: 2235  tcgccgtccttgtcgaataggctgaaggcctcccttgaactcggcgatctggtcgtcggt 2176
+
+                             
+Query: 46574 gagctggtccgccatg 46589
+             ||| ||||||||||||
+Sbjct: 2175  gagttggtccgccatg 2160
+
+
+>DV858069 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 705
+
+ Score =  406 bits (205), Expect = e-111
+ Identities = 331/373 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||||||||||||||||||||||||||| ||||||||||||||||||||||| |||
+Sbjct: 512   cctcacttggccatcatgaccttgacgaactcgtcgtagttgatctggccgtcgccatcc 453
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||| |||||| || |||||||| || |  ||||||||||||||||||
+Sbjct: 452   acgtcggcctcgcggaccatctcctcaacctcctcctcggagagcttctccccgaggttg 393
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| ||||| ||||| || || |||||||| || |||||||||||||| || || 
+Sbjct: 392   gtcatcacctggcgaagctcagctgcagagatgaaaccattctggtccttgtcaaagaca 333
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||| ||||||||||| ||||| |||||||||||||| |  |||||||||
+Sbjct: 332   cggaaagcctccttcagctcctcctcggagtcggtgtccttcatcttgcgggccatcagg 273
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| |||||||| ||||| || || || |||||||||||||||
+Sbjct: 272   ttcaggaactccgggaagtcaatggtgccattgccatctgcatccacctcgttgatcatg 213
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 212   tcctgcagctctgcctcggttgggttctggccaagggaacgcatcacagttccaagctcc 153
+
+                          
+Query: 45065 ttggtggtgatgc 45077
+             |||||||||||||
+Sbjct: 152   ttggtggtgatgc 140
+
+
+
+ Score = 97.6 bits (49), Expect = 1e-18
+ Identities = 73/81 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46510 taccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgt 46569
+             |||| ||||| |||||||||||||||||||| ||||||||||||||| | |||||||| |
+Sbjct: 139   taccatcgccgtccttgtcgaagaggctgaatgcctccttgaactcgccaatctgctcct 80
+
+                                  
+Query: 46570 cggtgagctggtccgccatgg 46590
+             || | ||||||||||||||||
+Sbjct: 79    cgctcagctggtccgccatgg 59
+
+
+>DV859225 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 764
+
+ Score =  381 bits (192), Expect = e-104
+ Identities = 285/316 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             ||||||||||||||| |||||||||||||||||||||||||||||||| |||||||| ||
+Sbjct: 498   tcacttggccatcatcaccttgacgaactcctcgtagttgatctggccatcgccgtcgac 439
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+             ||| ||||| ||||||||||||||||||||||||||||| ||||||||||| ||||||||
+Sbjct: 438   gtcggcctcgcggatcatctcgtccacctcctcgtccgttagcttctccccaaggttggt 379
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             ||| |||||||| |||||| | ||||| |||||||||||||||| |||||| ||||| ||
+Sbjct: 378   catgacgtggcggagctccccggccgaaatgaagccgttctggttcttgtcaaacacccg 319
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| ||||| ||||||  || ||||||||| ||||||||| |||| |  |||||||||||
+Sbjct: 318   gaaggcctctttgagcctcttctccgagtcggtgtccttcttcttgcgagccatcaggtt 259
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+              |||||||| |||||||||||||||||||||||||| ||||| |||||||||||||||||
+Sbjct: 258   gaggaactccgggaagtcgatggtgccgttgccgtcagcgtccacctcgttgatcatgtc 199
+
+                             
+Query: 45007 ctgcagctccgcctcc 45022
+             ||| ||||| ||||||
+Sbjct: 198   ctggagctcggcctcc 183
+
+
+
+ Score = 67.9 bits (34), Expect = 1e-09
+ Identities = 53/58 (91%), Gaps = 1/58 (1%)
+ Strand = Plus / Minus
+
+                                                                       
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcgg 46572
+             ||||| ||||||||||| ||||||||||| |||||||||||||| ||||| |||||||
+Sbjct: 158   tcgccgtccttgtcgaataggctgaaggc-tccttgaactcggccatctggtcgtcgg 102
+
+
+>DV857122 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 796
+
+ Score =  341 bits (172), Expect = 6e-92
+ Identities = 325/376 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||||||||||||||||||||||||||| || ||||| |
+Sbjct: 561   ctcatttggccatcatgaccttgacgaactcctcgtagttgatctggccatcaccgtcaa 502
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| ||||||||||| || |||||||| || ||||| |
+Sbjct: 501   catcagcttcacggatcatctcgtcgacctcctcgtcggttagcttctcgccaaggtttg 442
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 441   tcatgacatgacggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 382
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 381   tgaaggcctccttgagctcttcctctgagtcagtgtccttcatcttgcgagccatcaggt 322
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||| |||||||||||||| || || || || |||||||||||||
+Sbjct: 321   tgagaaactctgggaagtcaatggtgccgttgccatcagcatcgacttcgttgatcatgt 262
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 261   cctggagctcagcctccgttgggttctgccccagcgaacgcatgaccgttcccagctcct 202
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 201   tggttgtgatgcaacc 186
+
+
+
+ Score =  115 bits (58), Expect = 6e-24
+ Identities = 67/70 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||||||||||||||| |||||||||||||||||||| |||||||||||||| 
+Sbjct: 178   tccttgtcgaagaggctgaaggcttccttgaactcggcgatctggtcgtcggtgagctga 119
+
+                       
+Query: 46581 tccgccatgg 46590
+             ||||||||||
+Sbjct: 118   tccgccatgg 109
+
+
+>DV853600 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 781
+
+ Score =  333 bits (168), Expect = 1e-89
+ Identities = 324/376 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| ||||||||||||||||||||||||||||| |||||||||||||| || ||||| |
+Sbjct: 561   ctcatttggccatcatgaccttgacgaactcctcatagttgatctggccatcaccgtcaa 502
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| |||||||| || || |||||||| || ||||| |
+Sbjct: 501   catcagcttcacggatcatctcgtcgacctcctcatcggttagcttctcgccaaggtttg 442
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 441   tcatgacatggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 382
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 381   tgaaggcctccttgagctcttcctctgagtcggtgtccttcatcttgcgagccatcaggt 322
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||| |||||||||||||| || || || || |||||||||||||
+Sbjct: 321   tgagaaactctgggaagtcaatggtgccgttgccatcagcatcgacttcgttgatcatgt 262
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 261   cctggagctcagcctccgttgggttctgccccagcgaacgcatgaccgttcccagctcct 202
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 201   tggtagtgatgcaacc 186
+
+
+
+ Score =  123 bits (62), Expect = 3e-26
+ Identities = 68/70 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| 
+Sbjct: 178   tccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtgagctga 119
+
+                       
+Query: 46581 tccgccatgg 46590
+             ||||||||||
+Sbjct: 118   tccgccatgg 109
+
+
+>DV854722 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 883
+
+ Score =  313 bits (158), Expect = 1e-83
+ Identities = 311/362 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| ||||||||||||||||||||||||||||| |||||||||||||| || ||||| |
+Sbjct: 649   ctcatttggccatcatgaccttgacgaactcctcatagttgatctggccatcaccgtcaa 590
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| |||||||| || || |||||||| || ||||| |
+Sbjct: 589   catcagcttcacggatcatctcgtcgacctcctcatcggttagcttctcgccaaggtttg 530
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 529   tcatgacatggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 470
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 469   tgaaggcctccttgagctcttcctctgagtcggtgtccttcatcttgcgagccatcaggt 410
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||| |||||||||||||| || || || || |||||||||||||
+Sbjct: 409   tgagaaactctgggaagtcaatggtgccgttgccatcagcatcgacttcgttgatcatgt 350
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 349   cctggagctcagcctccgttgggttctgccccagcgaacgcatgaccgttcccagctcct 290
+
+               
+Query: 45066 tg 45067
+             ||
+Sbjct: 289   tg 288
+
+
+>TA166_204232 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 1150
+
+ Score =  301 bits (152), Expect = 5e-80
+ Identities = 302/352 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| ||||||||||||||||||||||||||||| |||||||||||||| || ||||| |
+Sbjct: 915   ctcatttggccatcatgaccttgacgaactcctcatagttgatctggccatcaccgtcaa 856
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| |||||||| || || |||||||| || ||||| |
+Sbjct: 855   catcagcttcacggatcatctcgtcgacctcctcatcagttagcttctcgccaaggtttg 796
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 795   tcatgacatggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 736
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 735   tgaaggcctccttgagctcttcctctgagtcggtgtccttcatcttgcgagccatcaggt 676
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||| |||||||||||||| || || |||||||||||||||||||
+Sbjct: 675   tgagaaactctgggaagtcaatggtgccgttgccatcagcatcaacctcgttgatcatgt 616
+
+                                                                 
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttcc 45057
+             |||| ||||| |||  ||| ||||||||||| || || ||||| || |||||
+Sbjct: 615   cctggagctcagccctcgttgggttctgccccagcgaacgcatgaccgttcc 564
+
+
+>DV853257
+          Length = 303
+
+ Score = 65.9 bits (33), Expect = 5e-09
+ Identities = 39/41 (95%)
+ Strand = Plus / Minus
+
+                                                      
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttg 44746
+             |||| ||||||||||||||||||||||||||||| ||||||
+Sbjct: 50    ctcatttggccatcatgaccttgacgaactcctcatagttg 10
+
+
+  Database: AcTA_1
+    Posted date:  Feb 16, 2007  2:00 PM
+  Number of letters in database: 4,425,894
+  Number of sequences in database:  5916
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 5916
+Number of Hits to DB: 237,600
+Number of extensions: 92760
+Number of successful extensions: 25958
+Number of sequences better than 1.0e-05: 8
+Number of HSP's gapped: 25956
+Number of HSP's successfully gapped: 13
+Length of query: 82726
+Length of database: 4,425,894
+Length adjustment: 20
+Effective length of query: 82706
+Effective length of database: 4,307,574
+Effective search space: 356262215244
+Effective search space used: 356262215244
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 28 (56.0 bits)

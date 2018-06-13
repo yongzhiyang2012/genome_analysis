@@ -1,0 +1,299 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>batch_tenest.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_tenest.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_databases">Required Databases</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limiations">Limiations</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>batch_tenest.pl - Run TENest in batch mode</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    batch_tenest.pl -i indir -o outdir</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i,--indir         # Dir containing fasta files to process 
+    -o,--outdir        # Dir to place the output in</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Runs the program TE Nest in batch mode. This will run TE Nest for all fasta
+files located in the input directory.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dindir">-i,--indir</a></strong>
+
+<dd>
+<p>Path to the directory containing the input files to annotate with TEnest.
+These files must be in the fasta format.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutdir">-o,--outdir</a></strong>
+
+<dd>
+<p>Path to the base output directory to place the batch_tenest.pl output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dorg">--org</a></strong>
+
+<dd>
+<p>The organism database to use. The default organism database is maize.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dblast_2ddir">--blast-dir</a></strong>
+
+<dd>
+<p>The directory for wu blast. If this directory is not specified at the
+command line, batch_tenest.pl will assume that this is at
+/usr/local/genome/wu_blast/</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dtenest_2ddir">--tenest-dir</a></strong>
+
+<dd>
+<p>The directory that the TE Nest program is located in. If this directory is not
+specified, batch_tenet.pl will assume that the TE Nest program is locate
+in your home directory at $HOME/apps/te_nest/</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<dl>
+<dt><strong><a name="item_tenest_2epl_does_not_exist_at_3a__2fsome_2fdirecto">TENest.pl does not exist at: /some/directory/</a></strong>
+
+<dd>
+<p>The TENest.pl program does not exist at the directory you specified or
+in the directory that the program assumes it to be in. The best way to
+make sure this works is to specify a directory using the --tenest-dir option.</p>
+</dd>
+</li>
+<dt><strong><a name="item_can_27t_open_directory_3a__2fyour_2finput_2fdirect">Can't open directory: /your/input/directory/</a></strong>
+
+<dd>
+<p>The input directory that you specified by the -i file has either been
+typed in incorrectly, the path you entered does not exist, or you
+do not have read access to that directory.</p>
+</dd>
+</li>
+<dt><strong><a name="item_error_3a_no_fasta_files_were_found_in_the_input_di">ERROR: No fasta files were found in the input directory</a></strong>
+
+<dd>
+<p>Currently this program assumes that all fasta files end with the 
+fasta or fa extension. It is possible that you have fasta files in the
+input directory, but they do not have the *.fasta or *.fa file names.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of configuration files or variables
+set in the user environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<dl>
+<dt><strong><a name="item_te_nest">TE Nest</a></strong>
+
+<dd>
+<p>This program requires the installation of TE Nest. This program is 
+available from:
+<a href="http://www.public.iastate.edu/~imagefpc/Subpages/te_nest.html">http://www.public.iastate.edu/~imagefpc/Subpages/te_nest.html</a></p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<h2><a name="required_databases">Required Databases</a></h2>
+<p>This program requires an organism database is the TE Nest format. This
+databases are downloadable from:
+<a href="http://www.public.iastate.edu/~imagefpc/Subpages/te_nest.html">http://www.public.iastate.edu/~imagefpc/Subpages/te_nest.html</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limiations">Limiations</a></h2>
+<ul>
+<li><strong><a name="item_please_report_any_limitations_you_encounter">Please report any limitations you encounter</a></strong>
+
+<p>If you encounter limitations while working with this program, please 
+file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>This program is part of the DAWG-PAWS package of genome
+annotation programs. See the DAWG-PAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 09/29/2008</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_tenest.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

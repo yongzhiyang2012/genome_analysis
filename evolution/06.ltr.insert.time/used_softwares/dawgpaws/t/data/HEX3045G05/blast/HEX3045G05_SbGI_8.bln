@@ -1,0 +1,564 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SbGI_8 
+           39,148 sequences; 27,811,196 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+TC92118 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - ric...   424   e-116
+TC91634 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - ric...   422   e-115
+TC106412 similar to GB|AAA33705.1|169205|PETCALPRO calmodulin-re...   383   e-103
+AW680448 PIR|S10533|MC calmodulin - alfalfa, partial (84%)            381   e-103
+TC91563 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - ric...   381   e-103
+TC92331 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - ric...   309   1e-81
+TC91939 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - ric...   301   3e-79
+TC106527 weakly similar to UP|Q84VQ1 (Q84VQ1) AMPKBI (5'-AMP-act...   153   2e-34
+TC107576 similar to UP|Q9ST66 (Q9ST66) GAL83 protein, partial (32%)    58   8e-06
+TC103464 homologue to UP|Q9ATP2 (Q9ATP2) Calmodulin-like protein...    58   8e-06
+
+>TC92118 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - rice
+             {Oryza sativa;}, complete
+          Length = 1532
+
+ Score =  424 bits (214), Expect = e-116
+ Identities = 334/374 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||| || ||||| || |||||||||||||||||||| || 
+Sbjct: 959   cctcacttggccatcataaccttaacaaactcttcatagttgatctggccgtcgccatcg 900
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 899   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 840
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || |||||||||||||| || |||
+Sbjct: 839   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcaaagacg 780
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 779   cggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttccttgccatcagg 720
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| ||||| || ||||| || || |||||||| |||||||||
+Sbjct: 719   ttcaggaactctgggaagtcaatggtcccattgccatcagcatcaacctcattgatcatg 660
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 659   tcctgcagctctgcctcggtagggttctggccaagggagcgcatcacagttccaagctcc 600
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||||||||||||
+Sbjct: 599   ttggtggtgatgca 586
+
+
+
+ Score =  141 bits (71), Expect = 7e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 584   ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 525
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 524   gtgagctggtccgccatgg 506
+
+
+>TC91634 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - rice
+             {Oryza sativa;}, complete
+          Length = 763
+
+ Score =  422 bits (213), Expect = e-115
+ Identities = 333/373 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| ||||||||||||||||||||||||||||| |||||||
+Sbjct: 537   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccgtcaccgtcca 478
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| || || |||||||||||||||||||||||||||||||||||||| || |||||||
+Sbjct: 477   cgtcggcttcacggatcatctcgtccacctcctcgtccgtcagcttctcacctaggttgg 418
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| ||||||||||||||||||||||
+Sbjct: 417   tcatgacatggcgaagctcagcagcagagatgaagccattctggtccttgtcgaacacgc 358
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 357   ggaaggcctccttgagctcctcctcagagtcagtgtccttcatcttgcgtgccatcaggt 298
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || ||||||||||| || ||||| || || |||||||| ||||||||||
+Sbjct: 297   tgagaaactcaggaaagtcgatggttccattgccatcagcatcaacctcattgatcatgt 238
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||||||||| |  || |||||||| |||||||||||||
+Sbjct: 237   cctgaagctcagcctcagtagggttctgccccaatgagcgcatcacagttccaagctcct 178
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 177   tggtggtgatgca 165
+
+
+
+ Score =  141 bits (71), Expect = 7e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||| |||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct: 163   ccgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcg 104
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 103   gtgagctggtccgccatgg 85
+
+
+>TC106412 similar to GB|AAA33705.1|169205|PETCALPRO calmodulin-related
+             protein {Petunia x hybrida;} , partial (85%)
+          Length = 1090
+
+ Score =  383 bits (193), Expect = e-103
+ Identities = 330/375 (88%), Gaps = 3/375 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44710 cttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtc 44769
+             |||||||||||||||||||||||||||  |||||||||| | ||||||||||||| ||||
+Sbjct: 578   cttggccatcatgaccttgacgaactcggcgtagttgatgtcgccgtcgccgtccgcgtc 519
+
+                                                                         
+Query: 44770 cgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcat 44829
+              ||||| |||||||||||| | ||||||||||   |||||||||||||||||||||||||
+Sbjct: 518   ggcctcgcggatcatctcgccgacctcctcgttgctcagcttctccccgaggttggtcat 459
+
+                                                                         
+Query: 44830 cacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaa 44889
+              ||||| || ||||||||||| |||||||| |||| ||||||||||||||||||||||||
+Sbjct: 458   gacgtgccggagctccgccgcggagatgaacccgtcctggtccttgtcgaacacgcggaa 399
+
+                                                                         
+Query: 44890 cgcctccttgagctcctc---ctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||||||| ||||||||||   |||||| ||||||||||||||||| | ||||||||||  
+Sbjct: 398   cgcctccctgagctcctcctcctccgactccgtgtccttcatcttgcgcgccatcaggcc 339
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             |||||||||  | | ||||||||||||| ||  ||    ||| ||||||  |||||||||
+Sbjct: 338   caggaactcctgcaggtcgatggtgccgctgttgttgctgtccacctcggcgatcatgtc 279
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             |||||||||||||||||||||||||||||||||||| ||||||||||| || ||||||||
+Sbjct: 278   ctgcagctccgcctccgtggggttctgcccgagggagcgcatcacggtcccgagctcctt 219
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             ||| |||||||||||
+Sbjct: 218   ggttgtgatgcaacc 204
+
+
+
+ Score = 87.7 bits (44), Expect = 9e-15
+ Identities = 71/80 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||| | |||||||||||||||||||| || || ||||||||||| ||||| || ||
+Sbjct: 206   accgtcgtcgtccttgtcgaagaggctgaaagcttctttgaactcggcaatctggtcttc 147
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             | ||||||||||||||||||
+Sbjct: 146   gctgagctggtccgccatgg 127
+
+
+>AW680448 PIR|S10533|MC calmodulin - alfalfa, partial (84%)
+          Length = 522
+
+ Score =  381 bits (192), Expect = e-103
+ Identities = 330/376 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||||||||||||||||||||| ||||| || |
+Sbjct: 438   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccatcgccatcga 379
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || ||||||||||| ||||||||||| || |||||||
+Sbjct: 378   cgtcagcctcgcggatcatctcatcgacctcctcgtcggtcagcttctcgccaaggttgg 319
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||| ||||| |||||||| || |||||||||||||||||||||||||||||||| |
+Sbjct: 318   tcatcacatggcggagctccgctgcagagatgaagccgttctggtccttgtcgaacaccc 259
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              |||||||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 258   tgaacgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 199
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| || ||||| |||||||| ||||| || || || ||||| ||||||||||
+Sbjct: 198   tgaggaactcaggaaagtcaatggtgccattgccatcggcatcgacctcattgatcatgt 139
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| || || || || ||||| || |||||||||||||
+Sbjct: 138   cctgaagctcagcctcggttgggttttgacccagtgaacgcatgacagttccaagctcct 79
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 78    tggttgtgatgcaacc 63
+
+
+>TC91563 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - rice
+             {Oryza sativa;}, complete
+          Length = 1256
+
+ Score =  381 bits (192), Expect = e-103
+ Identities = 330/376 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||||||||||||||||||||| ||||| || |
+Sbjct: 936   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccatcgccatcga 877
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || ||||||||||| ||||||||||| || |||||||
+Sbjct: 876   cgtcagcctcgcggatcatctcatcgacctcctcgtcggtcagcttctcgccaaggttgg 817
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||| ||||| |||||||| || |||||||||||||||||||||||||||||||| |
+Sbjct: 816   tcatcacatggcggagctccgctgcagagatgaagccgttctggtccttgtcgaacaccc 757
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              |||||||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 756   tgaacgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 697
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| || ||||| |||||||| ||||| || || || ||||| ||||||||||
+Sbjct: 696   tgaggaactcaggaaagtcaatggtgccattgccatcggcatcgacctcattgatcatgt 637
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| || || || || ||||| || |||||||||||||
+Sbjct: 636   cctgaagctcagcctcggttgggttttgacccagtgaacgcatgacagttccaagctcct 577
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 576   tggttgtgatgcaacc 561
+
+
+
+ Score =  135 bits (68), Expect = 4e-29
+ Identities = 74/76 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             ||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct: 559   tcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtg 500
+
+                             
+Query: 46575 agctggtccgccatgg 46590
+             ||||||||||||||||
+Sbjct: 499   agctggtccgccatgg 484
+
+
+>TC92331 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - rice
+             {Oryza sativa;}, partial (92%)
+          Length = 677
+
+ Score =  309 bits (156), Expect = 1e-81
+ Identities = 234/260 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||| || ||||| || |||||||||||||||||||| || 
+Sbjct: 514   cctcacttggccatcataaccttaacaaactcttcatagttgatctggccgtcgccatcg 455
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 454   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 395
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || |||||||||||||| || |||
+Sbjct: 394   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcaaagacg 335
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 334   cggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttccttgccatcagg 275
+
+                                 
+Query: 44945 ttcaggaactcggggaagtc 44964
+             ||||||||||| ||||||||
+Sbjct: 274   ttcaggaactctgggaagtc 255
+
+
+
+ Score =  141 bits (71), Expect = 7e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 175   ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 116
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 115   gtgagctggtccgccatgg 97
+
+
+
+ Score = 97.6 bits (49), Expect = 9e-18
+ Identities = 70/77 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 45002 atgtcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagc 45061
+             |||||||||||||| ||||| || |||||||| || ||||| |||||||| |||||||||
+Sbjct: 253   atgtcctgcagctctgcctcggtagggttctggccaagggagcgcatcacagttccaagc 194
+
+                              
+Query: 45062 tccttggtggtgatgca 45078
+             |||||||||||||||||
+Sbjct: 193   tccttggtggtgatgca 177
+
+
+>TC91939 PIR|S24952|S24952 calmodulin 1 (clone lambda DASH) - rice
+             {Oryza sativa;}, complete
+          Length = 939
+
+ Score =  301 bits (152), Expect = 3e-79
+ Identities = 320/376 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||| ||||| |||||||| ||||||||||| || || || ||||
+Sbjct: 566   ctcacttggccatcatgactttgacaaactcctcatagttgatctgaccatcaccatcca 507
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| ||||||||||| || || |||||||| || || || |
+Sbjct: 506   catcagcctcacggatcatctcatccacctcctcatcagttagcttctcaccaagatttg 447
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || |||||||||||||||||||||||||| ||||| |
+Sbjct: 446   tcatgacatggcggagctcggcagcagagatgaagccgttctggtccttgtcaaacacac 387
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||| ||||| |||||||||||||||||||| |  ||||| ||||
+Sbjct: 386   ggaaggcctccttgagctcttcctcagagtccgtgtccttcatcttgcgagccatgaggt 327
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || || || |||||||||||||| || || || ||||| ||||||||||
+Sbjct: 326   tgagaaactctggaaaatcaatggtgccgttgccatcagcatcgacctcattgatcatgt 267
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| ||||| || || ||||| || ||||| |||||||
+Sbjct: 266   cctggagctcagcctctgtagggttttgccctagtgaacgcatgacagttcccagctcct 207
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 206   tggtcgtgatgcaacc 191
+
+
+
+ Score =  117 bits (59), Expect = 1e-23
+ Identities = 68/71 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| ||||||||||||||||||||||| |||||||| |||||||||||||||
+Sbjct: 183   tccttgtcgaataggctgaaggcctccttgaactcagcgatctggtcgtcggtgagctgg 124
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 123   tccgccatggg 113
+
+
+>TC106527 weakly similar to UP|Q84VQ1 (Q84VQ1) AMPKBI (5'-AMP-activated
+             protein kinase, beta subunit, complex-interacting region)
+             domain family, partial (43%)
+          Length = 1005
+
+ Score =  153 bits (77), Expect = 2e-34
+ Identities = 137/157 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55264 catggacatcaaggaggttggccacctgccctctttcatcagtcacatgaggtagttcgg 55323
+             |||||||||| |||||||||||||| |||||||||||||||||  ||||||||||||| |
+Sbjct: 834   catggacatcgaggaggttggccacttgccctctttcatcagttgcatgaggtagttcag 775
+
+                                                                         
+Query: 55324 acacatatctcggcaccccatcaacaatcatcctgtaatgatatattccagatggcagaa 55383
+               |  |||||| || ||||||| ||||| |||| ||||||||| | ||| ||||||||||
+Sbjct: 774   ggatgtatctcagctccccatctacaataatccggtaatgataaactccggatggcagaa 715
+
+                                                  
+Query: 55384 ccaacaacacggcgtgatctttcccagacctctctaa 55420
+             ||||||| | |||||||||||| ||||||||||||||
+Sbjct: 714   ccaacaagatggcgtgatctttgccagacctctctaa 678
+
+
+
+ Score =  115 bits (58), Expect = 4e-23
+ Identities = 70/74 (94%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55523 gatgtccagttatcccatgatccttccacaaacacctcgtttcctccttgactccatgta 55582
+             ||||||||||||||||||||||||||||  |||||||| |||||||||||||||||||||
+Sbjct: 667   gatgtccagttatcccatgatccttccaggaacacctcatttcctccttgactccatgta 608
+
+                           
+Query: 55583 atcaaagttggaat 55596
+             | ||||||||||||
+Sbjct: 607   accaaagttggaat 594
+
+
+
+ Score = 63.9 bits (32), Expect = 1e-07
+ Identities = 47/52 (90%)
+ Strand = Plus / Minus
+
+                                                                 
+Query: 57614 cgccgccgcgtggccgttctccaccgccctggcgctcgcgttccccatgccc 57665
+             |||||||  ||||||||||||| || || |||||||||||||||||||||||
+Sbjct: 335   cgccgccatgtggccgttctccccctccttggcgctcgcgttccccatgccc 284
+
+
+>TC107576 similar to UP|Q9ST66 (Q9ST66) GAL83 protein, partial (32%)
+          Length = 637
+
+ Score = 58.0 bits (29), Expect = 8e-06
+ Identities = 74/89 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54830 cagcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgag 54889
+             |||| ||||||| ||||| ||| |||| ||||| || |  ||||| |||||||  |||||
+Sbjct: 394   cagcggtttgtaaagcacaaagctcacatacttggattcaaaccgatgggtgacgccgag 335
+
+                                          
+Query: 54890 ggcgagcagagactgcgccccccaccctt 54918
+             ||||||||| |||||||  ||||||||||
+Sbjct: 334   ggcgagcagcgactgcgatccccaccctt 306
+
+
+>TC103464 homologue to UP|Q9ATP2 (Q9ATP2) Calmodulin-like protein,
+             partial (97%)
+          Length = 1029
+
+ Score = 58.0 bits (29), Expect = 8e-06
+ Identities = 53/61 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44838 gcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctcct 44897
+             ||||||| || ||||||||||||||||    ||||| ||||||||| |||||||||||||
+Sbjct: 521   gcagctcggcggccgagatgaagccgtcaccgtcctcgtcgaacacccggaacgcctcct 462
+
+              
+Query: 44898 t 44898
+             |
+Sbjct: 461   t 461
+
+
+  Database: SbGI_8
+    Posted date:  Feb 13, 2007  3:43 PM
+  Number of letters in database: 27,811,196
+  Number of sequences in database:  39,148
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 39148
+Number of Hits to DB: 1,597,787
+Number of extensions: 640183
+Number of successful extensions: 186036
+Number of sequences better than 1.0e-05: 10
+Number of HSP's gapped: 186033
+Number of HSP's successfully gapped: 20
+Length of query: 82726
+Length of database: 27,811,196
+Length adjustment: 21
+Effective length of query: 82705
+Effective length of database: 26,989,088
+Effective search space: 2232132523040
+Effective search space used: 2232132523040
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 29 (58.0 bits)

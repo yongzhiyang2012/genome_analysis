@@ -1,0 +1,6 @@
+seq	FindLTR	LTR_retrotransposon	3985	4488	.	+	.	seq_findltr_1
+seq	FindLTR	five_prime_LTR	3985	4488	.	+	.	seq_findltr_1
+seq	FindLTR	three_prime_LTR	10984	11487	.	+	.	seq_findltr_1
+seq	FindLTR	LTR_retrotransposon	32934	33097	.	-	.	seq_findltr_2
+seq	FindLTR	five_prime_LTR	32934	33097	.	-	.	seq_findltr_2
+seq	FindLTR	three_prime_LTR	39773	39936	.	-	.	seq_findltr_2

@@ -1,0 +1,43 @@
+Input: LTR_seq HEX3045G05_TREP9.masked.fasta 1 /home/jestill/projects/wheat_annotation/te_annotation/LTR.cfg 
+Info: Total number of input sequences = 1
+Info: retrieveWord: Field MaxScoreRatioThreshold 15
+Info: retrieveWord: Field LTRmin 100
+Info: retrieveWord: Field LTRminExactMatch 30
+Info: Dmin 600 Dmax 15000
+
+detectLTR: String 0...
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Accepted  14989 15137 ... 16876 17024  length 149  span 2036 diff 7.046980 Confidence 1.000000 TSR #GAATT#
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Accepted  14989 15137 ... 16876 17024  length 149  span 2036 diff 7.046980 Confidence 1.000000 TSR #GAATT#
+
+ ************
+Report: String 0 Accepted  14989 15127 ... 16736 16872  length 139  span 1884 diff 7.241379 Confidence 0.500000 TSR ##
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Rejected 39170 39611 ... 39977 40421  length 441  span 1252 diff 18.707483 
+
+ ************
+Report: String 0 Accepted  14989 15127 ... 16736 16872  length 139  span 1884 diff 7.241379 Confidence 0.500000 TSR ##
+
+Timing Report: <6> seconds = (<1> Preprocessing + <5> GenerateCandidatePairs)

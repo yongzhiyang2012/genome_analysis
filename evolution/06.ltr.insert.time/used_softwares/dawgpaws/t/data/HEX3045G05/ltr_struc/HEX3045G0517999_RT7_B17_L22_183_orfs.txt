@@ -1,0 +1,303 @@
+
+LENGTH OF LONGEST ORF:  427
+
+ MP*            MINVYYSC*                                MVM
+FPNHRHELSFD*       MM*                                MQLPFT
+GGTLCVLPNVTT*                                               
+     MS*                                         MLLCGLTDKDL
+RRICRSQYEHPGSAIGY*                                          
+M*                                                          
+                                                            
+                                                            
+      MLSC*                                             MLCQ
+HFRCRSTRVHRQHSPLSLLCITMILRVRRNFFEITTFPNSGIRA*               
+          MSYFGSAVLLNEAARTDITRTLT*                          
+                                                            
+        MR*              MVVALLYAMQLCCNALLYH*               
+  MLVIKLSHR*                MMMAISYHLY*   MFIFYASYLALIDSSIIR
+*                                                           
+              MNHIVDMINILMFTIDTTPSHVIIGHGLVDLDHVIT*         
+                         MFDCR*MARAVVPLNFNAFLEKSKLKDDDSNYTDW
+VRNLRIILIAAQKNYVLEAPLSAKPVAGATPDVMNVWQSKADDYSIVQCAMLYGLESGLQ
+RRFERHGAYEMFQELKLIFQAKPGLRDMKSPISSIAARWRRIVLSVNIYSKCLGIIIT* 
+                                                            
+                                                            
+     MAK*       MLLMCTLLMLAVAPGYLILVLLLTFAIRNRGYGLSEDWLRMR* 
+    MVPKSM*                                                M
+VVLFI*    MVMHP*                 MLKSKDAELIMIVQLICGTAVYAISV*
+        MDFWNYLIMNHLVLANRALWVR*                     MYVVQ*ML
+RLVADIVIFSPSQMI*                                            
+   MSLVYI*                 MVCPNVVIVLY*                  ML*
+                   MNCGLARNQRCRF*     MLM*                  
+                                            MR*             
+           MKLMIMIMKLQIKLLPNLVDQPE*                  MMNLRTM
+KKRW*                  MRTKCGLWLTYPLIGKQLRINGSSRRKLTLTVMLLST
+KLDLLQKVFDKFKGLTTMIPSHP*               MIMKFGKWMSKLHS*MDFWKK
+SCI*                      MDWCKPLGVGINALLV*                 
+            MWMTYY*  MI*                                    
+                                                    MFPILQP*
+    MQCCVPDLMCALL*                                  MEVTKSSS
+*MVTLMQALTLIRTILNRKPDTCFY*MVELSVGAVLNKASWRDLHVKRST*         
+                                                            
+                        MINTKAPWVLESLLCNLDY*          MP*   
+         MINVYYSC*                                MVMFPNHRHE
+LSFD*       MM*                                MQLLFTGGTLCVL
+PNVTT*                                                      
+   MMYYETSKETCR*                                            
+MSIQVPLLVIDRDVSQSCLHSS*                                     
+                                                            
+                                                            
+          MTHKLILVIIP*                                      
+                                                            
+
+------------------------------------------------------------
+                  MFIIHARIVLTGNIIHV*          MPLLD*        
+     MSCHLINGITSLGE*                             MTMRLCNSRLP
+EEHFVCYQTSQRNWVIIKVLYRCLRRYLLGWRISRLGFVTPIVGEVSLGPLGNAHHYKPC
+KHCN*     MMCYGTSKETCR*                                     
+       MSIQVPLLVIDRRRVSVMST*                                
+                                                            
+                                                            
+                                                            
+                                                            
+                                                 MLCTSRTQVSC
+GQYKSYRLPVCHTLVRRYC*MKRPGPTLRVRLRETGSTNVLCTQVTGGCQFLQL*     
+                     MRR*                              M*   
+ MMLNFIV*                      MQCNCAVMLYFITKR*             
+MLCW*                MEITSTR*           M*    MHLILL*       
+                            MIGCDRLYVQIQRVQNSCTRRILRFNLTSLAY
+NRYGHGTRRLKGRA*                        MV*                  
+     MIN*                                MRSLRNQS* MMIAITRTG
+SVT*                           ML*       MTTR*              
+     MEHMRCSRS*                                             
+                                                            
+                                                            
+            M*                                              
+                                                            
+                                      MQS*                  
+                                                     MWSNEC*
+                 MWVYLLNET*                                 
+           MRNICATHTTRNTTA*                                 
+                                                       MCLHR
+IPKGDCWVHLLSQIRRQIFCC*                                      
+                                                            
+          MARSYEI*                         MDLQEEN*         
+                                                            
+                                                            
+                                                            
+                                       MSDHRRR*             
+                                                            
+                                            M*              
+                                                            
+                                                            
+       MS* MFIIHARIVLTENIIHV*          MPLLD*             MS
+CHLINGITSLGE*                             MTMRLCNSCLPEEHFVCY
+QTSQRNWVIIKVLYRCLRRYLLGWCISRLGFVTPIVGEVSLGPLGNAHHLSLASIATNKS
+VAG*                     MIESRASNIPMTKGTTYVVMRSDR*     M*   
+            MCLSHVYIVLEPVGSARLKFGDDRN*     MYRRLFGVPDVITDMMR
+SLEMVET*                                        MGHKGEEEGRPG
+QAPPPPSLNRTRKGGGGAPLSSFSLPPSFSNKARGGSSTPGWSRTPPGAPIGPAAPPPLP
+PLYTEARGTP*                                           MPSC* 
+                                                            
+
+------------------------------------------------------------
+                      MLELY*     MCEYIDKNRESLVCLYLTSSLIKHGYV
+S*                                            MFL*          
+                                                    MHITISLA
+SIATNELVAG*                               MTKGTTYVVMRFDR*   
+  M*                                              M*        
+    MTRSLEMVET*                                             
+                                                            
+                     MTHKLILVIIP*                           
+                                                            
+                  MHHHDLACA*                  MR*           
+                                                            
+                                            MFNLFLQGML*  MVK
+T*       MIMFCNRVIGNWQEPYGCRFIVCNAIVL*                      
+            MVIMKVLRRWRSQAQDDDGHIISLILIACDVYLLCILSCFD*     M
+IPH*          MHHCESSSC*                                    
+  MATEHGD*                                                  
+             MNSVPDSILLVYV*                                 
+                                                            
+                                     MEENSSVGEHILKMSGYHNHLTQ
+LGVNLPIDSVIDRVLQSLPPSYKSFVMNYNMQGMNKTIPELFAMLKAAEVKIKKEHQVLM
+VNKTTSFKKRGKGKKKGNFKKNNKQVAAQEKKPKSGPKPETECFYCKQTGHWKRNCPKYL
+ADKKDGKVN*                                                 M
+HVGNGSKVDVIAVGTLPLHLPSGLVLDLNNYYLVPALSMNIISGSCLM*           
+    MSNIFYGHAPLKSGLFFMNLDSSDTYIHNVEIKRCRVDNDSATYLWHCRLRHIGVK
+RMKKLHTDGLLELLDYESLGTCEPCLMGKMTKTPFSSTMERATDLLEIIHTYVCGPMNVE
+ARGRYRYFLAFTDDLSRCGYIYLMKHKSETFEKFKEFQSEVENHRNKKIKFLRSDRGGEY
+LSYEFGLHLKQCVIFAQLTPPETPQRNGVSERRNRTLLDMVRSMMSLTDLPLSFWGYALE
+TAAFTLNRTPSKSVETTPYELWFGKKPKMSFLKVWGCDAYVKKLQPDKLKPKSKKCVFIG
+YPKETVGYTFYHRSEGKFFVAKFGVFLEKEFLSKEVSGRKVELDEVTVPTPLLESSTS* 
+                                                MLLDHDEPTNYE
+EAMVSPDSAKWLEAMKSEMGSMYENKVWTLVNLPVDRQAIENKWIFKKKTDADGNVTVYK
+ARLVAKGFRQVQGIDYDDTFSPVAMLKSV* MLTIATFYDYEIWQMDVKTTFLNGFLEEE
+LYMMQPEGFVDPKGANKVCKLQRSIYGLVQASRSWNKRFVSVIKAFGFVQTFGEACIYKK
+VSGSSVAFLILYVDDILLIGNDIEFLDSIKGYLNKSFSMKDLGEAAYILGIKIYRDRSRR
+LIGLSQSTYLDKVLKKFKMDQAKKGFLPVLQGVKLCKTQCPTTAEDREKMKDVPYTSAIG
+SIMYAMLCTRPDVCLAISLAGRYQSNPGVDHWTAVKNILKYLKRTKDMFLVYGGDKELVV
+NGYVDASFDTDPDDSKSQTGYVFLLNGGAVSWCSSKQSVMAGSTCKAEYIAPSEAASEGV
+WMKEFISDLGVIPSASGPMKIFCDNTGAIALAKESRFHKRTKHIKRHFNSIRDLVQVGDI
+EICKIHTDLNFADPLTKPLPREKHDQHQGSMGVRIITV*                     
+               MLELY*     MCEYIDKNRESLVCLYLTSSLIKHGYVS*     
+                                       MFL*                 
+                                             MHIT*          
+                                         MLLCGLTDKDLCRICRSQY
+EHPGSAIGY*      MST*                                M*      
+                                                            
+                                                            
+                                                            
+                                                            
+
+------------------------------------------------------------
+CLRTLVDRQRKC*                                               
+     MMTVMMFYQRRASPKHRYDMSEVEYGGRGHRTRLRNDHEDQLVCHGVPLASVYKG
+GRGGGAAGPMGAPGGVLLQPGVELPPLALLEKEGGREKEERGAPPPPFLVLFRLGGGGAC
+PGRPSSSPLWPM*                                               
+  MSVITSGTPNNLRYIKTQKP*                 M*                  
+                          MLLARDSIIGISIPSSISLPASLFTRFVIHHPAT
+DLLVAMLARLK*                                                
+                                                            
+ MSMVRKHNHV*                       MFSVNTILA*               
+                                                            
+                                            MH*             
+               M*                                           
+                                                            
+                                                   MCFVKVQLS
+VLIYLYRS*                                           MLQSSHSL
+SCKYRLLQKSVQNQML*                                           
+        M*            MWQLLT*                               
+                                                            
+                                                            
+ MMYYFPIRE*                                                 
+                                                 MVSYLT*MQPS
+LKHNPKTITVNQ*                                               
+                             MFQTYVSLSRYTHICLNHL*           
+        MYV*                                                
+                              MYHYYRDS*                     
+                                                            
+                                                            
+                                                            
+                                                            
+                                                      MTFKTS
+LKTRF*                                                      
+                                                            
+                    MSDYHVRWSSINGEHQYVDHIYYMIHARPFSLRVPWPYLL
+YARLVKLNLSILRVQLFCTRCI*                                     
+                   MQSI*                                    
+                                   MAPASCR*               MS
+*                                                           
+                                                            
+                                                  MYPRRPATEV
+LTQHRGSSRTSSRSDRSKYRTYDTSEFCTRSTR*                          
+                                                            
+                                                            
+                                             MSRPFRDSSSCP*  
+                                   MTETRLRSITNSGTWMLILAPTYST
+KIFIGQTA*                                                   
+                                                            
+                                                      MSMVRK
+HNHV*                       MFPVNTILA*                      
+
+------------------------------------------------------------
+                                                            
+                                                            
+                                                            
+         MAHVGPITPRGGGVPVTPRYSDKIPISPETFSISKYRLPIYQSLCLDHFET
+PHHVRDHIRDSEQPSVHQNTKTLITIVTEL*            MTETHLGQ*        
+                                                            
+            MCITERAQRYLSDNRSDKS*                            
+                    MYKL*                                 MT
+THVYG*                       MYSHMYYVFG*    MNNKHLS*        
+                        MILTPMEPWC*                         
+MSPTWTKSRMELKCLLMCLVLL*                         MTPRSDMNSFIQ
+TPSLAASEGAMYSALHVDPAMTLCLELHQLTAPPFSKNTYPVCDLESSGSVSKLAST*  
+                      MFLTAVQ*                           MIE
+PMAEV*                                                      
+         MPNM*                 MLSRNSISFPINNMSSTYNIRNATELPLT
+FL*                                MDRWSLHTLLAPFGSTKPSGCIIYN
+SSSKNPFRNVVLTSICQIS*        MIQTDLSIATGEKVSS*               
+                                      MDPISDFIASSHFAESGLTIAS
+S*         MTSRTGLPYHSGADLTLVDLRGSVVT*                      
+                                                            
+ MKTHFFDLGLSLSG*                                            
+                                                            
+                                                            
+                                                          MR
+FTPIWRKRQCHK*                                               
+                   MFMLNAGTK*                               
+                    MLATEPVSNTQVLLRALVRYTSITCISHIP*         
+                                                            
+                                                 MTLSIGRLTPS
+*                                                   MLHDVQNV
+VEDPILSRKAWHTELSSSHQLCSARRS*                                
+                                              MINLSSINHIT*  
+                           ME*                              
+                                                            
+            MHKR*         MIWPSSSCACDLHLRSTFMITIVTGATT*     
+       MLPRLSLPLSDKVKHYSTIALHTIKRQPYGSCQLPITRLQNMIISYNKI*   
+       MPCKNKLNILYFVVASFTWLLRA*                             
+                                                MTYW*       
+                                                            
+                                           MLRESFVSTTA*     
+                  MVEGGTAHG* MITRINLCVMGCPLPQYIKEGEGEVRPALWV
+PLGRSPTPTGSRTPPSCLVGKGRRKGERGKGGAAPPSLSYSD*                M
+AQVGPITPPPPRGGGFR*                                     MSVIT
+SETPNNLRYIKTQNPNYDRHRTLSVRTLRVRELCRHDRDTSPVNNQ*             
+                   MLLARDSIVGISIPSSISLPASLFTRSVTHHPATNSLVAML
+ARLIVMCITEWAQRYLSDNRSDKS*                                   
+             MYKL*                                 MTTHVYG* 
+                      MYSHMYYVSG*    MNNKHLS*               
+
+------------------------------------------------------------
+                                                       MLRES
+FVSTTA*                       MVEGGTAHG* MITRINLCVMGCPLPQYIK
+EGEGEVRPALWVRLEESYSNRE*                                     
+                                                     MSRPFRD
+SSSCP*                                                    ML
+ILAPTYSTKIFIGQTA*                                           
+                                                            
+                        MKKAIATN*        MGQVNHIILLMM*      
+          MFD*                                     MT*      
+                                    MFFSWKRLSQRVCKIQICMYLANF
+YVSHLD*                                                     
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+       MI*                                MIIIISFITNWCRCHRNR
+FL*                                                         
+                                                            
+                                                    M*      
+                MIFNFTLKFFELFKCFRLMFH*                      
+          MYNF*                                       MEFLHA
+LYTDMA*                     MNICITTIEIHKK*      MTIKDITHINRT
+TIIL*                                    M*                 
+                                            MYITYTLVHFAILLIR
+QILGAVPLPVTSLLAVEALSLRLRSRLGFLLLSSNLFVVLLEVPFLLPFAPFLETGGLID
+HQHLMLLLDFYLRGF*                                            
+     MIPRHFEYMFTDRTILLHLAAIELIGDFISLNPGFA*                  
+          MAH*                                      MRIILKLR
+TQSV*                                                       
+                                MVNINMLIISTI* MLDLSVSVFRGHIC
+YMLGSSS*                                   MVHTQGEHLYFDNLVGD
+HLIMLLSIKAR*                MAIIILCL*                       
+                                                            
+                                                            
+                                 MSVRAASFNNTAEPKYDILVSGMTYIA
+HNSLVFYSCTTSTHKT*                     MVMHSNERGECCLCTLVDRQRK
+C*                                                    MMTVMM
+FYRRRASPKHRYDMTEVEYGGRGHRTRLRNDHEDQLVCHGVPLASIYKGGRGGGAAGPMG
+APGEESYSNRE*                                                
+                                                            
+                                 M*                         
+                                                            
+                                                            
+                 MKKAIATN*MIKC*   MGQVNHIILLMM*             
+   MFD*                                     MI*             
+
+------------------------------------------------------------

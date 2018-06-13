@@ -1,0 +1,15 @@
+cat	mammal
+dog	mammal
+rose	plant
+rose	spiny
+cat	animal
+dog	animal
+lobster	animal
+lobster	spiny
+lobster	sea
+whale	mammal
+whale	sea
+shark	animal
+shark	sea
+seaweed	plant
+seaweed	sea

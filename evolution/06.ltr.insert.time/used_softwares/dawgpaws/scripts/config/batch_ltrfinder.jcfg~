@@ -1,0 +1,10 @@
+#
+# VERY SIMPLE LTR FINDER CONFIG FILE JUST TWO COLUMNS
+# Col 1. Name of the parameter set
+# Col 2. All of the options for the program
+# $Id: batch_ltrfinder.jcfg 634 2009-04-08 04:06:18Z jestill $
+#
+def
+p_30	-p 30
+p_10	-p 10
+# END

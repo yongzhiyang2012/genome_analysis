@@ -1,0 +1,676 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: HvUniGene_47 
+           18,491 sequences; 13,848,097 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|Hv#S12497908 HVSMEg0002E15f Hordeum vulgare pre-anthesis ...   611   e-172
+gnl|UG|Hv#S12642676 HC112D02_T3.ab1 HC Hordeum vulgare subsp. vu...   438   e-120
+gnl|UG|Hv#S12559420 HWM012cB.08r ITEC HWM Barley Leaf Library Ho...   404   e-110
+gnl|UG|Hv#S12528655 HVSMEb0009I14f Hordeum vulgare seedling shoo...   317   3e-84
+gnl|UG|Hv#S12526404 HVSMEa0022G15f Hordeum vulgare seedling shoo...   303   4e-80
+gnl|UG|Hv#S12571752 EBes01_SQ003_H11_R embryo sac, 4-6 DPA, no t...   244   3e-62
+gnl|UG|Hv#S23828578 GCN004C02u GCN Hordeum vulgare cDNA clone GC...   192   1e-46
+gnl|UG|Hv#S12559139 HWM008.D10 ITEC HWM Barley Leaf Library Hord...   167   6e-39
+gnl|UG|Hv#S12626550 HVSMEl0023O04f Hordeum vulgare spike EST lib...   137   5e-30
+gnl|UG|Hv#S23828034 GCN003A13u GCN Hordeum vulgare cDNA clone GC...   123   8e-26
+gnl|UG|Hv#S18406876 HO08B03w HO Hordeum vulgare cDNA clone HO08B...   111   3e-22
+gnl|UG|Hv#S12715670 EBro08_SQ012_J23_R root, 3 week, drought-str...    68   4e-09
+
+>gnl|UG|Hv#S12497908 HVSMEg0002E15f Hordeum vulgare pre-anthesis spike
+             EST library HVcDNA0008 (white to yellow anther) Hordeum
+             vulgare subsp. vulgare cDNA clone HVSMEg0002E15f, mRNA
+             sequence /clone=HVSMEg0002E15f /gb=AW982210 /gi=16316620
+             /ug=Hv.12866 /len=863
+          Length = 863
+
+ Score =  611 bits (308), Expect = e-172
+ Identities = 355/371 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44711 ttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtcc 44770
+             |||||||||||||||||||| |  |||| ||||||||| |||||||||||||||||||||
+Sbjct: 522   ttggccatcatgaccttgacaacttcctggtagttgatntggccgtcgccgtccacgtcc 463
+
+                                                                         
+Query: 44771 gcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcatc 44830
+             || ||||||||||||| ||||||||||||||| |||||||||||||||||||||||||||
+Sbjct: 462   gcttcccggatcatctggtccacctcctcgtcggtcagcttctccccgaggttggtcatc 403
+
+                                                                         
+Query: 44831 acgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaac 44890
+             || ||||||||||| || ||||||||||||||||||||||||||||||||||||||||| 
+Sbjct: 402   acatggcgcagctctgcagccgagatgaagccgttctggtccttgtcgaacacgcggaag 343
+
+                                                                         
+Query: 44891 gcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcagg 44950
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 342   gcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcagg 283
+
+                                                                         
+Query: 44951 aactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctgc 45010
+             ||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 282   aactctgggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctgc 223
+
+                                                                         
+Query: 45011 agctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttggtg 45070
+             |||||||||||||||||||||||||| ||||| |||||||||||||| ||||||||||||
+Sbjct: 222   agctccgcctccgtggggttctgcccaagggatcgcatcacggttccgagctccttggtg 163
+
+                        
+Query: 45071 gtgatgcaacc 45081
+             |||||||||||
+Sbjct: 162   gtgatgcaacc 152
+
+
+
+ Score =  210 bits (106), Expect = 4e-52
+ Identities = 131/138 (94%), Gaps = 6/138 (4%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 154   accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 95
+
+                                                                         
+Query: 46571 ggtgagctggtccgccatggg----ggaggcttcgagaaggtgcgcacgggagacacggg 46626
+             |||||||||||||||||||||    ||| |||||||||||||||||||  ||||||||||
+Sbjct: 94    ggtgagctggtccgccatggggggaggaagcttcgagaaggtgcgcac--gagacacggg 37
+
+                               
+Query: 46627 ggcggctgcgcgaagggg 46644
+             ||||||||||||||||||
+Sbjct: 36    ggcggctgcgcgaagggg 19
+
+
+>gnl|UG|Hv#S12642676 HC112D02_T3.ab1 HC Hordeum vulgare subsp. vulgare
+             cDNA clone HC112D02_T3.ab1 similar to Phosphorylase
+             kinase,Phosphorylase,, mRNA sequence
+             /clone=HC112D02_T3.ab1 /gb=BM817143 /gi=19153157
+             /ug=Hv.4760 /len=916
+          Length = 916
+
+ Score =  438 bits (221), Expect = e-120
+ Identities = 335/373 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             ||||||||||||| ||||| ||||||||||||||||||||||| ||||||||||| || |
+Sbjct: 444   acttggccatcatcaccttaacgaactcctcgtagttgatctgcccgtcgccgtcgacat 385
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | ||||| ||||||||||||||||||||||||||||| |||||||| |||||||||||||
+Sbjct: 384   cggcctcgcggatcatctcgtccacctcctcgtccgttagcttctcgccgaggttggtca 325
+
+                                                                         
+Query: 44829 tcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcgga 44888
+             | |||||||| |||||||| |||||||||||||||||||||||||| |||||||| ||||
+Sbjct: 324   tgacgtggcggagctccgcggccgagatgaagccgttctggtccttatcgaacacccgga 265
+
+                                                                         
+Query: 44889 acgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttca 44948
+             | |||||||||||||| ||||||||||| |||||||||||||| |  ||||||||||| |
+Sbjct: 264   aagcctccttgagctcttcctccgagtcggtgtccttcatcttgcgagccatcaggttga 205
+
+                                                                         
+Query: 44949 ggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcct 45008
+             |||| || ||||||||||| |||||||||||||| || || |||||||||||||||||||
+Sbjct: 204   ggaattccgggaagtcgatagtgccgttgccgtctgcatccacctcgttgatcatgtcct 145
+
+                                                                         
+Query: 45009 gcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttgg 45068
+             | ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||| |
+Sbjct: 144   ggagctctgcctccgttgggttctgccccagcgaacgcatgactgttcccagctccttag 85
+
+                          
+Query: 45069 tggtgatgcaacc 45081
+             | |||||||||||
+Sbjct: 84    ttgtgatgcaacc 72
+
+
+>gnl|UG|Hv#S12559420 HWM012cB.08r ITEC HWM Barley Leaf Library Hordeum
+             vulgare subsp. vulgare cDNA clone HWM012cB.08, mRNA
+             sequence /clone=HWM012cB.08 /gb=BE421634 /gi=9419477
+             /ug=Hv.8411 /len=1212
+          Length = 1212
+
+ Score =  404 bits (204), Expect = e-110
+ Identities = 333/376 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||||||||||||||||||||||||||| || ||||| |
+Sbjct: 591   ctcatttggccatcatgaccttgacgaactcctcgtagttgatctggccatcaccgtcga 532
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| || || |||||||||||||||||||||||||| || |||||||| ||||| || |
+Sbjct: 531   cgtcagcttcacggatcatctcgtccacctcctcgtcggtgagcttctcgccgagattcg 472
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| |||||||| ||||| || || |||||||||||||| ||||||||||||||||| |
+Sbjct: 471   tcatgacgtggcggagctcagcagcagagatgaagccgttttggtccttgtcgaacaccc 412
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 411   tgaaggcctccttgagctcctcctctgagtcagtgtccttcatcttgcgggccatcaggt 352
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| |||||||| |||||||||||||| || ||||| || || ||||||||||
+Sbjct: 351   tgaggaactctgggaagtcaatggtgccgttgccatcagcgtcgacttcattgatcatgt 292
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 291   cctggagctcagcctccgttgggttctgccccagcgagcgcatgactgttcccagctcct 232
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             ||||||||||||||||
+Sbjct: 231   tggtggtgatgcaacc 216
+
+
+
+ Score =  121 bits (61), Expect = 3e-25
+ Identities = 67/69 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| 
+Sbjct: 208   tccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtgagctga 149
+
+                      
+Query: 46581 tccgccatg 46589
+             |||||||||
+Sbjct: 148   tccgccatg 140
+
+
+>gnl|UG|Hv#S12528655 HVSMEb0009I14f Hordeum vulgare seedling shoot EST
+             library HVcDNA0002 (Dehydration stress) Hordeum vulgare
+             subsp. vulgare cDNA clone HVSMEb0009I14f, mRNA sequence
+             /clone=HVSMEb0009I14f /gb=BF629010 /gi=13091017
+             /ug=Hv.5277 /len=869
+          Length = 869
+
+ Score =  317 bits (160), Expect = 3e-84
+ Identities = 275/313 (87%), Gaps = 9/313 (2%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54721 ccccttatgtacattgtcaaactacactctcttattcactccca-tcagtcctaatcagc 54779
+             |||||||||||||||||||| |||||||||||||||||| |||| ||||||||| |  | 
+Sbjct: 316   ccccttatgtacattgtcaagctacactctcttattcacccccaatcagtcctagttcga 257
+
+                                                                         
+Query: 54780 caccgttgctttctttcatcttccaccagcggca--------ccggtcacctcctcacca 54831
+             | ||| ||||| ||||||||||||||||||||||        ||||||||||||||| ||
+Sbjct: 256   cgccgctgcttcctttcatcttccaccagcggcatcggtcacccggtcacctcctcatca 197
+
+                                                                         
+Query: 54832 gcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgaggg 54891
+             || ||||||||||||||| |||||| ||||||||||||||||||||||||| ||||||||
+Sbjct: 196   gcggtttgtagagcacgacgttcacatacttcgactggaaccggtgggtgactccgaggg 137
+
+                                                                         
+Query: 54892 cgagcagagactgcgccccccaccctttctcgatgaacagatggttgaggacgacatgct 54951
+             ||||||||||||||| |||||| |||||||||||||||||||||| ||||||||| ||||
+Sbjct: 136   cgagcagagactgcgacccccatcctttctcgatgaacagatggtcgaggacgacgtgct 77
+
+                                                                         
+Query: 54952 gcggcttcggctttggagcgagttcgtcggagtgatcgatgccaccaagggcagtcatga 55011
+             |||||||||| || |||||| | ||||||||||  ||| |||| |||||| ||| |||||
+Sbjct: 76    gcggcttcggtttcggagcgtgctcgtcggagttgtcggtgccgccaaggacagacatga 17
+
+                          
+Query: 55012 gaagctgaggtgg 55024
+             ||||||| |||||
+Sbjct: 16    gaagctgtggtgg 4
+
+
+
+ Score = 63.9 bits (32), Expect = 6e-08
+ Identities = 38/40 (95%)
+ Strand = Plus / Minus
+
+                                                     
+Query: 54588 ttcacaacactccctcttgtttcatttcgccggagttcag 54627
+             ||||||||||| |||||||||||||||| |||||||||||
+Sbjct: 446   ttcacaacactgcctcttgtttcatttcaccggagttcag 407
+
+
+>gnl|UG|Hv#S12526404 HVSMEa0022G15f Hordeum vulgare seedling shoot EST
+             library HVcDNA0001 (Cold stress) Hordeum vulgare subsp.
+             vulgare cDNA clone HVSMEa0022G15f, mRNA sequence
+             /clone=HVSMEa0022G15f /gb=BG299900 /gi=13087787
+             /ug=Hv.3560 /len=796
+          Length = 796
+
+ Score =  303 bits (153), Expect = 4e-80
+ Identities = 318/373 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| || ||||| ||||| |||||||| ||||| || || |
+Sbjct: 493   ctcacttggccatcatcaccttcacaaactcttcgtaattgatctgtccgtcaccatcga 434
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| |||||||||||||| ||||||||||| || |||||||
+Sbjct: 433   catcagcctcgcggatcatctcatccacctcctcgtctgtcagcttctcaccaaggttgg 374
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| || || |||||||||||||| || |||||||||||||| |||||||
+Sbjct: 373   tcatgacatggcggagttcagccgccgagatgaaaccattctggtccttgtcaaacacgc 314
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||| ||||||||||| || || |||||||||||||| |  ||||| ||||
+Sbjct: 313   ggaaggcctccttaagctcctcctcagaatcagtgtccttcatcttacgtgccattaggt 254
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| || ||||| || || || ||||| || || || || || |||||||| |
+Sbjct: 253   tgaggaactcaggaaagtcaatcgttccattgccatcagcatccacttcattgatcatat 194
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| |||||||||||||| || || |||||||| |||||||| ||||
+Sbjct: 193   cctgaagctctgcctcagtggggttctgccctagcgaacgcatcacagttccaagttcct 134
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 133   tggtggtgatgca 121
+
+
+
+ Score =  125 bits (63), Expect = 2e-26
+ Identities = 75/79 (94%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             ||||| || |||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct: 119   ccgtctccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcg 60
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             ||||||||||| |||||||
+Sbjct: 59    gtgagctggtcggccatgg 41
+
+
+>gnl|UG|Hv#S12571752 EBes01_SQ003_H11_R embryo sac, 4-6 DPA, no
+             treatment, cv Optic, EBes01 Hordeum vulgare subsp. vulgare
+             cDNA clone EBes01_SQ003_H11 5', mRNA sequence
+             /clone=EBes01_SQ003_H11 /clone_end=5' /gb=BM099513
+             /gi=21939244 /ug=Hv.10940 /len=678
+          Length = 678
+
+ Score =  244 bits (123), Expect = 3e-62
+ Identities = 218/249 (87%), Gaps = 3/249 (1%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 67826 atctcggtgacgcggttggcctggccgttgcaggtgacgtgggaccagttgctgcagggg 67885
+             |||||||||||||||||||||||||||| ||||||||| | |||||||| ||   |||  
+Sbjct: 318   atctcggtgacgcggttggcctggccgtcgcaggtgacataggaccagtcgc---aggta 262
+
+                                                                         
+Query: 67886 ctcacctccgggatccaggtatacagcgcaccgtcagggtcctgtaggcctctccgcagg 67945
+              ||| ||||||| ||||||||||||| ||  ||||||||||||| ||||| ||||||| |
+Sbjct: 261   ttcagctccggggtccaggtatacagtgcgtcgtcagggtcctgcaggccgctccgcatg 202
+
+                                                                         
+Query: 67946 gccatgagcgcgtcacggtcgccgtacaggccagccgccgcgggctgcagcagcatggtc 68005
+             |||||||||||||||||||| |||| |||| ||||||||||||||  | |||||||| | 
+Sbjct: 201   gccatgagcgcgtcacggtcaccgtccaggtcagccgccgcgggcgcctgcagcatgctg 142
+
+                                                                         
+Query: 68006 gtcacgaccgccatgaagacggtcaccgccaggggcactcgggctccggccgccttgggc 68065
+             | ||||||||||| |||||| |||||||||||||||||||||||||| |||||| |||||
+Sbjct: 141   gacacgaccgccacgaagacagtcaccgccaggggcactcgggctcccgccgccgtgggc 82
+
+                      
+Query: 68066 gccatgggg 68074
+             |||||||||
+Sbjct: 81    gccatgggg 73
+
+
+
+ Score =  168 bits (85), Expect = 1e-39
+ Identities = 130/145 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 67403 cagctgtttcagagacttgagtttcgcgagcgatgcaggtatctgccccgagaggctgtt 67462
+             |||||||| |||||||||||||||| |||||||||||||||| ||||| |||||| ||||
+Sbjct: 535   cagctgttccagagacttgagtttcccgagcgatgcaggtatttgccctgagagggtgtt 476
+
+                                                                         
+Query: 67463 gttgtgcaggtgcatggtgttcaggttctccaagttgcccagctcttcagggatcgttcc 67522
+             |||||||| ||||| ||  ||||| |||||||||| ||||||||||||||||||||||||
+Sbjct: 475   gttgtgcaagtgcagggacttcagattctccaagtcgcccagctcttcagggatcgttcc 416
+
+                                      
+Query: 67523 ttggatattggtgtacgaaatccac 67547
+             |||||| |||||  |||| ||||||
+Sbjct: 415   ttggatgttggtccacgagatccac 391
+
+
+
+ Score = 89.7 bits (45), Expect = 1e-15
+ Identities = 60/65 (92%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 67125 tctggtcggacagcccatccagctcgctggggatcgggccggtcaagcggttctgttgaa 67184
+             |||| |||| ||||||  |||||||||| |||||||||||||||||||||||||||||||
+Sbjct: 599   tctgatcgggcagcccggccagctcgcttgggatcgggccggtcaagcggttctgttgaa 540
+
+                  
+Query: 67185 ggtgc 67189
+             |||||
+Sbjct: 539   ggtgc 535
+
+
+
+ Score = 63.9 bits (32), Expect = 6e-08
+ Identities = 53/60 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 67652 cacagtttggttagctggtccagcttgcccagctccggcgacagaggtccggtcaggttc 67711
+             ||||||||  |||||||||||| |||||| ||||||||||  |||||||||| |||||||
+Sbjct: 393   cacagtttctttagctggtccatcttgccgagctccggcggtagaggtccggacaggttc 334
+
+
+>gnl|UG|Hv#S23828578 GCN004C02u GCN Hordeum vulgare cDNA clone
+            GCN004C02 3-PRIME, mRNA sequence /clone=GCN004C02
+            /clone_end=3' /gb=DN156711 /gi=59942605 /ug=Hv.14302
+            /len=700
+          Length = 700
+
+ Score =  192 bits (97), Expect = 1e-46
+ Identities = 277/338 (81%), Gaps = 1/338 (0%)
+ Strand = Plus / Plus
+
+                                                                        
+Query: 2490 acgaaggtggagattagggaacgattgtgtataacgctgaatataatgacaaaggccctc 2549
+            ||||||||||| || || |||| | | ||||| || ||||||||  ||||  ||||||| 
+Sbjct: 102  acgaaggtggaaatcagagaacaagtttgtattactctgaatattttgactgaggcccta 161
+
+                                                                        
+Query: 2550 ggtgataaatatttgcgcttgccagcaaatgtgggtgtagataaaatagactgtttccaa 2609
+              |||||||||| |  | ||| ||||| |||||||  |||| |||  ||| ||||| |||
+Sbjct: 162  aatgataaatatctaggattgtcagcacatgtgggattagacaaaccagaatgttttcaa 221
+
+                                                                        
+Query: 2610 tttctgattgaacggattgtcaagaaaattagtggctggaaggaaaaattattgtctgcc 2669
+            |||||| ||||  |||| || || ||||||||||| ||||||||||||   || ||||  
+Sbjct: 222  tttctggttgagaggatagttaa-aaaattagtggttggaaggaaaaacctttttctgtt 280
+
+                                                                        
+Query: 2670 gggggaaaggagatcctgctcaaggttgtgatccaagccatacccacctatgcaatgtcg 2729
+            || ||||||||| |||||||||||| |||  |||||||||||||||||||||||||||||
+Sbjct: 281  ggaggaaaggaggtcctgctcaaggctgttgtccaagccatacccacctatgcaatgtcg 340
+
+                                                                        
+Query: 2730 gtctttaaaattcctnnnnnnnttgtaaaggaatcattgacacgatagcgcatttctggt 2789
+            |||||||||||||||       |||||||||||| |||||| ||||||||||||||| ||
+Sbjct: 341  gtctttaaaattcctaaaaaaattgtaaaggaattattgacgcgatagcgcatttctagt 400
+
+                                                  
+Query: 2790 ggggagacgaggagaaccataggaggatgcagtggatg 2827
+            ||| || |||||||||||| || |||||||| ||||||
+Sbjct: 401  gggaaggcgaggagaaccagagaaggatgcattggatg 438
+
+
+
+ Score = 58.0 bits (29), Expect = 4e-06
+ Identities = 50/57 (87%)
+ Strand = Plus / Plus
+
+                                                                     
+Query: 2868 tgggatttcgtgatattcactgtttcaatctggcactgctcgccaaacaggcatggc 2924
+            |||| |||||||||||||||||||| ||| | ||| ||||||| |||||||| ||||
+Sbjct: 495  tgggctttcgtgatattcactgttttaatttagcaatgctcgcgaaacaggcgtggc 551
+
+
+>gnl|UG|Hv#S12559139 HWM008.D10 ITEC HWM Barley Leaf Library Hordeum
+             vulgare subsp. vulgare cDNA clone HWM008.D10, mRNA
+             sequence /clone=HWM008.D10 /gb=BE421353 /gi=9419196
+             /ug=Hv.12700 /len=1220
+          Length = 1220
+
+ Score =  167 bits (84), Expect = 6e-39
+ Identities = 96/100 (96%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct: 215   cctcacttggccatcatgaccttgacgaactcgtcgtagttgatctggccgtcgccgtcc 156
+
+                                                     
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccg 44804
+             |||||||||||||||| |||||| ||||||||||| ||||
+Sbjct: 155   acgtccgcctcccggaccatctcctccacctcctcctccg 116
+
+
+>gnl|UG|Hv#S12626550 HVSMEl0023O04f Hordeum vulgare spike EST library
+             HVcDNA0012 (Fusarium infected) Hordeum vulgare subsp.
+             vulgare cDNA clone HVSMEl0023O04f, mRNA sequence
+             /clone=HVSMEl0023O04f /gb=BI950979 /gi=16293550
+             /ug=Hv.3446 /len=980
+          Length = 980
+
+ Score =  137 bits (69), Expect = 5e-30
+ Identities = 221/272 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44810 ttctccccgaggttggtcatcacgtggcgcagctccgccgccgagatgaagccgttctgg 44869
+             ||||| || ||||||||||| || |||||||| || || || ||||| || || || || 
+Sbjct: 385   ttctcaccaaggttggtcatgacatggcgcagttcagcagcagagataaaaccattttga 326
+
+                                                                         
+Query: 44870 tccttgtcgaacacgcggaacgcctccttgagctcctcctccgagtccgtgtccttcatc 44929
+             |||||||| ||||| ||||| |||||||||||||| || || || || ||||| ||||||
+Sbjct: 325   tccttgtcaaacacacggaatgcctccttgagctcttcgtcagaatcagtgtcgttcatc 266
+
+                                                                         
+Query: 44930 ttcctcgccatcaggttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtca 44989
+             || |  ||||| ||| | ||||| |||||||| || || || || |||||||| || || 
+Sbjct: 265   ttgcgggccataaggctgaggaattcggggaaatcaattgttccattgccgtcggcatcc 206
+
+                                                                         
+Query: 44990 acctcgttgatcatgtcctgcagctccgcctccgtggggttctgcccgagggaccgcatc 45049
+             ||||| ||||||||||| || ||||| ||||| ||||| || ||||| ||||| ||||| 
+Sbjct: 205   acctcattgatcatgtcttgaagctctgcctcagtgggattntgccccagggaacgcatg 146
+
+                                             
+Query: 45050 acggttccaagctccttggtggtgatgcaacc 45081
+             || ||||| ||||||||||| || ||||||||
+Sbjct: 145   acagttcccagctccttggtcgtaatgcaacc 114
+
+
+
+ Score =  125 bits (63), Expect = 2e-26
+ Identities = 74/78 (94%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             |||||| ||||||||||||||||||||||| |||||||||||||||||||| || |||||
+Sbjct: 116   accgtccccatccttgtcgaagaggctgaaagcctccttgaactcggcgatntggtcgtc 57
+
+                               
+Query: 46571 ggtgagctggtccgccat 46588
+             ||||||||||||||||||
+Sbjct: 56    ggtgagctggtccgccat 39
+
+
+>gnl|UG|Hv#S23828034 GCN003A13u GCN Hordeum vulgare cDNA clone GCN003A13
+             3-PRIME, mRNA sequence /clone=GCN003A13 /clone_end=3'
+             /gb=DN157123 /gi=59943017 /ug=Hv.14508 /len=700
+          Length = 700
+
+ Score =  123 bits (62), Expect = 8e-26
+ Identities = 147/173 (84%), Gaps = 8/173 (4%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 45768 tgcagaaatgagctatgacactactagaaaagaggaatctacaaatcaagtgttggtctt 45827
+             ||||| || ||||| |||||||||||||||||||||||| ||||||||| ||||||||||
+Sbjct: 14    tgcagtaacgagctttgacactactagaaaagaggaatcgacaaatcaaatgttggtctt 73
+
+                                                                         
+Query: 45828 agacta-cacagttaagactagatctccaacttccaggctaccagaagctagatcatgct 45886
+             |||||| ||| ||||| ||||||||||| | ||  | |||  ||||||||||||||    
+Sbjct: 74    agactaccacggttaacactagatctccgagttatacgctgtcagaagctagatca---- 129
+
+                                                                  
+Query: 45887 gctactgtcaccaaaaagtctcttcagtgtcgcgttata-aaaggagagctaa 45938
+               |||||| |||| |||||||||||||||||  |||||| |||||||||||||
+Sbjct: 130   --tactgtaaccacaaagtctcttcagtgtcaggttatacaaaggagagctaa 180
+
+
+
+ Score =  111 bits (56), Expect = 3e-22
+ Identities = 80/88 (90%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 46087 aacaacctgattctcatctctgtcactagaaattccgaaacactctacagctctaaaccc 46146
+             ||||||||||||| ||||| | |||||  |||||||||||||||| ||||||||||||||
+Sbjct: 419   aacaacctgattcgcatctgtatcactgcaaattccgaaacactcgacagctctaaaccc 478
+
+                                         
+Query: 46147 tagctcctaaatgcaaccagtcgctgct 46174
+             |||| |||||||||| ||||||||||||
+Sbjct: 479   tagcccctaaatgcagccagtcgctgct 506
+
+
+>gnl|UG|Hv#S18406876 HO08B03w HO Hordeum vulgare cDNA clone HO08B03
+             3-PRIME, mRNA sequence /clone=HO08B03 /clone_end=3'
+             /gb=CK567836 /gi=40953410 /ug=Hv.12898 /len=700
+          Length = 700
+
+ Score =  111 bits (56), Expect = 3e-22
+ Identities = 152/184 (82%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44727 tgacgaactcctcgtagttgatctggccgtcgccgtccacgtccgcctcccggatcatct 44786
+             |||||||||| ||| ||||||   ||||||||||||| | ||| |||||| |||||||||
+Sbjct: 243   tgacgaactcgtcgaagttgacgaggccgtcgccgtcgaggtcggcctcctggatcatct 302
+
+                                                                         
+Query: 44787 cgtccacctcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccg 44846
+             | |||||||||||||| || |||||||| |||||| || |||| ||||| |||||||| |
+Sbjct: 303   cctccacctcctcgtcggtgagcttctcgccgaggctgatcatgacgtgccgcagctcgg 362
+
+                                                                         
+Query: 44847 ccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcct 44906
+             ||   ||||||  |||||   ||||||||||||| || | ||| ||||||  ||||||||
+Sbjct: 363   ccttggagatgtggccgtcgcggtccttgtcgaagaccctgaaggcctcccggagctcct 422
+
+                 
+Query: 44907 cctc 44910
+             ||||
+Sbjct: 423   cctc 426
+
+
+
+ Score = 58.0 bits (29), Expect = 4e-06
+ Identities = 38/41 (92%)
+ Strand = Plus / Plus
+
+                                                      
+Query: 44948 aggaactcggggaagtcgatggtgccgttgccgtccgcgtc 44988
+             |||||||||| ||| |||||||||||||||||||| |||||
+Sbjct: 476   aggaactcggcgaactcgatggtgccgttgccgtcggcgtc 516
+
+
+>gnl|UG|Hv#S12715670 EBro08_SQ012_J23_R root, 3 week, drought-stressed,
+             cv Optic, EBro08 Hordeum vulgare subsp. vulgare cDNA clone
+             EBro08_SQ012_J23 5', mRNA sequence /clone=EBro08_SQ012_J23
+             /clone_end=5' /gb=BQ768862 /gi=21977336 /ug=Hv.11507
+             /len=663
+          Length = 663
+
+ Score = 67.9 bits (34), Expect = 4e-09
+ Identities = 58/66 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+             ||||||||||| ||||||||  || ||||||||||| |||| |||||||||||| ||| |
+Sbjct: 497   gtccgcctccctgatcatctgctcaacctcctcgtcggtcatcttctccccgagattgat 438
+
+                   
+Query: 44827 catcac 44832
+             ||||||
+Sbjct: 437   catcac 432
+
+
+  Database: HvUniGene_47
+    Posted date:  Feb 18, 2007  1:03 AM
+  Number of letters in database: 13,848,097
+  Number of sequences in database:  18,491
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 18491
+Number of Hits to DB: 751,775
+Number of extensions: 297985
+Number of successful extensions: 84875
+Number of sequences better than 1.0e-05: 12
+Number of HSP's gapped: 84866
+Number of HSP's successfully gapped: 25
+Length of query: 82726
+Length of database: 13,848,097
+Length adjustment: 20
+Effective length of query: 82706
+Effective length of database: 13,478,277
+Effective search space: 1114734377562
+Effective search space used: 1114734377562
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 29 (58.0 bits)

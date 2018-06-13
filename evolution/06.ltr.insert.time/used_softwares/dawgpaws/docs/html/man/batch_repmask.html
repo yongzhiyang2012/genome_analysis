@@ -1,0 +1,390 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>batch_repmask.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_repmask.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<ul>
+
+		<li><a href="#configuration_file">Configuration File</a></li>
+	</ul>
+
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>batch_repmask.pl - Run RepeatMasker and parse results to a GFF format file.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    batch_repmask.pl -i DirToProcess -o OutDir -c ConfigFile</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i, --indir    # Directory of fasta files to process
+    -o, --outdir   # Path to the base output directory
+    -c, --config   # Path to the config file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Runs the RepeatMasker program for a set of input
+FASTA files against a set of repeat library files &amp;
+then converts the repeat masker *.out file into the
+GFF format and then to the game XML format for
+visualization by the Apollo genome anotation program.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dindir">-i,--indir</a></strong>
+
+<dd>
+<p>Path of the directory containing the sequences to process.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutdir">-o,--outdir</a></strong>
+
+<dd>
+<p>Path of the directory to place the program output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dc_2c__2d_2dconfig">-c, --config</a></strong>
+
+<dd>
+<p>Configuration file that lists the database names and paths of the
+fasta files to use as masking databases.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2dp_2c_2d_2dnum_2dproc">-p,--num-proc</a></strong>
+
+<dd>
+<p>The number of processors to use for RepeatMasker. Default is one.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dengine">--engine</a></strong>
+
+<dd>
+<p>The repeatmasker engine to use: [crossmatch|wublast|decypher].
+The default is to use the crossmatch engine.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dapollo">--apollo</a></strong>
+
+<dd>
+<p>Use the apollo program to convert the file from gff to game xml.
+The default is not to use apollo.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2drm_2dpath">--rm-path</a></strong>
+
+<dd>
+<p>The full path to the RepeatMasker binary.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dlogfile">--logfile</a></strong>
+
+<dd>
+<p>Path to a file that will be used to log program status.
+If the file already exists, additional information will be concatenated
+to the existing file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dtest">--test</a></strong>
+
+<dd>
+<p>Run the program without doing the system commands.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>Error messages generated by this program and possible solutions are listed
+below.</p>
+<dl>
+<dt><strong><a name="item_error_3a_no_fasta_files_were_found_in_the_input_di">ERROR: No fasta files were found in the input directory</a></strong>
+
+<dd>
+<p>The input directory does not contain fasta files in the expected format.
+This could happen because you gave an incorrect path or because your sequence 
+files do not have the expected *.fasta extension in the file name.</p>
+</dd>
+</li>
+<dt><strong><a name="item_error_3a_could_not_create_the_output_directory">ERROR: Could not create the output directory</a></strong>
+
+<dd>
+<p>The output directory could not be created at the path you specified. 
+This could be do to the fact that the directory that you are trying
+to place your base directory in does not exist, or because you do not
+have write permission to the directory you want to place your file in.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>
+</p>
+<h2><a name="configuration_file">Configuration File</a></h2>
+<p>The major configuration file for this program is the list of
+datbases indicated by the -c flag.</p>
+<p>This file is a tab delimited text file. 
+Lines beginning with # are ignored.</p>
+<p><strong>EXAMPLE</strong></p>
+<pre>
+  #-------------------------------------------------------------
+  # DBNAME       DB_PATH
+  #-------------------------------------------------------------
+  TREP_9         /db/repeats/Trep9.nr.fasta
+  TIGR_Trit      /db/repeats/TIGR_Triticum_GSS_Repeats.v2.fasta
+  TREP_9_Clip    /db/repeats/Trep9.nr.fasta     -is_clip
+  # END</pre>
+<p>The columns above represent the following</p>
+<dl>
+<dt><strong><a name="item_col_2e_1">Col. 1</a></strong>
+
+<dd>
+<p>The name of the repeat library
+This will be used to name the output files from the analysis
+and to name the data tracks that will be used by Apollo.</p>
+</dd>
+</li>
+<dt><strong><a name="item_col_2e_2">Col. 2</a></strong>
+
+<dd>
+<p>The path to the fasta format file containing the repeats.</p>
+</dd>
+</li>
+<dt><strong><a name="item_col_2e_3">Col. 3</a></strong>
+
+<dd>
+<p>An optional third col may also be included. This can include addiontal options
+to include in the RepeatMasker run. This should include valid RepeatMasker
+options separated by spaces. You can type RepeatMasker --help for the full
+list of options accepted by your version of RepeatMasker. In the example
+above, the -is_clip option will clip any E. coli insertion elements
+that are contained in the contigs.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong><a name="item_repeatmasker">RepeatMasker</a></strong>
+
+<p>The RepeatMasker program can be download at:
+(http://www.repeatmasker.org/)</p>
+</li>
+<li><strong><a name="item_apollo_genome_annotation_curation_tool">Apollo Genome Annotation Curation Tool</a></strong>
+
+<p>The Apollo Genome Annotation Curation tool can be downloaded at
+<a href="http://www.fruitfly.org/annot/apollo/">http://www.fruitfly.org/annot/apollo/</a> .</p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_file_3a_3acopy">File::Copy</a></strong>
+
+<p>This module is required to copy the BLAST results.</p>
+</li>
+<li><strong><a name="item_getopt_3a_3along">Getopt::Long</a></strong>
+
+<p>This module is required to accept options at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_limited_repeatmasker_version_testing">Limited RepeatMasker version testing</a></strong>
+
+<p>This program has been tested with RepeatMasker v  3.1.6</p>
+</li>
+<li><strong><a name="item_no_env_options">No Env Options</a></strong>
+
+<p>Currently this program does not make use of variables in the user
+environment. However, it would be useful to define program paths
+and some common options in the environment.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>The batch_repmask.pl program is part of the DAWG-PAWS package of genome
+annotation programs. See the DAWG-PAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU GENERAL PUBLIC LICENSE, VERSION 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 04/10/2006
+
+</p>
+<p>UPDATED: 03/24/2009
+
+</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_repmask.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+//-----------------------------------------------------------+
+// This is the working copy of the wheat style. This can
+// simply be saved on a machine as fly.style to overwrite
+// the deafult style. I am using the name wheat.style
+// so that I can work with it.
+//-----------------------------------------------------------+
+//
+// This is your personal fly.style.
+// All that needs to go in it is the parameters that you want to change from the default.
+// The default preferences file above shows you most of the parameters you can set.
+// Press "Help" for more information about the parameters.
+
+
+//-----------------------------------------------------------+
+// IMPORT THE GAME STYLE AND ADD TO IT                       |
+// ADDED 11/29/2006 - JCE                                    |
+//-----------------------------------------------------------+
+ImportStyle             "game.style"
+
+// CHROMOSOME NUMBERS FOR WHEAT
+Chromosomes             "1,2,3,4,5,6,7,8,9,10,11,12"
+
+
+
+//-----------------------------------------------------------+
+// MSLL HMPR TIERS                                           |
+//-----------------------------------------------------------+
+//Types		        "/home/jestill/.apollo/msll_hmpr.tiers"     //Manually edited tiers file
+//Chromosomes             "1,2,3,4,5,6,7,8,9,10,11,12"
+
+//-----------------------------------------------------------+
+// ASGR TIERS
+//-----------------------------------------------------------+
+// 07/07/2006
+// Tiers file written to work with transposable element 
+// assemblies from the asgr data.
+//Types		        "/home/jestill/.apollo/asgr.tiers"     //Manually edited tiers file
+
+
+//-----------------------------------------------------------+
+// WHEAT TIERS                                               |
+//-----------------------------------------------------------+
+//Types		        "$HOME/.apollo/wheat.tiers"     //Manually edited tiers file
+Types		        "wheat.tiers"     //Manually edited tiers file
+
+//-----------------------------------------------------------+
+// GENERAL VARIABLES                                         |
+//-----------------------------------------------------------+
+// I just like the way the 3d looks - JCE 11/29/2006
+Draw3D                      "true"
+
+//-----------------------------------------------------------+
+// WHEAT ANNOTATION COMMENTS
+//-----------------------------------------------------------+
+AnnotationComment "I made this"
+AnnotationComment "Prediction based on FGENESH prediction without associated expressed data"
+
+//-----------------------------------------------------------+
+// WHEAT TRANSCRIPT COMMENTS
+//-----------------------------------------------------------+
+TranscriptComment "Gene model not available"
+TranscriptComment "Respect my authoritie"
+
+//-----------------------------------------------------------+
+// USERS FOR THE WHEAT ANNOTATION PROJECT                    |
+//-----------------------------------------------------------+
+// It appears that this is using the user name that the person is
+// logged onto the computer with. The comments field will be signed
+// by the name of the person that made the comment.
+UserInfo "user=jestill:project=WheatAnnot:color=25,25,112:full-name=Jamie Estill"
+UserInfo "user=gbaucom:project=WheatAnnot:color=255,255,0:full-name=Regina Baucom"
+UserInfo "user=mcestep:project=WheatAnnot:color=0,0,255:full-name=Matt Estep"
+UserInfo "user=ateam:project=WheatAnnot:color=0,0,255:full-name=A Team"
+
+//-----------------------------------------------------------+
+// PEPTIDE STATUS FOR THE WHEAT ANNOTATION PROJECT           |
+//-----------------------------------------------------------+
+PeptideStatus "2:Dialog,0,10:true:curator examined, accepted"
+PeptideStatus "2:Dialog,2,10:true:curator examined, unresolved"
+PeptideStatus "0:Dialog,3,10:true:not analyzed"
+PeptideStatus "0:Dialog,3,10:false:computational analysis failed"
+PeptideStatus "3:Dialog,0,10:false:perfect match to swissprot real (computational)"
+PeptideStatus "3:Dialog,0,10:false:not in swissprot real (computational)"
+PeptideStatus "1:Dialog,1,10:false:Imperfect match to SwissProt real (computational)"
+PeptideStatus "1:Dialog,1,10:false:Possible incorrect identifier (computational)"
+
+//-----------------------------------------------------------+
+// RESULT TAGS FOR THE WHEAT ANNOTATION PROJECT              |
+//-----------------------------------------------------------+
+// String before : in ResultTag must match a Type from tiers file.
+// You can have multiple ResultTags for each result type, and multiple
+// result types for each tag.
+// Example from 
+ResultTag  "EST Same Strain, EST Different Strain, Fly EST All, DGC cDNA, Community GB:comment: significant strain polymorphisms"
+// TAGS FOR 
+ResultTag  "FGENESH, Genscan:comment: Gene model contains putative transposons"

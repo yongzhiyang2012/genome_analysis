@@ -1,0 +1,350 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>fasta_shorten.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;fasta_shorten.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>fasta_shorten.pl - Change headers in a fasta file to give shorter names.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to fasta_shorten version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    fasta_shorten.pl -i InDir -o OutDir</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i, --indir    # Directory of fasta files to process
+    -o, --outdir   # Path to the base output directory</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program will take all of the fasta files in a input directory 
+and will shorten the name in the fasta headers. 
+Creating shorter names is often required for programs that have a 
+maximum length that they can use for fasta headers.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dindir">-i,--indir</a></strong>
+
+<dd>
+<p>Path of the directory containing the sequences to process.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutdir">-o,--outdir</a></strong>
+
+<dd>
+<p>Path of the directory to place the program output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2dl_2c_2d_2dlength">-l,--length</a></strong>
+
+<dd>
+<p>New length. The fasta header will be shortened to this length.
+Default length is 20.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dd_2c_2d_2ddelim_2dchar">-d,--delim-char</a></strong>
+
+<dd>
+<p>The delimiting character to use. Note that since PERL regular expressions
+can not use variables, I must limit this to a list of valid characters.
+Valid choices are:</p>
+</dd>
+<dl>
+<dt><strong><a name="item_pipe__5b_2dd_pipe_5d">pipe [-d pipe]</a></strong>
+
+<dd>
+<p>The pipe character '|' as used by NCBI.</p>
+</dd>
+</li>
+<dt><strong><a name="item_comma__5b_2dd_comma_5d">comma [-d comma]</a></strong>
+
+<dd>
+<p>A comma ',' is used to delimit the header line.</p>
+</dd>
+</li>
+<dt><strong><a name="item_space__5b_2dd_space_5d">space [-d space]</a></strong>
+
+<dd>
+<p>To delimit by any whitespace type in the word space.</p>
+</dd>
+</li>
+<dt><strong><a name="item_tab__5b_2dd_tab_5d">tab [-d tab]</a></strong>
+
+<dd>
+<p>To delimit by the tab character, type tab in the command line.</p>
+</dd>
+</li>
+</dl>
+<dt><strong><a name="item__2dp_2c_2d_2ddelim_2dpos">-p,--delim-pos</a></strong>
+
+<dd>
+<p>The position in the delimited set to use. Be default this will
+be the fist position in the split array. If delim-pos is greater 
+then the number of split characters, the first position will be used
+and a message sent to STDERR.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dupercase">--upercase</a></strong>
+
+<dd>
+<p>Convert all sequence residues to uppercase.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2drename">--rename</a></strong>
+
+<dd>
+<p>Rename the output fasta files to the new FASTA header name.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>Error messages generated by this program and possible solutions are listed
+below.</p>
+<dl>
+<dt><strong><a name="item_error_3a_no_fasta_files_were_found_in_the_input_di">ERROR: No fasta files were found in the input directory</a></strong>
+
+<dd>
+<p>The input directory does not contain fasta files in the expected format.
+This could happen because you gave an incorrect path or because your sequence 
+files do not have the expected *.fasta extension in the file name.</p>
+</dd>
+</li>
+<dt><strong><a name="item_error_3a_could_not_create_the_output_directory">ERROR: Could not create the output directory</a></strong>
+
+<dd>
+<p>The output directory could not be created at the path you specified. 
+This could be do to the fact that the directory that you are trying
+to place your base directory in does not exist, or because you do not
+have write permission to the directory you want to place your file in.</p>
+</dd>
+</li>
+<dt><strong><a name="item_warning_3a_outfile_already_exits">WARNING: Outfile already exits</a></strong>
+
+<dd>
+<p>This will occur when you are choosing to rename the output fasta file, and the
+new file name is not unique. The existing file will be overwritten by
+the new file. You can avoid this problem by keeping the original
+sequence name, by selecting a longer string (-l) to generate unique
+new strings, or by choosing a different delimit character to generate
+unique names.</p>
+</dd>
+<dd>
+<p>This may also occur when you are writing new fasta files to a directory
+that already contaings a fasta file with the same name.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not currently make use of configuration files
+or settings in the user's environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<p>No external software is currently required to use this program</p>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_getopt_3a_3along">Getopt::Long</a></strong>
+
+<p>This module is required to accept options at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_renaming_outfile_limited_to_single_record_fasta_fi">Renaming outfile limited to single record fasta files</a></strong>
+
+<p>Multiple record fasta files may be reanamed to multiple files or 
+throw an error.</p>
+</li>
+<li><strong><a name="item_no_additional_known_limitations">No additional known limitations</a></strong>
+
+<p>If you find limitations to your use of this software please email the
+author with information regarding your operating system and what
+limitations you are experiencing with your use of the software.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>The fasta_shorten.pl program is part of the DAWG-PAWS package of genome
+annotation programs. See the DAWG-PAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU GENERAL PUBLIC LICENSE, VERSION 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 07/17/2007</p>
+<p>UPDATED: 04/26/2008</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;fasta_shorten.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

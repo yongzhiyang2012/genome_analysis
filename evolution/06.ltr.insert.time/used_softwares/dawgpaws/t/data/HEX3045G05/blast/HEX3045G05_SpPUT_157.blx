@@ -1,0 +1,1023 @@
+TBLASTX 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SpPUT_157 
+           9061 sequences; 4,917,502 total letters
+
+Searching..................................................done
+
+
+
+                                                             Score    E
+Sequences producing significant alignments:                  (bits) Value  N
+
+PUT-157a-Sorghum_propinquum-137#PlantGDB-assembled Unique Tr...   293   5e-89  3 
+PUT-157a-Sorghum_propinquum-3094#PlantGDB-assembled Unique T...   293   2e-88  4 
+PUT-157a-Sorghum_propinquum-6059#PlantGDB-assembled Unique T...   293   4e-88  3 
+PUT-157a-Sorghum_propinquum-2336#PlantGDB-assembled Unique T...   105   2e-30  3 
+PUT-157a-Sorghum_propinquum-209490#PlantGDB-assembled Unique...    98   2e-19  1 
+PUT-157a-Sorghum_propinquum-6755#PlantGDB-assembled Unique T...    89   1e-16  1 
+PUT-157a-Sorghum_propinquum-6121#PlantGDB-assembled Unique T...    68   3e-16  3 
+PUT-157a-Sorghum_propinquum-4100#PlantGDB-assembled Unique T...    62   6e-16  3 
+PUT-157a-Sorghum_propinquum-8788#PlantGDB-assembled Unique T...    86   7e-16  1 
+PUT-157a-Sorghum_propinquum-5913#PlantGDB-assembled Unique T...    57   8e-15  2 
+PUT-157a-Sorghum_propinquum-179491#PlantGDB-assembled Unique...    54   9e-14  2 
+PUT-157a-Sorghum_propinquum-1658#PlantGDB-assembled Unique T...    66   1e-13  2 
+PUT-157a-Sorghum_propinquum-1429#PlantGDB-assembled Unique T...    51   8e-13  2 
+PUT-157a-Sorghum_propinquum-3707#PlantGDB-assembled Unique T...    39   4e-12  3 
+PUT-157a-Sorghum_propinquum-9461#PlantGDB-assembled Unique T...    68   3e-10  1 
+PUT-157a-Sorghum_propinquum-995#PlantGDB-assembled Unique Tr...    66   8e-10  1 
+PUT-157a-Sorghum_propinquum-894#PlantGDB-assembled Unique Tr...    49   4e-09  2 
+PUT-157a-Sorghum_propinquum-3153#PlantGDB-assembled Unique T...    46   2e-08  2 
+
+>PUT-157a-Sorghum_propinquum-137#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 777
+
+ Score =  293 bits (634), Expect(2) = 5e-89
+ Identities = 124/124 (100%), Positives = 124/124 (100%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 44902
+             GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE
+Sbjct: 171   GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 350
+
+                                                                         
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 44722
+             LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV
+Sbjct: 351   LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 530
+
+                 
+Query: 44721 MMAK 44710
+             MMAK
+Sbjct: 531   MMAK 542
+
+
+
+ Score = 66.1 bits (138), Expect(2) = 5e-89
+ Identities = 26/28 (92%), Positives = 28/28 (100%)
+ Frame = -1 / +3
+
+                                         
+Query: 46594 SPMADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             +PMADQLTD+QIAEFKEAFSLFDKDGDG
+Sbjct: 90    APMADQLTDDQIAEFKEAFSLFDKDGDG 173
+
+
+
+ Score =  105 bits (224), Expect(3) = 3e-32
+ Identities = 48/73 (65%), Positives = 59/73 (80%)
+ Frame = +2 / -3
+
+                                                                         
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFCPRDRITVPSSLVVMQPAQNSASI 45103
+             FI  A+R RNSGKSMVPLPSASTSLIMS SSASVGFCP +R+TVPSSLVVMQP+ + ++ 
+Sbjct: 328   FILRAMRLRNSGKSMVPLPSASTSLIMSWSSASVGFCPSERMTVPSSLVVMQPSPSLSNR 149
+
+                          
+Query: 45104 RYLALRNKIRASL 45142
+                +L + I +S+
+Sbjct: 148   LKASLNSAIWSSV 110
+
+
+
+ Score = 40.0 bits (81), Expect(3) = 3e-32
+ Identities = 14/15 (93%), Positives = 15/15 (100%)
+ Frame = +2 / -3
+
+                            
+Query: 44825 VITWRSSAAEMKPFW 44869
+             V+TWRSSAAEMKPFW
+Sbjct: 427   VMTWRSSAAEMKPFW 383
+
+
+
+ Score = 32.7 bits (65), Expect(3) = 3e-32
+ Identities = 15/16 (93%), Positives = 15/16 (93%)
+ Frame = +2 / -3
+
+                             
+Query: 44708 HLAIMTLTNSS*LIWP 44755
+             HLAIMTLTNSS*LI P
+Sbjct: 544   HLAIMTLTNSS*LI*P 497
+
+
+
+ Score = 84.9 bits (179), Expect(2) = 1e-27
+ Identities = 37/84 (44%), Positives = 53/84 (63%)
+ Frame = -3 / +3
+
+                                                                         
+Query: 43418 IDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEAD 43239
+             ID P FL + ARK     S + L +    FD D +G I A +LR VM   G++LT+EE D
+Sbjct: 285   IDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVD 464
+
+                                     
+Query: 43238 ELVRKADPRGEGRVQCKELVKVLM 43167
+             E++R+AD  G+G++  +E VKV+M
+Sbjct: 465   EMIREADVDGDGQINYEEFVKVMM 536
+
+
+
+ Score = 59.7 bits (124), Expect(2) = 1e-27
+ Identities = 28/53 (52%), Positives = 33/53 (62%)
+ Frame = -3 / +3
+
+                                                                  
+Query: 43613 MAAKLTQEQADECKEVFDLFDGDEDGRIAAGELVTALRSLGQNVDEAEARGFL 43455
+             MA +LT +Q  E KE F LFD D DG I   EL T +RSLGQN  EAE +  +
+Sbjct: 96    MADQLTDDQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMI 254
+
+
+
+ Score = 60.6 bits (126), Expect(3) = 7e-20
+ Identities = 25/48 (52%), Positives = 37/48 (77%)
+ Frame = +1 / -2
+
+                                                             
+Query: 44938 HQVQELGEVDGAVAVRVNLVDHVLQLRLRGVLPEGPHHGSKLLGGDAT 45081
+             H+V++L +++GAVA+ ++L+DHVL+L L  VLP   H  S+LLG DAT
+Sbjct: 314   HEVEKLWKINGAVAISIDLIDHVLELSLCRVLP**THDSSQLLGRDAT 171
+
+
+
+ Score = 57.0 bits (118), Expect(3) = 7e-20
+ Identities = 25/27 (92%), Positives = 25/27 (92%)
+ Frame = +3 / -3
+
+                                        
+Query: 46512 PSPSLSKRLKASLNSAICSSVSWSAMG 46592
+             PSPSLS RLKASLNSAI SSVSWSAMG
+Sbjct: 172   PSPSLSNRLKASLNSAIWSSVSWSAMG 92
+
+
+
+ Score = 35.9 bits (72), Expect(3) = 7e-20
+ Identities = 14/28 (50%), Positives = 20/28 (71%)
+ Frame = +1 / -2
+
+                                         
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRRD 44856
+             L DHL+HLL+  LL ++ H +A+L  RD
+Sbjct: 479   LTDHLIHLLIS*LLTKICHDMAELGSRD 396
+
+
+
+ Score = 76.2 bits (160), Expect(2) = 2e-13
+ Identities = 32/69 (46%), Positives = 45/69 (65%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYE 44737
+             D   E KEAF +FDKD +G I+  EL  VM +LG+  T+ E+ +MI E D DG+G I++ 
+Sbjct: 117   DQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFP 296
+
+                      
+Query: 44736 EFVKVMMAK 44710
+             EF+ +M  K
+Sbjct: 297   EFLNLMARK 323
+
+
+
+ Score = 29.9 bits (59), Expect(2) = 2e-13
+ Identities = 10/11 (90%), Positives = 10/11 (90%)
+ Frame = -3 / +2
+
+                        
+Query: 46589 HGGPAHRRADR 46557
+             HGGPAHRR DR
+Sbjct: 95    HGGPAHRRPDR 127
+
+
+>PUT-157a-Sorghum_propinquum-3094#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 900
+
+ Score =  293 bits (634), Expect(2) = 2e-88
+ Identities = 124/124 (100%), Positives = 124/124 (100%)
+ Frame = -2 / +1
+
+                                                                         
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 44902
+             GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE
+Sbjct: 184   GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 363
+
+                                                                         
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 44722
+             LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV
+Sbjct: 364   LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 543
+
+                 
+Query: 44721 MMAK 44710
+             MMAK
+Sbjct: 544   MMAK 555
+
+
+
+ Score = 64.3 bits (134), Expect(2) = 2e-88
+ Identities = 26/30 (86%), Positives = 28/30 (93%)
+ Frame = -1 / +1
+
+                                           
+Query: 46600 EASPMADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             + S MADQLTD+QIAEFKEAFSLFDKDGDG
+Sbjct: 97    QPSAMADQLTDDQIAEFKEAFSLFDKDGDG 186
+
+
+
+ Score =  118 bits (253), Expect(3) = 1e-39
+ Identities = 54/73 (73%), Positives = 62/73 (84%)
+ Frame = +2 / -2
+
+                                                                         
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFCPRDRITVPSSLVVMQPAQNSASI 45103
+             FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGF PR+RITVPSSLVVMQP+ + +  
+Sbjct: 341   FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFWPRERITVPSSLVVMQPSPSLSKR 162
+
+                          
+Query: 45104 RYLALRNKIRASL 45142
+                +L + I +S+
+Sbjct: 161   LKASLNSAIWSSV 123
+
+
+
+ Score = 43.2 bits (88), Expect(3) = 1e-39
+ Identities = 19/28 (67%), Positives = 21/28 (75%)
+ Frame = +1 / -1
+
+                                         
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRRD 44856
+             L DHLV LLV QLL EVGH +A+L  RD
+Sbjct: 492   LTDHLVDLLVGQLLAEVGHDMAELSSRD 409
+
+
+
+ Score = 40.9 bits (83), Expect(3) = 1e-39
+ Identities = 16/17 (94%), Positives = 17/17 (100%)
+ Frame = +2 / -2
+
+                              
+Query: 44705 PHLAIMTLTNSS*LIWP 44755
+             PHLAI+TLTNSS*LIWP
+Sbjct: 560   PHLAIITLTNSS*LIWP 510
+
+
+
+ Score = 84.9 bits (179), Expect(2) = 4e-28
+ Identities = 37/84 (44%), Positives = 53/84 (63%)
+ Frame = -3 / +1
+
+                                                                         
+Query: 43418 IDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEAD 43239
+             ID P FL + ARK     S + L +    FD D +G I A +LR VM   G++LT+EE D
+Sbjct: 298   IDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVD 477
+
+                                     
+Query: 43238 ELVRKADPRGEGRVQCKELVKVLM 43167
+             E++R+AD  G+G++  +E VKV+M
+Sbjct: 478   EMIREADVDGDGQINYEEFVKVMM 549
+
+
+
+ Score = 61.6 bits (128), Expect(2) = 4e-28
+ Identities = 29/54 (53%), Positives = 34/54 (62%)
+ Frame = -3 / +1
+
+                                                                   
+Query: 43616 AMAAKLTQEQADECKEVFDLFDGDEDGRIAAGELVTALRSLGQNVDEAEARGFL 43455
+             AMA +LT +Q  E KE F LFD D DG I   EL T +RSLGQN  EAE +  +
+Sbjct: 106   AMADQLTDDQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMI 267
+
+
+
+ Score = 77.6 bits (163), Expect(4) = 6e-28
+ Identities = 32/49 (65%), Positives = 38/49 (77%)
+ Frame = +1 / -1
+
+                                                              
+Query: 44932 PRHQVQELGEVDGAVAVRVNLVDHVLQLRLRGVLPEGPHHGSKLLGGDA 45078
+             P HQVQEL EV+G +A+ +NL+DHVLQL L  VL +G HH SKLLG DA
+Sbjct: 333   PCHQVQELWEVNGPIAISINLIDHVLQLCLGRVLAKGAHHSSKLLGSDA 187
+
+
+
+ Score = 58.8 bits (122), Expect(4) = 6e-28
+ Identities = 26/28 (92%), Positives = 26/28 (92%)
+ Frame = +3 / -2
+
+                                         
+Query: 46512 PSPSLSKRLKASLNSAICSSVSWSAMGE 46595
+             PSPSLSKRLKASLNSAI SSVSWSAM E
+Sbjct: 185   PSPSLSKRLKASLNSAIWSSVSWSAMAE 102
+
+
+
+ Score = 41.8 bits (85), Expect(4) = 6e-28
+ Identities = 15/16 (93%), Positives = 16/16 (100%)
+ Frame = +2 / -2
+
+                             
+Query: 44822 LVITWRSSAAEMKPFW 44869
+             LV+TWRSSAAEMKPFW
+Sbjct: 443   LVMTWRSSAAEMKPFW 396
+
+
+
+ Score = 28.1 bits (55), Expect(4) = 6e-28
+ Identities = 10/11 (90%), Positives = 10/11 (90%)
+ Frame = +3 / -2
+
+                        
+Query: 44484 QDKCHNQKKPG 44516
+             QDK HNQKKPG
+Sbjct: 758   QDKHHNQKKPG 726
+
+
+
+ Score = 76.2 bits (160), Expect(2) = 5e-14
+ Identities = 32/69 (46%), Positives = 45/69 (65%)
+ Frame = -2 / +1
+
+                                                                         
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYE 44737
+             D   E KEAF +FDKD +G I+  EL  VM +LG+  T+ E+ +MI E D DG+G I++ 
+Sbjct: 130   DQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFP 309
+
+                      
+Query: 44736 EFVKVMMAK 44710
+             EF+ +M  K
+Sbjct: 310   EFLNLMARK 336
+
+
+
+ Score = 32.2 bits (64), Expect(2) = 5e-14
+ Identities = 13/20 (65%), Positives = 15/20 (75%)
+ Frame = -3 / +3
+
+                                 
+Query: 46610 APSRSLPHGGPAHRRADRRV 46551
+             A + +L HGGPAHRR DR V
+Sbjct: 87    ALAAALCHGGPAHRRPDRGV 146
+
+
+>PUT-157a-Sorghum_propinquum-6059#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1147
+
+ Score =  293 bits (634), Expect(2) = 4e-88
+ Identities = 124/124 (100%), Positives = 124/124 (100%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 44902
+             GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE
+Sbjct: 330   GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 509
+
+                                                                         
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 44722
+             LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV
+Sbjct: 510   LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 689
+
+                 
+Query: 44721 MMAK 44710
+             MMAK
+Sbjct: 690   MMAK 701
+
+
+
+ Score = 63.8 bits (133), Expect(2) = 4e-88
+ Identities = 26/29 (89%), Positives = 27/29 (93%)
+ Frame = -1 / +3
+
+                                          
+Query: 46597 ASPMADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             A  MADQLTD+QIAEFKEAFSLFDKDGDG
+Sbjct: 246   AETMADQLTDDQIAEFKEAFSLFDKDGDG 332
+
+
+
+ Score = 98.2 bits (208), Expect(3) = 1e-33
+ Identities = 47/73 (64%), Positives = 57/73 (78%)
+ Frame = +2 / -1
+
+                                                                         
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFCPRDRITVPSSLVVMQPAQNSASI 45103
+             FI  A+R RNSGKSMVPLPSASTSLIMS SSASVGF P +R+TVPSSLVVMQP+ + +  
+Sbjct: 487   FILRAMRLRNSGKSMVPLPSASTSLIMS*SSASVGF*PSERMTVPSSLVVMQPSPSLSKR 308
+
+                          
+Query: 45104 RYLALRNKIRASL 45142
+                +L + I +S+
+Sbjct: 307   LKASLNSAIWSSV 269
+
+
+
+ Score = 48.7 bits (100), Expect(3) = 1e-33
+ Identities = 19/28 (67%), Positives = 23/28 (82%)
+ Frame = +1 / -3
+
+                                         
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRRD 44856
+             L DHL+ LL+ QLL +VGHHVA+LR RD
+Sbjct: 638   LADHLIDLLIGQLLAKVGHHVAELRSRD 555
+
+
+
+ Score = 35.9 bits (72), Expect(3) = 1e-33
+ Identities = 14/16 (87%), Positives = 15/16 (93%)
+ Frame = +2 / -1
+
+                             
+Query: 44708 HLAIMTLTNSS*LIWP 44755
+             HLAI+T TNSS*LIWP
+Sbjct: 703   HLAIITFTNSS*LIWP 656
+
+
+
+ Score = 84.9 bits (179), Expect(2) = 1e-27
+ Identities = 37/84 (44%), Positives = 53/84 (63%)
+ Frame = -3 / +3
+
+                                                                         
+Query: 43418 IDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEAD 43239
+             ID P FL + ARK     S + L +    FD D +G I A +LR VM   G++LT+EE D
+Sbjct: 444   IDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVD 623
+
+                                     
+Query: 43238 ELVRKADPRGEGRVQCKELVKVLM 43167
+             E++R+AD  G+G++  +E VKV+M
+Sbjct: 624   EMIREADVDGDGQINYEEFVKVMM 695
+
+
+
+ Score = 59.7 bits (124), Expect(2) = 1e-27
+ Identities = 28/53 (52%), Positives = 33/53 (62%)
+ Frame = -3 / +3
+
+                                                                  
+Query: 43613 MAAKLTQEQADECKEVFDLFDGDEDGRIAAGELVTALRSLGQNVDEAEARGFL 43455
+             MA +LT +Q  E KE F LFD D DG I   EL T +RSLGQN  EAE +  +
+Sbjct: 255   MADQLTDDQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMI 413
+
+
+
+ Score = 62.5 bits (130), Expect(3) = 3e-22
+ Identities = 26/48 (54%), Positives = 37/48 (77%)
+ Frame = +1 / -3
+
+                                                             
+Query: 44938 HQVQELGEVDGAVAVRVNLVDHVLQLRLRGVLPEGPHHGSKLLGGDAT 45081
+             H+V+EL +V+GA+A+ ++L+DHVL+L L  VL +  H  SKLLG DAT
+Sbjct: 473   HEVEELRKVNGAIAIGIDLIDHVLKLSLGWVLTQ*THDSSKLLGCDAT 330
+
+
+
+ Score = 57.0 bits (118), Expect(3) = 3e-22
+ Identities = 26/29 (89%), Positives = 26/29 (89%)
+ Frame = +3 / -1
+
+                                          
+Query: 46512 PSPSLSKRLKASLNSAICSSVSWSAMGEA 46598
+             PSPSLSKRLKASLNSAI SSVSWSAM  A
+Sbjct: 331   PSPSLSKRLKASLNSAIWSSVSWSAMVSA 245
+
+
+
+ Score = 43.2 bits (88), Expect(3) = 3e-22
+ Identities = 16/16 (100%), Positives = 16/16 (100%)
+ Frame = +2 / -1
+
+                             
+Query: 44822 LVITWRSSAAEMKPFW 44869
+             LVITWRSSAAEMKPFW
+Sbjct: 589   LVITWRSSAAEMKPFW 542
+
+
+
+ Score = 76.2 bits (160), Expect(2) = 2e-14
+ Identities = 32/69 (46%), Positives = 45/69 (65%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYE 44737
+             D   E KEAF +FDKD +G I+  EL  VM +LG+  T+ E+ +MI E D DG+G I++ 
+Sbjct: 276   DQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFP 455
+
+                      
+Query: 44736 EFVKVMMAK 44710
+             EF+ +M  K
+Sbjct: 456   EFLNLMARK 482
+
+
+
+ Score = 34.1 bits (68), Expect(2) = 2e-14
+ Identities = 12/13 (92%), Positives = 12/13 (92%)
+ Frame = -3 / +2
+
+                          
+Query: 46589 HGGPAHRRADRRV 46551
+             HGGPAHRR DRRV
+Sbjct: 254   HGGPAHRRPDRRV 292
+
+
+>PUT-157a-Sorghum_propinquum-2336#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 508
+
+ Score =  105 bits (224), Expect(3) = 2e-30
+ Identities = 43/85 (50%), Positives = 59/85 (69%)
+ Frame = -2 / +2
+
+                                                                         
+Query: 44964 DFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDE 44785
+             DFP FL LM   +K    +  L++AFRV DKD +G +S A+LRHV+T++GEKL   E DE
+Sbjct: 236   DFPRFLELMRAHLKPEPFDPPLRDAFRVLDKDGSGTVSVADLRHVLTSIGEKLEAHEFDE 415
+
+                                      
+Query: 44784 MIREADVDGDGQINYEEFVKVMMAK 44710
+              IRE DV  DG I Y++F++ ++AK
+Sbjct: 416   WIREVDVAPDGTIRYDDFIRRIVAK 490
+
+
+
+ Score = 42.3 bits (86), Expect(3) = 2e-30
+ Identities = 16/22 (72%), Positives = 19/22 (86%)
+ Frame = -1 / +2
+
+                                   
+Query: 46576 LTDEQIAEFKEAFSLFDKDGDG 46511
+             LT++QIA  +EAFSLFD DGDG
+Sbjct: 62    LTEDQIASMREAFSLFDTDGDG 127
+
+
+
+ Score = 40.5 bits (82), Expect(3) = 2e-30
+ Identities = 16/27 (59%), Positives = 21/27 (77%)
+ Frame = -2 / +2
+
+                                        
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDM 45001
+             G I   ELG +MRSLG NPT+A+L+D+
+Sbjct: 125   GKIAPSELGVLMRSLGGNPTQAQLRDI 205
+
+
+>PUT-157a-Sorghum_propinquum-209490#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1683
+
+ Score = 98.2 bits (208), Expect = 2e-19
+ Identities = 42/103 (40%), Positives = 63/103 (61%)
+ Frame = +1 / +2
+
+                                                                         
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRTRMNIIGSRSYIGPA 42018
+             LH +C   I+HRD+K  N++LD DF A ++DFGL   +  +  S+    I GS  YI P 
+Sbjct: 575   LHHDCSPPILHRDVKSNNILLDSDFEAHVADFGLAKFLQDSGASQCMSAIAGSYGYIAPE 754
+
+                                                        
+Query: 42019 YIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTNEKNNLIEKV 42147
+             Y    K   +SDVYS GV+LLE+V+G+KP  +  +  ++++ V
+Sbjct: 755   YAYTLKVDEKSDVYSFGVVLLELVTGKKPVGEFGDGVDIVQWV 883
+
+
+>PUT-157a-Sorghum_propinquum-6755#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 511
+
+ Score = 89.0 bits (188), Expect = 1e-16
+ Identities = 35/88 (39%), Positives = 53/88 (60%)
+ Frame = +1 / +2
+
+                                                                         
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRTRMNIIGSRSYIGPA 42018
+             LH E  + +++RD K  N++LD ++NAKLSDFGL         +     ++G+  Y  P 
+Sbjct: 122   LHEEAERPVIYRDFKTSNILLDAEYNAKLSDFGLAKDGPVGDKTHVSTRVMGTYGYAAPE 301
+
+                                         
+Query: 42019 YIEIGKACRQSDVYSLGVMLLEIVSGEK 42102
+             Y+  G    +SDVYS GV+LLE++SG +
+Sbjct: 302   YVMTGHLTSKSDVYSFGVVLLEMMSGRR 385
+
+
+>PUT-157a-Sorghum_propinquum-6121#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 785
+
+ Score = 50.1 bits (103), Expect(3) = 3e-16
+ Identities = 19/47 (40%), Positives = 32/47 (68%)
+ Frame = -2 / +1
+
+                                                            
+Query: 45084 AGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLN 44944
+             +G IT +EL + +  LG   +E+E++ ++   D DGNGTID+ EF++
+Sbjct: 64    SGTITLEELRSGLPKLGTKISESEIKQLMEAADVDGNGTIDYGEFIS 204
+
+
+
+ Score = 40.5 bits (82), Expect(3) = 3e-16
+ Identities = 15/28 (53%), Positives = 21/28 (75%)
+ Frame = -2 / +1
+
+                                         
+Query: 44802 DEEVDEMIREADVDGDGQINYEEFVKVM 44719
+             D+ + E+I E D D DG+INY+EFV +M
+Sbjct: 340   DKTIKEIIAEVDSDHDGRINYQEFVAMM 423
+
+
+
+ Score = 33.1 bits (66), Expect(3) = 3e-16
+ Identities = 11/30 (36%), Positives = 19/30 (63%)
+ Frame = -2 / +1
+
+                                           
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELRHVM 44827
+             + E+ + +AF  FDKD +G+I+  EL   +
+Sbjct: 229   EKEDHILKAFEYFDKDHSGYITVDELEEAL 318
+
+
+
+ Score = 68.0 bits (142), Expect = 2e-10
+ Identities = 27/62 (43%), Positives = 40/62 (64%)
+ Frame = -2 / +1
+
+                                                                         
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 44722
+             LKE FR  D D +G I+  ELR  +  LG K+++ E+ +++  ADVDG+G I+Y EF+  
+Sbjct: 28    LKEMFRSLDTDNSGTITLEELRSGLPKLGTKISESEIKQLMEAADVDGNGTIDYGEFISA 207
+
+               
+Query: 44721 MM 44716
+              M
+Sbjct: 208   TM 213
+
+
+>PUT-157a-Sorghum_propinquum-4100#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 671
+
+ Score = 49.6 bits (102), Expect(3) = 6e-16
+ Identities = 20/54 (37%), Positives = 32/54 (59%)
+ Frame = -2 / +1
+
+                                                                   
+Query: 45084 AGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMK 44923
+             +G IT +EL   +  LG   +EAE++ ++   D DGNG+ID+ EF+     + K
+Sbjct: 76    SGTITYEELKVGLAKLGSKLSEAEVKQLMEPADVDGNGSIDYVEFITATMHRHK 237
+
+
+
+ Score = 38.6 bits (78), Expect(3) = 6e-16
+ Identities = 14/25 (56%), Positives = 18/25 (72%)
+ Frame = -2 / +1
+
+                                      
+Query: 44793 VDEMIREADVDGDGQINYEEFVKVM 44719
+             + E+I E D D DG+INYEEF  +M
+Sbjct: 361   IKEIISEVDTDNDGRINYEEFCAMM 435
+
+
+
+ Score = 34.1 bits (68), Expect(3) = 6e-16
+ Identities = 13/30 (43%), Positives = 20/30 (66%)
+ Frame = -2 / +1
+
+                                           
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELRHVM 44827
+             + +E L +AF+ FDKD +GFI+  EL   +
+Sbjct: 241   ERDEHLFKAFQYFDKDNSGFITRDELESAL 330
+
+
+
+ Score = 62.5 bits (130), Expect = 1e-08
+ Identities = 26/62 (41%), Positives = 39/62 (62%)
+ Frame = -2 / +1
+
+                                                                         
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKV 44722
+             LK+ F   D D +G I+  EL+  +  LG KL++ EV +++  ADVDG+G I+Y EF+  
+Sbjct: 40    LKQMFMNMDTDNSGTITYEELKVGLAKLGSKLSEAEVKQLMEPADVDGNGSIDYVEFITA 219
+
+               
+Query: 44721 MM 44716
+              M
+Sbjct: 220   TM 225
+
+
+>PUT-157a-Sorghum_propinquum-8788#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 471
+
+ Score = 86.3 bits (182), Expect = 7e-16
+ Identities = 34/94 (36%), Positives = 56/94 (59%)
+ Frame = +1 / +1
+
+                                                                         
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRTRMNIIGSRSYIGPA 42018
+             LH  C   I+HRD+K  NV++D    A++SDFG+   ++   T  +   + G+  Y+ P 
+Sbjct: 97    LHHNCIPHIIHRDMKSSNVLIDEQLEARVSDFGMARMMSVVDTHLSVSTLAGTPGYVPPE 276
+
+                                               
+Query: 42019 YIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTN 42120
+             Y +  +   + DVYS GV+LLE+++G+ PT  T+
+Sbjct: 277   YYQSFRCTTKGDVYSYGVVLLELLTGKPPTDSTD 378
+
+
+>PUT-157a-Sorghum_propinquum-5913#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 705
+
+ Score = 56.5 bits (117), Expect(2) = 8e-15
+ Identities = 19/41 (46%), Positives = 32/41 (78%)
+ Frame = +1 / +2
+
+                                                      
+Query: 41986 IIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPT 42108
+             + G+  Y+ P Y++ G+A  ++DVYS GV++LEI+SG++PT
+Sbjct: 122   VAGTFGYLAPEYMQFGRATEKTDVYSFGVLVLEILSGKRPT 244
+
+
+
+ Score = 45.1 bits (92), Expect(2) = 8e-15
+ Identities = 16/26 (61%), Positives = 22/26 (84%)
+ Frame = +1 / +2
+
+                                       
+Query: 41863 IVHRDIKPGNVMLDMDFNAKLSDFGL 41940
+             I+HRDIK  N++LD +F A++SDFGL
+Sbjct: 2     IIHRDIKSSNILLDGNFEARVSDFGL 79
+
+
+>PUT-157a-Sorghum_propinquum-179491#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1244
+
+ Score = 53.8 bits (111), Expect(2) = 9e-14
+ Identities = 20/43 (46%), Positives = 28/43 (65%)
+ Frame = +1 / +1
+
+                                                        
+Query: 41992 GSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTN 42120
+             G+  Y+ P Y  +GKA    DV+S G+MLLE+ SG+KP  + N
+Sbjct: 484   GTLGYLAPEYAMLGKASESCDVFSFGIMLLELASGKKPVEKLN 612
+
+
+
+ Score = 44.1 bits (90), Expect(2) = 9e-14
+ Identities = 16/33 (48%), Positives = 23/33 (69%)
+ Frame = +1 / +1
+
+                                              
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFG 41937
+             LH      I+HRD+K  NV+LD +F A+++DFG
+Sbjct: 334   LHHYATPHIIHRDVKASNVLLDSNFQARVADFG 432
+
+
+>PUT-157a-Sorghum_propinquum-1658#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 412
+
+ Score = 51.5 bits (106), Expect(2) = 1e-13
+ Identities = 22/33 (66%), Positives = 25/33 (75%)
+ Frame = -2 / +3
+
+                                              
+Query: 44910 EEELKEAFRVFDKDQNGFISAAELRHVMTNLGE 44812
+             EE+L+ AFRVFD D NG ISAAEL  V+  LGE
+Sbjct: 300   EEDLRHAFRVFDADGNGTISAAELARVLRGLGE 398
+
+
+
+ Score = 46.0 bits (94), Expect(2) = 1e-13
+ Identities = 23/60 (38%), Positives = 31/60 (51%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 44902
+             G I+  EL  +  SLG   ++ E+  M+ E DADG+G I   EF  L A    D  + EE
+Sbjct: 126   GRISRSELAALFESLGHAASDDEVARMMTEADADGDGFISLDEFAALNATVAGDAAAVEE 305
+
+
+
+ Score = 65.7 bits (137), Expect = 1e-09
+ Identities = 28/61 (45%), Positives = 40/61 (65%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 44913 SEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEE 44734
+             +EEE+   FR FD + +G IS +EL  +  +LG   +D+EV  M+ EAD DGDG I+ +E
+Sbjct: 75    AEEEMARVFRKFDANGDGRISRSELAALFESLGHAASDDEVARMMTEADADGDGFISLDE 254
+
+              
+Query: 44733 F 44731
+             F
+Sbjct: 255   F 257
+
+
+>PUT-157a-Sorghum_propinquum-1429#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 678
+
+ Score = 50.6 bits (104), Expect(2) = 8e-13
+ Identities = 21/46 (45%), Positives = 28/46 (60%)
+ Frame = +1 / +3
+
+                                                           
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRT 41976
+             LH  C   I+HRDIK  N++LD +F A L+DFGL   +   +T  T
+Sbjct: 30    LHMSCDPHILHRDIKSSNILLDENFEAHLADFGLARLICAYETHVT 167
+
+
+
+ Score = 44.1 bits (90), Expect(2) = 8e-13
+ Identities = 15/41 (36%), Positives = 28/41 (68%)
+ Frame = +1 / +3
+
+                                                      
+Query: 41983 NIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKP 42105
+             +++G+  YI P Y +   A  + D+YS G++LLE+++G +P
+Sbjct: 171   DVVGTLGYIPPEYGQSPVATYKGDIYSFGIVLLELLTGRRP 293
+
+
+>PUT-157a-Sorghum_propinquum-3707#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 614
+
+ Score = 38.6 bits (78), Expect(3) = 4e-12
+ Identities = 14/25 (56%), Positives = 21/25 (84%)
+ Frame = -2 / +3
+
+                                      
+Query: 44793 VDEMIREADVDGDGQINYEEFVKVM 44719
+             +D++I+EAD D DG+I+Y EFV +M
+Sbjct: 273   LDDVIKEADQDNDGRIDYGEFVAMM 347
+
+
+
+ Score = 38.2 bits (77), Expect(3) = 4e-12
+ Identities = 15/42 (35%), Positives = 24/42 (57%)
+ Frame = -2 / +3
+
+                                                       
+Query: 45072 TTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFL 44947
+             T  EL   +R  G    + E++D++   D D +GTID+ EF+
+Sbjct: 3     TYDELKEGLRKYGSTLKDTEIRDLMEAADIDNSGTIDYIEFI 128
+
+
+
+ Score = 32.2 bits (64), Expect(3) = 4e-12
+ Identities = 13/27 (48%), Positives = 18/27 (66%)
+ Frame = -2 / +3
+
+                                        
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELR 44836
+             + EE L  AF  FDKD +G+I+  EL+
+Sbjct: 156   EREEHLVAAFSYFDKDGSGYITVDELQ 236
+
+
+>PUT-157a-Sorghum_propinquum-9461#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 446
+
+ Score = 67.5 bits (141), Expect = 3e-10
+ Identities = 27/75 (36%), Positives = 45/75 (60%)
+ Frame = +1 / +1
+
+                                                                         
+Query: 41863 IVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRTRMNIIGSRSYIGPAYIEIGKAC 42042
+             I+H D+KP N++LD +   K++DFGL       QT     +  G+  Y+ P Y+  G   
+Sbjct: 220   IIHMDLKPKNILLDDNMVPKIADFGLSRLFGEEQTRTCTASRDGTLGYMAPEYLNRGIIT 399
+
+                            
+Query: 42043 RQSDVYSLGVMLLEI 42087
+             ++ D++SLGV+++EI
+Sbjct: 400   KKLDIFSLGVIIIEI 444
+
+
+>PUT-157a-Sorghum_propinquum-995#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 543
+
+ Score = 66.1 bits (138), Expect = 8e-10
+ Identities = 26/28 (92%), Positives = 28/28 (100%)
+ Frame = -1 / +1
+
+                                         
+Query: 46594 SPMADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             +PMADQLTD+QIAEFKEAFSLFDKDGDG
+Sbjct: 88    APMADQLTDDQIAEFKEAFSLFDKDGDG 171
+
+
+
+ Score = 58.8 bits (122), Expect = 1e-07
+ Identities = 26/28 (92%), Positives = 26/28 (92%)
+ Frame = +3 / -2
+
+                                         
+Query: 46509 LPSPSLSKRLKASLNSAICSSVSWSAMG 46592
+             LPSPSLS RLKASLNSAI SSVSWSAMG
+Sbjct: 173   LPSPSLSNRLKASLNSAIWSSVSWSAMG 90
+
+
+>PUT-157a-Sorghum_propinquum-894#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 521
+
+ Score = 48.7 bits (100), Expect(2) = 4e-09
+ Identities = 17/34 (50%), Positives = 24/34 (70%)
+ Frame = +1 / +1
+
+                                               
+Query: 41851 CPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQV 41952
+             C +CI+H DIKP N++LD  F  K++DFG+   V
+Sbjct: 7     CRECIIHCDIKPENILLDASFVPKIADFGMAAFV 108
+
+
+
+ Score = 33.6 bits (67), Expect(2) = 4e-09
+ Identities = 15/42 (35%), Positives = 23/42 (54%)
+ Frame = +1 / +1
+
+                                                       
+Query: 41968 SRTRMNIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVS 42093
+             SR      G+  Y+ P ++       + DVYS G++LLEI+S
+Sbjct: 121   SRVLTTFRGTAGYLAPEWLGGVAITSKVDVYSFGLVLLEIIS 246
+
+
+>PUT-157a-Sorghum_propinquum-3153#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_propinquum mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 624
+
+ Score = 45.5 bits (93), Expect(2) = 2e-08
+ Identities = 17/40 (42%), Positives = 26/40 (65%)
+ Frame = +1 / +1
+
+                                                     
+Query: 41986 IIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKP 42105
+             ++GS  Y  P +   G    +SDVYS GV++LE+++G KP
+Sbjct: 121   VVGSFGYSAPEFAMSGTYTAKSDVYSFGVVMLELLTGRKP 240
+
+
+
+ Score = 34.1 bits (68), Expect(2) = 2e-08
+ Identities = 12/26 (46%), Positives = 18/26 (69%)
+ Frame = +1 / +1
+
+                                       
+Query: 41863 IVHRDIKPGNVMLDMDFNAKLSDFGL 41940
+             +VHR  K  N++LD +++  LSD GL
+Sbjct: 1     VVHRTFKSSNILLDEEYSPHLSDCGL 78
+
+
+  Database: SpPUT_157
+    Posted date:  Feb 17, 2007  3:20 PM
+  Number of letters in database: 4,917,502
+  Number of sequences in database:  9061
+  
+Lambda     K      H
+   0.318    0.134    0.401 
+
+
+Matrix: BLOSUM62
+Number of Sequences: 9061
+Number of Hits to DB: 529,577,262
+Number of extensions: 8525746
+Number of successful extensions: 54674
+Number of sequences better than 1.0e-05: 18
+Length of query: 27575
+Length of database: 1,639,167
+Length adjustment: 52
+Effective length of query: 27523
+Effective length of database: 1,167,995
+Effective search space: 32146726385
+Effective search space used: 32146726385
+Neighboring words threshold: 13
+Window for multiple hits: 40
+X1: 16 ( 7.3 bits)
+S2: 107 (51.9 bits)

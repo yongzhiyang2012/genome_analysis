@@ -1,0 +1,12 @@
+HEX304G05	LTR_seq	LTR_retrotransposon	14989	17024	1.000000	.	.	ltrseq_1
+HEX304G05	LTR_seq	five_prime_LTR	14989	15137	1.000000	.	.	ltrseq_1
+HEX304G05	LTR_seq	three_prime_LTR	16876	17024	1.000000	.	.	ltrseq_1
+HEX304G05	LTR_seq	LTR_retrotransposon	14989	17024	1.000000	.	.	ltrseq_2
+HEX304G05	LTR_seq	five_prime_LTR	14989	15137	1.000000	.	.	ltrseq_2
+HEX304G05	LTR_seq	three_prime_LTR	16876	17024	1.000000	.	.	ltrseq_2
+HEX304G05	LTR_seq	LTR_retrotransposon	14989	16872	0.500000	.	.	ltrseq_3
+HEX304G05	LTR_seq	five_prime_LTR	14989	15127	0.500000	.	.	ltrseq_3
+HEX304G05	LTR_seq	three_prime_LTR	16736	16872	0.500000	.	.	ltrseq_3
+HEX304G05	LTR_seq	LTR_retrotransposon	14989	16872	0.500000	.	.	ltrseq_4
+HEX304G05	LTR_seq	five_prime_LTR	14989	15127	0.500000	.	.	ltrseq_4
+HEX304G05	LTR_seq	three_prime_LTR	16736	16872	0.500000	.	.	ltrseq_4

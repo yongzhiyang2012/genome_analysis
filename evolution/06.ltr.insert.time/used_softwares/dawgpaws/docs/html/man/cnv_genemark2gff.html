@@ -1,0 +1,355 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_genemark2gff.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_genemark2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<ul>
+
+		<li><a href="#typical_use">Typical Use</a></li>
+		<li><a href="#specify_the_training_matrix_used">Specify the Training Matrix Used</a></li>
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>cnv_genemark2gff.pl - Convert genemark output to gff format</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_genemark2gff.pl -i infile.genemark -o outfile.gff</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    --infile     # Path to the input file to translate
+                 # If not provided, assumes input from STDIN
+    --outfile    # Path to the output gff file
+                 # If not provided, writes output to STDOUT
+    --seqname    # The id of the sequence analyzed</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Converts the output from the genemark.hmm program to the gff format. This
+has been tested to work with gmhmme2 and gmhmme3. All exons are currently
+tagged as 'exon' in the gff output file. This is for compatibility with
+the Apollo genome annotation curation program.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path to the genemark file to translate to gff. If an infile is not
+specified, then the program will expect input from standard input.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutfile">-o,--outfile</a></strong>
+
+<dd>
+<p>Path to the gff output file. If an outfile is not specified, the progrm
+will write the gff file to standard output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dseqname">--seqname</a></strong>
+
+<dd>
+<p>This is the value listed as the source sequence in the gff output file. While
+not a specifically required variable, the default value for this in unknown.
+This will generally be set to the BAC ID or contig ID.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dprogram">--program</a></strong>
+
+<dd>
+<p>This is the source program name used in the gff output file. By default this
+is set to be GeneMarkHMM. This option allows you to set the source program
+to any value that you would want.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program with maximum output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dtest">--test</a></strong>
+
+<dd>
+<p>Run the program without doing the system commands.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<p>
+</p>
+<h2><a name="typical_use">Typical Use</a></h2>
+<p>The typical use of this program will be to parse a file produce from the
+genemark.hmm program.</p>
+<pre>
+    cnv_genemark2gff.pl -i HEX2493A05_genemark_hv.out --seqname HEX2493A05
+                        -o HEX2493A05_genemark_hv.gff</pre>
+<p>This will produce a gff output file similar to the following:</p>
+<pre>
+    HEX2493A05 GeneMarkHMM      exon    683     1393    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    1736    2084    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    2195    2515    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    2696    2803    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    2918    3035    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    3058    3131    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    3219    3502    .  +  . RNA0001
+    HEX2493A05 GeneMarkHMM      exon    3552    3559    .  +  . RNA0002
+    HEX2493A05 GeneMarkHMM      exon    3711    3801    .  +  . RNA0002
+    HEX2493A05 GeneMarkHMM      exon    3947    4711    .  +  . RNA0002
+    ...</pre>
+<p>The --seqname option used above allows you to specify the value written in the 
+first column of the gff file. If the --seqname was not specified
+like the following:</p>
+<pre>
+    cnv_genemark2gff.pl -i HEX2493A05_genemark_hv.out
+                        -o HEX2493A05_genemark_hv.gff</pre>
+<p>The gff output would be similar to the following:</p>
+<pre>
+    unknown_src GeneMarkHMM     exon    683     1393    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    1736    2084    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    2195    2515    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    2696    2803    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    2918    3035    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    3058    3131    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    3219    3502    .  +  . RNA0001
+    unknown_src GeneMarkHMM     exon    3552    3559    .  +  . RNA0002
+    unknown_src GeneMarkHMM     exon    3711    3801    .  +  . RNA0002
+    unknown_src GeneMarkHMM     exon    3947    4711    .  +  . RNA0002
+    ...</pre>
+<p>
+</p>
+<h2><a name="specify_the_training_matrix_used">Specify the Training Matrix Used</a></h2>
+<p>It is also possible to designate the second column of the gff output file
+using the --program option.
+This can be used to specify the training data use for gene predictions.
+This will allow you to later separate gene models for different
+training data sets.
+For example if I used the wheat training matrix, I may do the following:</p>
+<pre>
+    cnv_genemark2gff.pl -i HEX2493A05_genemark_hv.out --seqname HEX2493A05
+                        -o HEX2493A05_genemark_hv.gff 
+                        --program GeneMark:wheat</pre>
+<p>This will produce output similar to the following:</p>
+<pre>
+    HEX2493A05 GeneMark:wheat   exon    683     1393    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    1736    2084    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    2195    2515    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    2696    2803    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    2918    3035    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    3058    3131    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    3219    3502    .  +  . RNA0001
+    HEX2493A05 GeneMark:wheat   exon    3552    3559    .  +  . RNA0002
+    HEX2493A05 GeneMark:wheat   exon    3711    3801    .  +  . RNA0002
+    HEX2493A05 GeneMark:wheat   exon    3947    4711    .  +  . RNA0002
+    ...</pre>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>The error messages that can be generated will be listed here.</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of a configuration file or any variables set
+in the user environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong><a name="item_genemark">genemark</a></strong>
+
+<p>This program parses output from the genemark.hmm program. This program is
+available from <a href="http://opal.biology.gatech.edu/GeneMark/">http://opal.biology.gatech.edu/GeneMark/</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_bio_3a_3atools_3a_3agenemark">Bio::Tools::Genemark</a></strong>
+
+<p>This module is part of bioperl. Information on installing biperl is
+available from:
+<a href="http://bioperl.open-bio.org/wiki/Installing_BioPerl">http://bioperl.open-bio.org/wiki/Installing_BioPerl</a></p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_limited_testing_with_different_versions_of_genemar">Limited testing with different versions of genemark.hmm</a></strong>
+
+<p>This program is known to work with output produced from gmhmme2 and gmhmme3.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>The program is part of the DAWG-PAWS package of genome
+annotation programs. See the DAWG-PAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 10/30/2007</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_genemark2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

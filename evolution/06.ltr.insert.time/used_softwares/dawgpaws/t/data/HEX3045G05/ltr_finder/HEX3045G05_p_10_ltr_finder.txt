@@ -1,0 +1,314 @@
+Program    : LTR_FINDER
+Version    : 1.02
+
+Load tRNA db [/home/jestill/Apps/LTR_Finder/LTR_FINDER.i386-1.0.2/tRNAdb/Os-tRNAs.fa]  0.004 second
+Predict protein Domains 1.537 second
+>Sequence: HEX3045G05 Len:82726
+[1] HEX3045G05 Len:82726
+Location : 3980 - 12709 Len: 8730 Strand:+
+Score    : 7 [LTR region similarity:0.964]
+Status   : 11111110000
+5'-LTR   : 3980 - 5724 Len: 1745
+3'-LTR   : 10979 - 12709 Len: 1731
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : 3975 - 3979 , 12710 - 12714 [CTTTT]
+Sharpness: 0.514,0.457
+Strand + :
+PBS   : [16/17] 5729 - 5745 (MetCAT)
+PPT   : [12/15] 10888 - 10902
+
+Details of exact match pairs:
+10985-11030[46] (1) 11032-11074[43] (1) 11076-11247[172] (2) 11250-11267[18] (1) 11269-11337[69] (1) 11339-11439[101] (1) 11441-11487[47] (9) 11497-11515[19] (0) 11516-11541[26] (28) 11570-11623[54] (1) 11625-11686[62] (1) 11688-11704[17] (1) 11706-11761[56] (12) 11774-11792[19] (1) 11794-11847[54] (-3) 11845-11861[17] (1) 11863-11880[18] (1) 11882-11902[21] (1) 11904-11932[29] (1) 11934-11958[25] (17) 11976-12031[56] (-10) 12022-12038[17] (-6) 12033-12051[19] (1) 12053-12093[41] (0) 12094-12109[16] (1) 12111-12132[22] (-5) 12128-12147[20] (1) 12149-12198[50] (1) 12200-12227[28] (4) 12232-12277[46] (1) 12279-12369[91] (1) 12371-12405[35] (1) 12407-12433[27] (1) 12435-12466[32] (1) 12468-12493[26] (3) 12497-12523[27] (1) 12525-12580[56] (1) 12582-12602[21] (1) 12604-12619[16] (1) 12621-12709[89]
+3986-4031[46] (1) 4033-4075[43] (1) 4077-4248[172] (2) 4251-4268[18] (1) 4270-4338[69] (1) 4340-4440[101] (1) 4442-4488[47] (9) 4498-4516[19] (1) 4518-4543[26] (28) 4572-4625[54] (1) 4627-4688[62] (1) 4690-4706[17] (1) 4708-4763[56] (13) 4777-4795[19] (1) 4797-4850[54] (-4) 4847-4863[17] (1) 4865-4882[18] (1) 4884-4904[21] (1) 4906-4934[29] (1) 4936-4960[25] (17) 4978-5033[56] (-11) 5023-5039[17] (3) 5043-5061[19] (1) 5063-5103[41] (5) 5109-5124[16] (1) 5126-5147[22] (-7) 5141-5160[20] (1) 5162-5211[50] (1) 5213-5240[28] (6) 5247-5292[46] (1) 5294-5384[91] (1) 5386-5420[35] (1) 5422-5448[27] (1) 5450-5481[32] (1) 5483-5508[26] (3) 5512-5538[27] (1) 5540-5595[56] (1) 5597-5617[21] (1) 5619-5634[16] (1) 5636-5724[89]
+
+Details of the LTR alignment(5'-end):
+                                    |10979
+ATT----AACTCTATTGCAAGTGGGAGAC-------TGCAGAAAATATGCCCTAGAGGCAATAATAAAGTTATTATTTATT
+ ||    |||| ||    | ||  ||  |       || || |*|||||||||||||||||||||||||||||||||||||
+-TTGTGAAACT-TA----ACGT-TGATGCTTCTTTTTGAAGGAAATATGCCCTAGAGGCAATAATAAAGTTATTATTTATT
+                               *****|3980
+
+Details of the LTR alignment(3'-end):
+                                   12709|*****
+TGTGCGTAGGAATTTTTTTGAAATTACTACGTTCCCCAACACTTTTGACCATGA-CCTA---CTTAGGGGCACGATGGGGG
+||||||||||||||||||||||||||||||||||||||*|| |  | | || || ||||    ||| |    || ||    
+TGTGCGTAGGAATTTTTTTGAAATTACTACGTTCCCCAACAGTGGT-ATCA-GAGCCTAGGTTTTATG----CGTTGA---
+                                    5724|
+
+Details of the PBS alignment(+):
+tRNA type: MetCAT
+TATCAGAGCC-AGGTTT
+|||||||||| ||||||
+TATCAGAGCCTAGGTTT
+|5729
+
+Details of PPT(+):
+ACGAGAAAAACATGA
+|10888
+
+[2] HEX3045G05 Len:82726
+Location : 10990 - 14628 Len: 3639 Strand:+
+Score    : 6 [LTR region similarity:0.924]
+Status   : 11110110000
+5'-LTR   : 10990 - 11724 Len: 735
+3'-LTR   : 13895 - 14628 Len: 734
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : NOT FOUND
+Sharpness: 0.471,0.4
+Strand + :
+PBS   : [15/19] 11726 - 11744 (MetCAT)
+PPT   : [12/15] 13878 - 13892
+
+Details of exact match pairs:
+13890-13935[46] (6) 13942-13979[38] (1) 13981-14012[32] (6) 14019-14051[33] (26) 14078-14121[44] (1) 14123-14150[28] (15) 14166-14199[34] (1) 14201-14240[40] (7) 14248-14342[95] (1) 14344-14390[47] (9) 14400-14418[19] (1) 14420-14445[26] (28) 14474-14527[54] (23) 14551-14560[10]
+10985-11030[46] (6) 11037-11074[38] (1) 11076-11107[32] (8) 11116-11148[33] (25) 11174-11217[44] (2) 11220-11247[28] (15) 11263-11296[34] (1) 11298-11337[40] (7) 11345-11439[95] (1) 11441-11487[47] (9) 11497-11515[19] (0) 11516-11541[26] (28) 11570-11623[54] (-7) 11617-11626[10]
+
+Details of the LTR alignment(5'-end):
+                                       |13895
+GAAAGCAACTCCATAGGAATTGG-----TGAAGGAAATATGCCCTAGAGGCAATAATAAAGTTATTATTTATTTCCTTATA
+      ||||| || | || |||     || || |||||*|||||||||||||||||||||||||||||||||||||||| 
+-----TAACTCTATTGCAAGTGGGAGACTGCAGAAAATATGCCCTAGAGGCAATAATAAAGTTATTATTTATTTCCTTATG
+                                       |10990
+
+Details of the LTR alignment(3'-end):
+                                            14628|
+TTGTTATGCGGTTTGACCGATAAAGATCTTCGTAGAATATGTAGGAGCCAATATGAGCATCCAGGTTCCGCTATTGGTTAT
+|||||||||||| ||||||||||||||||* |||||||||||||||||||||||||||||||||||||||||         
+TTGTTATGCGGTCTGACCGATAAAGATCTTTGTAGAATATGTAGGAGCCAATATGAGCATCCAGGTTCCGCT---------
+                                            11724|
+
+Details of the PBS alignment(+):
+tRNA type: MetCAT
+TATCAG-AGCCAGGTTTCG
+||| || | ||||||| ||
+TATGAGCATCCAGGTTCCG
+|11726
+
+Details of PPT(+):
+AATTGGTGAAGGAAA
+|13878
+
+[3] HEX3045G05 Len:82726
+Location : 28066 - 41664 Len: 13599 Strand:-
+Score    : 8 [LTR region similarity:0.986]
+Status   : 11110110100
+5'-LTR   : 28066 - 28204 Len: 139
+3'-LTR   : 41528 - 41664 Len: 137
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : NOT FOUND
+Sharpness: 0.514,0.543
+Strand - :
+PBS   : [15/21] 41462 - 41482 (-HisGTG)
+PPT   : [13/15] 28212 - 28226
+Domain: 30467 - 30754 [possible ORF:27998-31003, (IN (core))]
+Domain: 36589 - 37083 [possible ORF:36586-37392, (IN (core))]
+
+Details of exact match pairs:
+41528-41589[62] (0) 41590-41616[27] (-3) 41614-41668[55]
+28066-28127[62] (1) 28129-28155[27] (-2) 28154-28208[55]
+
+Details of the LTR alignment(5'-end):
+                                       |41528
+TG---GGAG-GGGAGGGATGGATCGGATATCTGATACCATGTAAAGTGCTTGATTGTTCAGTGTCCTTACAGAATACAGAG
+||    ||| |  | | |   || ||| || |       *|||||||||||||||||||||||||||||||||||||||||
+TGTTTCGAGCGCAATGTACTAATTGGA-AT-T-------TGTAAAGTGCTTGATTGTTCAGTGTCCTTACAGAATACAGAG
+                                       |28066
+
+Details of the LTR alignment(3'-end):
+                                41664|
+GTGCAACGATCGTGCAATCCAAGTGGGAAGCGAGTCCACGCTGTAA-AGTGCTT------G-ATTGTTGAGTGTC--CTTA
+|||||||||||||||||||||||||||||||||||||||||* ||| |   |        | | |||  || | |  | | 
+GTGCAACGATCGTGCAATCCAAGTGGGAAGCGAGTCCACGCTCTAACACCCCCCCCCCCCGCAGTGTC-AGCGGCGGCGTC
+                                28204|
+
+Details of the PBS alignment(-):
+tRNA type: -HisGTG
+CA-ATTCCCGTC--ATTCGCC
+|| ||| || ||  ||||| |
+CATATTTCCTTCAGATTCGTC
+|41462
+
+Details of PPT(-):
+ACACCCCCCCCCCCC
+|28212
+
+[4] HEX3045G05 Len:82726
+Location : 28066 - 41816 Len: 13751 Strand:-
+Score    : 9 [LTR region similarity:0.98]
+Status   : 11111110100
+5'-LTR   : 28066 - 28214 Len: 149
+3'-LTR   : 41668 - 41816 Len: 149
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : 28061 - 28065 , 41817 - 41821 [GAATT]
+Sharpness: 0.471,0.543
+Strand - :
+PBS   : [17/23] 41595 - 41617 (-TyrGTA)
+PPT   : [13/15] 28215 - 28229
+Domain: 30467 - 30754 [possible ORF:27998-31003, (IN (core))]
+Domain: 36589 - 37083 [possible ORF:36586-37392, (IN (core))]
+
+Details of exact match pairs:
+41668-41686[19] (1) 41688-41699[12] (1) 41701-41756[56] (1) 41758-41816[59]
+28066-28084[19] (1) 28086-28097[12] (1) 28099-28154[56] (1) 28156-28214[59]
+
+Details of the LTR alignment(5'-end):
+                                     |41668
+GATCGTGCAAT---CCAAGTGGGAAGCGAGTCCACGCTGTAAAGTGCTTGATTGTTGAGTGTCCTTACATAATACAGAGAG
+||  | |||||   | || | ||||     |      |||||*||||||||||||| |||||||||||| |||||||||||
+GA--GCGCAATGTACTAA-TTGGAA-----T-----TTGTAAAGTGCTTGATTGTTCAGTGTCCTTACAGAATACAGAGAG
+                      ***-----*-----*|28066
+
+Details of the LTR alignment(3'-end):
+                                   41816|*****
+GATCGTGCAATCCAAGTGGGAAGCGAGTCCACGCTCTAACAGAATTGCCTCCGGTCTTGCATACTCCATACTG-AATGTC-
+|||||||||||||||||||||||||||||||||||||||*|      || ||       |   | ||   | | | |||| 
+GATCGTGCAATCCAAGTGGGAAGCGAGTCCACGCTCTAACA------CCCCC-------C---CCCC---CCGCAGTGTCA
+                                   28214|
+
+Details of the PBS alignment(-):
+tRNA type: -TyrGTA
+CG-AATC-CGGCAG---GTGGGA
+|| || | ||||||   ||||||
+CGCAACCGCGGCAGGACGTGGGA
+|41595
+
+Details of PPT(-):
+CCCCCCCCCCCCGCA
+|28215
+
+[5] HEX3045G05 Len:82726
+Location : 32893 - 41474 Len: 8582 Strand:-
+Score    : 8 [LTR region similarity:0.972]
+Status   : 11111110100
+5'-LTR   : 32893 - 34633 Len: 1741
+3'-LTR   : 39732 - 41474 Len: 1743
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : 32888 - 32892 , 41475 - 41479 [GATTC]
+Sharpness: 0.571,0.486
+Strand - :
+PBS   : [14/16] 39711 - 39726 (-MetCAT)
+PPT   : [12/15] 34635 - 34649
+Domain: 36589 - 37083 [possible ORF:36586-37392, (IN (core))]
+
+Details of exact match pairs:
+39731-39742[12] (1) 39744-39759[16] (1) 39761-39772[12] (1) 39774-39936[163] (5) 39942-39965[24] (2) 39968-39982[15] (1) 39984-40002[19] (1) 40004-40046[43] (1) 40048-40075[28] (3) 40079-40095[17] (-4) 40092-40207[116] (1) 40209-40235[27] (9) 40245-40340[96] (1) 40342-40362[21] (1) 40364-40378[15] (2) 40381-40423[43] (11) 40435-40447[13] (1) 40449-40485[37] (1) 40487-40532[46] (1) 40534-40587[54] (1) 40589-40620[32] (4) 40625-40643[19] (1) 40645-40679[35] (1) 40681-40698[18] (1) 40700-40784[85] (1) 40786-40803[18] (1) 40805-40859[55] (6) 40866-40881[16] (7) 40889-40993[105] (1) 40995-41073[79] (7) 41081-41163[83] (1) 41165-41191[27] (1) 41193-41258[66] (1) 41260-41367[108] (1) 41369-41379[11] (1) 41381-41393[13] (5) 41399-41426[28] (-1) 41426-41444[19] (1) 41446-41475[30]
+32892-32903[12] (1) 32905-32920[16] (1) 32922-32933[12] (1) 32935-33097[163] (5) 33103-33126[24] (2) 33129-33143[15] (1) 33145-33163[19] (1) 33165-33207[43] (1) 33209-33236[28] (3) 33240-33256[17] (-5) 33252-33367[116] (1) 33369-33395[27] (8) 33404-33499[96] (1) 33501-33521[21] (1) 33523-33537[15] (2) 33540-33582[43] (11) 33594-33606[13] (1) 33608-33644[37] (1) 33646-33691[46] (1) 33693-33746[54] (1) 33748-33779[32] (4) 33784-33802[19] (1) 33804-33838[35] (1) 33840-33857[18] (1) 33859-33943[85] (1) 33945-33962[18] (1) 33964-34018[55] (6) 34025-34040[16] (7) 34048-34152[105] (1) 34154-34232[79] (7) 34240-34322[83] (0) 34323-34349[27] (1) 34351-34416[66] (1) 34418-34525[108] (1) 34527-34537[11] (1) 34539-34551[13] (5) 34557-34584[28] (0) 34585-34603[19] (1) 34605-34634[30]
+
+Details of the LTR alignment(5'-end):
+                                        |39732
+ACATCAACACATAAAACCTAGGCTCGGAT-GCC---A--CTGTTGGGTTACGTAGTAATTTCAAAAAAATTCCTACGCACA
+ |  |  |   |      | || | || | |||   |  *||||||||||| |||||||||||||||| ||||||||||||
+GC--CGCCG-GTG-----TTGGGT-GGTTCGCCTGGATTCTGTTGGGTTACATAGTAATTTCAAAAAATTTCCTACGCACA
+                                   *****|32893
+
+Details of the LTR alignment(3'-end):
+                                  41474|*****
+ATAATAACTTCATTATTGCCTCTAGGGCATATTTCCTTCAGATTCGTCA-TGGCGATCGTGGGAGGGGAGGGAT--GGATC
+|||||||||| |||||||||||||||||||||||||||||*  ||  || | || | | | | ||   |   ||   | ||
+ATAATAACTTTATTATTGCCTCTAGGGCATATTTCCTTCAGTCTC-CCACTTGC-A-C-TAG-AGTCAATA-ATCTAGTTC
+                                  34633|
+
+Details of the PBS alignment(-):
+tRNA type: -MetCAT
+AAACCT-GGCTCTGAT
+|||||| ||||| |||
+AAACCTAGGCTCGGAT
+|39711
+
+Details of PPT(-):
+TCTCCCACTTGCACT
+|34635
+
+[6] HEX3045G05 Len:82726
+Location : 48312 - 50897 Len: 2586 Strand:-
+Score    : 7 [LTR region similarity:0.994]
+Status   : 11111110000
+5'-LTR   : 48312 - 48472 Len: 161
+3'-LTR   : 50737 - 50897 Len: 161
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : 48307 - 48311 , 50898 - 50902 [CCTCG]
+Sharpness: 0.514,0.514
+Strand - :
+PBS   : [15/20] 50662 - 50681 (-AspGTC)
+PPT   : [11/15] 48473 - 48487
+
+Details of exact match pairs:
+50737-50787[51] (1) 50789-50897[109]
+48312-48362[51] (1) 48364-48472[109]
+
+Details of the LTR alignment(5'-end):
+                                       |50737
+TTAGGGTTTGGATCGTGATTAGGCTGATAC-------CATGTTAGAAGGGAGAGAGAGGGATTGTTGCGGAATATGATGGT
+  |  |||  | ||  || ||  || | ||       | |*||||||||||||||||||||||||||||||||||||||||
+CCA-AGTTCAGGTCAAGACTAACCTCAAACACGTCCTCGTGTTAGAAGGGAGAGAGAGGGATTGTTGCGGAATATGATGGT
+                                  *****|48312
+
+Details of the LTR alignment(3'-end):
+                                  50897|*****
+GGAATCCTAAACTACATGTAACCCAAATATATCTCTAACACCTCGTCGTTATTTTTTCGTTCTGG-A-CGTGGCAATCAAT
+|||||||||||||||||||||||||||||||||||||||* | |  ||  | |    |||   || | ||| || | ||| 
+GGAATCCTAAACTACATGTAACCCAAATATATCTCTAACATCCCCCCGC-AGT----CGTAGCGGTAGCGTTGCGAACAAC
+                                  48472|
+
+Details of the PBS alignment(-):
+tRNA type: -AspGTC
+CGAT--CCCCGGAAACGGCG
+|||   ||||||  ||||||
+CGACCACCCCGGGGACGGCG
+|50662
+
+Details of PPT(-):
+TCCCCCCGCAGTCGT
+|48473
+
+[7] HEX3045G05 Len:82726
+Location : 52101 - 54454 Len: 2354 Strand:-
+Score    : 6 [LTR region similarity:0.938]
+Status   : 11110110000
+5'-LTR   : 52101 - 52261 Len: 161
+3'-LTR   : 54295 - 54454 Len: 160
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : NOT FOUND
+Sharpness: 0.5,0.429
+Strand - :
+PBS   : [14/18] 54269 - 54286 (-ProAGG)
+PPT   : [12/15] 52279 - 52293
+
+Details of exact match pairs:
+54290-54299[10] (6) 54306-54326[21] (-4) 54323-54335[13] (1) 54337-54350[14] (1) 54352-54364[13] (1) 54366-54377[12] (1) 54379-54397[19] (1) 54399-54414[16] (1) 54416-54426[11] (1) 54428-54455[28]
+52096-52105[10] (6) 52112-52132[21] (-3) 52130-52142[13] (1) 52144-52157[14] (1) 52159-52171[13] (1) 52173-52184[12] (1) 52186-52204[19] (1) 52206-52221[16] (1) 52223-52233[11] (1) 52235-52262[28]
+
+Details of the LTR alignment(5'-end):
+                                        |54295
+GCA-------------------TGC---CC-GTGCTATTATGTTGACATATGTTACATCGTGTGTCTA-CCCCGCTATATA
+|||                   |||   || ||| |||*|||||| |||| ||||||||||||||||| ||||||||||||
+GCACACGCCGCCGGCTCCCCCTTGCGCACCTGTGATATTATGTTGGCATAGGTTACATCGTGTGTCTACCCCCGCTATATA
+                                        |52101
+
+Details of the LTR alignment(3'-end):
+                                  54454|
+ATAACCTACCTTATACACTATATTCGACACAACTCCAACAA----CACCT--ACCAGTTCACTCAAAAAGTTTTAAGACGA
+ ||||||||||| |||||||||||||||||||||||||||*    |||||  || | |   ||| |  | | |||| |   
+GTAACCTACCTTGTACACTATATTCGACACAACTCCAACAAACTCCACCTTGACGAATATTCTCCACCA-TCTTAA-ATTC
+                                  52261|
+
+Details of the PBS alignment(-):
+tRNA type: -ProAGG
+CA-ATTCTCGGAATGCCC
+|| | || ||| ||||||
+CACACTC-CGGCATGCCC
+|54269
+
+Details of PPT(-):
+TATTCTCCACCATCT
+|52279
+
+
+Total consume 9.372 second

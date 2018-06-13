@@ -1,0 +1,5 @@
+HEX2903P03	ltr_finder:def	LTR_retrotransposon	121289	131504	6	-	.	ltr_finder_1
+HEX2903P03	ltr_finder:def	primer_binding_site	131270	131286	6	-	.	ltr_finder_1
+HEX2903P03	ltr_finder:def	RR_tract	121566	121580	6	-	.	ltr_finder_1
+HEX2903P03	ltr_finder:def	five_prime_LTR	121289	121499	6	-	.	ltr_finder_1
+HEX2903P03	ltr_finder:def	three_prime_LTR	131294	131504	6	-	.	ltr_finder_1

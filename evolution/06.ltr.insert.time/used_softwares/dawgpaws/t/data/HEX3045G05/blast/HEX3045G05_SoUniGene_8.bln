@@ -1,0 +1,332 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SoUniGene_8 
+           12,726 sequences; 10,365,692 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|Sof#S17252395 SCBFLR1039C07.g LR1 Saccharum officinarum c...   450   e-124
+gnl|UG|Sof#S17234564 SCCCRZ2001H12.g Saccharum officinarum mRNA ...   396   e-108
+gnl|UG|Sof#S17376924 SCQGAM2030G02.g AM2 Saccharum officinarum c...   155   2e-35
+gnl|UG|Sof#S17445038 SCQGST1034F01.g ST1 Saccharum officinarum c...   145   2e-32
+gnl|UG|Sof#S17285927 SCEZRT2018A06.g RT2 Saccharum officinarum c...   127   4e-27
+gnl|UG|Sof#S17271401 SCCCNR1003B09.g NR1 Saccharum officinarum c...    58   3e-06
+
+>gnl|UG|Sof#S17252395 SCBFLR1039C07.g LR1 Saccharum officinarum cDNA
+             clone SCBFLR1039C07 5', mRNA sequence /clone=SCBFLR1039C07
+             /clone_end=5' /gb=CA117394 /gi=34970702 /ug=Sof.3944
+             /len=1255
+          Length = 1255
+
+ Score =  450 bits (227), Expect = e-124
+ Identities = 337/374 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||||||  | ||||| ||||||||||||||||||||||||
+Sbjct: 554   cctcacttggccatcataaccttgacanattcctcatagttgatctggccgtcgccgtcc 495
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| || ||||||
+Sbjct: 494   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcaccaaggttg 435
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || ||||||||||||||||| |||
+Sbjct: 434   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcgaagacg 375
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 374   cggaaggcctccttgagctcctcctcggagtcggtgtccttcatcttccttgccatcagg 315
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||||||||| || ||||| || || |||||||| |||||||||
+Sbjct: 314   ttcaggaactctgggaagtcgatggtcccattgccatcagcatcaacctcattgatcatg 255
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| |||||||| |||||||| ||||| ||||||
+Sbjct: 254   tcctgcagctctgcctctgtagggttctggccgagggagcgcatcacagttccgagctcc 195
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||||||||||||
+Sbjct: 194   ttggtggtgatgca 181
+
+
+
+ Score =  141 bits (71), Expect = 3e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 179   ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 120
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 119   gtgagctggtccgccatgg 101
+
+
+>gnl|UG|Sof#S17234564 SCCCRZ2001H12.g Saccharum officinarum mRNA
+             (Nogueira,F.T.S) Saccharum officinarum cDNA, mRNA sequence
+             /gb=BU103691 /gi=32815022 /ug=Sof.5067 /len=1059
+          Length = 1059
+
+ Score =  396 bits (200), Expect = e-108
+ Identities = 332/376 (88%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| |||||||||||||||||||||||||||||||| ||||| || |
+Sbjct: 376   ctcacttggccatcatcaccttgacgaactcctcgtagttgatctggccatcgccatcga 435
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || ||||||||||| ||||||||||| || |||||||
+Sbjct: 436   cgtcggcctcgcggatcatctcatcgacctcctcgtcggtcagcttctcgccaaggttgg 495
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||||||||| |||||||| || |||||||||||||||||||||||||||||||| |
+Sbjct: 496   tcatcacgtggcggagctccgcagcagagatgaagccgttctggtccttgtcgaacaccc 555
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 556   tgaatgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 615
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| |||||||| |||||||| ||||| || || || ||||| ||||||||||
+Sbjct: 616   tgaggaactctgggaagtcaatggtgccattgccatcggcatcgacctcattgatcatgt 675
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || |||||||| || || || ||||| || || ||||||||||
+Sbjct: 676   cctgaagctcagcctcggttgggttctgacccagtgaacgcatgacagtcccaagctcct 735
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 736   tggttgtgatgcaacc 751
+
+
+
+ Score =  143 bits (72), Expect = 6e-32
+ Identities = 78/80 (97%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| |||||||||||||||||||||||||||||||||||||||||||| |||||
+Sbjct: 749   accgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtc 808
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             ||||||||||||||||||||
+Sbjct: 809   ggtgagctggtccgccatgg 828
+
+
+>gnl|UG|Sof#S17376924 SCQGAM2030G02.g AM2 Saccharum officinarum cDNA
+             clone SCQGAM2030G02 5', mRNA sequence /clone=SCQGAM2030G02
+             /clone_end=5' /gb=CA124384 /gi=34977692 /ug=Sof.670
+             /len=1232
+          Length = 1232
+
+ Score =  155 bits (78), Expect = 2e-35
+ Identities = 193/230 (83%), Gaps = 1/230 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44853 agatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgag-ctcctcctcc 44911
+             |||| ||||| ||||| |||| ||| ||||| || || ||||||||||| ||| ||||| 
+Sbjct: 500   agataaagccattctgatcctggtcaaacacacgaaaggcctccttgaggctcttcctca 441
+
+                                                                         
+Query: 44912 gagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatggtg 44971
+             |||||||||||||||||||| |  ||||| ||||| || ||||| || ||||| ||||||
+Sbjct: 440   gagtccgtgtccttcatcttgcgagccataaggttgagaaactctggaaagtcaatggtg 381
+
+                                                                         
+Query: 44972 ccgttgccgtccgcgtcaacctcgttgatcatgtcctgcagctccgcctccgtggggttc 45031
+             |||||||| || || || |||||||||||||||||||| ||||| ||||| || ||||| 
+Sbjct: 380   ccgttgccatcagcatcgacctcgttgatcatgtcctggagctcagcctctgtagggttt 321
+
+                                                               
+Query: 45032 tgcccgagggaccgcatcacggttccaagctccttggtggtgatgcaacc 45081
+             ||||| || || ||||| || ||||| ||||| ||||| |||||||||||
+Sbjct: 320   tgccccagtgagcgcatgacagttcccagctctttggtcgtgatgcaacc 271
+
+
+
+ Score =  101 bits (51), Expect = 2e-19
+ Identities = 66/71 (92%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||||||||||||||||||||| ||||| |||||||| || || |||||||||
+Sbjct: 263   tccttgtcgaagaggctgaaggcctccttaaactcagcgatctggtcttcagtgagctgg 204
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 203   tccgccatggg 193
+
+
+>gnl|UG|Sof#S17445038 SCQGST1034F01.g ST1 Saccharum officinarum cDNA
+             clone SCQGST1034F01 5', mRNA sequence /clone=SCQGST1034F01
+             /clone_end=5' /gb=CA177556 /gi=35108445 /ug=Sof.16429
+             /len=832
+          Length = 832
+
+ Score =  145 bits (73), Expect = 2e-32
+ Identities = 142/165 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 43450 tcctcgaggaagccccgcgcctcggcctcgtccacgttctggcccagcgagcggagcgcc 43509
+             ||||| ||||||| ||||| ||| ||||||||||||||||||||||| || || ||||||
+Sbjct: 319   tcctccaggaagcgccgcgtctccgcctcgtccacgttctggcccagggaccgcagcgcc 260
+
+                                                                         
+Query: 43510 gtgaccagctcgccggcggcgatgcggccgtcctcgtcgccgtcgaacaggtcgaacacc 43569
+             || || |||||||| | ||||||||| |||||||||||| |||||||||||||||| |  
+Sbjct: 259   gtcacgagctcgcccgtggcgatgcgaccgtcctcgtcggcgtcgaacaggtcgaagatt 200
+
+                                                          
+Query: 43570 tccttgcactcgtccgcctgctcctgggtcagcttggccgccatg 43614
+             ||||||||||||||  ||||| || | ||||||||  ||||||||
+Sbjct: 199   tccttgcactcgtcgacctgcgccggcgtcagcttctccgccatg 155
+
+
+
+ Score = 60.0 bits (30), Expect = 7e-07
+ Identities = 60/70 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 43239 gtcggcctcctcctccgtgagccggtcgccgtgggtgagcatcacctgccgcagctgctc 43298
+             |||| |||| || ||||||||||||||||   |||| | |||||||| |||||| |||||
+Sbjct: 536   gtcgccctcttcttccgtgagccggtcgcgtggggtcaccatcacctcccgcagttgctc 477
+
+                       
+Query: 43299 cgcggggatg 43308
+             ||||||||||
+Sbjct: 476   cgcggggatg 467
+
+
+>gnl|UG|Sof#S17285927 SCEZRT2018A06.g RT2 Saccharum officinarum cDNA
+             clone SCEZRT2018A06 5', mRNA sequence /clone=SCEZRT2018A06
+             /clone_end=5' /gb=CA139936 /gi=35032422 /ug=Sof.16528
+             /len=692
+          Length = 692
+
+ Score =  127 bits (64), Expect = 4e-27
+ Identities = 133/156 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44728 gacgaactcctcgtagttgatctggccgtcgccgtccacgtccgcctcccggatcatctc 44787
+             ||||||||| ||||| |||| ||||||||| ||||| | ||| ||||| |||||||||| 
+Sbjct: 541   gacgaactcatcgtaattgagctggccgtccccgtcaaggtcggcctcgcggatcatctg 482
+
+                                                                         
+Query: 44788 gtccacctcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccgc 44847
+              || ||||||||||| || |||||||| ||||||||| |||| |||||||| ||||| | 
+Sbjct: 481   ctcgacctcctcgtcggtgagcttctcgccgaggttgatcatgacgtggcggagctcggt 422
+
+                                                 
+Query: 44848 cgccgagatgaagccgttctggtccttgtcgaacac 44883
+              || |||||| | |||||||||||||||||||||||
+Sbjct: 421   ggcggagatgtacccgttctggtccttgtcgaacac 386
+
+
+
+ Score = 67.9 bits (34), Expect = 3e-09
+ Identities = 40/42 (95%)
+ Strand = Plus / Minus
+
+                                                       
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtc 44988
+             ||||||||||| |||||||||||||||||||||||| |||||
+Sbjct: 286   caggaactcggcgaagtcgatggtgccgttgccgtcggcgtc 245
+
+
+>gnl|UG|Sof#S17271401 SCCCNR1003B09.g NR1 Saccharum officinarum cDNA
+             clone SCCCNR1003B09 5', mRNA sequence /clone=SCCCNR1003B09
+             /clone_end=5' /gb=CA291458 /gi=36048177 /ug=Sof.11285
+             /len=1026
+          Length = 1026
+
+ Score = 58.0 bits (29), Expect = 3e-06
+ Identities = 53/61 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44838 gcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctcct 44897
+             ||||||| || ||||||||||||||||    ||||| ||||||||| |||||||||||||
+Sbjct: 481   gcagctcggcggccgagatgaagccgtcaccgtcctcgtcgaacacccggaacgcctcct 422
+
+              
+Query: 44898 t 44898
+             |
+Sbjct: 421   t 421
+
+
+  Database: SoUniGene_8
+    Posted date:  Feb 18, 2007  1:03 AM
+  Number of letters in database: 10,365,692
+  Number of sequences in database:  12,726
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 12726
+Number of Hits to DB: 575,900
+Number of extensions: 228627
+Number of successful extensions: 64146
+Number of sequences better than 1.0e-05: 6
+Number of HSP's gapped: 64144
+Number of HSP's successfully gapped: 11
+Length of query: 82726
+Length of database: 10,365,692
+Length adjustment: 20
+Effective length of query: 82706
+Effective length of database: 10,111,172
+Effective search space: 836254591432
+Effective search space used: 836254591432
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 29 (58.0 bits)

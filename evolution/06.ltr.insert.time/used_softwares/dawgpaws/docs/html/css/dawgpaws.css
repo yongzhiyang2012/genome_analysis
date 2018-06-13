@@ -1,0 +1,46 @@
+h1 { 
+    font-size:large; 
+}
+h2 { 
+    font-size:medium; 
+}
+body {
+    font-family:verdana, arial, helvetica, sans-serif;
+    color:#000;
+    font-size:small;
+    font-weight:normal;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+}
+a:link{ 
+    color:navy; text-decoration:none; 
+}
+a:visited{ 
+    color:navy; text-decoration:none; 
+}
+a:hovor{ 
+    color:navy; text-decoration:underline; 
+}
+a:active{ 
+    color:navy; text-decoration:underline; 
+}
+pre {	
+    font-weight:bold;
+    color:black;
+    font-family:courier;
+    border-style: dashed;
+    border-width:1px;
+    border-color:gray;
+    padding: 1em 0;
+    white-space: pre;
+    background: rgb(240,240,240);
+}
+table#prog_list {
+    width: 100%;
+}
+td#prog {
+    border-top-color:#999999; 
+    border-top-style:solid; 
+    border-top-width: 1px;
+}

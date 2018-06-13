@@ -1,0 +1,849 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AtGI_13 
+           81,826 sequences; 74,847,757 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+TC293324 UP|Q6UQE4_DAUCA (Q6UQE4) Calmodulin 8 (Calmodulin 4) (F...   238   1e-59
+TC300438 GB|AAG52168.1|12324401|AC020665 calmodulin-4; 77432-760...   236   4e-59
+TC294389 GB|AAG52168.1|12324401|AC020665 calmodulin-4; 77432-760...   228   1e-56
+AV553301                                                              216   4e-53
+TC294531 GB|AAR24759.1|38604032|BT010981 At2g41120 {Arabidopsis ...   216   4e-53
+TC302810 homologue to GB|AAG52168.1|12324401|AC020665 calmodulin...   212   6e-52
+TC293229 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete                212   6e-52
+TC302916 homologue to UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete   198   9e-48
+TC302355 GB|AAK91367.1|15215644|AY050350 AT3g43810/T28A8_100 {Ar...   190   2e-45
+TC297179 GB|AAK91367.1|15215644|AY050350 AT3g43810/T28A8_100 {Ar...   190   2e-45
+TC302685 homologue to UP|Q6LEC4_9FABA (Q6LEC4) Calmodulin, parti...   184   1e-43
+AA712683 calmodulin, ACaM4                                            131   2e-27
+TC300551 UP|Q3EBT4_ARATH (Q3EBT4) Protein At2g27030, complete         103   4e-19
+TC294245 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete                103   4e-19
+Z26721 similar to GP|2959326|emb|CAA04528.1 calmodulin-like prot...    88   2e-14
+BP633303                                                               86   9e-14
+TC313564 homologue to UP|Q940C4_ARATH (Q940C4) AT4g15470/dl3775w...    80   6e-12
+TC311408 homologue to UP|PIP27_ARATH (P93004) Aquaporin PIP2.7 (...    80   6e-12
+TC302853 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, partial (74%)            76   9e-11
+TC313454 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, partial (60%)            74   4e-10
+BP847787                                                               66   9e-08
+
+>TC293324 UP|Q6UQE4_DAUCA (Q6UQE4) Calmodulin 8 (Calmodulin 4)
+             (Fragment), complete
+          Length = 818
+
+ Score =  238 bits (120), Expect = 1e-59
+ Identities = 312/376 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| ||||||||||| || ||||||||||| || || || || |
+Sbjct: 551   ctcactttgccatcatgactttgacgaactcttcatagttgatctgaccatcaccatcga 492
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || || ||||| ||||||| ||||||||| || || |
+Sbjct: 491   cgtcagcctctcggatcatctcatcgacttcctcatccgtcaacttctccccaagatttg 432
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||||||||| || ||||| |||||||||||||| ||||||||||||||||| || || |
+Sbjct: 431   tcatcacgtgacgaagctcagccgccgagatgaaaccgttctggtccttgtcaaaaaccc 372
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| || ||||| ||||| ||||| || || ||||| |||||||| |  ||||| ||||
+Sbjct: 371   tgaaggcttccttaagctcttcctctgaatcagtgtctttcatcttacgtgccattaggt 312
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||| ||||| || || || ||||| ||||| || || || || |||||||| |
+Sbjct: 311   tcaggaactcagggaaatctattgtcccgttcccgtctgcatccacttcattgatcatat 252
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| || || || ||||||||||| || || | |||||| || ||||||||||
+Sbjct: 251   cctggagctcggcttctgtcgggttctgcccaagtgatctcatcacagtcccaagctcct 192
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             | |||||||| |||||
+Sbjct: 191   ttgtggtgatacaacc 176
+
+
+>TC300438 GB|AAG52168.1|12324401|AC020665 calmodulin-4; 77432-76078
+             {Arabidopsis thaliana} (exp=0; wgp=1; cg=0), complete
+          Length = 777
+
+ Score =  236 bits (119), Expect = 4e-59
+ Identities = 311/375 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||| | |||||| |||||||||||||| ||||| || || || || ||
+Sbjct: 565   tcacttagccatcataatcttgacaaactcctcgtagtttatctgaccatctccatcaac 506
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || || || || |||||||| || ||||| || || ||||| ||||| || || || ||
+Sbjct: 505   atctgcttcacgaatcatctcctcgacctcttcatcagtcagtttctcacctagattcgt 446
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| ||||| || || || ||||| ||||||||||| ||||||||||| | 
+Sbjct: 445   catcacatggcgaagctctgcagcggatatgaaaccgttctggtctttgtcgaacaccct 386
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| || || || ||||| ||||||||||| ||||||||||||||  | ||||| |||||
+Sbjct: 385   gaaagcttctttcagctcttcctccgagtctgtgtccttcatctttttagccattaggtt 326
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+              | |||||| |||||||| ||||| ||||| || || |||||||||||||||||||||||
+Sbjct: 325   taagaactcagggaagtcaatggttccgtttccatcagcgtcaacctcgttgatcatgtc 266
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+              || ||||| || || || ||||||||||| || ||||||||||| ||||| ||||||||
+Sbjct: 265   ttgtagctcagcttctgttgggttctgccctagtgaccgcatcactgttcccagctcctt 206
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+              ||||||||||||||
+Sbjct: 205   tgtggtgatgcaacc 191
+
+
+>TC294389 GB|AAG52168.1|12324401|AC020665 calmodulin-4; 77432-76078
+             {Arabidopsis thaliana} (exp=0; wgp=1; cg=0), complete
+          Length = 763
+
+ Score =  228 bits (115), Expect = 1e-56
+ Identities = 310/375 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||| | |||||| ||||| || ||||| ||||| || || || || ||
+Sbjct: 540   tcacttagccatcataatcttgacaaactcttcatagttaatctgaccatctccatcaac 481
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || ||||| ||||||||||| ||||| || || || || |||||||| || || |||||
+Sbjct: 480   atcagcctcacggatcatctcttccacttcttcatcagttagcttctcaccaagattggt 421
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| ||||| || || |||||||| ||||||||||| |||||||| || | 
+Sbjct: 420   catcacatggcgtagctcagcagcggagatgaaaccgttctggtctttgtcgaaaaccct 361
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| || || || ||||| ||||| ||||| ||||| ||||||||| | |||||||||||
+Sbjct: 360   gaaggcttcttttagctcttcctcggagtcagtgtctttcatcttcttagccatcaggtt 301
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             ||||||||||||||||||||| |||||||| || || || ||||||||||||||||||||
+Sbjct: 300   caggaactcggggaagtcgatagtgccgtttccatctgcatcaacctcgttgatcatgtc 241
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+              || ||||| ||||| || ||||| || || || || ||||| || ||||| ||||| ||
+Sbjct: 240   ttggagctcagcctctgttgggttttgtcctagtgaacgcataactgttcccagctcttt 181
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+              || |||||||||||
+Sbjct: 180   tgttgtgatgcaacc 166
+
+
+
+ Score = 67.9 bits (34), Expect = 2e-08
+ Identities = 64/74 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             |||||||| |||||||||||||| || || |||||||| |||| |||||| ||||| |||
+Sbjct: 164   tcgccatctttgtcgaagaggctaaaagcttccttgaattcggagatctgttcgtcagtg 105
+
+                           
+Query: 46575 agctggtccgccat 46588
+             || || ||||||||
+Sbjct: 104   agttgatccgccat 91
+
+
+>AV553301
+          Length = 567
+
+ Score =  216 bits (109), Expect = 4e-53
+ Identities = 310/377 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||| |||||||| ||||| || ||||| |||||||||||||| || || || || 
+Sbjct: 434   cctcacttagccatcataaccttcacaaactcttcgtagttgatctgaccatcaccatca 375
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             || || || |||   |||||||| || || || || || || |||||||| |||||||| 
+Sbjct: 374   acatcagcttccttaatcatctcatcaacttcttcatcagtaagcttctcgccgaggtta 315
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| || | ||  || || || |||||||| ||||||||||| |||||||| || 
+Sbjct: 314   gtcatcacatgtctcaattcagcagctgagatgaaaccgttctggtctttgtcgaaaact 255
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | ||| || |||||||| || ||||| ||||| ||||||||||| ||||| ||||| |||
+Sbjct: 254   ctgaaagcttccttgagttcttcctcagagtcagtgtccttcattttcctagccattagg 195
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             |||| |||||| ||||| || ||||| ||||| || ||||| ||||| ||||||||||||
+Sbjct: 194   ttcaagaactccgggaaatcaatggttccgttaccatccgcatcaacttcgttgatcatg 135
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||| ||||| || || || ||||| || |||||||| ||||||||||| |||||||||
+Sbjct: 134   tcctgaagctcagcttcggttgggttttgaccgagggaacgcatcacggtaccaagctcc 75
+
+                              
+Query: 45065 ttggtggtgatgcaacc 45081
+             || ||||| ||||||||
+Sbjct: 74    tttgtggtaatgcaacc 58
+
+
+>TC294531 GB|AAR24759.1|38604032|BT010981 At2g41120 {Arabidopsis
+             thaliana} (exp=-1; wgp=0; cg=0), complete
+          Length = 1602
+
+ Score =  216 bits (109), Expect = 4e-53
+ Identities = 310/377 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||| |||||||| ||||| || ||||| |||||||||||||| || || || || 
+Sbjct: 519   cctcacttagccatcataaccttcacaaactcttcgtagttgatctgaccatcaccatca 460
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             || || || |||   |||||||| || || || || || || |||||||| |||||||| 
+Sbjct: 459   acatcagcttccttaatcatctcatcaacttcttcatcagtaagcttctcgccgaggtta 400
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| || | ||  || || || |||||||| ||||||||||| |||||||| || 
+Sbjct: 399   gtcatcacatgtctcaattcagcagctgagatgaaaccgttctggtctttgtcgaaaact 340
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | ||| || |||||||| || ||||| ||||| ||||||||||| ||||| ||||| |||
+Sbjct: 339   ctgaaagcttccttgagttcttcctcagagtcagtgtccttcattttcctagccattagg 280
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             |||| |||||| ||||| || ||||| ||||| || ||||| ||||| ||||||||||||
+Sbjct: 279   ttcaagaactccgggaaatcaatggttccgttaccatccgcatcaacttcgttgatcatg 220
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||| ||||| || || || ||||| || |||||||| ||||||||||| |||||||||
+Sbjct: 219   tcctgaagctcagcttcggttgggttttgaccgagggaacgcatcacggtaccaagctcc 160
+
+                              
+Query: 45065 ttggtggtgatgcaacc 45081
+             || ||||| ||||||||
+Sbjct: 159   tttgtggtaatgcaacc 143
+
+
+
+ Score = 69.9 bits (35), Expect = 6e-09
+ Identities = 62/71 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||||||||| | ||||||||| |||||||| || | |||||| ||||| ||||||
+Sbjct: 138   ccatccttgtcgaataagctgaaggcttccttgaattctgagatctgatcgtctgtgagc 79
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 78    tgatccgccat 68
+
+
+>TC302810 homologue to GB|AAG52168.1|12324401|AC020665 calmodulin-4;
+             77432-76078 {Arabidopsis thaliana} (exp=0; wgp=1; cg=0),
+             partial (97%)
+          Length = 685
+
+ Score =  212 bits (107), Expect = 6e-52
+ Identities = 260/311 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44771 gcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcatc 44830
+             ||||| ||||||||||| ||||| || || || || |||||||| || || |||||||||
+Sbjct: 411   gcctcacggatcatctcttccacttcttcatcagttagcttctcaccaagattggtcatc 352
+
+                                                                         
+Query: 44831 acgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaac 44890
+             || ||||| ||||| || || |||||||| ||||||||||| |||||||| || | ||| 
+Sbjct: 351   acatggcgtagctcagcagcggagatgaaaccgttctggtctttgtcgaaaaccctgaat 292
+
+                                                                         
+Query: 44891 gcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcagg 44950
+             || || || ||||| ||||| ||||| ||||| ||||||||| | |||||||||||||||
+Sbjct: 291   gcttcttttagctcttcctctgagtcagtgtctttcatcttcttagccatcaggttcagg 232
+
+                                                                         
+Query: 44951 aactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctgc 45010
+             ||||||||||||||||| |||||||| || || || |||||||||||||||||||| || 
+Sbjct: 231   aactcggggaagtcgatagtgccgtttccatctgcatcaacctcgttgatcatgtcttgg 172
+
+                                                                         
+Query: 45011 agctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttggtg 45070
+             ||||| ||||| || ||||| || || || || ||||| || ||||| ||||| || || 
+Sbjct: 171   agctcagcctctgttgggttttgtcctagtgaacgcataactgttcccagctcttttgtt 112
+
+                        
+Query: 45071 gtgatgcaacc 45081
+             |||||||||||
+Sbjct: 111   gtgatgcaacc 101
+
+
+
+ Score = 67.9 bits (34), Expect = 2e-08
+ Identities = 64/74 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             |||||||| |||||||||||||| || || |||||||| |||| |||||| ||||| |||
+Sbjct: 99    tcgccatctttgtcgaagaggctaaaagcttccttgaattcggagatctgttcgtcagtg 40
+
+                           
+Query: 46575 agctggtccgccat 46588
+             || || ||||||||
+Sbjct: 39    agttgatccgccat 26
+
+
+>TC293229 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete
+          Length = 865
+
+ Score =  212 bits (107), Expect = 6e-52
+ Identities = 308/375 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||||||||| || ||||| |||||||| ||||| || || || || ||
+Sbjct: 605   tcacttagccatcatgaccttaacaaactcttcgtagttaatctgaccatcaccatcaac 546
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || || |||  ||||||||| || || || || || || |||||||| || ||||| ||
+Sbjct: 545   atcagcttccttgatcatctcatcaacttcttcatcagtaagcttctcaccaaggtttgt 486
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| ||||| || || |||||||| |||||||||||||||||||| || ||
+Sbjct: 485   catcacatggcggagctcagctgctgagatgaaaccgttctggtccttgtcgaaaacccg 426
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| || ||||||||||| ||||| ||||| |||||||||||||| |  ||||| |||||
+Sbjct: 425   gaatgcttccttgagctcttcctcagagtcggtgtccttcatcttacgagccataaggtt 366
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             || |||||| ||||| || ||||| ||||| || || || || || ||||||||||||||
+Sbjct: 365   caagaactctgggaaatcaatggtaccgttaccatcagcatccacttcgttgatcatgtc 306
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+              || ||||| || || || ||||| || || ||||| |||||||| || || ||||||||
+Sbjct: 305   ttgaagctctgcttcggttgggttttgtccaagggaacgcatcacagtacccagctcctt 246
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             |||||| ||||||||
+Sbjct: 245   ggtggtaatgcaacc 231
+
+
+
+ Score = 69.9 bits (35), Expect = 6e-09
+ Identities = 62/71 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||||||||| | |||||| || ||||| ||||| | |||||| ||||||||||||
+Sbjct: 226   ccatccttgtcgaataagctgaaagcttccttaaactcagagatctgatcgtcggtgagc 167
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 166   tgatccgccat 156
+
+
+>TC302916 homologue to UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete
+          Length = 978
+
+ Score =  198 bits (100), Expect = 9e-48
+ Identities = 308/376 (81%), Gaps = 1/376 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||||||||| || ||||| |||||||| ||||| || || || || ||
+Sbjct: 674   tcacttagccatcatgaccttaacaaactcttcgtagttaatctgaccatcaccatcaac 615
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || || |||  ||||||||| || || || || || || |||||||| || ||||| ||
+Sbjct: 614   atcagcttccttgatcatctcatcaacttcttcatcagtaagcttctcaccaaggtttgt 555
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| ||||| ||||| || || |||||||| |||||||||||||||||||| || ||
+Sbjct: 554   catcacatggcggagctcagctgctgagatgaaaccgttctggtccttgtcgaaaacccg 495
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtcc-gtgtccttcatcttcctcgccatcaggt 44945
+             ||| || ||||||||||| ||||| |||||| |||||||||||||| |  ||||| ||||
+Sbjct: 494   gaatgcttccttgagctcttcctcagagtccggtgtccttcatctttcgagccataaggt 435
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             ||| |||||| ||||| || ||||| ||||| || || || ||  | |||||||||||||
+Sbjct: 434   tcaagaactctgggaaatcaatggttccgttaccatcagcatccccttcgttgatcatgt 375
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| || || || ||||| || || ||||| |||||| | ||||| |||||||
+Sbjct: 374   cttgaagctctgcttcggttgggttttgtccaagggaacgcatcccagttcccagctcct 315
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             ||||||| ||||||||
+Sbjct: 314   tggtggtaatgcaacc 299
+
+
+>TC302355 GB|AAK91367.1|15215644|AY050350 AT3g43810/T28A8_100
+             {Arabidopsis thaliana} (exp=-1; wgp=0; cg=0), complete
+          Length = 760
+
+ Score =  190 bits (96), Expect = 2e-45
+ Identities = 306/376 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| |||||||| || || ||||| ||||| || ||||| || |
+Sbjct: 520   ctcacttagccatcatgactttgacgaattcttcatagttaatctgaccatcgccatcaa 461
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | ||||| || ||||||||||| || || ||||| || |  |||||||| ||||| || |
+Sbjct: 460   catccgcttctcggatcatctcatcaacttcctcatcggatagcttctcaccgagatttg 401
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || ||||| || || || ||||| || |||||||| || || || || |
+Sbjct: 400   tcatgacatgtcgaagctctgctgcagatatgaaaccattctggtctttatcaaaaaccc 341
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+               || || ||||||||||| ||||| || || ||||||||||| ||||| ||||||||||
+Sbjct: 340   taaaagcttccttgagctcttcctctgaatcagtgtccttcattttccttgccatcaggt 281
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||| ||||| || ||||| ||||| || || || ||||| || ||||||||||
+Sbjct: 280   tcaggaactccgggaaatcaatggtcccgttcccatctgcatcaacttcattgatcatgt 221
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| || || || ||||| ||||| || |||| |||||||||||| |||||||
+Sbjct: 220   cttgaagctcagcttctgttgggttttgccccagagacctcatcacggttccgagctcct 161
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||||||||| |||||
+Sbjct: 160   tggtggtgatacaacc 145
+
+
+
+ Score = 77.8 bits (39), Expect = 2e-11
+ Identities = 63/71 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46518 ccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagc 46577
+             |||||||| ||||||||||| ||||| ||||||||||| | |||||| || |||||||||
+Sbjct: 140   ccatccttatcgaagaggctaaaggcttccttgaactctgagatctggtcatcggtgagc 81
+
+                        
+Query: 46578 tggtccgccat 46588
+             || ||||||||
+Sbjct: 80    tgatccgccat 70
+
+
+>TC297179 GB|AAK91367.1|15215644|AY050350 AT3g43810/T28A8_100
+             {Arabidopsis thaliana} (exp=-1; wgp=0; cg=0), partial
+             (85%)
+          Length = 645
+
+ Score =  190 bits (96), Expect = 2e-45
+ Identities = 306/376 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| |||||||| || || ||||| ||||| || ||||| || |
+Sbjct: 385   ctcacttagccatcatgactttgacgaattcttcatagttaatctgaccatcgccatcaa 326
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | ||||| || ||||||||||| || || ||||| || |  |||||||| ||||| || |
+Sbjct: 325   catccgcttctcggatcatctcatcaacttcctcatcggatagcttctcaccgagatttg 266
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || ||||| || || || ||||| || |||||||| || || || || |
+Sbjct: 265   tcatgacatgtcgaagctctgctgcagatatgaatccattctggtctttatcaaaaaccc 206
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+               || || ||||||||||| ||||| || || ||||||||||| ||||| ||||||||||
+Sbjct: 205   taaaagcttccttgagctcttcctctgaatcagtgtccttcattttccttgccatcaggt 146
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||||||||| ||||| || ||||| ||||| || || || ||||| || ||||||||||
+Sbjct: 145   tcaggaactccgggaaatcaatggtcccgttcccatctgcatcaacttcattgatcatgt 86
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| || || || ||||| ||||| || |||| |||||||||||| |||||||
+Sbjct: 85    cttgaagctcagcttctgttgggttttgccccagagacctcatcacggttccgagctcct 26
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||||||||| |||||
+Sbjct: 25    tggtggtgatacaacc 10
+
+
+>TC302685 homologue to UP|Q6LEC4_9FABA (Q6LEC4) Calmodulin, partial
+             (65%)
+          Length = 688
+
+ Score =  184 bits (93), Expect = 1e-43
+ Identities = 231/277 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| ||||||||||| ||||||||||| || ||||||||||| || || || || |
+Sbjct: 480   ctcactttgccatcatgactttgacgaactcttcatagttgatctgaccatcaccatcga 421
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| || || ||||| ||||||| ||||||||| || || |
+Sbjct: 420   catcagcctctcggatcatctcatcgacttcctcatccgtcaacttctccccaagatttg 361
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||||||||| || ||||| |||||||||||||| ||||||||||||||||| || || |
+Sbjct: 360   tcatcacgtgacgaagctcagccgccgagatgaaaccgttctggtccttgtcaaaaaccc 301
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| || ||||| ||||| ||||| || || ||||| |||||||| |  ||||| ||||
+Sbjct: 300   tgaaggcttccttaagctcttcctctgaatcagtgtctttcatcttacgtgccattaggt 241
+
+                                                  
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtc 44982
+             |||||||||| ||||| || || || ||||| |||||
+Sbjct: 240   tcaggaactcagggaaatctattgtcccgttcccgtc 204
+
+
+>AA712683 calmodulin, ACaM4
+          Length = 320
+
+ Score =  131 bits (66), Expect = 2e-27
+ Identities = 126/146 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44936 gccatcaggttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcg 44995
+             ||||| ||||| | |||||| |||||||| ||||| ||||| || || ||||||||||||
+Sbjct: 262   gccattaggtttaagaactcagggaagtcaatggttccgtttccatcagcgtcaacctcg 203
+
+                                                                         
+Query: 44996 ttgatcatgtcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggtt 45055
+             ||||||||||| || ||||| || || || ||||||||||| || ||||||||||| |||
+Sbjct: 202   ttgatcatgtcttgtagctcagcttctgttgggttctgccctagtgaccgcatcactgtt 143
+
+                                       
+Query: 45056 ccaagctccttggtggtgatgcaacc 45081
+             || |||||||| ||||||||||||||
+Sbjct: 142   cccagctcctttgtggtgatgcaacc 117
+
+
+>TC300551 UP|Q3EBT4_ARATH (Q3EBT4) Protein At2g27030, complete
+          Length = 728
+
+ Score =  103 bits (52), Expect = 4e-19
+ Identities = 109/128 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44849 gccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcctcc 44908
+             ||||||||||| |||||||||||||| ||||| || | ||| || || || ||||| || 
+Sbjct: 369   gccgagatgaaaccgttctggtccttatcgaaaaccctgaaagcttctttcagctcttct 310
+
+                                                                         
+Query: 44909 tccgagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatg 44968
+             || ||||| ||||||||||||||||| ||||| |||||||| ||||| |||||||| |||
+Sbjct: 309   tcagagtcagtgtccttcatcttcctagccattaggttcagaaactcagggaagtctatg 250
+
+                     
+Query: 44969 gtgccgtt 44976
+             || |||||
+Sbjct: 249   gttccgtt 242
+
+
+>TC294245 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, complete
+          Length = 731
+
+ Score =  103 bits (52), Expect = 4e-19
+ Identities = 109/128 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44849 gccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcctcc 44908
+             ||||||||||| |||||||||||||| ||||| || | ||| || || || ||||| || 
+Sbjct: 373   gccgagatgaaaccgttctggtccttatcgaaaaccctgaaagcttctttcagctcttct 314
+
+                                                                         
+Query: 44909 tccgagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatg 44968
+             || ||||| ||||||||||||||||| ||||| |||||||| ||||| |||||||| |||
+Sbjct: 313   tcagagtcagtgtccttcatcttcctagccattaggttcagaaactcagggaagtctatg 254
+
+                     
+Query: 44969 gtgccgtt 44976
+             || |||||
+Sbjct: 253   gttccgtt 246
+
+
+>Z26721 similar to GP|2959326|emb|CAA04528.1 calmodulin-like protein
+             {Branchiostoma lanceolatum}, partial (32%)
+          Length = 325
+
+ Score = 87.7 bits (44), Expect = 2e-14
+ Identities = 136/164 (82%), Gaps = 2/164 (1%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44894 tccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcaggaac 44953
+             ||||||||||| ||||| || || ||||||||||| ||||| |||||||||||||| |||
+Sbjct: 249   tccttgagctcttcctctga-tcagtgtccttcattttccttgccatcaggttcag-aac 192
+
+                                                                         
+Query: 44954 tcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctgcagc 45013
+             || ||||| || ||||| ||||| || || || ||||| || ||||||||||| || |||
+Sbjct: 191   tccgggaaatcaatggtcccgttcccatctgcatcaacttcattgatcatgtcttgaagc 132
+
+                                                         
+Query: 45014 tccgcctccgtggggttctgcccgagggaccgcatcacggttcc 45057
+             || || || || ||||| ||||| || |||| ||||||| ||||
+Sbjct: 131   tcagcttctgttgggttttgccccagagacctcatcacgtttcc 88
+
+
+>BP633303
+          Length = 407
+
+ Score = 85.7 bits (43), Expect = 9e-14
+ Identities = 73/83 (87%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44795 tcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccgccgccgag 44854
+             ||||| ||||||| ||||||||| || ||||| |||| ||| || ||||| |||||||||
+Sbjct: 322   tcctcatccgtcaacttctccccaagattggtaatcaggtgacgaagctcagccgccgag 381
+
+                                    
+Query: 44855 atgaagccgttctggtccttgtc 44877
+             ||||| |||||||||||||||||
+Sbjct: 382   atgaaaccgttctggtccttgtc 404
+
+
+>TC313564 homologue to UP|Q940C4_ARATH (Q940C4) AT4g15470/dl3775w,
+             partial (33%)
+          Length = 726
+
+ Score = 79.8 bits (40), Expect = 6e-12
+ Identities = 106/128 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44804 gtcagcttctccccgaggttggtcatcacgtggcgcagctccgccgccgagatgaagccg 44863
+             ||||| ||||| || || || |||||||| ||||| ||||| || || || ||||| |||
+Sbjct: 398   gtcagtttctcacctagattcgtcatcacatggcgaagctctgcagcggatatgaaaccg 339
+
+                                                                         
+Query: 44864 ttctggtccttgtcgaacacgcggaacgcctccttgagctcctcctccgagtccgtgtcc 44923
+             |||||||| |||| |||||| | ||| || || || ||||| ||||||||||| ||||||
+Sbjct: 338   ttctggtctttgtggaacaccctgaaagcttctttcagctcttcctccgagtctgtgtcc 279
+
+                     
+Query: 44924 ttcatctt 44931
+             ||||||||
+Sbjct: 278   ttcatctt 271
+
+
+>TC311408 homologue to UP|PIP27_ARATH (P93004) Aquaporin PIP2.7 (Plasma
+             membrane intrinsic protein 3) (Salt stress-induced major
+             intrinsic protein), partial (50%)
+          Length = 891
+
+ Score = 79.8 bits (40), Expect = 6e-12
+ Identities = 115/140 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44942 aggttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatc 45001
+             ||||||| |||||| ||||| || ||||| ||||| || || || || || |||||||||
+Sbjct: 338   aggttcaagaactctgggaaatcaatggtaccgttaccatcagcatccacttcgttgatc 279
+
+                                                                         
+Query: 45002 atgtcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagc 45061
+             ||||| || ||||| || || || ||||| || || ||||| |||||||| || || |||
+Sbjct: 278   atgtcttgaagctctgcttcggttgggttttgtccaagggaacgcatcacagtacccagc 219
+
+                                 
+Query: 45062 tccttggtggtgatgcaacc 45081
+             ||||||||||| ||||||||
+Sbjct: 218   tccttggtggtaatgcaacc 199
+
+
+>TC302853 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, partial (74%)
+          Length = 460
+
+ Score = 75.8 bits (38), Expect = 9e-11
+ Identities = 109/130 (83%), Gaps = 2/130 (1%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44849 gccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcctcc 44908
+             ||||||||||| |||||||||||||| ||||| || | ||| || || || ||||| || 
+Sbjct: 370   gccgagatgaaaccgttctggtccttatcgaaaaccctgaaagcttctttcagctcttct 311
+
+                                                                         
+Query: 44909 tcc-gagtccgtgtccttcatc-ttcctcgccatcaggttcaggaactcggggaagtcga 44966
+             | | ||||| |||||||||||| ||||| ||||| |||||||| ||||| |||||||| |
+Sbjct: 310   ttcagagtcagtgtccttcatctttcctagccattaggttcagaaactcagggaagtcta 251
+
+                       
+Query: 44967 tggtgccgtt 44976
+             |||| |||||
+Sbjct: 250   tggttccgtt 241
+
+
+>TC313454 UP|Q6LD03_BRANA (Q6LD03) Calmodulin, partial (60%)
+          Length = 818
+
+ Score = 73.8 bits (37), Expect = 4e-10
+ Identities = 58/65 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44912 gagtccgtgtccttcatcttcctcgccatcaggttcaggaactcggggaagtcgatggtg 44971
+             ||||| ||||||||||||||||| ||||| |||||||| ||||| |||||||| ||||| 
+Sbjct: 307   gagtcagtgtccttcatcttcctagccattaggttcagaaactcagggaagtctatggtt 248
+
+                  
+Query: 44972 ccgtt 44976
+             |||||
+Sbjct: 247   ccgtt 243
+
+
+>BP847787
+          Length = 388
+
+ Score = 65.9 bits (33), Expect = 9e-08
+ Identities = 124/153 (81%), Gaps = 1/153 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||| | |||||| ||||| || || || ||||| || || || |||||
+Sbjct: 212   tcacttagccatcataatcttgac-aactcttcatattttatctgaccatctccatccac 154
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || ||||| ||||||||||| ||||| || || || || |||||||| || || |||||
+Sbjct: 153   atcagcctcacggatcatctcttccacttcttcatcagttagcttctcaccaagattggt 94
+
+                                              
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaa 44859
+             |||||| ||||| ||||| || || ||||||||
+Sbjct: 93    catcacatggcgtagctcagcagcggagatgaa 61
+
+
+  Database: AtGI_13
+    Posted date:  Feb 13, 2007  3:06 PM
+  Number of letters in database: 74,847,757
+  Number of sequences in database:  81,826
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 81826
+Number of Hits to DB: 4,278,796
+Number of extensions: 1674919
+Number of successful extensions: 469413
+Number of sequences better than 1.0e-05: 21
+Number of HSP's gapped: 469404
+Number of HSP's successfully gapped: 26
+Length of query: 82726
+Length of database: 74,847,757
+Length adjustment: 22
+Effective length of query: 82704
+Effective length of database: 73,047,585
+Effective search space: 6041327469840
+Effective search space used: 6041327469840
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 30 (60.0 bits)

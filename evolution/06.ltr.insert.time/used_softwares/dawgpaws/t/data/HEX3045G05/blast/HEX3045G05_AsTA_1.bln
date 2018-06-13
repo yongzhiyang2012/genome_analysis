@@ -1,0 +1,148 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AsTA_1 
+           6182 sequences; 3,216,399 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+TA146_63632 Calmodulin-like protein [Branchiostoma lanceolatum (...   281   3e-74
+DV868330 Calmodulin-2/4 [Solanum tuberosum (Potato)]                   90   3e-16
+TA147_63632                                                            86   4e-15
+DV863040                                                               64   1e-08
+
+>TA146_63632 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 614
+
+ Score =  281 bits (142), Expect = 3e-74
+ Identities = 274/318 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||| ||||||||||||||||||||||| || ||||| |
+Sbjct: 327   ctcatttggccatcatgaccttgacaaactcctcgtagttgatctggccatcaccgtcaa 268
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| |||||||| || || |||||||| || ||||| |
+Sbjct: 267   catcagcttcacggatcatctcgtcgacctcctcatcggttagcttctcaccaaggtttg 208
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 207   tcatgacatggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 148
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 147   tgaaggcctccttgagctcttcctctgagtcggtgtccttcatcttgcgagccatcaggt 88
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||| |||||||||||||| || || || || |||||||||||||
+Sbjct: 87    tgagaaactctgggaagtcaatggtgccgttgccatcagcatcgacttcgttgatcatgt 28
+
+                               
+Query: 45006 cctgcagctccgcctccg 45023
+             |||| ||||| |||||||
+Sbjct: 27    cctggagctcagcctccg 10
+
+
+>DV868330 Calmodulin-2/4 [Solanum tuberosum (Potato)]
+          Length = 423
+
+ Score = 89.7 bits (45), Expect = 3e-16
+ Identities = 111/133 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             |||||||||||||||| || || || || || |||||||||||||| || || || || |
+Sbjct: 155   acttggccatcatgactttaacaaattcatcatagttgatctggccatcaccatcaacat 96
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | ||||| |||| ||||||||| |||||||| || |||| |||||| || ||||||||||
+Sbjct: 95    cagcctcacggaccatctcgtcaacctcctcatcagtcaacttctcacccaggttggtca 36
+
+                          
+Query: 44829 tcacgtggcgcag 44841
+             | || ||||||||
+Sbjct: 35    tgacatggcgcag 23
+
+
+>TA147_63632
+          Length = 328
+
+ Score = 85.7 bits (43), Expect = 4e-15
+ Identities = 46/47 (97%)
+ Strand = Plus / Minus
+
+                                                            
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctgg 44752
+             |||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 47    ctcatttggccatcatgaccttgacgaactcctcgtagttgatctgg 1
+
+
+>DV863040
+          Length = 693
+
+ Score = 63.9 bits (32), Expect = 1e-08
+ Identities = 32/32 (100%)
+ Strand = Plus / Minus
+
+                                             
+Query: 65772 ccccaatatggcaaataatacaaccaaccatg 65803
+             ||||||||||||||||||||||||||||||||
+Sbjct: 624   ccccaatatggcaaataatacaaccaaccatg 593
+
+
+  Database: AsTA_1
+    Posted date:  Feb 16, 2007  2:00 PM
+  Number of letters in database: 3,216,399
+  Number of sequences in database:  6182
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 6182
+Number of Hits to DB: 172,722
+Number of extensions: 67106
+Number of successful extensions: 18425
+Number of sequences better than 1.0e-05: 4
+Number of HSP's gapped: 18425
+Number of HSP's successfully gapped: 4
+Length of query: 82726
+Length of database: 3,216,399
+Length adjustment: 19
+Effective length of query: 82707
+Effective length of database: 3,098,941
+Effective search space: 256304113287
+Effective search space used: 256304113287
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 28 (56.0 bits)

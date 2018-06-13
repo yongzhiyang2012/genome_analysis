@@ -1,0 +1,921 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: ZmUniGene_61 
+           55,327 sequences; 31,859,345 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|Zm#S11522787 Zea mays CL1769_2 mRNA sequence /gb=AY109837...   496   e-137
+gnl|UG|Zm#S11528725 Zea mays PCO074294 mRNA sequence /gb=AY10389...   460   e-127
+gnl|UG|Zm#S25104373 MZCCL10055D08.g Maize Endosperm cDNA Library...   448   e-123
+gnl|UG|Zm#S11526172 Zea mays PCO074292 mRNA sequence /gb=AY10645...   398   e-108
+gnl|UG|Zm#S25102733 MZCCL10036H10.g Maize Endosperm cDNA Library...   391   e-106
+gnl|UG|Zm#S33885660 ZM_BFc0050O05.r ZM_BFc Zea mays cDNA clone Z...   381   e-103
+gnl|UG|Zm#S35719652 Zea mays clone 15042 mRNA sequence /gb=DQ245...   371   e-100
+gnl|UG|Zm#S11528553 Zea mays PCO074293 mRNA sequence /gb=AY10407...   333   1e-88
+gnl|UG|Zm#S35718812 Zea mays clone 9755 mRNA sequence /gb=DQ2461...   319   2e-84
+gnl|UG|Zm#S35719304 Zea mays clone 20050 mRNA sequence /gb=DQ245...   244   7e-62
+gnl|UG|Zm#S35720254 Zea mays clone 10824 mRNA sequence /gb=DQ244...   232   3e-58
+gnl|UG|Zm#S34814156 zmrsub1_0A20-017-f03.s3 zmrsub1 Zea mays cDN...   176   1e-41
+gnl|UG|Zm#S27403145 ZM_BFb0144D02.f ZM_BFb Zea mays cDNA 3', mRN...   161   8e-37
+gnl|UG|Zm#S11333424 Zm03_06c10_A Zm03_AAFC_ECORC_cold_stressed_m...   135   5e-29
+gnl|UG|Zm#S11525501 Zea mays PCO084454 mRNA sequence /gb=AY10712...    74   2e-10
+gnl|UG|Zm#S34016597 ZM_BFc0112C08.r ZM_BFc Zea mays cDNA clone Z...    64   1e-07
+
+>gnl|UG|Zm#S11522787 Zea mays CL1769_2 mRNA sequence /gb=AY109837
+             /gi=21213710 /ug=Zm.176 /len=1030
+          Length = 1030
+
+ Score =  496 bits (250), Expect = e-137
+ Identities = 343/374 (91%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||| 
+Sbjct: 592   cctcacttggccatcataaccttgacgaactcctcgtagttgatctggccgtcgccgtcg 533
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| || ||||||
+Sbjct: 532   acgtcggcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccaaggttg 473
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| |||||||||||||||||||| |||
+Sbjct: 472   gtcatgacatggcggagctcggcagccgagatgaaaccgttctggtccttgtcgaagacg 413
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct: 412   cggaaggcctccttgagctcctcctctgagtccgtgtccttcatcttcctcgccatcagg 353
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||||||||| || ||||| ||||| || |||||||||||||||
+Sbjct: 352   ttcaggaactccgggaagtcgatggtcccattgccatccgcatcgacctcgttgatcatg 293
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 292   tcctgcagctctgcctcggtagggttctggccaagggagcgcatcaccgttccaagctcc 233
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||| ||||||||
+Sbjct: 232   ttggtagtgatgca 219
+
+
+
+ Score =  141 bits (71), Expect = 8e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||| ||||||||||||||||||||||||||||| |||||||||||||||
+Sbjct: 217   ccgtcgccatccttatcgaagaggctgaaggcctccttgaactccgcgatctgctcgtcg 158
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 157   gtgagctggtccgccatgg 139
+
+
+>gnl|UG|Zm#S11528725 Zea mays PCO074294 mRNA sequence /gb=AY103899
+             /gi=21206977 /ug=Zm.3077 /len=1076
+          Length = 1076
+
+ Score =  460 bits (232), Expect = e-127
+ Identities = 340/376 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||||||||||||||||||||||||||||||||| ||||| || |
+Sbjct: 693   ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccatcgccatcga 634
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| |||||||||||||| ||||||||||| ||||||||||| ||||||||||
+Sbjct: 633   cgtcggcctcgcggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttgg 574
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||||||||| ||||||||||| |||||||||||||||||||||||||||||||| |
+Sbjct: 573   tcatcacgtggcggagctccgccgcagagatgaagccgttctggtccttgtcgaacaccc 514
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              |||||||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 513   tgaacgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 454
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||||||||||||||| ||||| |||||||| || || ||||| ||||||||||
+Sbjct: 453   tgaggaactcggggaagtcgatcgtgccattgccgtcggcatccacctcattgatcatgt 394
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| || || |||||||| |||||||| || || || ||||| || |||||||||||||
+Sbjct: 393   cctggagttcagcctccgttgggttctgacccagtgaacgcatgacagttccaagctcct 334
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 333   tggttgtgatgcaacc 318
+
+
+
+ Score =  119 bits (60), Expect = 3e-24
+ Identities = 75/80 (93%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| ||||| ||||||||||||||||||||||||||||||||||| || |||||
+Sbjct: 320   accgtcgccgtccttatcgaagaggctgaaggcctccttgaactcggcgatttggtcgtc 261
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+              |||||||||||||||||||
+Sbjct: 260   agtgagctggtccgccatgg 241
+
+
+>gnl|UG|Zm#S25104373 MZCCL10055D08.g Maize Endosperm cDNA Library Zea
+             mays cDNA, mRNA sequence /gb=CO443289 /gi=67014540
+             /ug=Zm.352 /len=852
+          Length = 852
+
+ Score =  448 bits (226), Expect = e-123
+ Identities = 337/374 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct: 554   cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtca 495
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             || || ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 494   acatcggcctcacggatcatctcgtcgacctcctcgtcagtcagcttctcgccgaggttg 435
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || || |||||||| || ||||||||||||||||| |||
+Sbjct: 434   gtcatgacatggcggagctcagcagctgagatgaaaccattctggtccttgtcgaagacg 375
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             || || |||||||| ||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 374   cgaaaggcctccttaagctcctcctcggagtcggtgtccttcatcttccttgccatcagg 315
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| ||||| || ||||| || || ||||||||||||||||||
+Sbjct: 314   ttcaggaactctgggaagtcaatggtcccattgccatcagcatcaacctcgttgatcatg 255
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| || || ||||||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 254   tcctgcagctctgcttcagtggggttctggccaagggagcgcatcacagttccaagctcc 195
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||| ||||||||
+Sbjct: 194   ttggtagtgatgca 181
+
+
+
+ Score =  133 bits (67), Expect = 2e-28
+ Identities = 76/79 (96%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||| ||||||||||||||||||||||||||||| |||||||||||||| 
+Sbjct: 179   ccgtcgccatccttatcgaagaggctgaaggcctccttgaactccgcgatctgctcgtcc 120
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 119   gtgagctggtccgccatgg 101
+
+
+>gnl|UG|Zm#S11526172 Zea mays PCO074292 mRNA sequence /gb=AY106452
+             /gi=21209530 /ug=Zm.3864 /len=929
+          Length = 929
+
+ Score =  398 bits (201), Expect = e-108
+ Identities = 330/373 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||||||||||||||||||||| || |||||||
+Sbjct: 587   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccatcaccgtcca 528
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| || || ||||||||||| |||||||||||||||||||| ||||| || |||||||
+Sbjct: 527   cgtcggcttcacggatcatctcatccacctcctcgtccgtcagtttctcacctaggttgg 468
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || || || || || ||||||||||||||||||||||||||||||||||
+Sbjct: 467   tcatgacatgtcgaagttcagcagcagagatgaagccgttctggtccttgtcgaacacgc 408
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 407   ggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttgcgtgccatcaggt 348
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| |||||||||||||| || ||||| || || |||||||||||||||||||
+Sbjct: 347   tgagaaactcagggaagtcgatggttccattgccatcagcatcaacctcgttgatcatgt 288
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||||||||| |  || |||||||| |||||||| ||||
+Sbjct: 287   cctgaagctcagcctcagtagggttctgccccaacgagcgcatcacagttccaagttcct 228
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 227   tggtggtgatgca 215
+
+
+
+ Score =  125 bits (63), Expect = 5e-26
+ Identities = 75/79 (94%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||| |||||||||||||||||||| || |||||||||||||||||||| ||||||
+Sbjct: 213   ccgtcgccgtccttgtcgaagaggctgaatgcttccttgaactcggcgatctggtcgtcg 154
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 153   gtgagctggtccgccatgg 135
+
+
+>gnl|UG|Zm#S25102733 MZCCL10036H10.g Maize Endosperm cDNA Library Zea
+             mays cDNA, mRNA sequence /gb=CO441798 /gi=67013049
+             /ug=Zm.72791 /len=886
+          Length = 886
+
+ Score =  391 bits (197), Expect = e-106
+ Identities = 329/373 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||| ||||||||||||||||| || |||||||
+Sbjct: 504   ctcacttggccatcatcaccttcacgaactcgtcgtagttgatctggccatcaccgtcca 445
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| || || |||||||||||||||||||||||||||||||||||||| || |||||||
+Sbjct: 444   cgtcggcttcacggatcatctcgtccacctcctcgtccgtcagcttctcgcctaggttgg 385
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || |||||||||||||||||||||||||||||||| |
+Sbjct: 384   tcatgacatggcgaagctcagcagcggagatgaagccgttctggtccttgtcgaacacac 325
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 324   ggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttgcgtgccatcaggt 265
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || ||||||||||| || ||||| || || |||||||| ||||||||||
+Sbjct: 264   tgagaaactcaggaaagtcgatggttccattgccatcagcatcaacctcattgatcatgt 205
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||||||||| |  || |||||||| || ||||| ||||
+Sbjct: 204   cctgaagctcagcctcagtagggttctgccccaatgagcgcatcacagtgccaagttcct 145
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 144   tggtggtgatgca 132
+
+
+
+ Score =  141 bits (71), Expect = 8e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||| |||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct: 130   ccgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctgttcgtcg 71
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 70    gtgagctggtccgccatgg 52
+
+
+>gnl|UG|Zm#S33885660 ZM_BFc0050O05.r ZM_BFc Zea mays cDNA clone
+             ZM_BFc0050O05 3', mRNA sequence /clone=ZM_BFc0050O05
+             /clone_end=3' /gb=EC902522 /gi=110220624 /ug=Zm.11725
+             /len=843
+          Length = 843
+
+ Score =  381 bits (192), Expect = e-103
+ Identities = 327/372 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44710 cttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtc 44769
+             ||||||| ||||||||||||||||||| ||||||||||| |||||||||| |||||||||
+Sbjct: 563   cttggccgtcatgaccttgacgaactcgtcgtagttgatgtggccgtcgcggtccacgtc 504
+
+                                                                         
+Query: 44770 cgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcat 44829
+              ||||| |||| ||||||| |||||||||  ||  |||||||||||||||||||||||||
+Sbjct: 503   ggcctcacggaccatctcggccacctcctgctcgctcagcttctccccgaggttggtcat 444
+
+                                                                         
+Query: 44830 cacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaa 44889
+             || ||| || ||||| ||||| ||||| |  |||||||||||||||||||||||||||||
+Sbjct: 443   caagtgccggagctcggccgcggagatcaccccgttctggtccttgtcgaacacgcggaa 384
+
+                                                                         
+Query: 44890 cgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcag 44949
+             ||||||| |||||||||||||||| |||| |||| ||||||| | ||||||||||  |||
+Sbjct: 383   cgcctccctgagctcctcctccgactccgcgtccctcatcttgcgcgccatcaggcccag 324
+
+                                                                         
+Query: 44950 gaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctg 45009
+             ||||||  |   ||||||||||||| ||||||    ||| ||||||  ||||||||||||
+Sbjct: 323   gaactcctgctcgtcgatggtgccgctgccgttgctgtccacctcggcgatcatgtcctg 264
+
+                                                                         
+Query: 45010 cagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttggt 45069
+             |||||||||||| ||||||||||||||||| ||||||||||||||||| |||||||||||
+Sbjct: 263   cagctccgcctcggtggggttctgcccgagagaccgcatcacggttccgagctccttggt 204
+
+                         
+Query: 45070 ggtgatgcaacc 45081
+              |||||||||||
+Sbjct: 203   tgtgatgcaacc 192
+
+
+
+ Score =  103 bits (52), Expect = 2e-19
+ Identities = 73/80 (91%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| |||||||||||||||||||| || |||||||||||||| |||||||| ||
+Sbjct: 194   accgtcgccgtccttgtcgaagaggctgaaagcttccttgaactcggcaatctgctcctc 135
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             | | ||||||||||||||||
+Sbjct: 134   gctaagctggtccgccatgg 115
+
+
+>gnl|UG|Zm#S35719652 Zea mays clone 15042 mRNA sequence /gb=DQ245393
+             /gi=77818076 /ug=Zm.81887 /len=711
+          Length = 711
+
+ Score =  371 bits (187), Expect = e-100
+ Identities = 328/375 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| ||||||||||| || |||||||| |||||||||||||| || ||||| || ||
+Sbjct: 517   tcacttagccatcatgactttaacgaactcatcgtagttgatctgcccatcgccatcaac 458
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || ||||| ||||||||||| || || ||||| || |||||||||||||| ||||| ||
+Sbjct: 457   atcagcctcacggatcatctcatcaacttcctcatcggtcagcttctccccaaggttagt 398
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             |||||| || || ||||| ||||| |||||||| |||||||||||||| || ||||| | 
+Sbjct: 397   catcacatgtcgaagctcagccgcggagatgaaaccgttctggtccttatcaaacaccct 338
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             |||||| ||||||||||| ||||||||||| |||||||||||||||||||||||||||||
+Sbjct: 337   gaacgcttccttgagctcttcctccgagtcagtgtccttcatcttcctcgccatcaggtt 278
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             ||||||||| |||||||| ||||| ||||| ||||| |||||||| ||||||||||||||
+Sbjct: 277   caggaactcagggaagtcaatggtcccgttcccgtcagcgtcaacttcgttgatcatgtc 218
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+              |||||||| || || || ||||| ||||| || |||| |||||||||||| ||||||||
+Sbjct: 217   ttgcagctcggcttctgtcgggttttgccccagagacctcatcacggttccgagctcctt 158
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             |||||||||||||||
+Sbjct: 157   ggtggtgatgcaacc 143
+
+
+
+ Score = 83.8 bits (42), Expect = 2e-13
+ Identities = 66/74 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             |||||||||||||||||||||||||| || ||||||||||| | |||||| || ||||| 
+Sbjct: 141   tcgccatccttgtcgaagaggctgaaagcttccttgaactctgagatctggtcatcggtc 82
+
+                           
+Query: 46575 agctggtccgccat 46588
+             ||||| ||||||||
+Sbjct: 81    agctgatccgccat 68
+
+
+>gnl|UG|Zm#S11528553 Zea mays PCO074293 mRNA sequence /gb=AY104071
+             /gi=21207149 /ug=Zm.72656 /len=1001
+          Length = 1001
+
+ Score =  333 bits (168), Expect = 1e-88
+ Identities = 324/376 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||||||||| ||||||||||||||||||||||| || || || |
+Sbjct: 626   ctcacttggccatcatgaccttgacaaactcctcgtagttgatctggccatcaccatcga 567
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||||||||||||||| || || |||||||| || || || |
+Sbjct: 566   catcagcctcacggatcatctcgtccacctcctcatcagttagcttctcaccaagatttg 507
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || ||||||||||||||||||||||||||||| ||||| |
+Sbjct: 506   tcatgacatggcggagctcggcggccgagatgaagccgttctggtccttgtcaaacacac 447
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 446   ggaaggcctccttgagctcttcctcagagtcggtgtccttcatcttgcgagccataaggt 387
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| ||||| ||||||||||||||||| || || || ||||||||||||||||
+Sbjct: 386   tgagaaactctgggaaatcgatggtgccgttgccatcagcatcgacctcgttgatcatgt 327
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || || || ||||| || || ||||| || || || |||||||
+Sbjct: 326   cctggagctcagcctctgtaggattttgccccagcgagcgcatgacagtgcccagctcct 267
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 266   tggtcgtgatgcaacc 251
+
+
+
+ Score =  125 bits (63), Expect = 5e-26
+ Identities = 69/71 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             |||||||||||||||||||||||||||||||||||||||||||| ||||||||||| |||
+Sbjct: 243   tccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtgagttgg 184
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 183   tccgccatggg 173
+
+
+>gnl|UG|Zm#S35718812 Zea mays clone 9755 mRNA sequence /gb=DQ246164
+             /gi=77818847 /ug=Zm.82110 /len=772
+          Length = 772
+
+ Score =  319 bits (161), Expect = 2e-84
+ Identities = 320/373 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             |||| ||||||||||| || |||||||| || ||||||||||| || || || || || |
+Sbjct: 506   acttagccatcatgactttaacgaactcatcatagttgatctgaccatcaccatcaacat 447
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | || || ||||||||||| || || ||||| || || ||||||||||| ||||| ||||
+Sbjct: 446   cagcttcacggatcatctcatcaacttcctcatcggttagcttctccccaaggttagtca 387
+
+                                                                         
+Query: 44829 tcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcgga 44888
+             |||| ||||| ||||| || || |||||||| ||||||||||| ||||| ||||| | ||
+Sbjct: 386   tcacatggcgaagctcagctgcagagatgaaaccgttctggtctttgtcaaacaccctga 327
+
+                                                                         
+Query: 44889 acgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttca 44948
+             | || ||||||||||| ||||| ||||| ||||||||||| |||||||||||||||||||
+Sbjct: 326   aggcttccttgagctcttcctctgagtcagtgtccttcattttcctcgccatcaggttca 267
+
+                                                                         
+Query: 44949 ggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcct 45008
+             ||||||||||||| |||||||| ||||| ||||| ||||| ||||||||||||||||| |
+Sbjct: 266   ggaactcggggaaatcgatggtcccgttcccgtctgcgtcgacctcgttgatcatgtctt 207
+
+                                                                         
+Query: 45009 gcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttgg 45068
+             ||||||| || || || ||||| ||||| || |||| |||||||||||| ||||||||||
+Sbjct: 206   gcagctcagcttctgttgggttttgccctagagacctcatcacggttccgagctccttgg 147
+
+                          
+Query: 45069 tggtgatgcaacc 45081
+             |||||||||||||
+Sbjct: 146   tggtgatgcaacc 134
+
+
+
+ Score = 91.7 bits (46), Expect = 6e-16
+ Identities = 70/78 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             |||||| |||||||||||||||||||| ||||| ||||||||||| | |||||| || ||
+Sbjct: 136   accgtcaccatccttgtcgaagaggctaaaggcttccttgaactctgagatctggtcatc 77
+
+                               
+Query: 46571 ggtgagctggtccgccat 46588
+             ||||||||| ||||||||
+Sbjct: 76    ggtgagctgatccgccat 59
+
+
+>gnl|UG|Zm#S35719304 Zea mays clone 20050 mRNA sequence /gb=DQ245741
+             /gi=77818424 /ug=Zm.81990 /len=687
+          Length = 687
+
+ Score =  244 bits (123), Expect = 7e-62
+ Identities = 312/375 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44707 tcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccac 44766
+             |||||| |||||||| | |||||| |||||||||||||| ||||| || || || || ||
+Sbjct: 497   tcacttagccatcataatcttgacaaactcctcgtagtttatctgaccatccccatcaac 438
+
+                                                                         
+Query: 44767 gtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggt 44826
+              || || || |||| |||||| || || || || || || |||||||| || || || ||
+Sbjct: 437   atcagcttcacggaccatctcctcaacttcttcatcagtaagcttctcacctagattcgt 378
+
+                                                                         
+Query: 44827 catcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcg 44886
+             ||| || ||||| ||||| || || || ||||| ||||||||||| ||||||||||| | 
+Sbjct: 377   catgacatggcggagctctgcagcggatatgaacccgttctggtctttgtcgaacaccct 318
+
+                                                                         
+Query: 44887 gaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||| || || |||||||| ||||||||||||||||| ||||||||  | ||||| |||||
+Sbjct: 317   gaaagcttctttgagctcttcctccgagtccgtgtctttcatctttttggccatgaggtt 258
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+              |||||||| |||||||| ||||||||||| ||||||||||| || ||||||||||||||
+Sbjct: 257   taggaactcagggaagtcaatggtgccgttcccgtccgcgtccacttcgttgatcatgtc 198
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             ||| ||||| || || || |||||||| || |||||||||||||| || || ||||| ||
+Sbjct: 197   ctggagctcagcttctgttgggttctgtcctagggaccgcatcactgtccccagctcttt 138
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             |||||||||||||||
+Sbjct: 137   ggtggtgatgcaacc 123
+
+
+
+ Score = 83.8 bits (42), Expect = 2e-13
+ Identities = 66/74 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             ||||||||||||||||||||||| || || ||||||||||||| |||||| ||||| || 
+Sbjct: 121   tcgccatccttgtcgaagaggctaaacgcttccttgaactcggagatctgttcgtccgtt 62
+
+                           
+Query: 46575 agctggtccgccat 46588
+             ||||| ||||||||
+Sbjct: 61    agctgatccgccat 48
+
+
+>gnl|UG|Zm#S35720254 Zea mays clone 10824 mRNA sequence /gb=DQ244796
+             /gi=77817472 /ug=Zm.81641 /len=677
+          Length = 677
+
+ Score =  232 bits (117), Expect = 3e-58
+ Identities = 309/373 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||| |||||||| || || |||||||| || ||||||||||| || || || ||||
+Sbjct: 509   ctcactttgccatcataactttaacgaactcatcatagttgatctgaccatcaccatcca 450
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| ||||| || ||||| || ||||||||||| || || |
+Sbjct: 449   cgtcagcctctcggatcatctcatccacttcttcgtcagttagcttctccccaagatttg 390
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||||||||| ||||| ||||| |||||||| ||||||||||||||||| || || |
+Sbjct: 389   tcatcacgtggcggagctcagccgcggagatgaaaccgttctggtccttgtcaaaaaccc 330
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| || || || ||||| ||||| || || |||||||||||||| |  ||||| ||||
+Sbjct: 329   tgaaggcttctttaagctcttcctctgaatcagtgtccttcatcttgcgggccattaggt 270
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             |||| ||||| ||||| || || || || || ||||| ||||||||||||||||||||||
+Sbjct: 269   tcagaaactccgggaaatctatcgttccattcccgtctgcgtcaacctcgttgatcatgt 210
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             | || ||||| || || || ||||| ||||| || || | |||||| || || |||||||
+Sbjct: 209   cttggagctcagcttctgtagggttttgcccaagtgatctcatcaccgtcccgagctcct 150
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             | |||||||||||
+Sbjct: 149   ttgtggtgatgca 137
+
+
+
+ Score = 87.7 bits (44), Expect = 1e-14
+ Identities = 62/68 (91%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| ||||||||||| ||||||||||||| |||||| || ||||| ||||||
+Sbjct: 126   tccttgtcgaataggctgaaggcttccttgaactcggagatctggtcatcggttagctgg 67
+
+                     
+Query: 46581 tccgccat 46588
+             ||||||||
+Sbjct: 66    tccgccat 59
+
+
+>gnl|UG|Zm#S34814156 zmrsub1_0A20-017-f03.s3 zmrsub1 Zea mays cDNA 3',
+             mRNA sequence /clone_end=3' /gb=EE678816 /gi=113701312
+             /ug=Zm.18000 /len=785
+          Length = 785
+
+ Score =  176 bits (89), Expect = 1e-41
+ Identities = 146/165 (88%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 43450 tcctcgaggaagccccgcgcctcggcctcgtccacgttctggcccagcgagcggagcgcc 43509
+             ||||| ||||||| ||||||||| ||||||||||||||||||||||| ||||| ||||||
+Sbjct: 481   tcctccaggaagcgccgcgcctccgcctcgtccacgttctggcccagggagcgcagcgcc 540
+
+                                                                         
+Query: 43510 gtgaccagctcgccggcggcgatgcggccgtcctcgtcgccgtcgaacaggtcgaacacc 43569
+             || || |||||||| | ||||||||| |||||||||||| |||||||||||||||| |  
+Sbjct: 541   gtcacgagctcgcccgtggcgatgcgaccgtcctcgtcggcgtcgaacaggtcgaagatt 600
+
+                                                          
+Query: 43570 tccttgcactcgtccgcctgctcctgggtcagcttggccgccatg 43614
+             ||||||||||||||| |||||||| | ||||||||  ||||||||
+Sbjct: 601   tccttgcactcgtccacctgctccggcgtcagcttctccgccatg 645
+
+
+
+ Score =  155 bits (78), Expect = 5e-35
+ Identities = 129/146 (88%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 43200 gcggccctcgccgcgggggtcggccttgcggaccagctcgtcggcctcctcctccgtgag 43259
+             ||||||||||||||| |||||||||| ||||| || | ||||||||||||||||||||||
+Sbjct: 234   gcggccctcgccgcgcgggtcggcctcgcggagcatcgcgtcggcctcctcctccgtgag 293
+
+                                                                         
+Query: 43260 ccggtcgccgtgggtgagcatcacctgccgcagctgctccgcggggatgacgccgctccc 43319
+              |||||||||||| | | |||||||||||||||||||||||||||||||   ||||| | 
+Sbjct: 294   tcggtcgccgtggcttaccatcacctgccgcagctgctccgcggggatggacccgctgca 353
+
+                                       
+Query: 43320 gtcgtcgtcgaacgcgtcgaggcact 43345
+             | ||||||||||| |||||| |||||
+Sbjct: 354   ggcgtcgtcgaacacgtcgaagcact 379
+
+
+>gnl|UG|Zm#S27403145 ZM_BFb0144D02.f ZM_BFb Zea mays cDNA 3', mRNA
+             sequence /clone_end=3' /gb=DV024140 /gi=76284572
+             /ti=1121061504 /ug=Zm.4583 /len=657
+          Length = 657
+
+ Score =  161 bits (81), Expect = 8e-37
+ Identities = 138/157 (87%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44727 tgacgaactcctcgtagttgatctggccgtcgccgtccacgtccgcctcccggatcatct 44786
+             |||||||||| |||||||||| ||||||||||||||| | ||| ||||| ||||||||||
+Sbjct: 283   tgacgaactcgtcgtagttgacctggccgtcgccgtcgaggtcggcctcgcggatcatct 342
+
+                                                                         
+Query: 44787 cgtccacctcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccg 44846
+               ||||||||||||||||| |||||||| ||||||||| |||| |||||||| ||||| |
+Sbjct: 343   gctccacctcctcgtccgtgagcttctcgccgaggttgatcatgacgtggcggagctcgg 402
+
+                                                  
+Query: 44847 ccgccgagatgaagccgttctggtccttgtcgaacac 44883
+               || |||||| | |||||||||||||||||||||||
+Sbjct: 403   tggcggagatgtacccgttctggtccttgtcgaacac 439
+
+
+
+ Score = 60.0 bits (30), Expect = 2e-06
+ Identities = 39/42 (92%)
+ Strand = Plus / Plus
+
+                                                       
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtc 44988
+             ||||||||||| ||||||||||| |||||||||||| |||||
+Sbjct: 521   caggaactcggcgaagtcgatggcgccgttgccgtcggcgtc 562
+
+
+>gnl|UG|Zm#S11333424 Zm03_06c10_A
+             Zm03_AAFC_ECORC_cold_stressed_maize_seedlings Zea mays
+             cDNA clone Zm03_06c10, mRNA sequence /clone=Zm03_06c10
+             /gb=BG319780 /gi=13149458 /ug=Zm.18116 /len=831
+          Length = 831
+
+ Score =  135 bits (68), Expect = 5e-29
+ Identities = 119/136 (87%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 54824 cctcaccagcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgag 54883
+             |||| ||||| | ||||||||||| ||| |||||||||| ||||  ||||||||||||| 
+Sbjct: 85    cctctccagcggcttgtagagcacaaagctcacgtacttggactcaaaccggtgggtgac 144
+
+                                                                         
+Query: 54884 tccgagggcgagcagagactgcgccccccaccctttctcgatgaacagatggttgaggac 54943
+              |||||||||||||| ||||||| |||||| ||||||||||||||||| |||| ||||||
+Sbjct: 145   gccgagggcgagcagcgactgcgacccccagcctttctcgatgaacaggtggtcgaggac 204
+
+                             
+Query: 54944 gacatgctgcggcttc 54959
+             ||| ||||| ||||||
+Sbjct: 205   gacgtgctgtggcttc 220
+
+
+
+ Score = 99.6 bits (50), Expect = 3e-18
+ Identities = 68/74 (91%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 55523 gatgtccagttatcccatgatccttccacaaacacctcgtttcctccttgactccatgta 55582
+             ||||||||||||||||| ||||||||||  |||||||| | ||||||||| |||||||||
+Sbjct: 569   gatgtccagttatcccacgatccttccaggaacacctcatctcctccttggctccatgta 628
+
+                           
+Query: 55583 atcaaagttggaat 55596
+             ||||||||||||||
+Sbjct: 629   atcaaagttggaat 642
+
+
+
+ Score = 75.8 bits (38), Expect = 4e-11
+ Identities = 125/154 (81%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 55264 catggacatcaaggaggttggccacctgccctctttcatcagtcacatgaggtagttcgg 55323
+             |||||||||| |||| |||||||||  |||||||||| ||||   | ||||||||||| |
+Sbjct: 402   catggacatcgaggacgttggccactcgccctctttcgtcagctgcgtgaggtagttcag 461
+
+                                                                         
+Query: 55324 acacatatctcggcaccccatcaacaatcatcctgtaatgatatattccagatggcagaa 55383
+               |  || ||| || |||| || || || |||| |||||| || | ||| ||||||||||
+Sbjct: 462   ggatgtacctcagctccccgtccacgatgatccggtaatggtagactccggatggcagaa 521
+
+                                               
+Query: 55384 ccaacaacacggcgtgatctttcccagacctctc 55417
+             ||||||| |||||||||||||| ||||| |||||
+Sbjct: 522   ccaacaagacggcgtgatcttttccagatctctc 555
+
+
+>gnl|UG|Zm#S11525501 Zea mays PCO084454 mRNA sequence /gb=AY107123
+             /gi=21210201 /ug=Zm.23479 /len=663
+          Length = 663
+
+ Score = 73.8 bits (37), Expect = 2e-10
+ Identities = 121/149 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44729 acgaactcctcgtagttgatctggccgtcgccgtccacgtccgcctcccggatcatctcg 44788
+             |||||||| |||||||| | ||| ||||| |||||   ||| || |||| ||||||||  
+Sbjct: 470   acgaactcatcgtagttcacctgcccgtcaccgtcggtgtctgcttccctgatcatctgt 411
+
+                                                                         
+Query: 44789 tccacctcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccgcc 44848
+             || ||||||||||| |||| ||||||||||||  ||||||||||    | ||||||  ||
+Sbjct: 410   tcaacctcctcgtcggtcatcttctccccgagactggtcatcaccgtcctcagctcaacc 351
+
+                                          
+Query: 44849 gccgagatgaagccgttctggtccttgtc 44877
+             |  |||||||||||||||||||| |||||
+Sbjct: 350   ggggagatgaagccgttctggtctttgtc 322
+
+
+>gnl|UG|Zm#S34016597 ZM_BFc0112C08.r ZM_BFc Zea mays cDNA clone
+             ZM_BFc0112C08 3', mRNA sequence /clone=ZM_BFc0112C08
+             /clone_end=3' /gb=EE043772 /gi=110539852 /ug=Zm.76868
+             /len=827
+          Length = 827
+
+ Score = 63.9 bits (32), Expect = 1e-07
+ Identities = 53/60 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44838 gcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctcct 44897
+             ||||||| || ||||||||||||||||    ||||| |||||||||||||||||||||||
+Sbjct: 569   gcagctcggcggccgagatgaagccgtcaccgtcctcgtcgaacacgcggaacgcctcct 510
+
+
+  Database: ZmUniGene_61
+    Posted date:  Feb 18, 2007  1:05 AM
+  Number of letters in database: 31,859,345
+  Number of sequences in database:  55,327
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 55327
+Number of Hits to DB: 1,754,105
+Number of extensions: 701481
+Number of successful extensions: 199086
+Number of sequences better than 1.0e-05: 16
+Number of HSP's gapped: 199082
+Number of HSP's successfully gapped: 31
+Length of query: 82726
+Length of database: 31,859,345
+Length adjustment: 21
+Effective length of query: 82705
+Effective length of database: 30,697,478
+Effective search space: 2538834917990
+Effective search space used: 2538834917990
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 29 (58.0 bits)

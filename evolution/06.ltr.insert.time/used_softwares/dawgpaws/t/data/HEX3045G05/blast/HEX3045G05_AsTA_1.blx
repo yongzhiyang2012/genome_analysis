@@ -1,0 +1,950 @@
+TBLASTX 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AsTA_1 
+           6182 sequences; 3,216,399 total letters
+
+Searching..................................................done
+
+
+
+                                                             Score    E
+Sequences producing significant alignments:                  (bits) Value  N
+
+DV866540 Hypothetical protein F9K21.130 [Arabidopsis thalian...   171   4e-72  3 
+TA146_63632 Calmodulin-like protein [Branchiostoma lanceolat...   245   6e-64  3 
+DV862864 Putative calmodulin [Oryza sativa (japonica cultiva...   199   4e-50  2 
+DV868330 Calmodulin-2/4 [Solanum tuberosum (Potato)]              111   1e-23  2 
+DV864969 similar to troponin C type IIIb [Apis mellifera]          88   2e-18  2 
+TA484_63632 Hypothetical protein P0407A09.27-1 [Oryza sativa...    56   1e-17  2 
+DV863040                                                           75   5e-15  3 
+DV864282 Hypothetical protein [Ustilago maydis 521]                60   7e-15  2 
+DV868730 Retrotransposon protein, putative, unclassified [Or...    69   2e-14  2 
+TA79_63632 Calcium-dependent protein kinase 2 [Triticum aest...    44   3e-14  3 
+DV865579 Calcium-dependent protein kinase 2 [Triticum aestiv...    44   3e-14  3 
+DV866374 Putative receptor-type protein kinase LRK1 [Oryza s...    48   5e-13  2 
+DV866278 Receptor kinase LRK10 [Avena sativa (Oat)]                59   2e-12  2 
+DV865168 Putative serine/threonine kinase [Triticum aestivum...    47   3e-12  2 
+DV861186 Receptor kinase, putative [Oryza sativa (japonica c...    46   2e-11  2 
+DV866262 PREDICTED P0597G07.108 gene product [Oryza sativa (...    65   1e-09  1 
+DV863689 Putative serine/threonine kinase [Vitis vinifera (G...    63   5e-09  1 
+DV868618 Putative light repressible receptor protein kinase ...    61   2e-08  1 
+DV865607 Helicase-like protein [Oryza sativa (japonica culti...    60   3e-08  1 
+DV867863 Stem rust resistance protein, putative [Oryza sativ...    58   1e-07  1 
+DV865729 F5A9.24 [Arabidopsis thaliana (Mouse-ear cress)]          57   3e-07  1 
+DV862332 OSJNBa0021F22.13 protein [Oryza sativa (japonica cu...    53   4e-06  1 
+DV863179 EF hand, putative [Oryza sativa (japonica cultivar-...    36   5e-06  2 
+
+>DV866540 Hypothetical protein F9K21.130 [Arabidopsis thaliana
+            (Mouse-ear cress)]
+          Length = 984
+
+ Score =  171 bits (367), Expect(2) = 4e-72
+ Identities = 74/164 (45%), Positives = 108/164 (65%)
+ Frame = +3 / +1
+
+                                                                        
+Query: 2256 EGLNALLTRAEEIGTISGVKVCRDAPPITNLLFADDSLILVKANQHNAEALKTALDLYCQ 2435
+            EGL+ LL + ++   + G+KV   AP + +LLFAD SL+  KA++  A  LK  L  YC 
+Sbjct: 175  EGLSCLLKKFDQSSALHGLKVAPSAPEVNHLLFADVSLLFFKASREGAMELKNFLTKYCN 354
+
+                                                                        
+Query: 2436 ASGQLVSIKKSSIFFSPNTKVEIRERLCITLNIMTKALGDKYLRLPANVGVDKIDCFQFL 2615
+            ASGQ++++ KSSIFFS      +RE + + L +  + L +KYL +P +VG  K   F++L
+Sbjct: 355  ASGQIINMDKSSIFFSKGCPEVVREGIKVELEV*RETLNEKYLGMPYDVGKSKGSAFKYL 534
+
+                                                        
+Query: 2616 IERIVKKISGWKEKLLSAGGKEILLKVVIQAIPTYAMSVFKIPK 2747
+             +R+ KK+ GW E+LLS GGKEIL+K V QA+ T++MS FK+ K
+Sbjct: 535  RDRVWKKVLGWLEQLLSVGGKEILIKSVAQAVHTFSMSCFKLAK 666
+
+
+
+ Score =  122 bits (260), Expect(2) = 4e-72
+ Identities = 47/85 (55%), Positives = 59/85 (69%)
+ Frame = +2 / +1
+
+                                                                        
+Query: 2753 CKGIIDTIAHFWWGDEENHRRMQWMAWWKMCVPKNQGGVGFRDIHCFNLALLAKQAWHLL 2932
+            C+ I   I +FWWG ++  RR  W++W  M  PK  GG+GFRDI  FNLALL +QAW LL
+Sbjct: 673  CEHINSLIRNFWWGGKDGKRRTCWVSWETMIQPKFAGGLGFRDIELFNLALLVRQAWRLL 852
+
+                                     
+Query: 2933 DNPDSLCATILRAKYYPNGDLLNSK 3007
+              PDSL A +LRA YYPNGD+L+ +
+Sbjct: 853  KVPDSLSARVLRAVYYPNGDVLSGR 927
+
+
+
+ Score = 74.8 bits (157), Expect(2) = 6e-24
+ Identities = 39/106 (36%), Positives = 54/106 (50%)
+ Frame = -3 / -1
+
+                                                                        
+Query: 2744 RNFKDRHCIGGYGLDHNLEQDLLSPGRQ*FFLPATNFLDNPFNQKLETVYFIYTHICWQA 2565
+            R  K  H    YGL   L+Q+LLSP R   F P+ +FL    +   E+  F + HI    
+Sbjct: 663  RKLKAGHRESMYGLGDGLDQNLLSPYR*QLF*PSQHFLPYSVS*VFESTTFGFAHIIRHP 484
+
+                                                          
+Query: 2564 QIFITEGLCHYIQRYTQSFPNLHLRVWAKENAGFFNAYQLSRCLTV 2427
+            Q+F  EGL  + + +   FP+      AKEN GF +   L+RC+TV
+Sbjct: 483  QVFFIEGLSSHFELHFYPFPHHLWTTLAKENRGFIHIDYLARCITV 346
+
+
+
+ Score = 57.0 bits (118), Expect(2) = 6e-24
+ Identities = 32/70 (45%), Positives = 36/70 (51%)
+ Frame = -2 / -2
+
+                                                                        
+Query: 2991 SPLG*YLALRIVAHKESGLSRRCHACLASSARLKQ*ISRNPTPPWFLGTHIFHQAIHCIL 2812
+            SPLG*  AL   A  ESG      ACL + ARL   +SR P PP   G  I  Q    +L
+Sbjct: 911  SPLG**TALSTRALSESGTLSNLQACLTNRARLNNSMSRKPKPPANFGWIIVSQETQHVL 732
+
+                      
+Query: 2811 LWFSSSPHQK 2782
+            L+ S  PHQK
+Sbjct: 731  LFPSLPPHQK 702
+
+
+
+ Score = 57.9 bits (120), Expect(3) = 4e-16
+ Identities = 31/64 (48%), Positives = 33/64 (51%)
+ Frame = -1 / -2
+
+                                                                        
+Query: 2737 LKTDIA*VGMAWITTLSRISFPPADNNFSFQPLIFLTIRSIRNWKQSILSTPTFAGKRKY 2558
+            LK DI  V  AW T L +ISFPP DNN S  P  F    S+R  K   L  PT  G  KY
+Sbjct: 656  LKQDIEKVCTAWATDLIKISFPPTDNNCSSHPSTFFHTLSLRYLKALPLDLPTS*GIPKY 477
+
+                
+Query: 2557 LSPR 2546
+             S R
+Sbjct: 476  FSLR 465
+
+
+
+ Score = 38.2 bits (77), Expect(3) = 4e-16
+ Identities = 22/59 (37%), Positives = 29/59 (49%)
+ Frame = -1 / -2
+
+                                                                       
+Query: 2482 LKKMLDFLMLTNCPDA*QYKSNAVFRASALCWLAFTRIKESSAKRRFVMGGASLQTFTP 2306
+            LKK+ D  +L   PDA QY     F + A   LA    + +SAK ++   GA   TF P
+Sbjct: 401  LKKIEDLSILIIWPDALQYLVKKFFNSIAPSLLALKNSRLTSAKSKWFTSGAEGATFKP 225
+
+
+
+ Score = 26.3 bits (51), Expect(3) = 4e-16
+ Identities = 10/35 (28%), Positives = 19/35 (54%)
+ Frame = -1 / -1
+
+                                               
+Query: 2884 NITKSHPPLVFRYAHFPPGHPLHPPMVLLVSPPEM 2780
+            N+ ++  P      H  PG+P  P + +L +PP++
+Sbjct: 804  NVPET*TPRELWLDHCLPGNPACPSLSILAAPPKI 700
+
+
+>TA146_63632 Calmodulin-like protein [Branchiostoma lanceolatum (Common
+             lancelet) (Amphioxus)]
+          Length = 614
+
+ Score =  245 bits (529), Expect = 6e-64
+ Identities = 104/104 (100%), Positives = 104/104 (100%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45021 EAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAE 44842
+             EAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAE
+Sbjct: 12    EAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAE 191
+
+                                                         
+Query: 44841 LRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 44710
+             LRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK
+Sbjct: 192   LRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 323
+
+
+
+ Score = 62.5 bits (130), Expect(3) = 8e-22
+ Identities = 29/33 (87%), Positives = 29/33 (87%)
+ Frame = +2 / -2
+
+                                              
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSAS 45022
+             FI  AIR RNSGKSMVPLPSASTSLIMS SSAS
+Sbjct: 109   FILRAIRLRNSGKSMVPLPSASTSLIMSWSSAS 11
+
+
+
+ Score = 40.0 bits (81), Expect(3) = 8e-22
+ Identities = 14/15 (93%), Positives = 15/15 (100%)
+ Frame = +2 / -2
+
+                            
+Query: 44825 VITWRSSAAEMKPFW 44869
+             V+TWRSSAAEMKPFW
+Sbjct: 208   VMTWRSSAAEMKPFW 164
+
+
+
+ Score = 39.6 bits (80), Expect(3) = 8e-22
+ Identities = 16/16 (100%), Positives = 16/16 (100%)
+ Frame = +2 / -2
+
+                             
+Query: 44708 HLAIMTLTNSS*LIWP 44755
+             HLAIMTLTNSS*LIWP
+Sbjct: 325   HLAIMTLTNSS*LIWP 278
+
+
+
+ Score = 84.9 bits (179), Expect = 1e-15
+ Identities = 37/84 (44%), Positives = 53/84 (63%)
+ Frame = -3 / +3
+
+                                                                         
+Query: 43418 IDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEAD 43239
+             ID P FL + ARK     S + L +    FD D +G I A +LR VM   G++LT+EE D
+Sbjct: 66    IDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVD 245
+
+                                     
+Query: 43238 ELVRKADPRGEGRVQCKELVKVLM 43167
+             E++R+AD  G+G++  +E VKV+M
+Sbjct: 246   EMIREADVDGDGQINYEEFVKVMM 317
+
+
+>DV862864 Putative calmodulin [Oryza sativa (japonica cultivar-group)]
+          Length = 589
+
+ Score =  199 bits (429), Expect = 4e-50
+ Identities = 83/116 (71%), Positives = 94/116 (81%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45066 KELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAF 44887
+             +EL  V RSLG  PT+ EL DM+ EVD DGNG IDF EFLNL+ARKMKD D +EELKEAF
+Sbjct: 15    EELAAVTRSLGLEPTDQELSDMMREVDTDGNGIIDFQEFLNLIARKMKDGDGDEELKEAF 194
+
+                                                                     
+Query: 44886 RVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVM 44719
+              V DKD NGFIS  ELR VM NLGEK+TDEEV++MIREAD DGDGQ+NY+EFV +M
+Sbjct: 195   GVLDKDHNGFISPVELRTVMINLGEKMTDEEVEQMIREADTDGDGQVNYDEFVLMM 362
+
+
+
+ Score = 74.8 bits (157), Expect(2) = 4e-20
+ Identities = 34/47 (72%), Positives = 37/47 (78%)
+ Frame = +2 / -1
+
+                                                            
+Query: 44924 FIFLAIRFRNSGKSMVPLPSASTSLIMSCSSASVGFCPRDRITVPSS 45064
+             FIFLAIRFRNS KSM+P PS STS IMS SS SVG  PR+R+T  SS
+Sbjct: 157   FIFLAIRFRNSWKSMIPFPSVSTSRIMSLSS*SVGSRPRERVTAASS 17
+
+
+
+ Score = 44.1 bits (90), Expect(2) = 4e-20
+ Identities = 17/28 (60%), Positives = 20/28 (71%)
+ Frame = +1 / -3
+
+                                         
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRRD 44856
+             LPDHL++ L+  LLPEV HH  QL R D
+Sbjct: 308   LPDHLLNFLISHLLPEVDHHCPQLDRGD 225
+
+
+
+ Score = 52.8 bits (109), Expect = 5e-06
+ Identities = 21/48 (43%), Positives = 33/48 (68%)
+ Frame = -2 / +3
+
+                                                             
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLM 44938
+             G I+  EL TVM +LG+  T+ E++ MI E D DG+G +++ EF+ +M
+Sbjct: 219   GFISPVELRTVMINLGEKMTDEEVEQMIREADTDGDGQVNYDEFVLMM 362
+
+
+>DV868330 Calmodulin-2/4 [Solanum tuberosum (Potato)]
+          Length = 423
+
+ Score =  111 bits (237), Expect = 1e-23
+ Identities = 46/48 (95%), Positives = 48/48 (100%)
+ Frame = -2 / +2
+
+                                                             
+Query: 44853 SAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 44710
+             SAAELRHVMTNLGEKLTDEEVDEM+READVDGDGQINY+EFVKVMMAK
+Sbjct: 11    SAAELRHVMTNLGEKLTDEEVDEMVREADVDGDGQINYDEFVKVMMAK 154
+
+
+
+ Score = 39.6 bits (80), Expect(2) = 1e-07
+ Identities = 16/27 (59%), Positives = 20/27 (74%)
+ Frame = +1 / -3
+
+                                        
+Query: 44773 LPDHLVHLLVRQLLPEVGHHVAQLRRR 44853
+             L DHLV+LL+ QLL +VGH +AQ   R
+Sbjct: 91    LTDHLVNLLISQLLTQVGHDMAQFSSR 11
+
+
+
+ Score = 36.8 bits (74), Expect(2) = 1e-07
+ Identities = 15/16 (93%), Positives = 16/16 (100%)
+ Frame = +2 / -1
+
+                             
+Query: 44708 HLAIMTLTNSS*LIWP 44755
+             +LAIMTLTNSS*LIWP
+Sbjct: 156   YLAIMTLTNSS*LIWP 109
+
+
+
+ Score = 57.4 bits (119), Expect = 2e-07
+ Identities = 23/45 (51%), Positives = 33/45 (73%)
+ Frame = -3 / +2
+
+                                                          
+Query: 43301 AEQLRQVMLTHGDRLTEEEADELVRKADPRGEGRVQCKELVKVLM 43167
+             A +LR VM   G++LT+EE DE+VR+AD  G+G++   E VKV+M
+Sbjct: 14    AAELRHVMTNLGEKLTDEEVDEMVREADVDGDGQINYDEFVKVMM 148
+
+
+>DV864969 similar to troponin C type IIIb [Apis mellifera]
+          Length = 742
+
+ Score = 87.7 bits (185), Expect(2) = 2e-18
+ Identities = 31/64 (48%), Positives = 51/64 (79%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 44910 EEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEF 44731
+             +EELKEAFR++DK+ NG+I  ++L+ ++  L +KLT+ E+DEMI E D DG G ++++EF
+Sbjct: 396   QEELKEAFRLYDKEGNGYIKTSDLKDILRALDDKLTNNELDEMIAEIDTDGSGTVDFDEF 575
+
+                 
+Query: 44730 VKVM 44719
+             +++M
+Sbjct: 576   LEMM 587
+
+
+
+ Score = 35.0 bits (70), Expect(2) = 2e-18
+ Identities = 13/26 (50%), Positives = 17/26 (65%)
+ Frame = -1 / +3
+
+                                       
+Query: 46588 MADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             MAD LT EQ+   K AF +FD++  G
+Sbjct: 141   MADDLTKEQVTMLKRAFDMFDREKKG 218
+
+
+
+ Score = 67.5 bits (141), Expect(2) = 1e-15
+ Identities = 29/68 (42%), Positives = 44/68 (64%)
+ Frame = -2 / +3
+
+                                                                         
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEE 44902
+             G I    +G+++R+LGQ   E++LQ +I EVDADG+G ++F EFL L A+ + + DSE  
+Sbjct: 216   GSIACNNVGSILRTLGQQFEESDLQALIAEVDADGSGQLEFDEFLTLTAKFLVEEDSEGM 395
+
+                     
+Query: 44901 LKEAFRVF 44878
+              +E    F
+Sbjct: 396   QEELKEAF 419
+
+
+
+ Score = 45.5 bits (93), Expect(2) = 1e-15
+ Identities = 17/61 (27%), Positives = 32/61 (52%)
+ Frame = -3 / +3
+
+                                                                         
+Query: 43352 LAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLTEEEADELVRKADPRGEGRVQCKELVKV 43173
+             L +    +D +G+G I    L+ ++    D+LT  E DE++ + D  G G V   E +++
+Sbjct: 405   LKEAFRLYDKEGNGYIKTSDLKDILRALDDKLTNNELDEMIAEIDTDGSGTVDFDEFLEM 584
+
+              
+Query: 43172 L 43170
+             +
+Sbjct: 585   M 587
+
+
+
+ Score = 58.3 bits (121), Expect(2) = 2e-08
+ Identities = 23/48 (47%), Positives = 32/48 (66%)
+ Frame = -2 / +3
+
+                                                             
+Query: 45081 GCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLM 44938
+             G I T +L  ++R+L    T  EL +MI E+D DG+GT+DF EFL +M
+Sbjct: 444   GYIKTSDLKDILRALDDKLTNNELDEMIAEIDTDGSGTVDFDEFLEMM 587
+
+
+
+ Score = 29.9 bits (59), Expect(2) = 2e-08
+ Identities = 12/31 (38%), Positives = 20/31 (64%)
+ Frame = -1 / +3
+
+                                            
+Query: 46603 LEASPMADQLTDEQIAEFKEAFSLFDKDGDG 46511
+             L A  + ++ ++    E KEAF L+DK+G+G
+Sbjct: 354   LTAKFLVEEDSEGMQEELKEAFRLYDKEGNG 446
+
+
+
+ Score = 57.0 bits (118), Expect = 3e-07
+ Identities = 19/58 (32%), Positives = 37/58 (63%)
+ Frame = -2 / +3
+
+                                                                       
+Query: 44901 LKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFV 44728
+             LK AF +FD+++ G I+   +  ++  LG++  + ++  +I E D DG GQ+ ++EF+
+Sbjct: 177   LKRAFDMFDREKKGSIACNNVGSILRTLGQQFEESDLQALIAEVDADGSGQLEFDEFL 350
+
+
+>TA484_63632 Hypothetical protein P0407A09.27-1 [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 821
+
+ Score = 56.1 bits (116), Expect(2) = 1e-17
+ Identities = 20/44 (45%), Positives = 31/44 (70%)
+ Frame = +1 / +3
+
+                                                         
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTS 41970
+             LH +C + IVH D+KP N++LD + NA L DFG+ + V H+ ++
+Sbjct: 156   LHHDCERQIVHCDLKPTNILLDDEMNAYLGDFGIASLVGHSSSN 287
+
+
+
+ Score = 54.2 bits (112), Expect(2) = 1e-17
+ Identities = 21/48 (43%), Positives = 33/48 (68%)
+ Frame = +1 / +3
+
+                                                             
+Query: 41965 TSRTRMNIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPT 42108
+             +S T + + G+  YI P Y + G+A    DVYSLG++LLE++ G++PT
+Sbjct: 279   SSNTSVGLKGTIGYIAPEYAQSGQASIHGDVYSLGIVLLEMLIGKRPT 422
+
+
+>DV863040
+          Length = 693
+
+ Score = 69.8 bits (146), Expect(3) = 5e-15
+ Identities = 25/40 (62%), Positives = 30/40 (75%)
+ Frame = +3 / -1
+
+                                                     
+Query: 65703 KIPCTIIRGLEHCLVLHS*NRCVPQYGK*YNQPCECMVVQ 65822
+             K+PC +   LEHC VL+  NR +PQYGK*YNQPC C V+Q
+Sbjct: 693   KVPCIVTHSLEHCSVLYPLNRNIPQYGK*YNQPC*CRVIQ 574
+
+
+
+ Score = 26.7 bits (52), Expect(3) = 5e-15
+ Identities = 12/20 (60%), Positives = 15/20 (75%)
+ Frame = +3 / -2
+
+                                 
+Query: 65826 QADRSTKMVLPTS*TYGTEV 65885
+             QAD S  M+L ++* YGTEV
+Sbjct: 569   QAD*SISMLLQSA*IYGTEV 510
+
+
+
+ Score = 22.1 bits (42), Expect(3) = 5e-15
+ Identities = 8/8 (100%), Positives = 8/8 (100%)
+ Frame = +1 / -1
+
+                     
+Query: 65887 GQYKLSKF 65910
+             GQYKLSKF
+Sbjct: 513   GQYKLSKF 490
+
+
+
+ Score = 75.3 bits (158), Expect(2) = 6e-14
+ Identities = 25/39 (64%), Positives = 30/39 (76%)
+ Frame = -1 / +2
+
+                                                    
+Query: 65824 YWTTMHSHGWLYYLPYWGTHLF*EWSTKQCSNPRIIVHG 65708
+             YW T+H HGWLYYLPYWG  LF  +ST+QCSN  + +HG
+Sbjct: 572   YWITLH*HGWLYYLPYWGIFLFNGYSTEQCSNE*VTIHG 688
+
+
+
+ Score = 22.6 bits (43), Expect(2) = 6e-14
+ Identities = 8/9 (88%), Positives = 8/9 (88%)
+ Frame = -3 / +2
+
+                      
+Query: 65912 WNLLSLYWP 65886
+             WNLLSLY P
+Sbjct: 488   WNLLSLY*P 514
+
+
+
+ Score = 62.0 bits (129), Expect(2) = 1e-10
+ Identities = 26/40 (65%), Positives = 29/40 (72%)
+ Frame = +1 / -2
+
+                                                     
+Query: 65704 KYRVLLFVDWNIV*CSILRIGVSPNMANNTTNHVNAWLSS 65823
+             KY VLL + WNIV C I   G+ PNMANNTTNH +A LSS
+Sbjct: 692   KYHVLLLIHWNIVRCYIH*TGIFPNMANNTTNHASAELSS 573
+
+
+
+ Score = 33.6 bits (67), Expect(2) = 1e-10
+ Identities = 13/34 (38%), Positives = 23/34 (67%)
+ Frame = +1 / -1
+
+                                               
+Query: 66361 LEAYKHPPTYKDMYNKI***QQHVMISYLVMLQP 66462
+             LE  +HP  YK++Y++I  *+QH++++  V   P
+Sbjct: 348   LETLEHPHNYKELYDEILQ*RQHLVVAEWVGADP 247
+
+
+
+ Score = 53.3 bits (110), Expect(2) = 5e-08
+ Identities = 23/41 (56%), Positives = 29/41 (70%)
+ Frame = +2 / -3
+
+                                                      
+Query: 65705 NTVYYYSWIGTLFSAPFLE*VCPPIWQIIQPTM*MHGCPVS 65827
+             +T+Y YS+IGTLF A  +E    PIWQIIQPTM +   PV+
+Sbjct: 691   STMYCYSFIGTLFGAISIEQEYSPIWQIIQPTMLVQSYPVT 569
+
+
+
+ Score = 33.6 bits (67), Expect(2) = 5e-08
+ Identities = 13/22 (59%), Positives = 17/22 (77%)
+ Frame = +2 / -2
+
+                                   
+Query: 66365 RLTNTLLLTKICTTKYDNDNNT 66430
+             RL N L++TK C TKY ND++T
+Sbjct: 344   RL*NILIITKSCMTKYYNDDST 279
+
+
+
+ Score = 56.5 bits (117), Expect = 4e-07
+ Identities = 24/41 (58%), Positives = 30/41 (73%)
+ Frame = -3 / +1
+
+                                                      
+Query: 65825 ILDNHAFTWLVVLFAILGDTPILRMEH*TMFQSTNNSTRYF 65703
+             +LDN A  WLVVLFAILG+ P+  + H TMFQ  +N+T YF
+Sbjct: 571   LLDNSALAWLVVLFAILGNIPVQWI*HRTMFQ*MSNNTWYF 693
+
+
+
+ Score = 52.4 bits (108), Expect = 7e-06
+ Identities = 24/41 (58%), Positives = 29/41 (70%)
+ Frame = -2 / +3
+
+                                                      
+Query: 65829 LDTGQPCIHMVGCIICHIGGHTYSKNGALNNVPIHE**YTV 65707
+             L TG  C  MVGCIICHIG ++ S + A NNVP++E* Y V
+Sbjct: 567   LVTG*LCTSMVGCIICHIGEYSCSMDIAPNNVPMNE*QYMV 689
+
+
+>DV864282 Hypothetical protein [Ustilago maydis 521]
+          Length = 556
+
+ Score = 59.7 bits (124), Expect(2) = 7e-15
+ Identities = 26/55 (47%), Positives = 37/55 (67%)
+ Frame = -2 / +2
+
+                                                                    
+Query: 45003 MINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAEL 44839
+             MI   D DG+GT+DF EF+  ++      + EE+LK AF+V+D D++GFIS  EL
+Sbjct: 146   MIAIFDEDGSGTVDFQEFVAGLSAFSNKGEREEKLKFAFKVYDMDRDGFISNGEL 310
+
+
+
+ Score = 41.4 bits (84), Expect(2) = 7e-15
+ Identities = 15/34 (44%), Positives = 25/34 (73%)
+ Frame = -2 / +2
+
+                                               
+Query: 44832 VMTNLGEKLTDEEVDEMIREADVDGDGQINYEEF 44731
+             V  NL ++   + VD+ + EAD+DGDG++N++EF
+Sbjct: 332   VGNNLKDQQLQQIVDKTLMEADLDGDGKLNFDEF 433
+
+
+>DV868730 Retrotransposon protein, putative, unclassified [Oryza
+            sativa (japonica cultivar-group)]
+          Length = 693
+
+ Score = 68.9 bits (144), Expect(2) = 2e-14
+ Identities = 28/71 (39%), Positives = 41/71 (57%)
+ Frame = +1 / +1
+
+                                                                        
+Query: 1288 IENLLDQKEIFWLQRGRANWLMHGDRNTSFFHNAATARKKRNNIKKLLDDSGVWREGKDL 1467
+            I  LL ++EI W QR +A +++ GD NT +FH  A  R ++  I  L  D G+     +L
+Sbjct: 274  IATLLREEEIKWYQRSKAQFILEGDSNTRYFHMVANGRHRKKYIHSLH*DEGIIEGQNEL 453
+
+                       
+Query: 1468 KNHITDYFSKL 1500
+            K +ITDY+  L
+Sbjct: 454  KQYITDYYKTL 486
+
+
+
+ Score = 30.9 bits (61), Expect(2) = 2e-14
+ Identities = 13/27 (48%), Positives = 15/27 (55%)
+ Frame = +1 / +2
+
+                                       
+Query: 1615 KALFEIGDLKAPGQMDSMLSSIKDFGL 1695
+            K  F    +K PGQMDS    IK FG+
+Sbjct: 608  KQFFRWNTIKLPGQMDSRQRFIKTFGI 688
+
+
+>TA79_63632 Calcium-dependent protein kinase 2 [Triticum aestivum
+             (Wheat)]
+          Length = 1421
+
+ Score = 43.7 bits (89), Expect(3) = 3e-14
+ Identities = 17/46 (36%), Positives = 27/46 (58%)
+ Frame = -2 / +1
+
+                                                           
+Query: 45084 AGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFL 44947
+             +G IT  EL   +R  G    + E++D++   D D +GTID+ EF+
+Sbjct: 721   SGAITYDELKEGLRKYGSTLKDTEIRDLMEAADVDNSGTIDYIEFI 858
+
+
+
+ Score = 40.0 bits (81), Expect(3) = 3e-14
+ Identities = 15/30 (50%), Positives = 23/30 (76%)
+ Frame = -2 / +1
+
+                                           
+Query: 44808 LTDEEVDEMIREADVDGDGQINYEEFVKVM 44719
+             + D  +D++I+EAD D DG+I+Y EFV +M
+Sbjct: 988   MPDAFLDDVIKEADQDNDGRIDYGEFVAMM 1077
+
+
+
+ Score = 32.2 bits (64), Expect(3) = 3e-14
+ Identities = 13/27 (48%), Positives = 18/27 (66%)
+ Frame = -2 / +1
+
+                                        
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELR 44836
+             + EE L  AF  FDKD +G+I+  EL+
+Sbjct: 886   EREEHLVAAFSYFDKDGSGYITVDELQ 966
+
+
+>DV865579 Calcium-dependent protein kinase 2 [Triticum aestivum (Wheat)]
+          Length = 629
+
+ Score = 43.7 bits (89), Expect(3) = 3e-14
+ Identities = 17/46 (36%), Positives = 27/46 (58%)
+ Frame = -2 / +1
+
+                                                           
+Query: 45084 AGCITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFL 44947
+             +G IT  EL   +R  G    + E++D++   D D +GTID+ EF+
+Sbjct: 25    SGAITYDELKEGLRKYGSTLKDTEIRDLMEAADVDNSGTIDYIEFI 162
+
+
+
+ Score = 40.0 bits (81), Expect(3) = 3e-14
+ Identities = 15/30 (50%), Positives = 23/30 (76%)
+ Frame = -2 / +1
+
+                                           
+Query: 44808 LTDEEVDEMIREADVDGDGQINYEEFVKVM 44719
+             + D  +D++I+EAD D DG+I+Y EFV +M
+Sbjct: 292   MPDAFLDDVIKEADQDNDGRIDYGEFVAMM 381
+
+
+
+ Score = 32.2 bits (64), Expect(3) = 3e-14
+ Identities = 13/27 (48%), Positives = 18/27 (66%)
+ Frame = -2 / +1
+
+                                        
+Query: 44916 DSEEELKEAFRVFDKDQNGFISAAELR 44836
+             + EE L  AF  FDKD +G+I+  EL+
+Sbjct: 190   EREEHLVAAFSYFDKDGSGYITVDELQ 270
+
+
+>DV866374 Putative receptor-type protein kinase LRK1 [Oryza sativa
+             (japonica cultivar-group)]
+          Length = 710
+
+ Score = 47.8 bits (98), Expect(2) = 5e-13
+ Identities = 17/52 (32%), Positives = 29/52 (55%)
+ Frame = +1 / +2
+
+                                                                 
+Query: 41983 NIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTNEKNNLI 42138
+             +++G+  Y+ P     GKA   +DV++ G  LLEI  G +P  Q +  N ++
+Sbjct: 134   HVVGTMGYLAPELGHTGKATPSTDVFAFGAFLLEITCGRRPIEQNDRNNRVV 289
+
+
+
+ Score = 46.9 bits (96), Expect(2) = 5e-13
+ Identities = 16/38 (42%), Positives = 25/38 (65%)
+ Frame = +1 / +2
+
+                                                   
+Query: 41863 IVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRT 41976
+             ++HRD+K  NV+LD + N +L DFGL    +H   ++T
+Sbjct: 17    VIHRDVKASNVLLDREMNGRLGDFGLARLYDHGVDAQT 130
+
+
+>DV866278 Receptor kinase LRK10 [Avena sativa (Oat)]
+          Length = 755
+
+ Score = 59.3 bits (123), Expect(2) = 2e-12
+ Identities = 26/59 (44%), Positives = 34/59 (57%)
+ Frame = +1 / +2
+
+                                                                        
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRTRMNIIGSRSYIGP 42015
+             LH  C + I+H DIKP N++LD +FN K+SDFGL       Q+  T     G+  YI P
+Sbjct: 17    LHQGCNQRILHFDIKPHNILLDYNFNPKISDFGLAKLCARDQSIVTLTAARGTMGYIAP 193
+
+
+
+ Score = 33.6 bits (67), Expect(2) = 2e-12
+ Identities = 14/34 (41%), Positives = 22/34 (64%)
+ Frame = +1 / +2
+
+                                               
+Query: 42031 GKACRQSDVYSLGVMLLEIVSGEKPTIQTNEKNN 42132
+             G    +SDVYS G+++LE+VSG + +  + E  N
+Sbjct: 215   GGVSYKSDVYSFGMLVLEMVSGRRNSDPSVESQN 316
+
+
+>DV865168 Putative serine/threonine kinase [Triticum aestivum (Wheat)]
+          Length = 950
+
+ Score = 46.9 bits (96), Expect(2) = 3e-12
+ Identities = 16/38 (42%), Positives = 26/38 (68%)
+ Frame = +1 / +1
+
+                                                   
+Query: 41863 IVHRDIKPGNVMLDMDFNAKLSDFGLVTQVNHTQTSRT 41976
+             I+HRD+KP N+++D +  AK++DFGL     + +T  T
+Sbjct: 649   IIHRDLKPANILIDKNMVAKITDFGLSRMEKNAKTEST 762
+
+
+
+ Score = 45.1 bits (92), Expect(2) = 3e-12
+ Identities = 17/40 (42%), Positives = 27/40 (67%)
+ Frame = +1 / +1
+
+                                                     
+Query: 41983 NIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEK 42102
+             N + +  Y  P YI+ GK   + DVYSLGV+++E+V+G +
+Sbjct: 763   NRVSTPGYSAPEYIDSGKMSVKYDVYSLGVIIIELVTGSR 882
+
+
+>DV861186 Receptor kinase, putative [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 705
+
+ Score = 45.5 bits (93), Expect(2) = 2e-11
+ Identities = 18/34 (52%), Positives = 24/34 (70%)
+ Frame = +1 / +3
+
+                                               
+Query: 41839 LHTECPKCIVHRDIKPGNVMLDMDFNAKLSDFGL 41940
+             LH +C   +VH D+KP NV+L+ D  A +SDFGL
+Sbjct: 15    LHNQCNPPLVHCDLKPSNVLLNDDMVACVSDFGL 116
+
+
+
+ Score = 44.1 bits (90), Expect(2) = 2e-11
+ Identities = 17/39 (43%), Positives = 26/39 (66%)
+ Frame = +1 / +3
+
+                                                    
+Query: 41992 GSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPT 42108
+             GS  YI P Y    K   + D+YS G++LL++++G+KPT
+Sbjct: 183   GSIGYIAPEYGTGRKISIEGDIYSYGIILLQMITGKKPT 299
+
+
+>DV866262 PREDICTED P0597G07.108 gene product [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 978
+
+ Score = 65.2 bits (136), Expect = 1e-09
+ Identities = 24/77 (31%), Positives = 39/77 (50%)
+ Frame = -3 / +1
+
+                                                                         
+Query: 32585 WLKDDLAIIQWLYTRISTELFNLVVTDGATARDIWLELRRLFQDNRDARISALNMELRTI 32406
+             W + D  I+ WLYT +S ++ N+V+    T  ++W  +  LF DNR  R      E   +
+Sbjct: 115   WTQIDQCIVSWLYTTVSQDVLNIVMQPDDTTANLWNSIHALFLDNRLQRAVYAKQEFHNL 294
+
+                              
+Query: 32405 TQGDRPVGVFCQCIKAI 32355
+              QG+  +  FC  +K +
+Sbjct: 295   VQGELSITAFCSRLKCL 345
+
+
+>DV863689 Putative serine/threonine kinase [Vitis vinifera (Grape)]
+          Length = 487
+
+ Score = 62.9 bits (131), Expect = 5e-09
+ Identities = 24/44 (54%), Positives = 33/44 (75%)
+ Frame = -2 / +1
+
+                                                         
+Query: 44841 LRHVMTNLGEKLTDEEVDEMIREADVDGDGQINYEEFVKVMMAK 44710
+             LRH++T++GEKL   E DE IRE +V  DG+I YE+F+  M+AK
+Sbjct: 10    LRHILTSIGEKLEPAEFDEWIREVEVGSDGRIKYEDFIARMVAK 141
+
+
+>DV868618 Putative light repressible receptor protein kinase [Oryza
+             sativa (japonica cultivar-group)]
+          Length = 629
+
+ Score = 60.6 bits (126), Expect = 2e-08
+ Identities = 27/77 (35%), Positives = 44/77 (57%)
+ Frame = +1 / +3
+
+                                                                         
+Query: 41986 IIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPTIQTNEKNNLIEKVLKCQAN 42165
+             + G+  Y+ P Y    +   ++DVYS G++LLEI++G+ P +   +  +L   V +  A 
+Sbjct: 33    VAGTLGYLDPEYHATFQLTVKTDVYSFGIVLLEIITGQPPVVMDPQTIHLPTWVRQKIAK 212
+
+                              
+Query: 42166 NTILDAADKGLRGQFDG 42216
+              +I D  DK L GQ+DG
+Sbjct: 213   GSIHDVVDKKLLGQYDG 263
+
+
+>DV865607 Helicase-like protein [Oryza sativa (japonica cultivar-group)]
+          Length = 465
+
+ Score = 60.2 bits (125), Expect = 3e-08
+ Identities = 24/49 (48%), Positives = 38/49 (77%)
+ Frame = +3 / +3
+
+                                                              
+Query: 22986 SQGQSLNKVGLYLPRQVFAHGQLYVAVSRVTNRHGLKILITDDEEHASK 23132
+             S+GQ+L++VG +  + +++HGQLYVA+SRV +R GLK LI D+   A++
+Sbjct: 54    SRGQTLDRVGNHWRKPIYSHGQLYVAISRVKSRGGLKSLIRDNHGQAAE 200
+
+
+>DV867863 Stem rust resistance protein, putative [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 632
+
+ Score = 58.3 bits (121), Expect = 1e-07
+ Identities = 23/65 (35%), Positives = 37/65 (56%)
+ Frame = +1 / +3
+
+                                                                         
+Query: 41929 DFGLVTQVNHTQTSRTRMNIIGSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPT 42108
+             + GL       QT     N++GS  YI P Y+  G+   +SD+YSLG++++E  +G+K  
+Sbjct: 6     EVGLSRLFGQDQTREKTQNVVGSLGYIAPEYLYKGEISTRSDIYSLGLLIIETTTGDKNK 185
+
+                  
+Query: 42109 IQTNE 42123
+              + NE
+Sbjct: 186   PKQNE 200
+
+
+>DV865729 F5A9.24 [Arabidopsis thaliana (Mouse-ear cress)]
+          Length = 804
+
+ Score = 57.0 bits (118), Expect = 3e-07
+ Identities = 28/63 (44%), Positives = 36/63 (57%)
+ Frame = +2 / +2
+
+                                                                        
+Query: 2795 DEENHRRMQWMAWWKMCVPKNQGGVGFRDIHCFNLALLAKQAWHLLDNPDSLCATILRAK 2974
+            DE     + W     +  PK   G+GFRDI  FNL LLAKQA  +   P+SL + +L+AK
+Sbjct: 365  DERKTCWVSWKK*QSVTKPKFVRGLGFRDI*VFNLPLLAKQACRIKMEPNSLRSRVLKAK 544
+
+               
+Query: 2975 YYP 2983
+            Y P
+Sbjct: 545  YSP 553
+
+
+>DV862332 OSJNBa0021F22.13 protein [Oryza sativa (japonica
+             cultivar-group)]
+          Length = 671
+
+ Score = 53.3 bits (110), Expect = 4e-06
+ Identities = 20/39 (51%), Positives = 28/39 (71%)
+ Frame = +1 / +2
+
+                                                    
+Query: 41992 GSRSYIGPAYIEIGKACRQSDVYSLGVMLLEIVSGEKPT 42108
+             G+  Y+ P Y   GKA R SDV+S G+MLLE+ +G++PT
+Sbjct: 77    GTIGYMAPEYGSAGKASRMSDVFSYGIMLLEVFTGKRPT 193
+
+
+>DV863179 EF hand, putative [Oryza sativa (japonica cultivar-group)]
+          Length = 709
+
+ Score = 35.9 bits (72), Expect(2) = 5e-06
+ Identities = 17/55 (30%), Positives = 27/55 (49%)
+ Frame = -2 / +3
+
+                                                                    
+Query: 45042 SLGQNPTEAELQDMINEVDADGNGTIDFPEFLNLMARKMKDTDSEEELKEAFRVF 44878
+             +LG+  +  E   ++   DADG+G +   EF  L A    D      L+EAF ++
+Sbjct: 231   TLGEEVSSEEAAAILAAADADGDGLLSQEEFSKLAAGAQDDAVKRRCLREAFGMY 395
+
+
+
+ Score = 35.0 bits (70), Expect(2) = 5e-06
+ Identities = 14/29 (48%), Positives = 20/29 (68%)
+ Frame = -2 / +3
+
+                                          
+Query: 44799 EEVDEMIREADVDGDGQINYEEFVKVMMA 44713
+             EE   MI   D+DGDG ++++EF  +MMA
+Sbjct: 483   EECRAMICRFDLDGDGALSFDEFKVMMMA 569
+
+
+  Database: AsTA_1
+    Posted date:  Feb 16, 2007  2:00 PM
+  Number of letters in database: 3,216,399
+  Number of sequences in database:  6182
+  
+Lambda     K      H
+   0.318    0.134    0.401 
+
+
+Matrix: BLOSUM62
+Number of Sequences: 6182
+Number of Hits to DB: 333,359,236
+Number of extensions: 5083601
+Number of successful extensions: 25314
+Number of sequences better than 1.0e-05: 23
+Length of query: 27575
+Length of database: 1,072,133
+Length adjustment: 51
+Effective length of query: 27524
+Effective length of database: 756,851
+Effective search space: 20831566924
+Effective search space used: 20831566924
+Neighboring words threshold: 13
+Window for multiple hits: 40
+X1: 16 ( 7.3 bits)
+S2: 105 (51.0 bits)

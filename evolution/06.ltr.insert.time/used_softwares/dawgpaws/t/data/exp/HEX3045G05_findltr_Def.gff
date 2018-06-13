@@ -1,0 +1,6 @@
+HEX3045G05	find_ltr:Def	LTR_retrotransposon	3985	11487	.	+	.	HEX3045G05_findltr_1
+HEX3045G05	find_ltr:Def	five_prime_LTR	3985	4488	.	+	.	HEX3045G05_findltr_1
+HEX3045G05	find_ltr:Def	three_prime_LTR	10984	11487	.	+	.	HEX3045G05_findltr_1
+HEX3045G05	find_ltr:Def	LTR_retrotransposon	32934	39936	.	-	.	HEX3045G05_findltr_2
+HEX3045G05	find_ltr:Def	five_prime_LTR	32934	33097	.	-	.	HEX3045G05_findltr_2
+HEX3045G05	find_ltr:Def	three_prime_LTR	39773	39936	.	-	.	HEX3045G05_findltr_2

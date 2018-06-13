@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>vennseq.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;vennseq.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_options">Required Options</a></li>
+	</ul>
+
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<ul>
+
+		<li><a href="#configuration_file">Configuration File</a></li>
+		<li><a href="#environment_variables">Environment Variables</a></li>
+	</ul>
+
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>vennseq.pl - Venn diagram overlap of sequence features</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    vennseq.pl -i InputFastaFile.fasta -o OutputFile -d FeatureFileDir
+               -f tab</pre>
+<p>
+</p>
+<h2><a name="required_options">Required Options</a></h2>
+<pre>
+    -i       # Fasta file being annotated
+    -o       # Output file
+    -d       # Feature file directory
+    -f       # Format of the annotation data [gff]
+           
+=head1 DESCRIPTION</pre>
+<p>Creates a Venn Diagram comparing the overlap of sequence
+features along a query sequence. The purpose is to allow
+me to visualize the overlap of Repeat Databases or gene
+models along a BAC.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di">-i</a></strong>
+
+<dd>
+<p>Path to the sequence file in fasta format.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do">-o</a></strong>
+
+<dd>
+<p>Path to the output file in the Venn text file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dd">-d</a></strong>
+
+<dd>
+<p>Directory containing sequence features.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2df_2c_2d_2dformat">-f,--format</a></strong>
+
+<dd>
+<p>The feature file format. This must be one of ( tab | blast | gff ).
+Currently only tab delim blast hits are supported. This is set to
+gff default.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2ds_2c_2d_2dsvg_2dout">-s,--svg-out</a></strong>
+
+<dd>
+<p>Path to a svg format vector file of the Venn diagram. This will produce
+a svg file at this path, otherwise to svg file is created.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dvenn_2dmaster">--venn-master</a></strong>
+
+<dd>
+<p>The directory containing the VennMaster program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dno_2dvm">--no-vm</a></strong>
+
+<dd>
+<p>This will do the anlysis of the suquence features, and write the 
+analysis to STDOUT without using VennMaster to visualize the results.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2djava_2dpath">--java-path</a></strong>
+
+<dd>
+<p>The path to the java binary. By default, this program will use 'java'
+and assume that the java path you want to use is defined in your PATH.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dseq_2did">--seq-id</a></strong>
+
+<dd>
+<p>The identifier to use for the sequence id</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dseq_2dlen">--seq-len</a></strong>
+
+<dd>
+<p>This is an alternative to providing a sequence file to determine the sequence
+length from. This allows you to define the lenght of the sequence that the
+features are being mapped onto.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2ddebug">--debug</a></strong>
+
+<dd>
+<p>Run the program in debug mode.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program with maximum output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>Error messages generated by this program and possible solutions are listed
+below.</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>
+</p>
+<h2><a name="configuration_file">Configuration File</a></h2>
+<p>This program does not require a configuration file and does not</p>
+<p>
+</p>
+<h2><a name="environment_variables">Environment Variables</a></h2>
+<p>The following variables may be dfined in the user environment.</p>
+<ul>
+<li><strong><a name="item_vmaster_dir">VMASTER_DIR</a></strong>
+
+<p>This is the directory where the VennMaster program is located
+This option can also be defined wit the --venn-master option 
+at the command line.</p>
+</li>
+<li><strong><a name="item_vmaster_java_bin">VMASTER_JAVA_BIN</a></strong>
+
+<p>This is the path of the java binary that you want to use to
+run the VennMaster program. If this is not specified in the user
+environment, this will use 'java' as defined in the PATH variable.
+This option can also be defined with the --java-path option
+at the command line.</p>
+</li>
+<li><strong><a name="item_vmaster_java_mem">VMASTER_JAVA_MEM</a></strong>
+
+<p>This is the amount of memory to allot to the VennMaster program
+If this is not specified, the program will use 512 GB memory. This
+option can also be defined with the --java-mem option at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong><a name="item_vennmaster">VennMaster</a></strong>
+
+<p>This progra requires the VennMaster program 
+<a href="http://www.informatik.uni-ulm.de/ni/staff/HKestler/vennm/doc.html">http://www.informatik.uni-ulm.de/ni/staff/HKestler/vennm/doc.html</a>.</p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<p>This program does not require Perl modules beyond those modules included in
+a normal installation of Perl.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWGPAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_limited_testing_with_vennmaster">Limited Testing with VennMaster</a></strong>
+
+<p>I have only tested this will VennMaster on the Mac OS 10.5.</p>
+</li>
+<li><strong><a name="item_separate_sources_must_be_in_separate_files">Separate sources must be in separate files</a></strong>
+
+<p>For gff files, the separate sources must be in separate gff files. Currently
+sources defined in the second colum will be regarded as the same source
+if they are in the same gff file.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>The vennseq.pl program is part of the DAWGPAWS package of genome
+annotation programs. See the DAWGPAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU GENERAL PUBLIC LICENSE, VERSION 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>Started: 03/06/2007</p>
+<p>Updated: 04/06/2009
+
+</p>
+<p>Version: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;vennseq.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

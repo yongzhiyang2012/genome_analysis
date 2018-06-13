@@ -1,0 +1,18 @@
+# CONFIG FILE FOR batch_findltr.pl program
+# This is part of the DAWG-PAWS package
+#  This is white_space delimited file
+# Col 1. Base_name. NO SPACES IN NAMES
+# Col 2. Minimum Length MEM
+# Col 3. Mimimum distance between MEMs
+# Col 4. Maximum distance between MEMs
+# Col 5. Maximu gap between MEMs
+# Col 6. Minimum length of the LTR 
+# Col 7. Maximum length of the LTR
+# Col 8. Range Bin
+# Col 9. Minimum length of ORF
+# Col 10. Mac E value of HMM Hit
+#------------------------------------------------------------------------+
+#1   2     3     4      5     6     7      8     9        10             |
+#------------------------------------------------------------------------+
+Def  40  1100  16000    40   100   1000   500  700        0.0000000001
+# END.

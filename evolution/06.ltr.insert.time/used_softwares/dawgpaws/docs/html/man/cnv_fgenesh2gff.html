@@ -1,0 +1,486 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_fgenesh2gff.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_fgenesh2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>cnv_fgenesh2gff.pl - Convert fgenesh gene predictions to gff format</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_fgenesh2gff.pl -i infile.txt -o outfile.gff</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    --infile        # Path to fgenesh result to convert
+    --outfie        # Path to the gff format output</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program converts output from the fgenesh program to the gff format. If 
+the fgenesh output file appears to be saved from the web, the program
+will attempt to first strip the HTML tags from the text before converting
+to the GFF format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path of the input file. This should a text file of the result of the fgenesh
+gene prediction program. If an input file is not specified, then the program
+will expect input from STDIN.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutfile">-o,--outfile</a></strong>
+
+<dd>
+<p>Path of the gff file that is produced by the program. If an output file
+is not specified, the program will write output to STDOUT.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dhtml">--html</a></strong>
+
+<dd>
+<p>Use this to convert the output from the softberry website if you
+saved the text in html format.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dp_2c_2d_2dparam">-p,--param</a></strong>
+
+<dd>
+<p>The label used to describe the parameter set used for the the annotation
+program. This identifier will be appended the source column (col 2)
+in the GFF output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2ds_2c_2d_2dseqname">-s,--seqname</a></strong>
+
+<dd>
+<p>This is the name of the sequence that was annotated. This will be used
+in the source column (col 1) of the gff output file. By default, the program
+will use the name of the sequence as specified in the fgenesh output file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<dl>
+<dt><strong><a name="item_typical_use">Typical Use</a></strong>
+
+<dd>
+<p>Typically you will be using this program to convert the fgenesh annotation 
+output for an individual sequence file to the gff format.</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i fgenesh_result.txt -o fgenesh_result.gff</pre>
+</dd>
+<dd>
+<p>This will result in a GFF result similar to the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05  fgenesh   exon     961     1456    12.02   +     . gene_1
+ HEX3045G05  fgenesh   exon     1702    2725    0.04    +     . gene_1
+ HEX3045G05  fgenesh   exon     3619    3982    10.41   +     . gene_1
+ HEX3045G05  fgenesh   exon     6960    7273    13.70   +     . gene_2
+ HEX3045G05  fgenesh   exon     7435    7789    21.29   +     . gene_2
+ HEX3045G05  fgenesh   exon     7904    8091    1.14    +     . gene_2
+ HEX3045G05  fgenesh   exon     8248    9163    13.79   +     . gene_2
+ HEX3045G05  fgenesh   exon     9206    9587    8.00    +     . gene_2
+ ...</pre>
+</dd>
+</li>
+<dt><strong><a name="item_specify_the_sequence_id">Specify the Sequence ID</a></strong>
+
+<dd>
+<p>Generally the cvn_fgenesh2gff.pl program will use the label for the sequence
+as reported in the fgenesh report file. Otherwise, you can specify the
+source sequence name using the -n or --name flag. For example:</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i result.txt -o result.gff -n wheat_1</pre>
+</dd>
+<dd>
+<p>Will result in a gff file like the following:</p>
+</dd>
+<dd>
+<pre>
+ wheat_1    fgenesh     exon    961     1456    12.02   +     . gene_1
+ wheat_1    fgenesh     exon    1702    2725    0.04    +     . gene_1
+ wheat_1    fgenesh     exon    3619    3982    10.41   +     . gene_1
+ wheat_1    fgenesh     exon    6960    7273    13.70   +     . gene_2
+ wheat_1    fgenesh     exon    7435    7789    21.29   +     . gene_2
+ wheat_1    fgenesh     exon    7904    8091    1.14    +     . gene_2
+ wheat_1    fgenesh     exon    8248    9163    13.79   +     . gene_2
+ wheat_1    fgenesh     exon    9206    9587    8.00    +     . gene_2
+ ...</pre>
+</dd>
+<dd>
+<p>This option allows you to change the name of the sequence source without
+having to run the fgenesh program again.</p>
+</dd>
+</li>
+<dt><strong><a name="item_specify_the_parameter_set">Specify the Parameter Set</a></strong>
+
+<dd>
+<p>It is often useful to run a program using different parameter sets. The
+cnv_fgenesh2gff.pl program therefore allows you to specify the label
+for a set of parameters to be able to distinguish multiple prediction results
+from the same program using different parameter combinations. This
+parameter set label will be added to the second column of the gff
+output file.</p>
+</dd>
+<dd>
+<p>For example running the program with parameter set one:</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i result.txt -o result.gff -p set_1</pre>
+</dd>
+<dd>
+<p>This will result in a GFF file like the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05  fgenesh:set_1  exon   961    1456  12.02   +    .  gene_1
+ HEX3045G05  fgenesh:set_1  exon   1702   2725  0.04    +    .  gene_1
+ HEX3045G05  fgenesh:set_1  exon   3619   3982  10.41   +    .  gene_1
+ HEX3045G05  fgenesh:set_1  exon   6960   7273  13.70   +    .  gene_2
+ HEX3045G05  fgenesh:set_1  exon   7435   7789  21.29   +    .  gene_2
+ HEX3045G05  fgenesh:set_1  exon   7904   8091  1.14    +    .  gene_2
+ HEX3045G05  fgenesh:set_1  exon   8248   9163  13.79   +    .  gene_2
+ HEX3045G05  fgenesh:set_1  exon   9206   9587  8.00    +    .  gene_2
+ ...</pre>
+</dd>
+<dd>
+<p>Then running the program wit parameter set two:</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i result.txt -o result.gff -p set_2</pre>
+</dd>
+<dd>
+<p>This will result in a GFF file like the following:</p>
+</dd>
+<dd>
+<pre>
+ HEX3045G05  fgenesh:set_2  exon   961    1456  12.02   +    .  gene_1
+ HEX3045G05  fgenesh:set_2  exon   1702   2725  0.04    +    .  gene_1
+ HEX3045G05  fgenesh:set_2  exon   3619   3982  10.41   +    .  gene_1
+ ...</pre>
+</dd>
+<dd>
+<p>This will allow you to later distinguish between the result for parameter
+set one and the parameter set two results.</p>
+</dd>
+</li>
+<dt><strong><a name="item_accepting_input_from_stdin">Accepting Input from STDIN</a></strong>
+
+<dd>
+<p>It is often useful in working at the unix command line to pipe the output 
+from one program to another. For that reason, the cnv_fgenesh2gff.pl program
+can accept input from STDIN. For example, given a text file named result.txt.
+You can send the result to cnv_fgenesh2gff.pl using the cat command and
+then the pipe '|':</p>
+</dd>
+<dd>
+<pre>
+  cat result.txt | cnv_fgenesh2gff.pl</pre>
+</dd>
+<dd>
+<p>Since an output file is not specified, the result will be printed to
+STDOUT and will appear on the screen.</p>
+</dd>
+</li>
+<dt><strong><a name="item_writing_output_to_stdout">Writing Output to STDOUT</a></strong>
+
+<dd>
+<p>Since the program can write output to STDOUT, it is possible to
+directly load the GFF file to your database. For example, if you
+have a script called load_gff2mydb.pl, you can pipe the GFF results
+to this program directly:</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i result.txt | load_gff2mydb.pl</pre>
+</dd>
+<dd>
+<p>This will load the result to your database without generating a copy
+of the GFF file on your hard drive.</p>
+</dd>
+</li>
+<dt><strong><a name="item_removing_text_that_throws_warnings">Removing Text That Throws Warnings</a></strong>
+
+<dd>
+<p>Saving the output from the fgenesh webpage will included the copywrite statement
+from. You will get the following warning:</p>
+</dd>
+<dd>
+<pre>
+  --------------------- WARNING ---------------------
+  MSG: seq doesn't validate, mismatch is ?1999,2009,&lt;,://,/&gt;
+  ---------------------------------------------------</pre>
+</dd>
+<dd>
+<p>This warning is only written to STDERR, and should not affect the gff output
+of the program. However, you can remove the offending line of fgenesh
+output using the grep command before piping the text to the
+cnv_fgenesh2gff.pl program.</p>
+</dd>
+<dd>
+<pre>
+  grep -v 'www.softberry.com' fgenesh.txt | cnv_fgenesh2gff.pl</pre>
+</dd>
+</li>
+<dt><strong><a name="item_strip_html_tags">Strip HTML Tags</a></strong>
+
+<dd>
+<p>It is also possible to parse output from the softberry website if
+it was saved in html text format using the --html option. This
+will attempt to strip the html and save a local tmp copy that
+is in plain text file that will then be parsed:</p>
+</dd>
+<dd>
+<pre>
+  cnv_fgenesh2gff.pl -i infile.txt --html</pre>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>The following lists some typical error messages and solutions:</p>
+<ul>
+<li><strong><a name="item_msg_3a_seq_doesn_27t_validate_2c_mismatch_is__3f19">MSG: seq doesn't validate, mismatch is ?1999,2009,&lt;,://,/&gt;</a></strong>
+
+<p>This generally will be seen when the fgenesh text file includes the
+copywrite statement from the softberry web site.</p>
+</li>
+<li><strong><a name="item_msg_3a_seq_doesn_27t_validate_2c_mismatch_is__26_2">MSG: seq doesn't validate, mismatch is &amp;,;,:[,]13,(,)961,39821884,,,+,</a></strong>
+
+<p>You may see something like this if you are trying to parse a result
+you saved from the softberry web site in the html format. The solution 
+to this problem is to save the program as text. You can strip the 
+html from the program using the --html option.</p>
+</li>
+<li><strong><a name="item_warning_3a_the_input_file_appears_to_be_html">WARNING: The input file appears to be HTML</a></strong>
+
+<p>You will see this message if the program detects that the fgenesh output
+you are trying to parse is in HTML format. If this is the case, 
+cnv_fgenesh2gff.pl will attempt to save a copy of the fgenesh
+result as a normal text file before converting to GFF format.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of a configuartion file or varaibles
+defined in the user's environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong><a name="item_fgenesh">Fgenesh</a></strong>
+
+<p>This program is designed to parse ab initio gene annotation results generated
+by the Fgenesh program. These results can be generated from a local copy
+of the Fgenesh program, or can be results obtained by the Fgenesh web
+service provided by softberry
+<a href="http://linux1.softberry.com/berry.phtml">http://linux1.softberry.com/berry.phtml</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_bio_3a_3atools_3a_3afgenesh">Bio::Tools::Fgenesh</a></strong>
+
+<p>This program requires the perl module Bio::Tools::Fgenesh. This module is
+part of the bioperl package</p>
+</li>
+</ul>
+<p>Other modules or software that the program is dependent on.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_not_tested_on_fgenesh_binary">Not Tested on Fgenesh Binary</a></strong>
+
+<p>This progarm has only been tested with output from the softberry
+website and has not been tested with the Fgenesh binary. If you find
+that this program does work with the standalone program, please
+contact the author and let me know.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 01/31/2009</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_fgenesh2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+GENSCAN 1.0	Date run:  2-Aug-107	Time: 12:44:52
+
+Sequence HEX3045G05 : 82726 bp : 46.13% C+G : Isochore 1 ( 0 - 100 C+G%)
+
+Parameter matrix: Maize.smat
+
+Predicted genes/exons:
+
+Gn.Ex Type S .Begin ...End .Len Fr Ph I/Ac Do/T CodRg P.... Tscr..
+----- ---- - ------ ------ ---- -- -- ---- ---- ----- ----- ------
+
+ 1.01 PlyA +     37     42    6                               2.27
+
+ 2.00 Prom +    400    439   40                               3.92
+ 2.01 Init +  12739  12766   28  0  1  132  100   -33 0.892   4.63
+ 2.02 Term +  13008  13042   35  1  2   74   46   -11 0.903  -6.47
+ 2.03 PlyA +  13154  13159    6                               2.27
+
+ 3.03 PlyA -  16654  16649    6                               2.27
+ 3.02 Term -  17204  17154   51  2  0   92   46    80 0.293   4.21
+ 3.01 Init -  17989  17963   27  1  0   79   57   -16 0.269  -5.05
+ 3.00 Prom -  18975  18936   40                               4.42
+
+ 4.00 Prom +  20711  20750   40                              -0.18
+ 4.01 Init +  21814  21825   12  0  0  104  110     0 0.734   6.06
+ 4.02 Intr +  23495  23622  128  1  2  -74   66   131 0.147  -2.91
+ 4.03 Intr +  24022  24198  177  1  0   82   -4   200 0.007  12.44
+ 4.04 Term +  26409  26547  139  0  1   46   45    78 0.007  -0.16
+ 4.05 PlyA +  26781  26786    6                               0.77
+
+ 5.04 PlyA -  27278  27273    6                               2.27
+ 5.03 Term -  32260  31722  539  2  2   60   46   586 0.777  51.51
+ 5.02 Intr -  32745  32399  347  2  2  103   53   326 0.449  29.86
+ 5.01 Init -  43613  43159  455  2  2  130   -3  1236 0.885 119.00
+ 5.00 Prom -  43691  43652   40                              -8.99
+
+ 6.03 PlyA -  43891  43886    6                               0.77
+ 6.02 Term -  45080  44707  374  0  2   43   45  1403 0.981 130.86
+ 6.01 Init -  46588  46513   76  1  1  108   67   270 0.999  30.85
+ 6.00 Prom -  46713  46674   40                               2.72
+
+ 7.04 PlyA -  48141  48136    6                               2.27
+ 7.03 Term -  55147  54818  330  1  0   49   45   402 0.674  30.91
+ 7.02 Intr -  55355  55265   91  1  1   59   29    83 0.451   2.19
+ 7.01 Init -  57661  57468  194  1  2  107   58   501 0.632  50.84
+ 7.00 Prom -  59438  59399   40                               0.92
+
+ 8.00 Prom +  60298  60337   40                               2.72
+ 8.01 Init +  61299  61393   95  2  2   91   33   199 0.867  15.88
+ 8.02 Intr +  62276  62432  157  2  1   91  -20   107 0.383   3.30
+ 8.03 Intr +  62507  62546   40  1  1   52   85    49 0.474   1.18
+ 8.04 Term +  63375  63484  110  1  2  -33   46   264 0.970  11.70
+ 8.05 PlyA +  66239  66244    6                               2.27
+
+ 9.06 PlyA -  66888  66883    6                               2.27
+ 9.05 Term -  67030  66925  106  0  1   84   46   128 0.999   8.99
+ 9.04 Intr -  67189  67118   72  0  0   43   48   111 0.921   3.70
+ 9.03 Intr -  67547  67404  144  1  0   48   68    71 0.918   3.51
+ 9.02 Intr -  67726  67655   72  0  0   49   48   101 0.907   3.30
+ 9.01 Init -  68070  67826  245  0  2  130   76   545 0.999  56.42
+ 9.00 Prom -  68182  68143   40                               5.42
+
+10.02 PlyA -  68801  68796    6                               2.27
+10.01 Term -  70356  70202  155  1  2   61   35    85 0.627   1.78
+
+Predicted peptide sequence(s):
+
+
+>HEX3045G05|GENSCAN_predicted_peptide_2|20_aa
+MGVVLRDEKDSNTATEKQIK
+
+>HEX3045G05|GENSCAN_predicted_peptide_3|25_aa
+MGIIFLHTHSPLKAVTAGAYWKVAI
+
+>HEX3045G05|GENSCAN_predicted_peptide_4|151_aa
+MVGQYRRIEVGSHKGGVDGTLNVSHSSGGGGEFRWAAPSQWRSQEQYCAARRAGRWPGRS
+LERQLGSAVGGRVGAASQQAQEGGGRVGRPGGTETGGWVTAAPARASNTPVAGSDRAAPR
+AVPRPTHRKICPPPACGSYSSASYRVSDGWT
+
+>HEX3045G05|GENSCAN_predicted_peptide_5|446_aa
+MAAKLTQEQADECKEVFDLFDGDEDGRIAAGELVTALRSLGQNVDEAEARGFLEXXXXXX
+XXXXAIDLPTFLAVAARKANAGVSAKGLAQCLDAFDDDGSGVIPAEQLRQVMLTHGDRLT
+EEEADELVRKADPRGEGRVQCKELVKVLMNNNDTITDITPFIPIVLDLHSHNYYHWRHIF
+EIHLGRYSLLHHITGDTPPAPANPRWLKDDLAIIQWLYTRISTELFNLVVTDGATARDIW
+LELRRLFQDNRDARISALNMELRTITQGDLDSHAPTFANARRGALHAPDGGAESGAQGQH
+ASPLPHLGSPCSDSCGFVRGFLSGASSTSTAAGVVPQPQLQGKKPDLSATKAGIDVFFIE
+LYSCTANRCTISCAFLTGSLNMRPPHDPWTGLVQAWPMPWSAPSPYGAPPAYTGAWVPGL
+RPSTGAPGLLGSRPPQQAYTAYAPLY
+
+>HEX3045G05|GENSCAN_predicted_peptide_6|149_aa
+MADQLTDEQIAEFKEAFSLFDKDGDGCITTKELGTVMRSLGQNPTEAELQDMINEVDADG
+NGTIDFPEFLNLMARKMKDTDSEEELKEAFRVFDKDQNGFISAAELRHVMTNLGEKLTDE
+EVDEMIREADVDGDGQINYEEFVKVMMAK
+
+>HEX3045G05|GENSCAN_predicted_peptide_7|204_aa
+MGNASARAVENGHAAAPMEQVAVAPVGGSSAEAAAPPDAVMRELPPPVPYVFAPQVMMIL
+PCPKWMIVDGVPRYVSELPHVTDERGQVANLLDVHEYIPDSLDSVAEFDAPPSPEHSYNM
+EFPTDEELTKQDPPALPPQLLMTALGGIDHSDELAPKPKPQHVVLNHLFIEKGWGAQSLL
+ALGLTHRFQSKYVNFVLYKLLVRR
+
+>HEX3045G05|GENSCAN_predicted_peptide_8|133_aa
+MVRRPVVPCVGLALVTHTYVCVVASASRAMPPAPNPHRQTSGSVGVDGHAGAAPWSRSSL
+PRLAGSTTRLSDSVSLVFGLQRVVLGSARPKLELGNVALGDASSWNSDDERFLDAYAPTS
+EEDITETESESDE
+
+>HEX3045G05|GENSCAN_predicted_peptide_9|212_aa
+MAPKAAGARVPLAVTVFMAVVTTMLLQPAAAGLYGDRDALMALRRGLQDPDGALYTWIPE
+VSPCSNWSHVTCNGQANRVTEIVIGFVNLTGPLSPELGKLDQLTKLWISYTNIQGTIPEE
+LGNLENLNTMHLHNNSLSGQIPASLAKLKSLKQLHLQQNRLTGPIPSELDGLSDQTSVNL
+SNNDLCGPIPTDGPFKNINSSLADNPRLGSNC
+
+>HEX3045G05|GENSCAN_predicted_peptide_10|51_aa
+XCAFLIYWGGLRKPEMEEMVKRGAKMLKENTTQMMLLCGPPAPTMDGHDGS
+
+
+Explanation
+
+Gn.Ex : gene number, exon number (for reference)
+Type  : Init = Initial exon
+        Intr = Internal exon
+        Term = Terminal exon
+        Sngl = Single-exon gene
+        Prom = Promoter
+        PlyA = poly-A signal
+S     : DNA strand (+ = input strand; - = opposite strand)
+Begin : beginning of exon or signal (numbered on input strand)
+End   : end point of exon or signal (numbered on input strand)
+Len   : length of exon or signal (bp)
+Fr    : reading frame (a codon ending at x is in frame f = x mod 3)
+Ph    : net phase of exon (length mod 3)
+I/Ac  : initiation signal or acceptor splice site score (x 10)
+Do/T  : donor splice site or termination signal score (x 10)
+CodRg : coding region score (x 10)
+P     : probability of exon (sum over all parses containing exon)
+Tscr  : exon score (depends on length, I/Ac, Do/T and CodRg scores)
+
+Comments
+
+The SCORE of a predicted feature (e.g., exon or splice site) is a
+log-odds measure of the quality of the feature based on local sequence
+properties. Thus, for example, a predicted donor splice site with
+score > 100 is excellent; 50-100 is acceptable; 0-50 is weak; and
+below 0 is poor (probably not a real donor site).
+
+The PROBABILITY of a predicted exon is the estimated probability under
+GENSCAN's model of genomic sequence structure that the exon is correct.
+This probability depends in general on global as well as local sequence
+properties.  This information can be used to assess the reliability of the
+predicted exon, e.g., it would be better to design PCR primers based on
+a predicted exon with probability > 0.95 than one with lower probability.
+

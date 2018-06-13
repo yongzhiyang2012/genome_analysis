@@ -1,0 +1,679 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: OsUniGene_65 
+           35,353 sequences; 53,749,288 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gnl|UG|Os#S35448194 CT842879 Oryza sativa (indica cultivar-group...   509   e-141
+gnl|UG|Os#S25060654 RECm0675 A normalized whole-life-cycle cDNA ...   448   e-123
+gnl|UG|Os#S12439301 Oryza sativa calmodulin-like protein mRNA, c...   369   3e-99
+gnl|UG|Os#S35191913 Oryza sativa (japonica cultivar-group) cDNA,...   287   9e-75
+gnl|UG|Os#S35342048 Oryza sativa (indica cultivar-group) cDNA cl...   210   2e-51
+gnl|UG|Os#S35431940 CT861208 Oryza sativa (indica cultivar-group...   210   2e-51
+gnl|UG|Os#S16409367 Oryza sativa (japonica cultivar-group) cDNA ...   176   2e-41
+gnl|UG|Os#S12453526 Oryza sativa (japonica cultivar-group) OsCAM...   161   1e-36
+gnl|UG|Os#S31801092 CI043402 Oryza sativa (japonica cultivar-gro...   153   3e-34
+gnl|UG|Os#S25079256 EI115B02 A normalized whole-life-cycle cDNA ...   153   3e-34
+gnl|UG|Os#S16414437 Oryza sativa (japonica cultivar-group) cDNA ...   131   1e-27
+gnl|UG|Os#S17523996 Oryza sativa (japonica cultivar-group) cDNA ...    76   7e-11
+gnl|UG|Os#S35125942 Oryza sativa (japonica cultivar-group) Os11g...    72   1e-09
+
+>gnl|UG|Os#S35448194 CT842879 Oryza sativa (indica cultivar-group) cv.
+             Guang Lu Ai 4 Oryza sativa (indica cultivar-group) cDNA
+             clone CONTIG2371, mRNA sequence /clone=CONTIG2371
+             /gb=CT842879 /gi=117240893 /ug=Os.2226 /len=1532
+          Length = 1532
+
+ Score =  509 bits (257), Expect = e-141
+ Identities = 347/377 (92%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| 
+Sbjct: 589   cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcaccgtcg 530
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 529   acgtcggcctcgcggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 470
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| |||||||| ||||| || || |||||||||||||||||||| ||||||||||| 
+Sbjct: 469   gtcatgacgtggcggagctcggcggcggagatgaagccgttctggtctttgtcgaacacc 410
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             | |||||||||||||||||||||||||||||| |||||||||||||| |  |||||||||
+Sbjct: 409   ctgaacgcctccttgagctcctcctccgagtcggtgtccttcatcttgcgtgccatcagg 350
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             || |||||||| |||||||||||||||||||||||||||||||| |||||||||||||||
+Sbjct: 349   ttgaggaactccgggaagtcgatggtgccgttgccgtccgcgtcgacctcgttgatcatg 290
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||| ||||| |||||||| ||||||||||| || || |||||||||||||| ||||||
+Sbjct: 289   tcctggagctcggcctccgttgggttctgccccagcgaacgcatcacggttcccagctcc 230
+
+                              
+Query: 45065 ttggtggtgatgcaacc 45081
+             ||||| |||||||||||
+Sbjct: 229   ttggttgtgatgcaacc 213
+
+
+
+ Score =  133 bits (67), Expect = 3e-28
+ Identities = 73/75 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             ||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct: 211   tcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtg 152
+
+                            
+Query: 46575 agctggtccgccatg 46589
+             |||||||||||||||
+Sbjct: 151   agctggtccgccatg 137
+
+
+>gnl|UG|Os#S25060654 RECm0675 A normalized whole-life-cycle cDNA library
+             of rice Oryza sativa (indica cultivar-group) cDNA clone
+             EI078O17, EI057J10, EI076F21, EI060N01, BI074B21, EI091G22
+             5', mRNA sequence
+             /clone=EI078O17,_EI057J10,_EI076F21,_EI060N01,_BI074B21,
+             _EI091G22 /clone_end=5' /gb=CX099905 /gi=66913057
+             /ug=Os.10290 /len=1201
+          Length = 1201
+
+ Score =  448 bits (226), Expect = e-123
+ Identities = 341/378 (90%), Gaps = 1/378 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||||||||| |||||||||||||||||||||||||| ||||| || 
+Sbjct: 561   cctcacttggccatcatgaccttaacgaactcctcgtagttgatctggccatcgccatcg 502
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| || |||||||| ||||||||||| || ||||||
+Sbjct: 501   acgtcagcctcacggatcatctcgtcgacttcctcgtcagtcagcttctcaccaaggttg 442
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| |||||||| ||||| || ||||||||||| ||||||||||||||||| ||||| 
+Sbjct: 441   gtcatgacgtggcggagctcagcagccgagatgaaaccgttctggtccttgtcaaacaca 382
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| || |||||||||||| |||||||||||
+Sbjct: 381   cggaaggcctccttgagctcctcctcagagtcggtatccttcatcttcttcgccatcagg 322
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| ||||| || ||||| || || ||||||||||||||||||
+Sbjct: 321   ttcaggaactctgggaagtcaatggtcccattgccatcagcatcaacctcgttgatcatg 262
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctc- 45063
+             ||||||||||||||||| || |||||||| || |||||||||||||||||||||||||| 
+Sbjct: 261   tcctgcagctccgcctcagttgggttctgaccaagggaccgcatcacggttccaagctca 202
+
+                               
+Query: 45064 cttggtggtgatgcaacc 45081
+             ||| || |||||||||||
+Sbjct: 201   cttagtagtgatgcaacc 184
+
+
+
+ Score =  141 bits (71), Expect = 1e-30
+ Identities = 80/83 (96%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| |||||||||||||||||||| |||||||||||||||||||||||||||||
+Sbjct: 186   accgtcgccgtccttgtcgaagaggctgaacgcctccttgaactcggcgatctgctcgtc 127
+
+                                    
+Query: 46571 ggtgagctggtccgccatggggg 46593
+             |||||||||||||||||| ||||
+Sbjct: 126   ggtgagctggtccgccatcgggg 104
+
+
+>gnl|UG|Os#S12439301 Oryza sativa calmodulin-like protein mRNA, complete
+             cds /cds=p(106,669) /gb=AF231026 /gi=6969638 /ug=Os.2216
+             /len=961
+          Length = 961
+
+ Score =  369 bits (186), Expect = 3e-99
+ Identities = 321/366 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44710 cttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtc 44769
+             |||||||||||||  ||||||||||||||||||||||||||| ||||||||||| |||||
+Sbjct: 552   cttggccatcatgcacttgacgaactcctcgtagttgatctgcccgtcgccgtcgacgtc 493
+
+                                                                         
+Query: 44770 cgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcat 44829
+              ||||| | |||||||||| | ||||||||||| || |||  |||||||| ||||| |||
+Sbjct: 492   ggcctcgctgatcatctcgccgacctcctcgtcggtgagccgctccccgatgttggccat 433
+
+                                                                         
+Query: 44830 cacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaa 44889
+             ||||||||| ||||| || || ||||||||||||||||||||||||||||| ||||||||
+Sbjct: 432   cacgtggcggagctcggcggcggagatgaagccgttctggtccttgtcgaagacgcggaa 373
+
+                                                                         
+Query: 44890 cgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcag 44949
+             ||||||||| ||||||||||| |||||| ||||| ||| ||| | ||||||||||  |||
+Sbjct: 372   cgcctccttcagctcctcctcggagtccttgtccctcagcttgcgcgccatcaggcccag 313
+
+                                                                         
+Query: 44950 gaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctg 45009
+             ||||||   ||| |||||| ||||||||| ||||||||| |||||| |||||||||||||
+Sbjct: 312   gaactccttgaattcgatgttgccgttgctgtccgcgtccacctcgctgatcatgtcctg 253
+
+                                                                         
+Query: 45010 cagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctccttggt 45069
+             |||||||||||| || ||||||||||| ||    |||||||||||||| |||||||||||
+Sbjct: 252   cagctccgcctctgttgggttctgccccagacttcgcatcacggttcctagctccttggt 193
+
+                   
+Query: 45070 ggtgat 45075
+             ||||||
+Sbjct: 192   ggtgat 187
+
+
+
+ Score =  103 bits (52), Expect = 3e-19
+ Identities = 73/80 (91%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| ||||||||||||||||||||||||||| |||||||  | |||||||| ||
+Sbjct: 183   accgtcgccgtccttgtcgaagaggctgaaggcctccctgaactctacaatctgctcttc 124
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             || |||||||||||||||||
+Sbjct: 123   ggagagctggtccgccatgg 104
+
+
+>gnl|UG|Os#S35191913 Oryza sativa (japonica cultivar-group) cDNA, clone:
+             J080012M07, full insert sequence /gb=AK242346
+             /gi=116011711 /ug=Os.455 /len=800
+          Length = 800
+
+ Score =  287 bits (145), Expect = 9e-75
+ Identities = 316/373 (84%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| ||||| || ||||| |||||||| || || || || |
+Sbjct: 562   ctcacttggccatcatcaccttcacgaattcttcgtaattgatctgaccatcaccatcga 503
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| |||||||||||||||||||||||||| || |||||||| || |||||||
+Sbjct: 502   catcagcctcacggatcatctcgtccacctcctcgtctgtaagcttctcaccaaggttgg 443
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || || || || || || |||||||||||||| |||||||||||||| || || |
+Sbjct: 442   tcatgacatgacggagttcagctgccgagatgaagccattctggtccttgtcaaatacac 383
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| || ||||||||||||||||| || || |||||||||||||| |  ||||||||||
+Sbjct: 382   ggaaggcttccttgagctcctcctcagaatcagtgtccttcatcttgcgtgccatcaggt 323
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || ||||| || || || || || || || || ||||||||||||||||
+Sbjct: 322   tgagaaactcaggaaagtcaatcgttccatttccatcagcatccacctcgttgatcatgt 263
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| |||||||||||||| |  || |||||||| |||||||||||||
+Sbjct: 262   cctgaagctcagcctcagtggggttctgccctaatgagcgcatcacagttccaagctcct 203
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 202   tggtggtgatgca 190
+
+
+
+ Score =  141 bits (71), Expect = 1e-30
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||| |||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct: 188   ccgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcg 129
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 128   gtgagctggtccgccatgg 110
+
+
+>gnl|UG|Os#S35342048 Oryza sativa (indica cultivar-group) cDNA
+             clone:OSIGCRA124D18, full insert sequence /gb=CT830600
+             /gi=116641633 /ug=Os.19793 /len=1123
+          Length = 1123
+
+ Score =  210 bits (106), Expect = 2e-51
+ Identities = 295/358 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             |||||||||||||||| || ||||| || |||||||||||||| || || || || || |
+Sbjct: 531   acttggccatcatgactttaacgaattcatcgtagttgatctgcccatcaccatcaacat 472
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | ||||| |||||||||||||| |||||||| || ||||||||||| || ||||| ||||
+Sbjct: 471   cggcctcacggatcatctcgtcaacctcctcatctgtcagcttctcaccaaggttagtca 412
+
+                                                                         
+Query: 44829 tcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcgga 44888
+             | ||||| ||||  || || || ||||| || ||||| ||||||||||||||||| ||||
+Sbjct: 411   tgacgtgacgcaattcagcagcagagataaaaccgttttggtccttgtcgaacacacgga 352
+
+                                                                         
+Query: 44889 acgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttca 44948
+             |||||||||||||||| ||||| || || || || |||||||| |  ||||||||||| |
+Sbjct: 351   acgcctccttgagctcttcctcagaatcagtatctttcatcttgcgggccatcaggttga 292
+
+                                                                         
+Query: 44949 ggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcct 45008
+             | || || ||||| ||||| || || |||||||| || || ||||| ||||||||||| |
+Sbjct: 291   gaaattcagggaaatcgattgttccattgccgtcagcatccacctcattgatcatgtctt 232
+
+                                                                       
+Query: 45009 gcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             | || || ||||| || ||||||||||| || || ||||| || ||||| | ||||||
+Sbjct: 231   gtagttctgcctcagttgggttctgccccagcgaacgcatgacagttcccaactcctt 174
+
+
+
+ Score =  139 bits (70), Expect = 5e-30
+ Identities = 76/78 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||||| |||||||||||||||||||||||||||||||||||||||||||| |||||
+Sbjct: 161   accgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtc 102
+
+                               
+Query: 46571 ggtgagctggtccgccat 46588
+             ||||||||||||||||||
+Sbjct: 101   ggtgagctggtccgccat 84
+
+
+>gnl|UG|Os#S35431940 CT861208 Oryza sativa (indica cultivar-group) cv.
+             Guang Lu Ai 4 Oryza sativa (indica cultivar-group) cDNA
+             clone CONTIG10229, mRNA sequence /clone=CONTIG10229
+             /gb=CT861208 /gi=117210474 /ug=Os.12074 /len=2511
+          Length = 2511
+
+ Score =  210 bits (106), Expect = 2e-51
+ Identities = 235/278 (84%)
+ Strand = Plus / Plus
+
+                                                                         
+Query: 44771 gcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcatc 44830
+             ||||| |||||||||||||| ||||||||||| || |||||||| || || |||||||| 
+Sbjct: 1783  gcctcgcggatcatctcgtcgacctcctcgtcggtgagcttctcgcccagattggtcatg 1842
+
+                                                                         
+Query: 44831 acgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaac 44890
+             ||||| || ||||| |||||||| |||||||||||   |||||||||||| |||||||||
+Sbjct: 1843  acgtgacgaagctcggccgccgatatgaagccgttgccgtccttgtcgaagacgcggaac 1902
+
+                                                                         
+Query: 44891 gcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcagg 44950
+             || ||   || |||||| ||||||||||||||||||||||| | ||||||||   ||| |
+Sbjct: 1903  gcttcgcggatctcctcttccgagtccgtgtccttcatcttgcgcgccatcatcgtcaag 1962
+
+                                                                         
+Query: 44951 aactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcctgc 45010
+             ||||| || ||||||||||||||||||||||| ||||| |||||||| |||||||| || 
+Sbjct: 1963  aactctggaaagtcgatggtgccgttgccgtctgcgtctacctcgtttatcatgtcttga 2022
+
+                                                   
+Query: 45011 agctccgcctccgtggggttctgcccgagggaccgcat 45048
+             ||||| || || ||||| || || ||||| || |||||
+Sbjct: 2023  agctcagcttcggtgggattttgtccgagcgagcgcat 2060
+
+
+>gnl|UG|Os#S16409367 Oryza sativa (japonica cultivar-group) cDNA
+             clone:J013157L19, full insert sequence /gb=AK068637
+             /gi=32978654 /ug=Os.20753 /len=1476
+          Length = 1476
+
+ Score =  176 bits (89), Expect = 2e-41
+ Identities = 164/189 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55519 ccttgatgtccagttatcccatgatccttccacaaacacctcgtttcctccttgactcca 55578
+             |||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||
+Sbjct: 754   ccttgatgtccagttatcccatgatccttccacaaacacctcatttcctccttgactcca 695
+
+                                                                         
+Query: 55579 tgtaatcaaagttggaatttcaacctccggggggttattgttggtggattcatccgagcc 55638
+             ||  ||||||||||||||| |   |||| |||| |  || |||||||||||||||||  |
+Sbjct: 694   tgagatcaaagttggaattcccttctcctggggatggttattggtggattcatccgattc 635
+
+                                                                         
+Query: 55639 attcatccatgaatggttaaaagcaggtgaaaattcattcggtatctgcatcggagctac 55698
+             ||| |||||||||| ||| ||| |||| ||||||||| | ||||| ||||  || |||||
+Sbjct: 634   atttatccatgaattgttgaaaacaggagaaaattcagtaggtatatgcagtggggctac 575
+
+                      
+Query: 55699 tggaacctg 55707
+             |||||||||
+Sbjct: 574   tggaacctg 566
+
+
+
+ Score =  115 bits (58), Expect = 8e-23
+ Identities = 139/166 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55264 catggacatcaaggaggttggccacctgccctctttcatcagtcacatgaggtagttcgg 55323
+             |||||||||| ||||||||||| ||||||||||  ||||||| ||||||||||||||| |
+Sbjct: 917   catggacatcgaggaggttggcaacctgccctccctcatcagccacatgaggtagttcag 858
+
+                                                                         
+Query: 55324 acacatatctcggcaccccatcaacaatcatcctgtaatgatatattccagatggcagaa 55383
+               |||||| ||||  ||||||| || || ||||||||||| ||||  || ||||||||||
+Sbjct: 857   ggacatatttcggttccccatcgacgatgatcctgtaatggtatacccctgatggcagaa 798
+
+                                                           
+Query: 55384 ccaacaacacggcgtgatctttcccagacctctctaacaccttcct 55429
+             | | ||| | ||  || |||||||||||| ||||||||||| ||||
+Sbjct: 797   ctagcaatatggtatggtctttcccagacttctctaacaccctcct 752
+
+
+
+ Score = 93.7 bits (47), Expect = 3e-16
+ Identities = 59/63 (93%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 57495 acctgcggcgcgaagacgtaggggaccggaggagggagctcccgcatcacggcgtccggc 57554
+             |||||||||| |||||||||||| ||||| ||||| ||||||||||||||||||||||||
+Sbjct: 570   acctgcggcgtgaagacgtagggcaccgggggaggcagctcccgcatcacggcgtccggc 511
+
+                
+Query: 57555 ggc 57557
+             |||
+Sbjct: 510   ggc 508
+
+
+
+ Score = 69.9 bits (35), Expect = 4e-09
+ Identities = 95/115 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54837 ttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgagggcgagc 54896
+             ||||| ||||||||| | || ||||| || || |||||||| |||| ||| || || |||
+Sbjct: 1218  ttgtacagcacgaagcttacatacttggattgaaaccggtgagtgactccaagagcaagc 1159
+
+                                                                    
+Query: 54897 agagactgcgccccccaccctttctcgatgaacagatggttgaggacgacatgct 54951
+             || |||||||  ||||| |||||||||||  |||| ||||||||||| |||||||
+Sbjct: 1158  agcgactgcgatccccatcctttctcgatatacaggtggttgaggacaacatgct 1104
+
+
+>gnl|UG|Os#S12453526 Oryza sativa (japonica cultivar-group) OsCAM-2 mRNA
+             for Calmodulin-2, complete cds /cds=p(172,672)
+             /gb=AB060552 /gi=15991281 /ug=Os.9585 /len=978
+          Length = 978
+
+ Score =  161 bits (81), Expect = 1e-36
+ Identities = 156/181 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44727 tgacgaactcctcgtagttgatctggccgtcgccgtccacgtccgcctcccggatcatct 44786
+             |||||||||| ||| |||||| ||||||||||||||| | ||| ||||||||||||||||
+Sbjct: 646   tgacgaactcgtcgaagttgacctggccgtcgccgtcgaggtcggcctcccggatcatct 587
+
+                                                                         
+Query: 44787 cgtccacctcctcgtccgtcagcttctccccgaggttggtcatcacgtggcgcagctccg 44846
+               |||||||||||||| || |||||||| |||||| || ||||||||||||| ||||| |
+Sbjct: 586   gctccacctcctcgtcggtgagcttctcgccgaggctgatcatcacgtggcggagctcgg 527
+
+                                                                         
+Query: 44847 ccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctccttgagctcct 44906
+             | || |||||||  |||| ||||||||||||||||||   ||||||||||  ||||||||
+Sbjct: 526   cggcggagatgagcccgtcctggtccttgtcgaacaccttgaacgcctcccggagctcct 467
+
+              
+Query: 44907 c 44907
+             |
+Sbjct: 466   c 466
+
+
+>gnl|UG|Os#S31801092 CI043402 Oryza sativa (japonica cultivar-group)
+             callus Oryza sativa (japonica cultivar-group) cDNA clone
+             011-M043R-F05 3', mRNA sequence /clone=011-M043R-F05
+             /clone_end=3' /gb=CI043402 /gi=89176381 /ug=Os.85960
+             /len=518
+          Length = 518
+
+ Score =  153 bits (77), Expect = 3e-34
+ Identities = 110/121 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||||||||| |||||||||||||||||||||||||| ||||| || 
+Sbjct: 236   cctcacttggccatcatgaccttaacgaactcctcgtagttgatctggccatcgccatcg 177
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| || |||||||| ||||||||||| || ||||||
+Sbjct: 176   acgtcagcctcacggatcatctcgtcgacttcctcgtcggtcagcttctcaccaaggttg 117
+
+              
+Query: 44825 g 44825
+             |
+Sbjct: 116   g 116
+
+
+
+ Score =  143 bits (72), Expect = 3e-31
+ Identities = 105/116 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44891 gcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttcagg 44950
+             |||||||||||||||||||| ||||| || |||||||||||| |||||||||||||||||
+Sbjct: 116   gcctccttgagctcctcctcagagtcggtatccttcatcttcttcgccatcaggttcagg 57
+
+                                                                     
+Query: 44951 aactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             ||||| |||||||| ||||| || ||||| || || ||||||||||||||||||||
+Sbjct: 56    aactctgggaagtcaatggtcccattgccatcagcatcaacctcgttgatcatgtc 1
+
+
+>gnl|UG|Os#S25079256 EI115B02 A normalized whole-life-cycle cDNA library
+             of rice Oryza sativa (indica cultivar-group) cDNA clone
+             EI115B02 5', mRNA sequence /clone=EI115B02 /clone_end=5'
+             /gb=CX118452 /gi=66931604 /ug=Os.54462 /len=866
+          Length = 866
+
+ Score =  153 bits (77), Expect = 3e-34
+ Identities = 155/181 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 43157 acttgttgttcatgagcaccttgacgagctccttgcactggacgcggccctcgccgcggg 43216
+             ||||||||||||| | |||| |||||| ||||||| ||| ||||||||||||||||  ||
+Sbjct: 496   acttgttgttcatcaacaccgtgacgaactccttgtactcgacgcggccctcgccggcgg 437
+
+                                                                         
+Query: 43217 ggtcggccttgcggaccagctcgtcggcctcctcctccgtgagccggtcgccgtgggtga 43276
+               || |||||||| |||| ||||||||||||||||||||| ||||||||||||||||  |
+Sbjct: 436   tatccgccttgcgcaccatctcgtcggcctcctcctccgtcagccggtcgccgtgggaca 377
+
+                                                                         
+Query: 43277 gcatcacctgccgcagctgctccgcggggatgacgccgctcccgtcgtcgtcgaacgcgt 43336
+              |||| ||||||| ||||||||||| ||||| || |||||||   ||||||||||| |||
+Sbjct: 376   ccatcgcctgccggagctgctccgccgggatcaccccgctccgcgcgtcgtcgaacacgt 317
+
+              
+Query: 43337 c 43337
+             |
+Sbjct: 316   c 316
+
+
+
+ Score =  147 bits (74), Expect = 2e-32
+ Identities = 95/102 (93%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 43464 ccgcgcctcggcctcgtccacgttctggcccagcgagcggagcgccgtgaccagctcgcc 43523
+             |||||||||||||||||| ||||||||||||||||| || |||||||| || ||||||||
+Sbjct: 180   ccgcgcctcggcctcgtcgacgttctggcccagcgaccgcagcgccgtcacgagctcgcc 121
+
+                                                       
+Query: 43524 ggcggcgatgcggccgtcctcgtcgccgtcgaacaggtcgaa 43565
+             |||||||||||| ||||||||||||| |||||||||||||||
+Sbjct: 120   ggcggcgatgcgaccgtcctcgtcgctgtcgaacaggtcgaa 79
+
+
+>gnl|UG|Os#S16414437 Oryza sativa (japonica cultivar-group) cDNA
+             clone:001-117-F09, full insert sequence /gb=AK063566
+             /gi=32973584 /ug=Os.57504 /len=1470
+          Length = 1470
+
+ Score =  131 bits (66), Expect = 1e-27
+ Identities = 78/82 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46509 ttaccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcg 46568
+             ||||| ||||| |||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct: 169   ttaccatcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcg 110
+
+                                   
+Query: 46569 tcggtgagctggtccgccatgg 46590
+             ||||||||||| ||||||||||
+Sbjct: 109   tcggtgagctgatccgccatgg 88
+
+
+>gnl|UG|Os#S17523996 Oryza sativa (japonica cultivar-group) cDNA
+             clone:J023133G18, full insert sequence /gb=AK111834
+             /gi=37988497 /ug=Os.79626 /len=1384
+          Length = 1384
+
+ Score = 75.8 bits (38), Expect = 7e-11
+ Identities = 47/50 (94%)
+ Strand = Plus / Minus
+
+                                                               
+Query: 44714 gccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtc 44763
+             |||||||||||||||| |||||| | ||||||||||||||||||||||||
+Sbjct: 693   gccatcatgaccttgaggaactcgttgtagttgatctggccgtcgccgtc 644
+
+
+
+ Score = 63.9 bits (32), Expect = 2e-07
+ Identities = 35/36 (97%)
+ Strand = Plus / Minus
+
+                                                 
+Query: 44854 gatgaagccgttctggtccttgtcgaacacgcggaa 44889
+             ||||||||||||||||||||||||||| ||||||||
+Sbjct: 553   gatgaagccgttctggtccttgtcgaagacgcggaa 518
+
+
+>gnl|UG|Os#S35125942 Oryza sativa (japonica cultivar-group) Os11g0134400
+             (Os11g0134400) mRNA, complete cds /cds=p(1,612)
+             /gb=NM_001072208 /gi=115484028 /ug=Os.79504 /len=612
+          Length = 612
+
+ Score = 71.9 bits (36), Expect = 1e-09
+ Identities = 69/80 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44816 ccgaggttggtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttg 44875
+             |||||||||| ||| |||||||| |||||  | |  | ||||||||||||||||||||||
+Sbjct: 356   ccgaggttggccatgacgtggcggagctcgtcgggggtgatgaagccgttctggtccttg 297
+
+                                 
+Query: 44876 tcgaacacgcggaacgcctc 44895
+             ||||| |||||||| |||||
+Sbjct: 296   tcgaagacgcggaaggcctc 277
+
+
+  Database: OsUniGene_65
+    Posted date:  Feb 18, 2007  1:03 AM
+  Number of letters in database: 53,749,288
+  Number of sequences in database:  35,353
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 35353
+Number of Hits to DB: 3,349,719
+Number of extensions: 1367096
+Number of successful extensions: 130574
+Number of sequences better than 1.0e-05: 13
+Number of HSP's gapped: 130570
+Number of HSP's successfully gapped: 24
+Length of query: 82726
+Length of database: 53,749,288
+Length adjustment: 22
+Effective length of query: 82704
+Effective length of database: 52,971,522
+Effective search space: 4380956755488
+Effective search space used: 4380956755488
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 13 (26.3 bits)
+S2: 30 (60.0 bits)

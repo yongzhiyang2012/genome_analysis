@@ -1,0 +1,22 @@
+#-----------------------------------------------------------+
+# DAWG-PAWS: Batch Blast Configuration file                 |
+#-----------------------------------------------------------+
+# This includes the 
+# A Tab delimited text file
+# BLAST PROGRAM -----> Name of the blastall program to use
+#                      [ blastn | blastx | tblastx | megablast ] 
+# OUT EXT -----------> Output file extension (ie. bln, blx)
+# EVALUE ------------> E-Value threshold
+# ALIGNOUT ---------->
+# DBNAME ------------> Name of the database
+# CMD SUFFIX --------> Additional BLAST Command flags (ie. -a 2, -U
+#----------------------------------------------------------------------------
+# BLAST	OUT					CMD
+# PROG	EXT	ALIGN	EVAL	DBNAME 		SUFFIX
+#----------------------------------------------------------------------------
+#-----------------------------+
+# BLASTN: REPEAT              |
+#-----------------------------+
+blastn	bln	8	1e-5	SanMiguel_200610	-a 2 -U
+blastn	bln	8	1e-5	TREP9_nr	-a 2 -U
+# END -- Leave this here

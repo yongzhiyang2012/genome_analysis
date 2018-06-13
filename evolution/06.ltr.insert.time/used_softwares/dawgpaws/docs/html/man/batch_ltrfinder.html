@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>batch_ltrfinder.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_ltrfinder.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<ul>
+
+		<li><a href="#configuration_file">Configuration File</a></li>
+		<li><a href="#user_environment">User Environment</a></li>
+	</ul>
+
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#required_software">Required Software</a></li>
+		<li><a href="#required_perl_modules">Required Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#bugs">Bugs</a></li>
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>batch_ltrfinder.pl - Run the LTRFinder program in batch mode</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to program version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    batch_ltrfinder.pl -i InDir -o OutDir -c ConfigFile</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i,--indir    # Directory of fasta files to process
+    -o,--outdir   # Path to the base output directory
+    -c,--config   # Path to the config file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program will run the LTR_FINDER program for a set of fasta files.
+You can set multiple parameter sets using a config file.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dindir">-i,--indir</a></strong>
+
+<dd>
+<p>Path of the directory containing the sequences to process.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutdir">-o,--outdir</a></strong>
+
+<dd>
+<p>Path of the directory to place the program output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dc_2c_2d_2dconfig">-c,--config</a></strong>
+
+<dd>
+<p>Path to the batch_ltrfinder config file. This is a tab delimited text file 
+made up of two columns. The first column indicates the name assigned to
+the parameter set, while the second column contains the flags that
+will be passed to the LTR_FINDER program.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dltr_2dfinder">--ltr-finder</a></strong>
+
+<dd>
+<p>Path to the LTR_FINDER binary.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2ds_2c_2d_2dtrna_2ddb">-s,--trna-db</a></strong>
+
+<dd>
+<p>Path to the tRNA database used by LTR_FINDER.
+This file is part of the LTR_FINDER download.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2da_2c_2d_2dprosite">-a,--prosite</a></strong>
+
+<dd>
+<p>Path to the prosite directory for use by LTR_FINDER.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dg_2cgff">-g,gff</a></strong>
+
+<dd>
+<p>Convert the outout to gff format.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2df_2c_2d_2dfeat_2dseq">-f,--feat-seq</a></strong>
+
+<dd>
+<p>Extract sequence string of features. These will be extracted as separate fasta
+files for each sequence feature class. These fasta files will be stored in the
+ltr_finder directory. Using rootname as the name of the contig and ltrid
+as the number assigned by LTR_Finder, the fasta files that are created are:</p>
+</dd>
+<dl>
+<dt><strong><a name="item_rootname_ltrid_ltr5_2efasta">rootname_ltrid_ltr5.fasta</a></strong>
+
+<dd>
+<p>The sequence of the five prime LTR. This is not extracted from the alignment
+returned by LTR_Finder, but is extracted from the original sequence using
+the coordinates returned by LTR finder.</p>
+</dd>
+</li>
+<dt><strong><a name="item_rootname_ltr3_2efasta">rootname_ltr3.fasta</a></strong>
+
+<dd>
+<p>The squence of the three primer LTR. This is also extracted from the 
+original sequence using the coordinates returned by LTR finder.</p>
+</dd>
+</li>
+<dt><strong><a name="item_rootname_ltr">rootname_ltr</a></strong>
+
+</dl>
+<p>The name of the individual LTR retrotransposon identified will be 
+consistant across these fasta files. Not all</p>
+<dt><strong><a name="item__2d_2dusage">--usage</a></strong>
+
+<dd>
+<p>Short overview of how to use program from command line.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dhelp">--help</a></strong>
+
+<dd>
+<p>Show program usage with summary of options.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dversion">--version</a></strong>
+
+<dd>
+<p>Show program version.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dman">--man</a></strong>
+
+<dd>
+<p>Show the full program manual. This uses the perldoc command to print the 
+POD documentation for the program.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program in verbose mode.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>The list of error messages that can be generated,
+explanation of the problem
+one or more causes
+suggested remedies
+list exit status associated with each error</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>
+</p>
+<h2><a name="configuration_file">Configuration File</a></h2>
+<p>The location of the configuration file is indicated by the --config option
+at the command line.
+This is a tab delimited text file allowing you to run the LTR_FINDER
+program with multiple parameter sets for each query sequence file.
+This config file is a two column file. Lines beginning with the # symbol
+are ignored and provide a way to add comments to your config file. This config
+file is expected to have UNIX format line endings. You should therefore
+avoid creating config files using Windows based programs such as MS Word.</p>
+<dl>
+<dt><strong><a name="item_col_1_2e_parameter_set_name">Col 1. Parameter set name</a></strong>
+
+<dd>
+<p>This is the name assigned to the parameter set defined on the current
+line. This name must not have any spaces. This name will be appended to
+the output gff file.</p>
+</dd>
+</li>
+<dt><strong><a name="item_col_2_2e_ltr_finder_options">Col 2. LTR_FINDER Options</a></strong>
+
+<dd>
+<p>A string of command line options to send to the LTR finder program. For
+a full set of possible variables, see the LTR_FINDER User Manual 
+<a href="http://tlife.fudan.edu.cn/ltr_finder/help/single.html">http://tlife.fudan.edu.cn/ltr_finder/help/single.html</a></p>
+</dd>
+</li>
+</dl>
+<p>Example config file:</p>
+<pre>
+   # Simple batch_ltrfinder config file
+   #
+   def
+   p_30 -p 30
+   p_10 -p 10
+   # END</pre>
+<p>
+</p>
+<h2><a name="user_environment">User Environment</a></h2>
+<p>This program makes use of the following variables defined in the
+user's environment.</p>
+<dl>
+<dt><strong><a name="item_trna_db">TRNA_DB</a></strong>
+
+<dd>
+<p>This is the path to TRNA_DB used by LTR_FINDER.</p>
+</dd>
+</li>
+<dt><strong><a name="item_prosite_dir">PROSITE_DIR</a></strong>
+
+<dd>
+<p>This is the path to the directory of Prosite models use by LTR_FINDER.</p>
+</dd>
+</li>
+<dt><strong><a name="item_ltr_finder">LTR_FINDER</a></strong>
+
+<dd>
+<p>This is the path to the LTR_FINDER binary.</p>
+</dd>
+</li>
+</dl>
+<p>Example environment variables set in the bash shell:</p>
+<pre>
+   export TRNA_DB='/home/yourname/apps/LTR_Finder/tRNAdb/Os-tRNAs.fa'
+   export PROSITE_DIR='/home/yourname/Apps/LTR_Finder/ps_scan'
+   export LTR_FINDER='ltr_finder'</pre>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="required_software">Required Software</a></h2>
+<ul>
+<li><strong>LTR_FINDER</strong>
+
+<p>The LTR_FINDER program can be obtained as a Linux binary by contacting
+the author: xuzh &lt;at&gt; fudan.edu.cn</p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="required_perl_modules">Required Perl Modules</a></h2>
+<ul>
+<li><strong><a name="item_file_3a_3acopy">File::Copy</a></strong>
+
+<p>This module is required to copy the BLAST results.</p>
+</li>
+<li><strong><a name="item_getopt_3a_3along">Getopt::Long</a></strong>
+
+<p>This module is required to accept options at the command line.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>The batch_ltrfinder.pl program is part of the DAWG-PAWS package of genome
+annotation programs. See the DAWG-PAWS web page 
+( <a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a> )
+or the Sourceforge project page 
+( <a href="http://sourceforge.net/projects/dawgpaws">http://sourceforge.net/projects/dawgpaws</a> ) 
+for additional information about this package.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>
+</p>
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_config_file_must_use_unix_format_line_endings">Config file must use UNIX format line endings</a></strong>
+
+<p>The config file must have UNIX formatted line endings. Because of
+this any config files that have been edited in programs such as
+MS Word must be converted to a UNIX compatible text format before
+being used with batch_blast.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU GENERAL PUBLIC LICENSE, VERSION 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>James C. Estill &lt;JamesEstill at gmail.com&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 10/02/2007</p>
+<p>UPDATED: 03/24/2009</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;batch_ltrfinder.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

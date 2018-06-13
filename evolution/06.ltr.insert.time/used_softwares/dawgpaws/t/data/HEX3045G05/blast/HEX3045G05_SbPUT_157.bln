@@ -1,0 +1,529 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: SbPUT_157 
+           44,954 sequences; 30,917,818 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+PUT-157a-Sorghum_bicolor-31058#PlantGDB-assembled Unique Transcr...   424   e-116
+PUT-157a-Sorghum_bicolor-40193#PlantGDB-assembled Unique Transcr...   422   e-115
+PUT-157a-Sorghum_bicolor-26186#PlantGDB-assembled Unique Transcr...   383   e-103
+PUT-157a-Sorghum_bicolor-72948924#PlantGDB-assembled Unique Tran...   381   e-103
+PUT-157a-Sorghum_bicolor-29748925#PlantGDB-assembled Unique Tran...   309   1e-81
+PUT-157a-Sorghum_bicolor-51548926#PlantGDB-assembled Unique Tran...   301   3e-79
+PUT-157a-Sorghum_bicolor-4148923#PlantGDB-assembled Unique Trans...   153   2e-34
+PUT-157a-Sorghum_bicolor-25877#PlantGDB-assembled Unique Transcr...    58   9e-06
+PUT-157a-Sorghum_bicolor-5802#PlantGDB-assembled Unique Transcri...    58   9e-06
+
+>PUT-157a-Sorghum_bicolor-31058#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1186
+
+ Score =  424 bits (214), Expect = e-116
+ Identities = 334/374 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||| || ||||| || |||||||||||||||||||| || 
+Sbjct: 610   cctcacttggccatcataaccttaacaaactcttcatagttgatctggccgtcgccatcg 551
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 550   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 491
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || |||||||||||||| || |||
+Sbjct: 490   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcaaagacg 431
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 430   cggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttccttgccatcagg 371
+
+                                                                         
+Query: 44945 ttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatg 45004
+             ||||||||||| |||||||| ||||| || ||||| || || |||||||| |||||||||
+Sbjct: 370   ttcaggaactctgggaagtcaatggtcccattgccatcagcatcaacctcattgatcatg 311
+
+                                                                         
+Query: 45005 tcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcc 45064
+             ||||||||||| ||||| || |||||||| || ||||| |||||||| ||||||||||||
+Sbjct: 310   tcctgcagctctgcctcggtagggttctggccaagggagcgcatcacagttccaagctcc 251
+
+                           
+Query: 45065 ttggtggtgatgca 45078
+             ||||||||||||||
+Sbjct: 250   ttggtggtgatgca 237
+
+
+
+ Score =  141 bits (71), Expect = 8e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 235   ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 176
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 175   gtgagctggtccgccatgg 157
+
+
+>PUT-157a-Sorghum_bicolor-40193#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 763
+
+ Score =  422 bits (213), Expect = e-115
+ Identities = 333/373 (89%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| ||||||||||||||||||||||||||||| |||||||
+Sbjct: 537   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccgtcaccgtcca 478
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| || || |||||||||||||||||||||||||||||||||||||| || |||||||
+Sbjct: 477   cgtcggcttcacggatcatctcgtccacctcctcgtccgtcagcttctcacctaggttgg 418
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| ||||||||||||||||||||||
+Sbjct: 417   tcatgacatggcgaagctcagcagcagagatgaagccattctggtccttgtcgaacacgc 358
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||||||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 357   ggaaggcctccttgagctcctcctcagagtcagtgtccttcatcttgcgtgccatcaggt 298
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || ||||||||||| || ||||| || || |||||||| ||||||||||
+Sbjct: 297   tgagaaactcaggaaagtcgatggttccattgccatcagcatcaacctcattgatcatgt 238
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||||||||| |  || |||||||| |||||||||||||
+Sbjct: 237   cctgaagctcagcctcagtagggttctgccccaatgagcgcatcacagttccaagctcct 178
+
+                          
+Query: 45066 tggtggtgatgca 45078
+             |||||||||||||
+Sbjct: 177   tggtggtgatgca 165
+
+
+
+ Score =  141 bits (71), Expect = 8e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||| |||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct: 163   ccgtcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcg 104
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 103   gtgagctggtccgccatgg 85
+
+
+>PUT-157a-Sorghum_bicolor-26186#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1088
+
+ Score =  383 bits (193), Expect = e-103
+ Identities = 330/375 (88%), Gaps = 3/375 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44710 cttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgtc 44769
+             |||||||||||||||||||||||||||  |||||||||| | ||||||||||||| ||||
+Sbjct: 576   cttggccatcatgaccttgacgaactcggcgtagttgatgtcgccgtcgccgtccgcgtc 517
+
+                                                                         
+Query: 44770 cgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtcat 44829
+              ||||| |||||||||||| | ||||||||||   |||||||||||||||||||||||||
+Sbjct: 516   ggcctcgcggatcatctcgccgacctcctcgttgctcagcttctccccgaggttggtcat 457
+
+                                                                         
+Query: 44830 cacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaa 44889
+              ||||| || ||||||||||| |||||||| |||| ||||||||||||||||||||||||
+Sbjct: 456   gacgtgccggagctccgccgcggagatgaacccgtcctggtccttgtcgaacacgcggaa 397
+
+                                                                         
+Query: 44890 cgcctccttgagctcctc---ctccgagtccgtgtccttcatcttcctcgccatcaggtt 44946
+             ||||||| ||||||||||   |||||| ||||||||||||||||| | ||||||||||  
+Sbjct: 396   cgcctccctgagctcctcctcctccgactccgtgtccttcatcttgcgcgccatcaggcc 337
+
+                                                                         
+Query: 44947 caggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             |||||||||  | | ||||||||||||| ||  ||    ||| ||||||  |||||||||
+Sbjct: 336   caggaactcctgcaggtcgatggtgccgctgttgttgctgtccacctcggcgatcatgtc 277
+
+                                                                         
+Query: 45007 ctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcctt 45066
+             |||||||||||||||||||||||||||||||||||| ||||||||||| || ||||||||
+Sbjct: 276   ctgcagctccgcctccgtggggttctgcccgagggagcgcatcacggtcccgagctcctt 217
+
+                            
+Query: 45067 ggtggtgatgcaacc 45081
+             ||| |||||||||||
+Sbjct: 216   ggttgtgatgcaacc 202
+
+
+
+ Score = 87.7 bits (44), Expect = 1e-14
+ Identities = 71/80 (88%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46511 accgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtc 46570
+             ||||||| | |||||||||||||||||||| || || ||||||||||| ||||| || ||
+Sbjct: 204   accgtcgtcgtccttgtcgaagaggctgaaagcttctttgaactcggcaatctggtcttc 145
+
+                                 
+Query: 46571 ggtgagctggtccgccatgg 46590
+             | ||||||||||||||||||
+Sbjct: 144   gctgagctggtccgccatgg 125
+
+
+>PUT-157a-Sorghum_bicolor-72948924#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1256
+
+ Score =  381 bits (192), Expect = e-103
+ Identities = 330/376 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||||||||||||||| ||||| |||||||||||||||||||||||||| ||||| || |
+Sbjct: 936   ctcacttggccatcatcaccttcacgaactcctcgtagttgatctggccatcgccatcga 877
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             |||| ||||| ||||||||||| || ||||||||||| ||||||||||| || |||||||
+Sbjct: 876   cgtcagcctcgcggatcatctcatcgacctcctcgtcggtcagcttctcgccaaggttgg 817
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             ||||||| ||||| |||||||| || |||||||||||||||||||||||||||||||| |
+Sbjct: 816   tcatcacatggcggagctccgctgcagagatgaagccgttctggtccttgtcgaacaccc 757
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              |||||||||||||||||||||||| ||||| |||||||||||||| |  ||||| ||||
+Sbjct: 756   tgaacgcctccttgagctcctcctcggagtcggtgtccttcatcttgcgggccatgaggt 697
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | |||||||| || ||||| |||||||| ||||| || || || ||||| ||||||||||
+Sbjct: 696   tgaggaactcaggaaagtcaatggtgccattgccatcggcatcgacctcattgatcatgt 637
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| || || || || ||||| || |||||||||||||
+Sbjct: 636   cctgaagctcagcctcggttgggttttgacccagtgaacgcatgacagttccaagctcct 577
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 576   tggttgtgatgcaacc 561
+
+
+
+ Score =  135 bits (68), Expect = 5e-29
+ Identities = 74/76 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46515 tcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtg 46574
+             ||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct: 559   tcgccgtccttgtcgaagaggctgaaggcctccttgaactcggcgatctggtcgtcggtg 500
+
+                             
+Query: 46575 agctggtccgccatgg 46590
+             ||||||||||||||||
+Sbjct: 499   agctggtccgccatgg 484
+
+
+>PUT-157a-Sorghum_bicolor-29748925#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1086
+
+ Score =  309 bits (156), Expect = 1e-81
+ Identities = 234/260 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             ||||||||||||||||| ||||| || ||||| || |||||||||||||||||||| || 
+Sbjct: 923   cctcacttggccatcataaccttaacaaactcttcatagttgatctggccgtcgccatcg 864
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||||||||||||| ||||||||||| ||||||||||| |||||||||
+Sbjct: 863   acgtcagcctcacggatcatctcgtcgacctcctcgtcggtcagcttctcgccgaggttg 804
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             ||||| || ||||| ||||| || ||||||||||| || |||||||||||||| || |||
+Sbjct: 803   gtcatgacatggcggagctcagcagccgagatgaaaccattctggtccttgtcaaagacg 744
+
+                                                                         
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcagg 44944
+             ||||| |||||||||||||||||||| ||||| ||||||||||||||||| |||||||||
+Sbjct: 743   cggaaggcctccttgagctcctcctcagagtcggtgtccttcatcttccttgccatcagg 684
+
+                                 
+Query: 44945 ttcaggaactcggggaagtc 44964
+             ||||||||||| ||||||||
+Sbjct: 683   ttcaggaactctgggaagtc 664
+
+
+
+ Score =  141 bits (71), Expect = 8e-31
+ Identities = 77/79 (97%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46512 ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcg 46571
+             |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||
+Sbjct: 584   ccgtcgccatccttgtcgaagaggctgaaggcctccttgaactccgcgatctggtcgtcg 525
+
+                                
+Query: 46572 gtgagctggtccgccatgg 46590
+             |||||||||||||||||||
+Sbjct: 524   gtgagctggtccgccatgg 506
+
+
+
+ Score = 97.6 bits (49), Expect = 1e-17
+ Identities = 70/77 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 45002 atgtcctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagc 45061
+             |||||||||||||| ||||| || |||||||| || ||||| |||||||| |||||||||
+Sbjct: 662   atgtcctgcagctctgcctcggtagggttctggccaagggagcgcatcacagttccaagc 603
+
+                              
+Query: 45062 tccttggtggtgatgca 45078
+             |||||||||||||||||
+Sbjct: 602   tccttggtggtgatgca 586
+
+
+>PUT-157a-Sorghum_bicolor-51548926#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 922
+
+ Score =  301 bits (152), Expect = 3e-79
+ Identities = 320/376 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             ||||||||||||||||||| ||||| |||||||| ||||||||||| || || || ||||
+Sbjct: 549   ctcacttggccatcatgactttgacaaactcctcatagttgatctgaccatcaccatcca 490
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || ||||| ||||||||||| ||||||||||| || || |||||||| || || || |
+Sbjct: 489   catcagcctcacggatcatctcatccacctcctcatcagttagcttctcaccaagatttg 430
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || |||||||||||||||||||||||||| ||||| |
+Sbjct: 429   tcatgacatggcggagctcggcagcagagatgaagccgttctggtccttgtcaaacacac 370
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+             |||| |||||||||||||| ||||| |||||||||||||||||||| |  ||||| ||||
+Sbjct: 369   ggaaggcctccttgagctcttcctcagagtccgtgtccttcatcttgcgagccatgaggt 310
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| || || || |||||||||||||| || || || ||||| ||||||||||
+Sbjct: 309   tgagaaactctggaaaatcaatggtgccgttgccatcagcatcgacctcattgatcatgt 250
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| ||||| || ||||| ||||| || || ||||| || ||||| |||||||
+Sbjct: 249   cctggagctcagcctctgtagggttttgccctagtgaacgcatgacagttcccagctcct 190
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 189   tggtcgtgatgcaacc 174
+
+
+
+ Score =  117 bits (59), Expect = 1e-23
+ Identities = 68/71 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| ||||||||||||||||||||||| |||||||| |||||||||||||||
+Sbjct: 166   tccttgtcgaataggctgaaggcctccttgaactcagcgatctggtcgtcggtgagctgg 107
+
+                        
+Query: 46581 tccgccatggg 46591
+             |||||||||||
+Sbjct: 106   tccgccatggg 96
+
+
+>PUT-157a-Sorghum_bicolor-4148923#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1005
+
+ Score =  153 bits (77), Expect = 2e-34
+ Identities = 137/157 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55264 catggacatcaaggaggttggccacctgccctctttcatcagtcacatgaggtagttcgg 55323
+             |||||||||| |||||||||||||| |||||||||||||||||  ||||||||||||| |
+Sbjct: 834   catggacatcgaggaggttggccacttgccctctttcatcagttgcatgaggtagttcag 775
+
+                                                                         
+Query: 55324 acacatatctcggcaccccatcaacaatcatcctgtaatgatatattccagatggcagaa 55383
+               |  |||||| || ||||||| ||||| |||| ||||||||| | ||| ||||||||||
+Sbjct: 774   ggatgtatctcagctccccatctacaataatccggtaatgataaactccggatggcagaa 715
+
+                                                  
+Query: 55384 ccaacaacacggcgtgatctttcccagacctctctaa 55420
+             ||||||| | |||||||||||| ||||||||||||||
+Sbjct: 714   ccaacaagatggcgtgatctttgccagacctctctaa 678
+
+
+
+ Score =  115 bits (58), Expect = 4e-23
+ Identities = 70/74 (94%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 55523 gatgtccagttatcccatgatccttccacaaacacctcgtttcctccttgactccatgta 55582
+             ||||||||||||||||||||||||||||  |||||||| |||||||||||||||||||||
+Sbjct: 667   gatgtccagttatcccatgatccttccaggaacacctcatttcctccttgactccatgta 608
+
+                           
+Query: 55583 atcaaagttggaat 55596
+             | ||||||||||||
+Sbjct: 607   accaaagttggaat 594
+
+
+
+ Score = 63.9 bits (32), Expect = 1e-07
+ Identities = 47/52 (90%)
+ Strand = Plus / Minus
+
+                                                                 
+Query: 57614 cgccgccgcgtggccgttctccaccgccctggcgctcgcgttccccatgccc 57665
+             |||||||  ||||||||||||| || || |||||||||||||||||||||||
+Sbjct: 335   cgccgccatgtggccgttctccccctccttggcgctcgcgttccccatgccc 284
+
+
+>PUT-157a-Sorghum_bicolor-25877#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 637
+
+ Score = 58.0 bits (29), Expect = 9e-06
+ Identities = 74/89 (83%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 54830 cagcagtttgtagagcacgaagttcacgtacttcgactggaaccggtgggtgagtccgag 54889
+             |||| ||||||| ||||| ||| |||| ||||| || |  ||||| |||||||  |||||
+Sbjct: 394   cagcggtttgtaaagcacaaagctcacatacttggattcaaaccgatgggtgacgccgag 335
+
+                                          
+Query: 54890 ggcgagcagagactgcgccccccaccctt 54918
+             ||||||||| |||||||  ||||||||||
+Sbjct: 334   ggcgagcagcgactgcgatccccaccctt 306
+
+
+>PUT-157a-Sorghum_bicolor-5802#PlantGDB-assembled Unique
+             Transcript-fragment derived from Sorghum_bicolor mRNAs
+             Jan_28_2007 (based on GenBank release 157).
+          Length = 1028
+
+ Score = 58.0 bits (29), Expect = 9e-06
+ Identities = 53/61 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44838 gcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcggaacgcctcct 44897
+             ||||||| || ||||||||||||||||    ||||| ||||||||| |||||||||||||
+Sbjct: 521   gcagctcggcggccgagatgaagccgtcaccgtcctcgtcgaacacccggaacgcctcct 462
+
+              
+Query: 44898 t 44898
+             |
+Sbjct: 461   t 461
+
+
+  Database: SbPUT_157
+    Posted date:  Feb 17, 2007  3:20 PM
+  Number of letters in database: 30,917,818
+  Number of sequences in database:  44,954
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 44954
+Number of Hits to DB: 1,780,798
+Number of extensions: 713665
+Number of successful extensions: 207303
+Number of sequences better than 1.0e-05: 9
+Number of HSP's gapped: 207300
+Number of HSP's successfully gapped: 19
+Length of query: 82726
+Length of database: 30,917,818
+Length adjustment: 21
+Effective length of query: 82705
+Effective length of database: 29,973,784
+Effective search space: 2478981805720
+Effective search space used: 2478981805720
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 29 (58.0 bits)

@@ -1,0 +1,271 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cnv_findltr2gff.pl</title>
+<link rel="stylesheet" href="../css/dawgpaws_man.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_www@b04.apple.com" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_findltr2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<ul>
+
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#required_arguments">Required Arguments</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<ul>
+
+		<li><a href="#software">Software</a></li>
+		<li><a href="#perl_modules">Perl Modules</a></li>
+	</ul>
+
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<ul>
+
+		<li><a href="#limitations">Limitations</a></li>
+	</ul>
+
+	<li><a href="#reference">REFERENCE</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>cnv_findltr2gff.pl - Convert output from find_ltr.pl to gff format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to version Release 1.0</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+    cnv_findltr2gff.pl -i infile.ltrpos -o outfile.gff [--seqname HEX451]</pre>
+<p>
+</p>
+<h2><a name="required_arguments">Required Arguments</a></h2>
+<pre>
+    -i         # Path to the ltrpos input file 
+               # Defaults to STDIN if not specified
+    -o         # Path to the gff format output file
+               # Defaults to STDOUT if not specified
+    -s         # Identifier for the annotated sequence
+    -p         # Name of use as a suffix in the gff source column
+               # This is generally the parameter set used</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Converts output from the find_ltr.pl ltr annotation program to 
+the standard gff format. The find_ltr.pl program is a component of
+the LTR DeNovo package 
+( <a href="http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz">http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz</a> ) 
+described in Rho, M., J. H. Choi, et al. (2007). BMC Genomics 8: 90.</p>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<dl>
+<dt><strong><a name="item__2di_2c_2d_2dinfile">-i,--infile</a></strong>
+
+<dd>
+<p>Path of the input file. This is a computational result from the find_ltr.pl
+program.  If an input file is not provided, the program
+will expect input from STDIN.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2do_2c_2d_2doutfile">-o,--outfile</a></strong>
+
+<dd>
+<p>Path of the output file.  If an output path is not provided,
+the program will write output to STDOUT.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dprogram">--program</a></strong>
+
+<dd>
+<p>The program name used to produce the computational prediction. By default
+this is set to be 'FindLTR'.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dp_2c__2d_2dparam">-p, --param</a></strong>
+
+<dd>
+<p>Name to use as the suffix when naming the source in the gff output. This
+can be used to distinguish among find_ltr runs that used different paramater
+sets. This will be append to findltr: to produce a name that can be
+unique for each parameter set result. For example the default parameter set
+could be given a <em>def</em> suffix while and alternate paramater set could
+be given the suffix <em>alt</em>. This will produce gff source lines of
+<em>findltr:def</em> and <em>findltr:alt</em>.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2ds_2c_2d_2dseqname">-s,--seqname</a></strong>
+
+<dd>
+<p>The name of the sequence that is being annotated. This is placed in the 
+first field of the gff output file.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dapend">--apend</a></strong>
+
+<dd>
+<p>Append the GFF output to the gff file indicate by the --outfile option. This
+allows you to append results from multiple programs to a single GFF file, but
+it is generally recommended to create separate GFF files and concatenate
+them at a later stage.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2dq_2c_2d_2dquiet">-q,--quiet</a></strong>
+
+<dd>
+<p>Run the program with minimal output.</p>
+</dd>
+</li>
+<dt><strong><a name="item__2d_2dverbose">--verbose</a></strong>
+
+<dd>
+<p>Run the program in verbose mode.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>Error messages that you may encounter and possible solutions are listed below:</p>
+<dl>
+<dt><strong><a name="item_expecting_input_from_stdin">Expecting input from STDIN</a></strong>
+
+<dd>
+<p>If a file is not specified by the -i or --infile option, the program will
+expect to receive intput from standard input.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="configuration_and_environment">CONFIGURATION AND ENVIRONMENT</a></h1>
+<p>This program does not make use of a configuration file or variables set
+in the user's environment.</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>
+</p>
+<h2><a name="software">Software</a></h2>
+<p>The following software is required for this program:</p>
+<ul>
+<li>
+<p>This program is designed to parse output from the ltr_finder.pl
+program. <a href="http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz">http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz</a></p>
+<p>M Rho et al. 2007. <em>'De novo identificatio of LTR retrotransposons
+in eukaryotic genomes'</em> BMC Genomics 8:90.</p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="perl_modules">Perl Modules</a></h2>
+<p>This program does not make use of perl modules beyond those installed
+with the basic Perl package. If you discover a dependency that is not
+documented here, please email the author or file a bug report.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>Any known bugs and limitations will be listed here.</p>
+<ul>
+<li><strong><a name="item_no_bugs_currently_known">No bugs currently known</a></strong>
+
+<p>If you find a bug with this software, file a bug report on the DAWG-PAWS
+Sourceforge website: <a href="http://sourceforge.net/tracker/?group_id=204962">http://sourceforge.net/tracker/?group_id=204962</a></p>
+</li>
+</ul>
+<p>
+</p>
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><strong><a name="item_works_with_2008_version_of_find_ltr_2epl">Works with 2008 version of find_ltr.pl</a></strong>
+
+<p>This program can parse results generated by the find_ltr.p program 
+as downloaded from
+<a href="http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz">http://darwin.informatics.indiana.edu/evolution/LTR.tar.gz</a>
+in 2008.</p>
+</li>
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="reference">REFERENCE</a></h1>
+<p>A manuscript is being submitted describing the DAWGPAWS program. 
+Until this manuscript is published, please refer to the DAWGPAWS 
+SourceForge website when describing your use of this program:</p>
+<p>JC Estill and JL Bennetzen. 2009. 
+The DAWGPAWS Pipeline for the Annotation of Genes and Transposable 
+Elements in Plant Genomes.
+<a href="http://dawgpaws.sourceforge.net/">http://dawgpaws.sourceforge.net/</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>GNU General Public License, Version 3</p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<p>THIS SOFTWARE COMES AS IS, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY. USE AT YOUR OWN RISK.</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>STARTED: 09/13/2007</p>
+<p>UPDATED: 01/29/2009</p>
+<p>VERSION: Release 1.0
+
+</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="block" valign="middle">
+<big><strong><span class="block">&nbsp;cnv_findltr2gff.pl</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>

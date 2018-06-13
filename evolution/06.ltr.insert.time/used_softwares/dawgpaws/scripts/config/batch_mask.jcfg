@@ -1,0 +1,8 @@
+# Config file for the batch_mask program
+# NAME - Name of the repeat database
+# PATH - Path to the fasta formatted repeat database
+#-----------------------------------------------------------
+# NAME	PATH
+#-----------------------------------------------------------
+TREP9	/db/jlblab/repeats/TREP9.nr.fasta
+#END

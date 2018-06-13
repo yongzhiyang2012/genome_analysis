@@ -1,0 +1,13 @@
+HEX2986I03	ltr_finder:def	LTR_retrotransposon	19141	27664	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	primer_binding_site	20883	20902	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	five_prime_LTR	19141	20850	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	three_prime_LTR	25956	27664	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	target_site_duplication	19136	19140	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	target_site_duplication	27665	27669	6	+	.	ltr_finder_1
+HEX2986I03	ltr_finder:def	LTR_retrotransposon	82257	91883	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	primer_binding_site	90813	90827	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	RR_tract	83377	83391	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	five_prime_LTR	82257	83298	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	three_prime_LTR	90842	91883	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	integrase_core_domain	86502	86978	7	-	.	ltr_finder_2
+HEX2986I03	ltr_finder:def	integrase_core_orf	86331	88151	7	-	.	ltr_finder_2

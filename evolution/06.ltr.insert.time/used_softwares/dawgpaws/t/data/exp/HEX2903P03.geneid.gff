@@ -1,0 +1,62 @@
+## gff-version 2
+## date Thu Apr 16 14:07:59 2009
+## source-version: geneid_v1.3 -- geneid@imim.es
+# Sequence HEX2903P03 - Length = 142553 bps
+# Optimal Gene Structure. 14 genes. Score = 137.92 
+# Gene 1 (Forward). 1 exons. 70 aa. Score = 6.93 
+HEX2903P03	geneid_v1.3	Terminal	1965	2174	6.93	+	0	HEX2903P03_1
+# Gene 2 (Reverse). 3 exons. 55 aa. Score = 0.47 
+HEX2903P03	geneid_v1.3	Terminal	6142	6146	-0.94	-	2	HEX2903P03_2
+HEX2903P03	geneid_v1.3	Internal	6597	6748	4.89	-	1	HEX2903P03_2
+HEX2903P03	geneid_v1.3	First	10924	10931	-3.47	-	0	HEX2903P03_2
+# Gene 3 (Forward). 1 exons. 125 aa. Score = 3.13 
+HEX2903P03	geneid_v1.3	Single	20670	21044	3.13	+	0	HEX2903P03_3
+# Gene 4 (Forward). 2 exons. 90 aa. Score = 6.07 
+HEX2903P03	geneid_v1.3	First	32019	32033	1.55	+	0	HEX2903P03_4
+HEX2903P03	geneid_v1.3	Terminal	38015	38269	4.52	+	0	HEX2903P03_4
+# Gene 5 (Forward). 5 exons. 137 aa. Score = 2.43 
+HEX2903P03	geneid_v1.3	First	38747	38752	-1.65	+	0	HEX2903P03_5
+HEX2903P03	geneid_v1.3	Internal	41129	41392	2.58	+	0	HEX2903P03_5
+HEX2903P03	geneid_v1.3	Internal	41701	41721	1.40	+	0	HEX2903P03_5
+HEX2903P03	geneid_v1.3	Internal	42168	42235	1.37	+	0	HEX2903P03_5
+HEX2903P03	geneid_v1.3	Terminal	45078	45129	-1.27	+	1	HEX2903P03_5
+# Gene 6 (Reverse). 6 exons. 417 aa. Score = 10.68 
+HEX2903P03	geneid_v1.3	Terminal	47282	47431	-1.13	-	0	HEX2903P03_6
+HEX2903P03	geneid_v1.3	Internal	47705	47829	-0.23	-	2	HEX2903P03_6
+HEX2903P03	geneid_v1.3	Internal	49918	50128	5.72	-	0	HEX2903P03_6
+HEX2903P03	geneid_v1.3	Internal	51723	51958	6.34	-	2	HEX2903P03_6
+HEX2903P03	geneid_v1.3	Internal	57732	57877	1.36	-	1	HEX2903P03_6
+HEX2903P03	geneid_v1.3	First	60346	60728	-1.37	-	0	HEX2903P03_6
+# Gene 7 (Reverse). 1 exons. 28 aa. Score = 0.81 
+HEX2903P03	geneid_v1.3	Single	64157	64240	0.81	-	0	HEX2903P03_7
+# Gene 8 (Reverse). 2 exons. 226 aa. Score = 10.60 
+HEX2903P03	geneid_v1.3	Terminal	74408	74686	6.45	-	0	HEX2903P03_8
+HEX2903P03	geneid_v1.3	First	74750	75148	4.15	-	0	HEX2903P03_8
+# Gene 9 (Forward). 3 exons. 57 aa. Score = 0.85 
+HEX2903P03	geneid_v1.3	First	85489	85491	-0.83	+	0	HEX2903P03_9
+HEX2903P03	geneid_v1.3	Internal	90436	90598	2.81	+	0	HEX2903P03_9
+HEX2903P03	geneid_v1.3	Terminal	100616	100620	-1.13	+	2	HEX2903P03_9
+# Gene 10 (Forward). 1 exons. 64 aa. Score = 2.07 
+HEX2903P03	geneid_v1.3	Single	101728	101919	2.07	+	0	HEX2903P03_10
+# Gene 11 (Forward). 4 exons. 153 aa. Score = 18.45 
+HEX2903P03	geneid_v1.3	First	102661	102748	4.71	+	0	HEX2903P03_11
+HEX2903P03	geneid_v1.3	Internal	102889	103125	13.02	+	2	HEX2903P03_11
+HEX2903P03	geneid_v1.3	Internal	105630	105723	2.58	+	2	HEX2903P03_11
+HEX2903P03	geneid_v1.3	Terminal	106969	107008	-1.86	+	1	HEX2903P03_11
+# Gene 12 (Reverse). 3 exons. 84 aa. Score = 8.33 
+HEX2903P03	geneid_v1.3	Terminal	107804	107842	-1.32	-	0	HEX2903P03_12
+HEX2903P03	geneid_v1.3	Internal	108935	109132	12.27	-	0	HEX2903P03_12
+HEX2903P03	geneid_v1.3	First	110755	110769	-2.62	-	0	HEX2903P03_12
+# Gene 13 (Forward). 7 exons. 459 aa. Score = 60.15 
+HEX2903P03	geneid_v1.3	First	111431	111500	2.28	+	0	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Internal	111622	111855	7.63	+	2	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Internal	111969	112062	0.18	+	2	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Internal	112214	112428	9.85	+	1	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Internal	112528	112661	4.17	+	2	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Internal	112792	113019	10.61	+	0	HEX2903P03_13
+HEX2903P03	geneid_v1.3	Terminal	113135	113536	25.44	+	0	HEX2903P03_13
+# Gene 14 (Reverse). 4 exons. 163 aa. Score = 6.93 
+HEX2903P03	geneid_v1.3	Terminal	129948	129959	0.09	-	0	HEX2903P03_14
+HEX2903P03	geneid_v1.3	Internal	132660	132704	0.77	-	0	HEX2903P03_14
+HEX2903P03	geneid_v1.3	Internal	139505	139717	3.38	-	0	HEX2903P03_14
+HEX2903P03	geneid_v1.3	Internal	139769	139987	2.70	-	0	HEX2903P03_14

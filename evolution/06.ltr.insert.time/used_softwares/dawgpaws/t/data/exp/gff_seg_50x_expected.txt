@@ -1,0 +1,8 @@
+HEX0057D13	vmatch	o_count	16	35	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	21	40	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	59	81	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	116	153	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	225	249	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	232	251	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	236	260	50	.	.	Vmatch 20mer
+HEX0057D13	vmatch	o_count	298	346	50	.	.	Vmatch 20mer

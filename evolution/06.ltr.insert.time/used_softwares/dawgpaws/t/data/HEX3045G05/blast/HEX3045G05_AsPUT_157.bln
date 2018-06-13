@@ -1,0 +1,381 @@
+BLASTN 2.2.16 [Mar-25-2007]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= HEX3045G05
+         (82,726 letters)
+
+Database: AsPUT_157 
+           5597 sequences; 3,264,400 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+PUT-157a-Avena_sativa-3475#PlantGDB-assembled Unique Transcript-...   333   1e-89
+PUT-157a-Avena_sativa-829#PlantGDB-assembled Unique Transcript-f...   315   2e-84
+PUT-157a-Avena_sativa-1998#PlantGDB-assembled Unique Transcript-...   309   1e-82
+PUT-157a-Avena_sativa-3333#PlantGDB-assembled Unique Transcript-...   238   5e-61
+PUT-157a-Avena_sativa-2638#PlantGDB-assembled Unique Transcript-...   167   1e-39
+PUT-157a-Avena_sativa-276#PlantGDB-assembled Unique Transcript-f...   155   5e-36
+PUT-157a-Avena_sativa-65667#PlantGDB-assembled Unique Transcript...   129   3e-28
+PUT-157a-Avena_sativa-5582#PlantGDB-assembled Unique Transcript-...   117   1e-24
+PUT-157a-Avena_sativa-1907#PlantGDB-assembled Unique Transcript-...    56   4e-06
+
+>PUT-157a-Avena_sativa-3475#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 626
+
+ Score =  333 bits (168), Expect = 1e-89
+ Identities = 324/376 (86%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||| || |||||||||||||||||||| |||||||| |
+Sbjct: 389   ctcatttggccatcatgaccttgacaaattcctcgtagttgatctggccatcgccgtcaa 330
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| ||||||||||| || |||||||| || ||||| |
+Sbjct: 329   catcagcttcacggatcatctcgtcaacctcctcgtcggttagcttctcgccaaggtttg 270
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| || ||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 269   tcatgacatggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 210
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||| ||||| |||||||||||||| |  ||||||||||
+Sbjct: 209   tgaaggcctccttgagctcttcctctgagtcagtgtccttcatcttgcgagccatcaggt 150
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| ||||| || |||||||| ||||| || |||||||| || ||||||||||
+Sbjct: 149   tgagaaactctgggaaatcaatggtgccattgccatcagcgtcaacttcattgatcatgt 90
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 89    cctggagctcagcctccgttgggttctgccccagtgaacgcatgactgttcccagctcct 30
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 29    tggttgtgatgcaacc 14
+
+
+>PUT-157a-Avena_sativa-829#PlantGDB-assembled Unique Transcript-fragment
+             derived from Avena_sativa mRNAs Jan_11_2007 (based on
+             GenBank release 157).
+          Length = 648
+
+ Score =  315 bits (159), Expect = 2e-84
+ Identities = 288/331 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||| ||||||||||||||||||||||| || ||||| |
+Sbjct: 353   ctcatttggccatcatgaccttgacaaactcctcgtagttgatctggccatcaccgtcaa 294
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| ||||||||||| || |||||||| || ||||| |
+Sbjct: 293   catcagcttcacggatcatctcgtcgacctcctcgtcggttagcttctcgccaaggtttg 234
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| |||||||| ||||| || || |||||||||||||| ||||||||||||||||| |
+Sbjct: 233   tcatgacgtggcggagctcggcagcagagatgaagccgttttggtccttgtcgaacaccc 174
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||||||||| |||||||||||||| |  ||||||||||
+Sbjct: 173   tgaaggcctccttgagctcttcctccgagtcagtgtccttcatcttgcgagccatcaggt 114
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| ||||| || |||||||| ||||| || ||||| || || ||||||||||
+Sbjct: 113   tgagaaactctgggaaatcaatggtgccattgccatcagcgtcgacttcattgatcatgt 54
+
+                                            
+Query: 45006 cctgcagctccgcctccgtggggttctgccc 45036
+             |||| ||||| |||||||| |||||||||||
+Sbjct: 53    cctggagctcagcctccgttgggttctgccc 23
+
+
+>PUT-157a-Avena_sativa-1998#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 840
+
+ Score =  309 bits (156), Expect = 1e-82
+ Identities = 321/376 (85%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||| ||||||||||||||||||||||| || || || |
+Sbjct: 554   ctcatttggccatcatgaccttgacaaactcctcgtagttgatctggccatcaccatcaa 495
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| ||||||||||| || |||||||| || ||||| |
+Sbjct: 494   catcagcttcacggatcatctcgtcgacctcctcgtcggttagcttctcgccaaggtttg 435
+
+                                                                         
+Query: 44826 tcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgc 44885
+             |||| |||||||| ||||| || || ||||||||||| || ||||||||||||||||| |
+Sbjct: 434   tcatgacgtggcggagctcagcagcagagatgaagccattttggtccttgtcgaacaccc 375
+
+                                                                         
+Query: 44886 ggaacgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggt 44945
+              ||| |||||||||||||| ||||  ||||| |||||||||||||| |  ||||||||||
+Sbjct: 374   tgaaggcctccttgagctcttcctttgagtcagtgtccttcatcttgcgagccatcaggt 315
+
+                                                                         
+Query: 44946 tcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgt 45005
+             | || ||||| ||||| || ||||| || ||||| || || || || |||||||||||||
+Sbjct: 314   tgagaaactctgggaaatcaatggttccattgccatcagcatcgacttcgttgatcatgt 255
+
+                                                                         
+Query: 45006 cctgcagctccgcctccgtggggttctgcccgagggaccgcatcacggttccaagctcct 45065
+             |||| ||||| |||||||| ||||||||||| || || ||||| || ||||| |||||||
+Sbjct: 254   cctggagctcagcctccgttgggttctgccccagtgaacgcatgaccgttcccagctcct 195
+
+                             
+Query: 45066 tggtggtgatgcaacc 45081
+             |||| |||||||||||
+Sbjct: 194   tggttgtgatgcaacc 179
+
+
+
+ Score =  115 bits (58), Expect = 5e-24
+ Identities = 67/70 (95%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 46521 tccttgtcgaagaggctgaaggcctccttgaactcggcgatctgctcgtcggtgagctgg 46580
+             ||||||||||| |||||||||||||||||||||||||||||||| |||||||||||||| 
+Sbjct: 171   tccttgtcgaacaggctgaaggcctccttgaactcggcgatctggtcgtcggtgagctga 112
+
+                       
+Query: 46581 tccgccatgg 46590
+             ||||||||||
+Sbjct: 111   tccgccatgg 102
+
+
+>PUT-157a-Avena_sativa-3333#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 488
+
+ Score =  238 bits (120), Expect = 5e-61
+ Identities = 202/228 (88%), Gaps = 1/228 (0%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||||||||||||||||||||||||||| |||||||||||||||||||| || || 
+Sbjct: 242   cctcacttggccatcatgaccttgacgaactcgtcgtagttgatctggccgtcaccatcg 183
+
+                                                                         
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttg 44824
+             ||||| ||||| |||| |||||| || |||||||| || |  ||||||||||| ||||||
+Sbjct: 182   acgtcggcctcgcggaccatctcctcgacctcctcctcagagagcttctccccaaggttg 123
+
+                                                                         
+Query: 44825 gtcatcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacg 44884
+             |||||||| ||||| ||||| || || |||||||| ||||||||||||||||| || || 
+Sbjct: 122   gtcatcacctggcggagctcagctgcagagatgaaaccgttctggtccttgtcaaaaaca 63
+
+                                                             
+Query: 44885 cggaacgcctccttgagctcctcctccgagtccgtgt-ccttcatctt 44931
+             |||||||||||||| ||||||||||||||||| |||| ||||||||||
+Sbjct: 62    cggaacgcctccttcagctcctcctccgagtcggtgtaccttcatctt 15
+
+
+>PUT-157a-Avena_sativa-2638#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 779
+
+ Score =  167 bits (84), Expect = 1e-39
+ Identities = 267/328 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             |||||||||||||||| || || || || ||||||||||||||||| || || || || |
+Sbjct: 483   acttggccatcatgactttaacaaattcgtcgtagttgatctggccatcaccatcaacat 424
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | || || |||| |||||| || |||||||| || |||| |||||| || ||||||||||
+Sbjct: 423   cagcttcacggaccatctcatcaacctcctcatcagtcaacttctcacccaggttggtca 364
+
+                                                                         
+Query: 44829 tcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcgga 44888
+             | || |||||||| || || || |||||||| || || || |||||||| ||||| ||||
+Sbjct: 363   tgacatggcgcagttcagcagcagagatgaaaccattttgatccttgtcaaacacacgga 304
+
+                                                                         
+Query: 44889 acgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttca 44948
+             |||||||||||||||| ||||| || || ||||| |||||||| |  ||||| ||||| |
+Sbjct: 303   acgcctccttgagctcttcctcagaatcagtgtctttcatcttgcgggccataaggttga 244
+
+                                                                         
+Query: 44949 ggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtcct 45008
+             |||| || ||||| || || || || ||||| || || || ||||| ||||||||||| |
+Sbjct: 243   ggaattcagggaaatcaattgttccattgccatcagcatccacctcattgatcatgtctt 184
+
+                                         
+Query: 45009 gcagctccgcctccgtggggttctgccc 45036
+             | ||||| ||||| || || ||||||||
+Sbjct: 183   gaagctctgcctcagtaggattctgccc 156
+
+
+>PUT-157a-Avena_sativa-276#PlantGDB-assembled Unique Transcript-fragment
+             derived from Avena_sativa mRNAs Jan_11_2007 (based on
+             GenBank release 157).
+          Length = 558
+
+ Score =  155 bits (78), Expect = 5e-36
+ Identities = 243/298 (81%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44709 acttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtccacgt 44768
+             |||||||||||||||| || || || || ||||||||||||||||| || || || || |
+Sbjct: 301   acttggccatcatgactttaacaaattcgtcgtagttgatctggccatcaccatcaacat 242
+
+                                                                         
+Query: 44769 ccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttggtca 44828
+             | ||||| |||| |||||| || |||||||| || |||| |||||| || ||||||||||
+Sbjct: 241   cagcctcacggaccatctcatcaacctcctcatcagtcaacttctcacccaggttggtca 182
+
+                                                                         
+Query: 44829 tcacgtggcgcagctccgccgccgagatgaagccgttctggtccttgtcgaacacgcgga 44888
+             | || |||||||| || || || |||||||| || || || |||||||| ||||| ||||
+Sbjct: 181   tgacatggcgcagttcagcagcagagatgaaaccattttgatccttgtcaaacacacgga 122
+
+                                                                         
+Query: 44889 acgcctccttgagctcctcctccgagtccgtgtccttcatcttcctcgccatcaggttca 44948
+             |||||||||||||||| ||||| || || ||||| |||||||| |  ||||| ||||| |
+Sbjct: 121   acgcctccttgagctcttcctcagaatcagtgtctttcatcttgcgggccataaggttga 62
+
+                                                                       
+Query: 44949 ggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcgttgatcatgtc 45006
+             |||| || ||||| || || || || ||||| ||  | || ||||| |||||||||||
+Sbjct: 61    ggaattcagggaaatcaattgttccattgccatcgacatccacctcattgatcatgtc 4
+
+
+>PUT-157a-Avena_sativa-65667#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 673
+
+ Score =  129 bits (65), Expect = 3e-28
+ Identities = 116/133 (87%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44706 ctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcca 44765
+             |||| |||||||||||||||||||| || |||||||||||||||||||| |||||||| |
+Sbjct: 552   ctcatttggccatcatgaccttgacaaattcctcgtagttgatctggccatcgccgtcaa 493
+
+                                                                         
+Query: 44766 cgtccgcctcccggatcatctcgtccacctcctcgtccgtcagcttctccccgaggttgg 44825
+             | || || || |||||||||||||| ||||||||||| || |||||||| || ||||| |
+Sbjct: 492   catcagcttcacggatcatctcgtcaacctcctcgtcggttagcttctcgccaaggtttg 433
+
+                          
+Query: 44826 tcatcacgtggcg 44838
+             |||| || |||||
+Sbjct: 432   tcatgacatggcg 420
+
+
+>PUT-157a-Avena_sativa-5582#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 463
+
+ Score =  117 bits (59), Expect = 1e-24
+ Identities = 86/95 (90%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44705 cctcacttggccatcatgaccttgacgaactcctcgtagttgatctggccgtcgccgtcc 44764
+             |||||||||||||||||||||||||||||||| |||||||||||||||||||| || || 
+Sbjct: 127   cctcacttggccatcatgaccttgacgaactcgtcgtagttgatctggccgtcaccatcg 68
+
+                                                
+Query: 44765 acgtccgcctcccggatcatctcgtccacctcctc 44799
+             ||||| ||||| |||| |||||| || ||||||||
+Sbjct: 67    acgtcggcctcgcggaccatctcctcgacctcctc 33
+
+
+>PUT-157a-Avena_sativa-1907#PlantGDB-assembled Unique
+             Transcript-fragment derived from Avena_sativa mRNAs
+             Jan_11_2007 (based on GenBank release 157).
+          Length = 842
+
+ Score = 56.0 bits (28), Expect = 4e-06
+ Identities = 73/88 (82%)
+ Strand = Plus / Minus
+
+                                                                         
+Query: 44936 gccatcaggttcaggaactcggggaagtcgatggtgccgttgccgtccgcgtcaacctcg 44995
+             ||||||||||| || |  || ||||| || |||||||| ||||| || ||||| || || 
+Sbjct: 831   gccatcaggttgagaacttctgggaaatcaatggtgccattgccatcagcgtcgacttca 772
+
+                                         
+Query: 44996 ttgatcatgtcctgcagctccgcctccg 45023
+             |||||||||||||| ||||| |||||||
+Sbjct: 771   ttgatcatgtcctggagctcagcctccg 744
+
+
+  Database: AsPUT_157
+    Posted date:  Feb 17, 2007  3:17 PM
+  Number of letters in database: 3,264,400
+  Number of sequences in database:  5597
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 5597
+Number of Hits to DB: 177,862
+Number of extensions: 69535
+Number of successful extensions: 19154
+Number of sequences better than 1.0e-05: 9
+Number of HSP's gapped: 19153
+Number of HSP's successfully gapped: 10
+Length of query: 82726
+Length of database: 3,264,400
+Length adjustment: 19
+Effective length of query: 82707
+Effective length of database: 3,158,057
+Effective search space: 261193420299
+Effective search space used: 261193420299
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 25 (49.6 bits)
+S1: 12 (24.3 bits)
+S2: 28 (56.0 bits)
