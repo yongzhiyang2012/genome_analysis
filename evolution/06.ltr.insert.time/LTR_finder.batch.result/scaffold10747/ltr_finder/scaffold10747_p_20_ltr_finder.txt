@@ -1,0 +1,52 @@
+Program    : LTR_FINDER
+Version    : 1.06
+
+Load tRNA db [/home/share/users/yangyongzhi2012/tools/genome_annotation/LTR_FINDER/LTR_FINDER.x86_64-1.0.6/tRNAdb/Athal-tRNAs.fa]  0.003 second
+Predict protein Domains 0.668 second
+>Sequence: scaffold10747 Len:11725
+[1] scaffold10747 Len:11725
+Location : 5870 - 10466 Len: 4597 Strand:+
+Score    : 8 [LTR region similarity:0.928]
+Status   : 11111110100
+5'-LTR   : 5870 - 6118 Len: 249
+3'-LTR   : 10224 - 10466 Len: 243
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : 5865 - 5869 , 10467 - 10471 [AATCC]
+Sharpness: 0.457,0.429
+Strand + :
+PBS   : [16/21] 6130 - 6150 (ArgACG)
+PPT   : [12/15] 10209 - 10223
+Domain: 7616 - 8146 [possible ORF:7565-8431, (IN (core))]
+
+Details of exact match pairs:
+10240-10264[25] (22) 10287-10309[23] (17) 10327-10381[55] (1) 10383-10415[33] (18) 10434-10460[27]
+5886-5910[25] (22) 5933-5955[23] (23) 5979-6033[55] (1) 6035-6067[33] (18) 6086-6112[27]
+
+Details of the LTR alignment(5'-end):
+                                     |10224
+ACTAATTGCTTCACAGCATTTAGTTTAAGGGAGGGAATGAAGGAGTTTACTGTAGTTTGTTTGTTAGAATAATGTCCTGAT
+|||||   |||       || |||| ||         ||| *|||||||||| |||||||||||||||||||||||||  |
+ACTAA---CTT-------TTAAGTTCAA------TCCTGAGGGAGTTTACTGCAGTTTGTTTGTTAGAATAATGTCCTAGT
+                          **------***|5870
+
+Details of the LTR alignment(3'-end):
+                                  10466|*****--
+GTTCTCATTCTTAGTTTTATTTAGATCAAAGTTCTCAACAAATCC--TA-CAGGAAATCAATAATG---CTAAGTTTAA--
+|||||| ||||||||||||||||||||||||||| ||||*| ||   || ||| |  ||   | ||   || |  | ||  
+GTTCTCGTTCTTAGTTTTATTTAGATCAAAGTTCCCAACAA-TCTGGTATCAG-AGCTCC-CACTGGGCCTGA--TCAATC
+                                   6118|
+
+Details of the PBS alignment(+):
+tRNA type: ArgACG
+GA-CT-CCACTGGG---GATC
+|| || ||||||||   ||||
+GAGCTCCCACTGGGCCTGATC
+|6130
+
+Details of PPT(+):
+GTTTAAGGGAGGGAA
+|10209
+
+
+Total consume 0.686 second

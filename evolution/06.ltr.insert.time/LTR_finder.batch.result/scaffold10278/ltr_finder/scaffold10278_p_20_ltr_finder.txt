@@ -1,0 +1,94 @@
+Program    : LTR_FINDER
+Version    : 1.06
+
+Load tRNA db [/home/share/users/yangyongzhi2012/tools/genome_annotation/LTR_FINDER/LTR_FINDER.x86_64-1.0.6/tRNAdb/Athal-tRNAs.fa]  0.004 second
+Predict protein Domains 1.345 second
+>Sequence: scaffold10278 Len:56343
+[1] scaffold10278 Len:56343
+Location : 1259 - 7160 Len: 5902 Strand:+
+Score    : 6 [LTR region similarity:0.912]
+Status   : 11110110000
+5'-LTR   : 1259 - 1611 Len: 353
+3'-LTR   : 6807 - 7160 Len: 354
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : NOT FOUND
+Sharpness: 0.457,0.457
+Strand + :
+PBS   : [14/20] 1683 - 1702 (LeuCAA)
+PPT   : [14/15] 6776 - 6790
+
+Details of exact match pairs:
+6805-6839[35] (89) 6929-6957[29] (36) 6994-7016[23] (16) 7033-7068[36] (28) 7097-7155[59]
+1257-1291[35] (88) 1380-1408[29] (36) 1445-1467[23] (16) 1484-1519[36] (28) 1548-1606[59]
+
+Details of the LTR alignment(5'-end):
+                                        |6807
+AACAGA---TGGCTCT-AATA------------AC--AATTGTTAGAATAAATCAATAATATATATGTTTTTTTCTCTATA
+||  ||   |||| || ||||            ||   *|||||||||||||||||||||||||||| ||||||||| |||
+AATTGACTTTGGCCCTCAATAGGTTTTAGTAATACTTGATTGTTAGAATAAATCAATAATATATATG-TTTTTTCTCCATA
+                                        |1259
+
+Details of the LTR alignment(3'-end):
+                                  7160|
+ATGATTATGCTAGTCCACACAAAAGGAATAAATATAACAAGTTTAGAAAACTTGAAACAAAATTAGAAAAGATGTTTGAG-
+|||||||||||||||||||||||||||||||||| ||||| * |   |  |||| | ||  ||     |||   ||| |  
+ATGATTATGCTAGTCCACACAAAAGGAATAAATACAACAA-TCTCCCA--CTTGGA-CAGCAT-----AAGTCATTTAACC
+                                  1611|
+
+Details of the PBS alignment(+):
+tRNA type: LeuCAA
+TG-TC-AGATGTGGGATTTG
+|| || | ||||   |||||
+TGATCAAAATGT---ATTTG
+|1683
+
+Details of PPT(+):
+AAGAAAAGAAACAGA
+|6776
+
+[2] scaffold10278 Len:56343
+Location : 9830 - 31269 Len: 21440 Strand:-
+Score    : 6 [LTR region similarity:0.921]
+Status   : 11110110000
+5'-LTR   : 9830 - 11721 Len: 1892
+3'-LTR   : 29396 - 31269 Len: 1874
+5'-TG    : TG , TG
+3'-CA    : CA , CA
+TSR      : NOT FOUND
+Sharpness: 0.457,0.529
+Strand - :
+PBS   : [14/19] 29304 - 29322 (-ProAGG)
+PPT   : [11/15] 11722 - 11736
+
+Details of exact match pairs:
+29380-29413[34] (1) 29415-29446[32] (24) 29471-29492[22] (33) 29526-29553[28] (14) 29568-29596[29] (5) 29602-29644[43] (9) 29654-29675[22] (138) 29814-29854[41] (168) 30023-30046[24] (1) 30048-30073[26] (43) 30117-30145[29] (88) 30234-30272[39] (5) 30278-30335[58] (1) 30337-30370[34] (9) 30380-30401[22] (1) 30403-30444[42] (1) 30446-30474[29] (20) 30495-30516[22] (43) 30560-30601[42] (10) 30612-30674[63] (35) 30710-30733[24] (32) 30766-30793[28] (24) 30818-30848[31] (78) 30927-30982[56] (12) 30995-31060[66] (4) 31065-31103[39] (20) 31124-31147[24] (1) 31149-31219[71] (12) 31232-31253[22] (1) 31255-31277[23]
+9814-9847[34] (1) 9849-9880[32] (24) 9905-9926[22] (35) 9962-9989[28] (13) 10003-10031[29] (5) 10037-10079[43] (10) 10090-10111[22] (157) 10269-10309[41] (155) 10465-10488[24] (1) 10490-10515[26] (43) 10559-10587[29] (88) 10676-10714[39] (5) 10720-10777[58] (1) 10779-10812[34] (9) 10822-10843[22] (1) 10845-10886[42] (1) 10888-10916[29] (26) 10943-10964[22] (43) 11008-11049[42] (10) 11060-11122[63] (35) 11158-11181[24] (32) 11214-11241[28] (35) 11277-11307[31] (71) 11379-11434[56] (12) 11447-11512[66] (4) 11517-11555[39] (20) 11576-11599[24] (1) 11601-11671[71] (12) 11684-11705[22] (1) 11707-11729[23]
+
+Details of the LTR alignment(5'-end):
+                                               |29396
+TAATTTTTTTTTCTACTTGCCATTNTTAAGTTTTTTTTTTTTCTACTTGCCATTTGATTATTGCTATGGTTTATATGCATT
+|||                            |*|||||||||||||||||||||||||||||||| |||||||||||||||
+TAA----------------------------TTTTTTTTTTTCTACTTGCCATTTGATTATTGCTGTGGTTTATATGCATT
+                                               |9830
+
+Details of the LTR alignment(3'-end):
+                              31269|
+GACAAGAATAGAGTGAATTATGTGAAACAATATGCATTTAACTTAGGAGTGTAAAGGCGGGTGGTTAAAT-AACC------
+|||||||||||||||||||| ||||||||||||||||||||||*  |  | |  | |  |||  ||  || ||||      
+GACAAGAATAGAGTGAATTACGTGAAACAATATGCATTTAACTTCAGTTTTTGGATGTTGGTTTTTTTATCAACCAAAAAT
+                              11721|
+
+Details of the PBS alignment(-):
+tRNA type: -ProAGG
+AATTCTCGGAAAAC--CCC
+|||||  || ||||  |||
+AATTCGAGGGAAACTGCCC
+|29304
+
+Details of PPT(-):
+TTTAACTTCAGTTTT
+|11722
+
+
+Total consume 1.764 second

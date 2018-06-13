@@ -2,13 +2,13 @@ use strict;
 use warnings;
 use Bio::SeqIO;
 
-my $mucle="~/anaconda2/bin/muscle"; # path-to-mucle;
+my $mucle="/home/share/users/yangyongzhi2012//anaconda2/bin/muscle"; # path-to-mucle;
 my $clustalw2="/home/share/software/ClustalW/clustalw-2.1-linux-x86_64-libcppstatic/clustalw2"; # path-to-clustalw2;
 my $dnadist="/home/share/software/phylip/phylip-3.696/exe/dnadist"; # path-to-dnadist;
-die "please check the path of the software used in this script\n" if ((! -e "$mucle") || (! -e "$dnadist"));
+die "please check the path of the software used in this script\n" if ((! -e "$mucle") || (! -e "$clustalw2") || (! -e "$dnadist"));
 
 my %h;
-my @inclassified=<split/*/*classified>;
+my @inclassified=<genome.ltrfinder.seq.fa.split/*/*classified>;
 for my $inclassified (@inclassified){
     my $fa=Bio::SeqIO->new(-file=>"$inclassified",-format=>"fasta");
     while (my $seq=$fa->next_seq) {
@@ -46,6 +46,7 @@ close SH;
 
 sub readfasta{
     my ($infile_fa)=@_;
+    die "no $infile_fa\n" if (! -e "$infile_fa");
     $infile_fa=~/(five_prime_LTR|three_prime_LTR)/;
     my $type=$1;
     my $infile_fa_read=Bio::SeqIO->new(-file=>"$infile_fa",-format=>"fasta");

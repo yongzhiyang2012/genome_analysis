@@ -1,0 +1,9 @@
+scaffold10747	ltr_finder:def	LTR_retrotransposon	5870	10466	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	primer_binding_site	6130	6150	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	RR_tract	10209	10223	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	five_prime_LTR	5870	6118	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	three_prime_LTR	10224	10466	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	target_site_duplication	5865	5869	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	target_site_duplication	10467	10471	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	integrase_core_domain	7616	8146	8	+	.	ltr_finder_1
+scaffold10747	ltr_finder:def	integrase_core_orf	7565	8431	8	+	.	ltr_finder_1

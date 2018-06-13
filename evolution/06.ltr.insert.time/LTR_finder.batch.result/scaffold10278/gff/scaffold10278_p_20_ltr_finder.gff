@@ -1,0 +1,10 @@
+scaffold10278	ltr_finder:p_20	LTR_retrotransposon	1259	7160	6	+	.	ltr_finder_1
+scaffold10278	ltr_finder:p_20	primer_binding_site	1683	1702	6	+	.	ltr_finder_1
+scaffold10278	ltr_finder:p_20	RR_tract	6776	6790	6	+	.	ltr_finder_1
+scaffold10278	ltr_finder:p_20	five_prime_LTR	1259	1611	6	+	.	ltr_finder_1
+scaffold10278	ltr_finder:p_20	three_prime_LTR	6807	7160	6	+	.	ltr_finder_1
+scaffold10278	ltr_finder:p_20	LTR_retrotransposon	9830	31269	6	-	.	ltr_finder_2
+scaffold10278	ltr_finder:p_20	primer_binding_site	29304	29322	6	-	.	ltr_finder_2
+scaffold10278	ltr_finder:p_20	RR_tract	11722	11736	6	-	.	ltr_finder_2
+scaffold10278	ltr_finder:p_20	five_prime_LTR	9830	11721	6	-	.	ltr_finder_2
+scaffold10278	ltr_finder:p_20	three_prime_LTR	29396	31269	6	-	.	ltr_finder_2

@@ -1,0 +1,9 @@
+Program    : LTR_FINDER
+Version    : 1.06
+
+Load tRNA db [/home/share/users/yangyongzhi2012/tools/genome_annotation/LTR_FINDER/LTR_FINDER.x86_64-1.0.6/tRNAdb/Athal-tRNAs.fa]  0.004 second
+Predict protein Domains 0.566 second
+>Sequence: scaffold10747 Len:11725
+No LTR Retrotransposons Found
+
+Total consume 0.575 second
