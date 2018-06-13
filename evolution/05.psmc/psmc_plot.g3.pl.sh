@@ -1,0 +1,1 @@
+./psmc_plot.g3.pl -w 2 -M Ore00,Ore01,Ore02,Ore03,Ore04,Ore11,Ore13,Ore14,Ore17,Ore20 -Y 15 Ore.all-2016-1-7.out psmc/Ore00.psmc psmc/Ore01.psmc psmc/Ore02.psmc psmc/Ore03.psmc psmc/Ore04.psmc psmc/Ore11.psmc psmc/Ore13.psmc psmc/Ore14.psmc psmc/Ore17.psmc psmc/Ore20.psmc
