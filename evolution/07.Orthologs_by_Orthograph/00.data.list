@@ -1,0 +1,5 @@
+Orthomcl_output = groups.txt
+pep:Rco = Rco.fasta
+pep:Vvi = Vvi.fasta
+classify_protein = /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Ath.pep.clean.fa
+classify_protein = /home/pool/users/yangyongzhi2012/Ostrya_genome/01.sequence/JGI10-filter/03.final.clean.data/Ore.pep.clean.fa
